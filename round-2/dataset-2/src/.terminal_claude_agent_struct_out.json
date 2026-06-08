@@ -1,0 +1,15 @@
+{
+  "title": "WVS + V-Dem + ILO SocProt: Public vs. Private Sector Workers & Institutional Independence",
+  "layman_summary": "Tests whether public-sector workers in low-welfare, high-inequality countries trust democratic institutions less than private-sector workers, using WVS surveys merged with V-Dem democracy scores and ILO social protection data.",
+  "summary": "This artifact provides three harmonized datasets for testing the hypothesis that public-sector workers in low-social-protection/high-inequality developing democratizers show lower institutional independence orientation than comparable private-sector workers.\n\n**Dataset 1 — wvs_wave7_developing_democratizers (576 examples)**: Individual-level WVS Wave 7 survey data filtered to non-OECD developing democratizers (V-Dem electdem >= 0.35). Each row is one respondent with: employment sector (public/private/ngo from Q284), institutional trust items (judiciary Q69, government Q71, parties Q72 — inverted so higher = more independent), democracy preference (Q235), democracy importance (Q250), education level (Q275R, 0-3 ordinal), income quintile (Q288R), and country-level macro merge (ILO SocProt coverage, SWIID Gini). Respondents classified into 4 quadrants by median SocProt (39.0%) and Gini (37.9) cutoffs across the developing-democratizer sample. Composite institutional_independence_index = mean of inverted trust components. 22 countries across Africa, Asia, Eastern Europe, and Latin America; 9 countries in the primary low_socprot_high_gini quadrant (ECU, GTM, IDN, IND, KEN, MYS, NGA, PER, PHL).\n\n**Dataset 2 — vdem_democracy_indicators (1102 examples)**: Country-year V-Dem v16 democracy indicators for non-OECD countries with electdem >= 0.2, years 2010-2022. Each row: electoral democracy score, judicial corruption, executive corruption, civil liberties. Used to validate developing-democratizer classification and provide institutional quality macro context.\n\n**Dataset 3 — ilo_socprot_country_year (354 examples)**: ILO SDG 1.3.1 country-year social protection coverage (% population covered) via DBnomics. Used as the primary SocProt axis for quadrant classification.\n\nAll files schema-validated against exp_sel_data_out. Total: 2032 examples across 3 datasets. File size: 1.21 MB (well within 100MB limit). Dependencies: pandas==2.3.3, numpy==2.2.6, loguru==0.7.3, Python 3.12.",
+  "out_expected_files": {
+    "script": "data.py",
+    "datasets": [
+      {
+        "full": ["full_data_out.json"],
+        "mini": "mini_data_out.json",
+        "preview": "preview_data_out.json"
+      }
+    ]
+  }
+}

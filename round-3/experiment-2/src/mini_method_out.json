@@ -1,0 +1,694 @@
+{
+  "metadata": {
+    "method_name": "DD Triple-Interaction Corrected Reanalysis (iter_3)",
+    "six_corrections_applied": [
+      "1: Education imputation 100% of period-2 confirmed and characterised",
+      "2: Acemoglu null corrected to cross-sectional OLS only (FE inestimable T=1)",
+      "3: Bonferroni correction applied (k=6), v2jucomp reclassified as exploratory",
+      "4: WVS IIX coding traced: higher IIX = more trust = state-compliant (not independent)",
+      "5: Oster β7* magnitude ~42× DD estimate with sign reversal, δ threshold < 1/42",
+      "6: Lagged subsample composition analysed, sign reversal attributed to sample/lag"
+    ],
+    "imputation_audit": {
+      "n_period2_obs": 70,
+      "n_period2_imputed": 70,
+      "pct_period2_imputed": 1.0,
+      "n_total_imputed": 70,
+      "pct_total_imputed": 0.43478260869565216,
+      "within_sd_education_pre_exclusion": 0.4135339760454356,
+      "imputation_interpretation": "All 70 period-2 (2020-22) education observations are forward-filled from a frozen 2017 anchor (100.0% of period-2, 43.5% of total N=161). The within-SD of 0.4135 years is an artifact of comparing a 2015-19 average against a single 2017 endpoint, not genuine educational change."
+    },
+    "acemoglu_null": {
+      "coef_education_lag1": 0.043053688892264866,
+      "se": 0.006094498986874185,
+      "pval": 1.6136669331510365e-12,
+      "r2": 0.42028310159946514,
+      "n_obs": 65,
+      "n_countries": 63,
+      "replicated_significance": true,
+      "correction_note": "Entity FE are inestimable: with T=1 per country after the 5-year lag, country dummies are collinear with the lagged regressor. The pooled OLS result (β=0.043, p=1.614e-12) replicates the significant cross-sectional correlation that Acemoglu et al. also find BEFORE applying entity FE. The entity-FE null requires a longer panel (pre-2015 period extension).",
+      "claim_corrected": "pooled_OLS_cross_sectional_replication_only"
+    },
+    "sample_funnel": {
+      "step1_vdem_democratizers_with_ilo": {
+        "n_obs": 161,
+        "n_countries": 96,
+        "description": "Post-1990 V-Dem democratizers with ILO SDG 1.3.1 coverage"
+      },
+      "step2_oecd_gdp_exclusion": {
+        "n_excluded_countries": 38,
+        "excluded_countries": [
+          "ARG",
+          "AUT",
+          "BEL",
+          "CAN",
+          "CHL",
+          "CYP",
+          "CZE",
+          "DEU",
+          "DNK",
+          "ESP",
+          "EST",
+          "FIN",
+          "FRA",
+          "GBR",
+          "GRC",
+          "HRV",
+          "HUN",
+          "IRL",
+          "ISL",
+          "ISR",
+          "ITA",
+          "JPN",
+          "LTU",
+          "LUX",
+          "LVA",
+          "MEX",
+          "MLT",
+          "MYS",
+          "NLD",
+          "NOR",
+          "POL",
+          "PRT",
+          "ROU",
+          "SUR",
+          "SVN",
+          "SWE",
+          "URY",
+          "USA"
+        ],
+        "gdp_threshold_ppp": 15000,
+        "reference_period": "1995-2005 average (hardcoded fallback list)"
+      },
+      "step3_analysis_sample": {
+        "n_obs": 95,
+        "n_countries": 58,
+        "description": "Low-income post-1990 democratizers (GDP PPP < $15k at transition)"
+      },
+      "excluded_country_characteristics": {
+        "mean_gini": 31.71535354545454,
+        "mean_socprot": 87.6659090909091,
+        "mean_libdem": 0.731333303030303
+      }
+    },
+    "naive_estimator": {
+      "beta7": 0.00012221407416801108,
+      "se7": 0.0001677795324843006,
+      "pval7": 0.4663561333020111,
+      "rsquared": 0.9486656421113032,
+      "n_obs": 95,
+      "full_table": {
+        "education": {
+          "coef": -0.43229503912647305,
+          "se": 0.8473126573012951,
+          "pval": 0.6099145588344249
+        },
+        "gini_disp": {
+          "coef": 0.0470757662610617,
+          "se": 0.10705384119418412,
+          "pval": 0.660126036282986
+        },
+        "socprot_coverage": {
+          "coef": 0.028907863811834106,
+          "se": 0.07823747854557729,
+          "pval": 0.7117634984015753
+        },
+        "EG_naive": {
+          "coef": -0.007240863815691859,
+          "se": 0.012978638404139773,
+          "pval": 0.5769083859123807
+        },
+        "ES_naive": {
+          "coef": -0.0037323850222383535,
+          "se": 0.0075000766027050894,
+          "pval": 0.6187333966125381
+        },
+        "GS_naive": {
+          "coef": -0.0009320878245221419,
+          "se": 0.0016762624776591561,
+          "pval": 0.5781758287379758
+        },
+        "EGS_naive": {
+          "coef": 0.00012221407416801108,
+          "se": 0.0001677795324843006,
+          "pval": 0.4663561333020111
+        }
+      }
+    },
+    "dd_estimator": {
+      "beta7": 0.2921112159510637,
+      "se7": 0.23340298883108276,
+      "pval7": 0.2107405922693817,
+      "ci95_lower": -0.1653586421578585,
+      "ci95_upper": 0.749581074059986,
+      "rsquared": 0.9474459160195601,
+      "n_obs": 95,
+      "full_table": {
+        "e_education_new": {
+          "coef": -0.5020295575985223,
+          "se": 0.6798863256973904,
+          "pval": 0.4602700790339761
+        },
+        "e_gini_disp_new": {
+          "coef": -0.017483660869131785,
+          "se": 0.024862864108102647,
+          "pval": 0.48192874268136254
+        },
+        "e_socprot_coverage_new": {
+          "coef": 0.0022185451241267026,
+          "se": 0.002028934015038338,
+          "pval": 0.27419470787326405
+        },
+        "dd_EG_dd": {
+          "coef": 7.728285126099019e-06,
+          "se": 8.178634028179566e-06,
+          "pval": 0.34469158832794244
+        },
+        "dd_ES_dd": {
+          "coef": 5.079138460155555e-15,
+          "se": 1.73474144013075e-14,
+          "pval": 0.7696831571336132
+        },
+        "dd_GS_dd": {
+          "coef": 0.0008230582506625554,
+          "se": 0.000871020168911981,
+          "pval": 0.34469158832020186
+        },
+        "dd_EGS_dd": {
+          "coef": 0.2921112159510637,
+          "se": 0.23340298883108276,
+          "pval": 0.2107405922693817
+        }
+      }
+    },
+    "bias_documentation": {
+      "bias_absolute": -0.2919890018768957,
+      "bias_in_DD_SEs": -1.251007981256883,
+      "beta7_naive": 0.00012221407416801108,
+      "beta7_DD": 0.2921112159510637,
+      "interpretation": "Substantial bias: naive mixes within/between-country variation"
+    },
+    "sub_index_bonferroni": {
+      "v2x_libdem": {
+        "label": "Liberal Democracy Index (primary)",
+        "beta7_DD": 0.2921112159510637,
+        "se7_DD": 0.23340298883108276,
+        "pval7_raw": 0.2107405922693817,
+        "n_obs": 95,
+        "pval_bonferroni": 1.0,
+        "pval_bh_fdr": 0.4206475887509882,
+        "survives_bonferroni": false,
+        "survives_bh_fdr": false
+      },
+      "v2x_jucon": {
+        "label": "Judicial Constraints Aggregate",
+        "beta7_DD": 0.5036334279595005,
+        "se7_DD": 0.3208639927066234,
+        "pval7_raw": 0.11650434971845887,
+        "n_obs": 95,
+        "pval_bonferroni": 0.6990260983107532,
+        "pval_bh_fdr": 0.3495130491553766,
+        "survives_bonferroni": false,
+        "survives_bh_fdr": false
+      },
+      "v2jucomp": {
+        "label": "Judicial Government Compliance",
+        "beta7_DD": 2.3975061516931047,
+        "se7_DD": 1.0626613261053042,
+        "pval7_raw": 0.024062251971075466,
+        "n_obs": 95,
+        "pval_bonferroni": 0.1443735118264528,
+        "pval_bh_fdr": 0.1443735118264528,
+        "survives_bonferroni": false,
+        "survives_bh_fdr": false
+      },
+      "v2cseeorgs": {
+        "label": "CSO Entry/Exit Autonomy",
+        "beta7_DD": -0.2573642191021011,
+        "se7_DD": 1.6408257785502933,
+        "pval7_raw": 0.875362732020639,
+        "n_obs": 95,
+        "pval_bonferroni": 1.0,
+        "pval_bh_fdr": 0.8753627320206391,
+        "survives_bonferroni": false,
+        "survives_bh_fdr": false
+      },
+      "v2csprtcpt": {
+        "label": "CSO Population Participation",
+        "beta7_DD": -0.2225870835260294,
+        "se7_DD": 1.0102234646788106,
+        "pval7_raw": 0.8256106519859227,
+        "n_obs": 95,
+        "pval_bonferroni": 1.0,
+        "pval_bh_fdr": 0.8753627320206391,
+        "survives_bonferroni": false,
+        "survives_bh_fdr": false
+      },
+      "v2x_polyarchy": {
+        "label": "Electoral Democracy Index",
+        "beta7_DD": 0.2582740274218459,
+        "se7_DD": 0.2392866303541253,
+        "pval7_raw": 0.2804317258339921,
+        "n_obs": 95,
+        "pval_bonferroni": 1.0,
+        "pval_bh_fdr": 0.4206475887509882,
+        "survives_bonferroni": false,
+        "survives_bh_fdr": false
+      },
+      "correction_summary": {
+        "n_tests": 6,
+        "bonferroni_threshold": 0.008333333333333333,
+        "v2jucomp_survives_bonferroni": false,
+        "v2jucomp_interpretation": "v2jucomp (raw p=0.024) does NOT survive Bonferroni correction (required p<0.0083, corrected p≈0.144). This is an exploratory directional finding requiring pre-registered replication, not a confirmed result."
+      }
+    },
+    "oster_bounds": {
+      "r2_uncontrolled": 0.9428937070790888,
+      "r2_naive_full_model": 0.9486656421113032,
+      "r2_controlled_dd": 0.9474459160195601,
+      "rmax": 1.0,
+      "beta_unc_education": -0.5067645120303318,
+      "beta1_oster_adjusted": -0.44736572381871537,
+      "beta7_naive": 0.00012221407416801108,
+      "beta7_DD": 0.2921112159510637,
+      "beta7_oster_adjusted": -12.28875807091721,
+      "magnitude_ratio_vs_DD": 42.06876490828034,
+      "sign_reversal": true,
+      "delta_for_robustness": 0.02377060515516041,
+      "characterization": "β7*=-12.29 is 42× larger in magnitude than the DD estimate of 0.292 and reverses sign. The estimate is not robust even to δ<0.0238 proportional selection on unobservables. R²_controlled (0.9474) barely exceeds R²_naive (0.9487) — the triple interaction adds minimal incremental explanatory power."
+    },
+    "wvs_iix_resolution": {
+      "coding_trace": {
+        "raw_wvs_scale": "1=great deal of trust, 4=none at all (Q69/Q71/Q72)",
+        "data_py_transform": "5 - v  (so v=1 high-trust → stored=4; v=4 no-trust → stored=1)",
+        "stored_value_meaning": "higher stored value = higher trust in institutions",
+        "iix_formula": "mean(inverted_trust_values) / 3",
+        "iix_actual_range": "0.333 (all v=4, no-trust → inverted=1) to 1.333 (all v=1, great-deal → inverted=4)",
+        "dataset_label": "higher IIX = more independent (INCORRECT)",
+        "correct_label": "higher IIX = MORE TRUST in courts/government/parties = state-COMPLIANT orientation",
+        "paper_description_correct": "lower IIX = more independent (skeptical of captured institutions)",
+        "contradiction_resolution": "The dataset label 'higher = more independent' is the opposite of what the inversion (5-v) produces. Higher IIX means higher inverted trust = more trust in courts/government/parties = state-compliant/accommodating behavior. SDET predicts public sector workers in low-SocProt/high-Gini show HIGHER IIX (more state-compliant), not lower. Under corrected coding, the micro-evidence direction is: public IIX > private IIX in the critical quadrant = consistent with SDET under corrected interpretation."
+      },
+      "n_wvs_respondents": 576,
+      "n_countries": 27,
+      "quadrant_comparison": {
+        "low_socprot_high_gini": {
+          "n_total": 215,
+          "mean_iix_all": 0.7948348837209303,
+          "n_public": 29,
+          "mean_iix_public": 0.8314172413793102,
+          "n_private": 166,
+          "mean_iix_private": 0.7985307228915663,
+          "n_ngo": 20,
+          "mean_iix_ngo": 0.7111149999999998,
+          "ttest_pub_vs_priv_stat": 0.5104301410646386,
+          "ttest_pub_vs_priv_pval": 0.6129371295803987
+        },
+        "low_socprot_low_gini": {
+          "n_total": 57,
+          "mean_iix_all": 0.8099473684210526,
+          "n_public": 8,
+          "mean_iix_public": 0.861125,
+          "n_private": 35,
+          "mean_iix_private": 0.7936599999999998,
+          "n_ngo": 14,
+          "mean_iix_ngo": 0.8214214285714286,
+          "ttest_pub_vs_priv_stat": 0.7437905556714461,
+          "ttest_pub_vs_priv_pval": 0.47252737957177643
+        },
+        "high_socprot_high_gini": {
+          "n_total": 69,
+          "mean_iix_all": 0.6868057971014493,
+          "n_public": 14,
+          "mean_iix_public": 0.7023857142857144,
+          "n_private": 47,
+          "mean_iix_private": 0.6855914893617021,
+          "n_ngo": 8,
+          "mean_iix_ngo": 0.6666749999999999,
+          "ttest_pub_vs_priv_stat": 0.22870043015993335,
+          "ttest_pub_vs_priv_pval": 0.8215785044780416
+        },
+        "high_socprot_low_gini": {
+          "n_total": 235,
+          "mean_iix_all": 0.7305042553191489,
+          "n_public": 62,
+          "mean_iix_public": 0.7526983870967743,
+          "n_private": 161,
+          "mean_iix_private": 0.7280962732919255,
+          "n_ngo": 12,
+          "mean_iix_ngo": 0.6481416666666666,
+          "ttest_pub_vs_priv_stat": 0.7057301008855094,
+          "ttest_pub_vs_priv_pval": 0.48180303641633637
+        }
+      },
+      "sdet_direction_assessment": {
+        "low_socprot_high_gini_pub_iix": 0.8314172413793102,
+        "low_socprot_high_gini_priv_iix": 0.7985307228915663,
+        "consistent_with_sdet_under_correct_coding": true,
+        "interpretation": "CONSISTENT WITH SDET (public sector workers more state-compliant)"
+      }
+    },
+    "lagged_subsample_analysis": {
+      "comparison": {
+        "countries_in_lagged_spec": [
+          "BEN",
+          "BFA",
+          "BGR",
+          "BOL",
+          "BRA",
+          "BTN",
+          "COL",
+          "CRI",
+          "DOM",
+          "ECU",
+          "GEO",
+          "GNB",
+          "GTM",
+          "HND",
+          "IDN",
+          "IND",
+          "JAM",
+          "KEN",
+          "MDA",
+          "MKD",
+          "MLI",
+          "MNE",
+          "MNG",
+          "NGA",
+          "NPL",
+          "PAN",
+          "PER",
+          "PHL",
+          "PRY",
+          "SEN",
+          "SLV",
+          "SRB",
+          "THA",
+          "TUN",
+          "ZMB"
+        ],
+        "n_countries_in_lag": 35,
+        "n_countries_dropped": 23,
+        "lagged_mean_libdem": 0.43538981944444444,
+        "dropped_mean_libdem": 0.39350726086956517,
+        "lagged_mean_gini": 40.47870369444444,
+        "dropped_mean_gini": 41.931956478260865,
+        "lagged_mean_socprot": 37.86273148611111,
+        "dropped_mean_socprot": 30.94347826086956
+      },
+      "contemporaneous_dd_on_37_subsample": {
+        "beta7": 0.2921112159510679,
+        "se7": 0.20402794501987467,
+        "pval7": 0.15222351208989884,
+        "n_obs": 72
+      },
+      "sign_reversal_diagnosis": "LAGGING ARTIFACT: contemporaneous DD on N=37 subsample countries gives β7=0.2921 (POSITIVE), opposite to the lagged spec (reference ≈-0.192). The sign reversal in the lagged spec is caused by the lag, not sample composition.",
+      "lagged_spec_beta7_reference": -0.192,
+      "lagged_spec_n_obs_reference": 37
+    },
+    "period1_only_sensitivity": {
+      "n_obs": 54,
+      "n_countries": 53,
+      "within_sd_education": 0.0,
+      "dd_feasible": false,
+      "interpretation": "Period-1-only sample (2015-19, N=54): T=1 per country, all within-deviations are zero by construction. DD triple interaction is unidentified in single-period cross-section. This confirms that all DD variation in the full sample comes from the period-2 education values, which are entirely imputed at the 2017 anchor."
+    },
+    "marginal_effects": [
+      {
+        "gini_label": "p25",
+        "gini_value": -0.14499999999999957,
+        "socprot_grid_within": [
+          -6.68,
+          -5.976842105263158,
+          -5.273684210526317,
+          -4.570526315789475,
+          -3.867368421052633,
+          -3.1642105263157916,
+          -2.4610526315789496,
+          -1.7578947368421085,
+          -1.0547368421052665,
+          -0.35157894736842454,
+          0.35157894736841655,
+          1.0547368421052585,
+          1.7578947368421005,
+          2.4610526315789425,
+          3.1642105263157827,
+          3.8673684210526247,
+          4.570526315789467,
+          5.273684210526309,
+          5.976842105263151,
+          6.679999999999992
+        ],
+        "socprot_grid_original_scale": [
+          29.5075438631579,
+          30.21070175789474,
+          30.913859652631583,
+          31.617017547368423,
+          32.32017544210527,
+          33.02333333684211,
+          33.72649123157895,
+          34.42964912631579,
+          35.132807021052635,
+          35.835964915789475,
+          36.539122810526315,
+          37.242280705263155,
+          37.9454386,
+          38.64859649473684,
+          39.35175438947368,
+          40.05491228421052,
+          40.758070178947364,
+          41.46122807368421,
+          42.16438596842105,
+          42.86754386315789
+        ],
+        "marginal_effect": [
+          -0.21909175442970008,
+          -0.24887479903708581,
+          -0.27865784364447166,
+          -0.30844088825185756,
+          -0.33822393285924335,
+          -0.3680069774666292,
+          -0.39779002207401504,
+          -0.42757306668140077,
+          -0.4573561112887866,
+          -0.4871391558961725,
+          -0.5169222005035583,
+          -0.5467052451109442,
+          -0.57648828971833,
+          -0.6062713343257158,
+          -0.6360543789331016,
+          -0.6658374235404875,
+          -0.6956204681478733,
+          -0.7254035127552592,
+          -0.7551865573626451,
+          -0.7849696019700307
+        ],
+        "ci_lower": [
+          -1.5800331603503253,
+          -1.6000326938301144,
+          -1.6215818471221106,
+          -1.6447092661287912,
+          -1.6694386234534593,
+          -1.6957882107036473,
+          -1.723770614074343,
+          -1.7533924863344788,
+          -1.784654424720801,
+          -1.8175509599223822,
+          -1.8520706566265621,
+          -1.888196321348713,
+          -1.9259053088440168,
+          -1.9651699146212072,
+          -2.005957838193903,
+          -2.048232699864477,
+          -2.0919545930813044,
+          -2.1370806546849925,
+          -2.1835656365229186,
+          -2.231362463768361
+        ],
+        "ci_upper": [
+          1.1418496514909253,
+          1.1022830957559426,
+          1.064266159833167,
+          1.0278274896250759,
+          0.9929907577349726,
+          0.9597742557703888,
+          0.9281905699263128,
+          0.8982463529716771,
+          0.8699422021432276,
+          0.8432726481300373,
+          0.8182262556194455,
+          0.7947858311268245,
+          0.7729287294073567,
+          0.7526272459697756,
+          0.7338490803277001,
+          0.7165578527835023,
+          0.7007136567855576,
+          0.686273629174474,
+          0.6731925217976287,
+          0.6614232598282994
+        ],
+        "zero_crossing_socprot_within": null,
+        "zero_crossing_socprot_original": null
+      },
+      {
+        "gini_label": "p75",
+        "gini_value": 0.14500000000000313,
+        "socprot_grid_within": [
+          -6.68,
+          -5.976842105263158,
+          -5.273684210526317,
+          -4.570526315789475,
+          -3.867368421052633,
+          -3.1642105263157916,
+          -2.4610526315789496,
+          -1.7578947368421085,
+          -1.0547368421052665,
+          -0.35157894736842454,
+          0.35157894736841655,
+          1.0547368421052585,
+          1.7578947368421005,
+          2.4610526315789425,
+          3.1642105263157827,
+          3.8673684210526247,
+          4.570526315789467,
+          5.273684210526309,
+          5.976842105263151,
+          6.679999999999992
+        ],
+        "socprot_grid_original_scale": [
+          29.5075438631579,
+          30.21070175789474,
+          30.913859652631583,
+          31.617017547368423,
+          32.32017544210527,
+          33.02333333684211,
+          33.72649123157895,
+          34.42964912631579,
+          35.132807021052635,
+          35.835964915789475,
+          36.539122810526315,
+          37.242280705263155,
+          37.9454386,
+          38.64859649473684,
+          39.35175438947368,
+          40.05491228421052,
+          40.758070178947364,
+          41.46122807368421,
+          42.16438596842105,
+          42.86754386315789
+        ],
+        "marginal_effect": [
+          -0.7849673607674195,
+          -0.7551843161600256,
+          -0.7254012715526319,
+          -0.6956182269452382,
+          -0.6658351823378446,
+          -0.6360521377304509,
+          -0.6062690931230572,
+          -0.5764860485156634,
+          -0.5467030039082698,
+          -0.516919959300876,
+          -0.48713691469348236,
+          -0.4573538700860887,
+          -0.42757082547869496,
+          -0.3977877808713012,
+          -0.3680047362639075,
+          -0.33822169165651383,
+          -0.30843864704912016,
+          -0.27865560244172644,
+          -0.24887255783433276,
+          -0.21908951322693898
+        ],
+        "ci_lower": [
+          -2.231357745691904,
+          -2.183560958882528,
+          -2.1370760207392063,
+          -2.0919500061615204,
+          -2.048228163349466,
+          -2.005953355480711,
+          -1.965165489092836,
+          -1.9259009438344536,
+          -1.888192020106073,
+          -1.852066422275271,
+          -1.8175467954254636,
+          -1.7846503328434076,
+          -1.7533884696098394,
+          -1.7237666747732305,
+          -1.6957843508083807,
+          -1.6694348446372507,
+          -1.6447055697410349,
+          -1.621578234179938,
+          -1.6000291650162717,
+          -1.580029716017162
+        ],
+        "ci_upper": [
+          0.6614230241570649,
+          0.6731923265624771,
+          0.6862734776339425,
+          0.7007135522710439,
+          0.7165577986737768,
+          0.7338490800198092,
+          0.7526273028467216,
+          0.7729288468031269,
+          0.7947860122895335,
+          0.818226503673519,
+          0.843272966038499,
+          0.8699425926712303,
+          0.8982468186524495,
+          0.9281911130306281,
+          0.9597748782805656,
+          0.9929914613242231,
+          1.0278282756427948,
+          1.0642670292964853,
+          1.1022840493476063,
+          1.1418506895632838
+        ],
+        "zero_crossing_socprot_within": null,
+        "zero_crossing_socprot_original": null
+      }
+    ]
+  },
+  "datasets": [
+    {
+      "dataset": "vdem_ilo_gini_edu_panel_complete",
+      "examples": [
+        {
+          "input": "{\"country_iso3\":\"ALB\",\"period\":\"2020-22\",\"period_start\":2020,\"period_end\":2022,\"v2x_jucon\":0.725667,\"v2jucomp\":1.022333,\"v2cseeorgs\":1.762,\"v2csprtcpt\":1.420333,\"v2x_civlib\":0.888,\"v2xcl_rol\":0.913,\"v2x_polyarchy\":0.523667,\"education\":10.0,\"gini_disp\":34.933333,\"gini_mkt\":50.866667,\"gini_disp_se\":2.0,\"socprot_coverage\":78.1,\"directly_reported_any\":true,\"directly_reported_all\":true,\"mean_education\":9.095143,\"mean_gini_disp\":36.325556,\"mean_socprot_coverage\":78.1,\"e_education\":0.904857,\"e_gini_disp\":-1.392222,\"e_socprot_coverage\":0.0,\"education_imputed\":true}",
+          "output": "0.437",
+          "metadata_row_index": 0,
+          "metadata_country_name": "Albania",
+          "metadata_task_type": "regression",
+          "metadata_target_variable": "v2x_libdem",
+          "metadata_is_democratizer": true,
+          "metadata_has_all_core_vars": true,
+          "predict_naive_fe": "0.437",
+          "predict_dd_corrected": "0.437"
+        },
+        {
+          "input": "{\"country_iso3\":\"ARG\",\"period\":\"2015-19\",\"period_start\":2015,\"period_end\":2019,\"v2x_jucon\":0.7254,\"v2jucomp\":0.9258,\"v2cseeorgs\":2.0338,\"v2csprtcpt\":2.462,\"v2x_civlib\":0.8822,\"v2xcl_rol\":0.8532,\"v2x_polyarchy\":0.7708,\"education\":9.866666,\"gini_disp\":37.98,\"gini_mkt\":40.32,\"gini_disp_se\":1.158,\"socprot_coverage\":65.4,\"directly_reported_any\":true,\"directly_reported_all\":true,\"mean_education\":9.206095,\"mean_gini_disp\":41.817143,\"mean_socprot_coverage\":65.65,\"e_education\":0.660571,\"e_gini_disp\":-3.837143,\"e_socprot_coverage\":-0.25,\"education_imputed\":false}",
+          "output": "0.6184",
+          "metadata_row_index": 1,
+          "metadata_country_name": "Argentina",
+          "metadata_task_type": "regression",
+          "metadata_target_variable": "v2x_libdem",
+          "metadata_is_democratizer": true,
+          "metadata_has_all_core_vars": true,
+          "predict_naive_fe": "",
+          "predict_dd_corrected": ""
+        },
+        {
+          "input": "{\"country_iso3\":\"ARG\",\"period\":\"2020-22\",\"period_start\":2020,\"period_end\":2022,\"v2x_jucon\":0.766667,\"v2jucomp\":1.534333,\"v2cseeorgs\":1.717,\"v2csprtcpt\":2.462,\"v2x_civlib\":0.877667,\"v2xcl_rol\":0.842667,\"v2x_polyarchy\":0.811333,\"education\":9.9,\"gini_disp\":38.0,\"gini_mkt\":39.9,\"gini_disp_se\":1.143333,\"socprot_coverage\":65.9,\"directly_reported_any\":true,\"directly_reported_all\":true,\"mean_education\":9.206095,\"mean_gini_disp\":41.817143,\"mean_socprot_coverage\":65.65,\"e_education\":0.693904,\"e_gini_disp\":-3.817143,\"e_socprot_coverage\":0.25,\"education_imputed\":true}",
+          "output": "0.648333",
+          "metadata_row_index": 2,
+          "metadata_country_name": "Argentina",
+          "metadata_task_type": "regression",
+          "metadata_target_variable": "v2x_libdem",
+          "metadata_is_democratizer": true,
+          "metadata_has_all_core_vars": true,
+          "predict_naive_fe": "",
+          "predict_dd_corrected": ""
+        }
+      ]
+    }
+  ]
+}

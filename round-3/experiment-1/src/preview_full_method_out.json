@@ -1,0 +1,43 @@
+{
+  "metadata": {
+    "method_name": "DD_triple_interaction_WB_tertiary_Granger",
+    "description": "Giesselmann-Schmidt-Catran DD estimator with WB tertiary enrollment, panel Granger falsification, and reverse-causality tests for SDET hypothesis.",
+    "specs_run": [
+      "A",
+      "B",
+      "C"
+    ],
+    "n_examples": 13
+  },
+  "datasets": [
+    {
+      "dataset": "DD_results_WB_tertiary_enrollment",
+      "examples": [
+        {
+          "input": "{\"spec\": \"A_UNDP_MYS_naive\", \"edu_variable\": \"education\", \"estimator\": \"naive_FE_product\"}",
+          "output": "{\"beta7\": 0.019849367081870784, \"se\": 0.015307058637151297, \"pval\": 0.19471859572116257, \"ci_lower\": -0.010151916556188523, \"ci_upper\": 0.04985065071993009, \"N\": 161, \"n_countries\": 96, \"condition_num...",
+          "metadata_spec": "A_UNDP_MYS_naive",
+          "metadata_beta7": 0.019849367081870784,
+          "metadata_pval": 0.19471859572116257,
+          "metadata_type": "regression_spec"
+        },
+        {
+          "input": "{\"spec\": \"B_UNDP_MYS_DD\", \"edu_variable\": \"education\", \"estimator\": \"DD_Giesselmann_Schmidt_Catran_2022\"}",
+          "output": "{\"beta7\": 155.2324995836918, \"se\": 119.70925640694406, \"pval\": 0.19471859572117955, \"ci_lower\": -79.39333158998929, \"ci_upper\": 389.85833075737287, \"N\": 161, \"n_countries\": 96, \"condition_number\": 5.8...",
+          "metadata_spec": "B_UNDP_MYS_DD",
+          "metadata_beta7": 155.2324995836918,
+          "metadata_pval": 0.19471859572117955,
+          "metadata_type": "regression_spec"
+        },
+        {
+          "input": "{\"spec\": \"C_WB_tertiary_DD\", \"edu_variable\": \"ter_enroll\", \"estimator\": \"DD_Giesselmann_Schmidt_Catran_2022\"}",
+          "output": "{\"beta7\": 13.128000558939018, \"se\": 9.99038343309383, \"pval\": 0.18882475715728286, \"ci_lower\": -6.452791161670511, \"ci_upper\": 32.70879227954855, \"N\": 137, \"n_countries\": 86, \"condition_number\": 3.346...",
+          "metadata_spec": "C_WB_tertiary_DD",
+          "metadata_beta7": 13.128000558939018,
+          "metadata_pval": 0.18882475715728286,
+          "metadata_type": "regression_spec"
+        }
+      ]
+    }
+  ]
+}

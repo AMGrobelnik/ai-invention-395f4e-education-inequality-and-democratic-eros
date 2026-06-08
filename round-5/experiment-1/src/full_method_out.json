@@ -1,0 +1,1272 @@
+{
+  "datasets": [
+    {
+      "dataset": "spec_c_primary_predictions_per_country_period",
+      "examples": [
+        {
+          "input": "{\"country_iso3\": \"ALB\", \"period_id\": 7, \"E_ter_std\": 0.6277, \"G_std\": -0.7048, \"S_std\": 1.3203}",
+          "output": "0.436",
+          "metadata_country": "ALB",
+          "metadata_period_id": "7",
+          "metadata_period_label": "2020-22",
+          "predict_dd_corrected": "0.038472",
+          "predict_baseline": "0.385116"
+        },
+        {
+          "input": "{\"country_iso3\": \"ARM\", \"period_id\": 6, \"E_ter_std\": 0.3658, \"G_std\": -0.4831, \"S_std\": 0.2779}",
+          "output": "0.33",
+          "metadata_country": "ARM",
+          "metadata_period_id": "6",
+          "metadata_period_label": "2015-19",
+          "predict_dd_corrected": "0.40446",
+          "predict_baseline": "0.397206"
+        },
+        {
+          "input": "{\"country_iso3\": \"ARM\", \"period_id\": 7, \"E_ter_std\": 0.4167, \"G_std\": -0.8291, \"S_std\": 0.2148}",
+          "output": "0.518667",
+          "metadata_country": "ARM",
+          "metadata_period_id": "7",
+          "metadata_period_label": "2020-22",
+          "predict_dd_corrected": "0.444207",
+          "predict_baseline": "0.451461"
+        },
+        {
+          "input": "{\"country_iso3\": \"BEN\", \"period_id\": 6, \"E_ter_std\": -1.1195, \"G_std\": 0.6207, \"S_std\": -1.3689}",
+          "output": "0.5004",
+          "metadata_country": "BEN",
+          "metadata_period_id": "6",
+          "metadata_period_label": "2015-19",
+          "predict_dd_corrected": "0.365474",
+          "predict_baseline": "0.468704"
+        },
+        {
+          "input": "{\"country_iso3\": \"BEN\", \"period_id\": 7, \"E_ter_std\": -1.1685, \"G_std\": 0.4802, \"S_std\": -1.346}",
+          "output": "0.28",
+          "metadata_country": "BEN",
+          "metadata_period_id": "7",
+          "metadata_period_label": "2020-22",
+          "predict_dd_corrected": "0.414926",
+          "predict_baseline": "0.311696"
+        },
+        {
+          "input": "{\"country_iso3\": \"BFA\", \"period_id\": 6, \"E_ter_std\": -1.3183, \"G_std\": 0.1419, \"S_std\": -1.3345}",
+          "output": "0.4566",
+          "metadata_country": "BFA",
+          "metadata_period_id": "6",
+          "metadata_period_label": "2015-19",
+          "predict_dd_corrected": "0.414042",
+          "predict_baseline": "0.445574"
+        },
+        {
+          "input": "{\"country_iso3\": \"BFA\", \"period_id\": 7, \"E_ter_std\": -1.2132, \"G_std\": 0.129, \"S_std\": -1.2963}",
+          "output": "0.388667",
+          "metadata_country": "BFA",
+          "metadata_period_id": "7",
+          "metadata_period_label": "2020-22",
+          "predict_dd_corrected": "0.431225",
+          "predict_baseline": "0.399693"
+        },
+        {
+          "input": "{\"country_iso3\": \"BGD\", \"period_id\": 7, \"E_ter_std\": -0.7053, \"G_std\": -0.9055, \"S_std\": -0.8257}",
+          "output": "0.092333",
+          "metadata_country": "BGD",
+          "metadata_period_id": "7",
+          "metadata_period_label": "2020-22",
+          "predict_dd_corrected": "0.092333",
+          "predict_baseline": "0.092333"
+        },
+        {
+          "input": "{\"country_iso3\": \"BGR\", \"period_id\": 6, \"E_ter_std\": 1.336, \"G_std\": -0.2796, \"S_std\": 1.7105}",
+          "output": "0.5324",
+          "metadata_country": "BGR",
+          "metadata_period_id": "6",
+          "metadata_period_label": "2015-19",
+          "predict_dd_corrected": "0.528862",
+          "predict_baseline": "0.571646"
+        },
+        {
+          "input": "{\"country_iso3\": \"BGR\", \"period_id\": 7, \"E_ter_std\": 1.4544, \"G_std\": -0.2605, \"S_std\": 1.5001}",
+          "output": "0.550667",
+          "metadata_country": "BGR",
+          "metadata_period_id": "7",
+          "metadata_period_label": "2020-22",
+          "predict_dd_corrected": "0.554205",
+          "predict_baseline": "0.511421"
+        },
+        {
+          "input": "{\"country_iso3\": \"BIH\", \"period_id\": 7, \"E_ter_std\": 0.0467, \"G_std\": -0.2294, \"S_std\": 0.4175}",
+          "output": "0.335667",
+          "metadata_country": "BIH",
+          "metadata_period_id": "7",
+          "metadata_period_label": "2020-22",
+          "predict_dd_corrected": "0.335667",
+          "predict_baseline": "0.335667"
+        },
+        {
+          "input": "{\"country_iso3\": \"BLR\", \"period_id\": 6, \"E_ter_std\": 1.5654, \"G_std\": -2.1804, \"S_std\": -0.2902}",
+          "output": "0.1066",
+          "metadata_country": "BLR",
+          "metadata_period_id": "6",
+          "metadata_period_label": "2015-19",
+          "predict_dd_corrected": "0.1066",
+          "predict_baseline": "0.1066"
+        },
+        {
+          "input": "{\"country_iso3\": \"BRA\", \"period_id\": 6, \"E_ter_std\": 0.2594, \"G_std\": 0.959, \"S_std\": 0.9416}",
+          "output": "0.6398",
+          "metadata_country": "BRA",
+          "metadata_period_id": "6",
+          "metadata_period_label": "2015-19",
+          "predict_dd_corrected": "0.595896",
+          "predict_baseline": "0.591414"
+        },
+        {
+          "input": "{\"country_iso3\": \"BRA\", \"period_id\": 7, \"E_ter_std\": 0.5104, \"G_std\": 0.8672, \"S_std\": 1.0851}",
+          "output": "0.535",
+          "metadata_country": "BRA",
+          "metadata_period_id": "7",
+          "metadata_period_label": "2020-22",
+          "predict_dd_corrected": "0.578904",
+          "predict_baseline": "0.583386"
+        },
+        {
+          "input": "{\"country_iso3\": \"BTN\", \"period_id\": 6, \"E_ter_std\": -0.9902, \"G_std\": -0.2566, \"S_std\": -1.3307}",
+          "output": "0.4872",
+          "metadata_country": "BTN",
+          "metadata_period_id": "6",
+          "metadata_period_label": "2015-19",
+          "predict_dd_corrected": "0.470052",
+          "predict_baseline": "0.53923"
+        },
+        {
+          "input": "{\"country_iso3\": \"BTN\", \"period_id\": 7, \"E_ter_std\": -0.9847, \"G_std\": -0.4134, \"S_std\": -1.2121}",
+          "output": "0.487667",
+          "metadata_country": "BTN",
+          "metadata_period_id": "7",
+          "metadata_period_label": "2020-22",
+          "predict_dd_corrected": "0.504815",
+          "predict_baseline": "0.435637"
+        },
+        {
+          "input": "{\"country_iso3\": \"CHL\", \"period_id\": 6, \"E_ter_std\": 1.6192, \"G_std\": 0.8758, \"S_std\": 0.999}",
+          "output": "0.8168",
+          "metadata_country": "CHL",
+          "metadata_period_id": "6",
+          "metadata_period_label": "2015-19",
+          "predict_dd_corrected": "0.798965",
+          "predict_baseline": "0.778547"
+        },
+        {
+          "input": "{\"country_iso3\": \"CHL\", \"period_id\": 7, \"E_ter_std\": 1.8015, \"G_std\": 0.7669, \"S_std\": 1.2132}",
+          "output": "0.773",
+          "metadata_country": "CHL",
+          "metadata_period_id": "7",
+          "metadata_period_label": "2020-22",
+          "predict_dd_corrected": "0.790835",
+          "predict_baseline": "0.811253"
+        },
+        {
+          "input": "{\"country_iso3\": \"CIV\", \"period_id\": 7, \"E_ter_std\": -1.1486, \"G_std\": 1.3045, \"S_std\": -1.2044}",
+          "output": "0.243333",
+          "metadata_country": "CIV",
+          "metadata_period_id": "7",
+          "metadata_period_label": "2020-22",
+          "predict_dd_corrected": "0.243333",
+          "predict_baseline": "0.243333"
+        },
+        {
+          "input": "{\"country_iso3\": \"COL\", \"period_id\": 6, \"E_ter_std\": 0.4687, \"G_std\": 1.0335, \"S_std\": 0.1172}",
+          "output": "0.538",
+          "metadata_country": "COL",
+          "metadata_period_id": "6",
+          "metadata_period_label": "2015-19",
+          "predict_dd_corrected": "0.51943",
+          "predict_baseline": "0.625719"
+        },
+        {
+          "input": "{\"country_iso3\": \"COL\", \"period_id\": 7, \"E_ter_std\": 0.5008, \"G_std\": 1.4406, \"S_std\": 0.3219}",
+          "output": "0.518667",
+          "metadata_country": "COL",
+          "metadata_period_id": "7",
+          "metadata_period_label": "2020-22",
+          "predict_dd_corrected": "0.537237",
+          "predict_baseline": "0.430948"
+        },
+        {
+          "input": "{\"country_iso3\": \"DOM\", \"period_id\": 6, \"E_ter_std\": 0.417, \"G_std\": 0.1992, \"S_std\": 0.3831}",
+          "output": "0.3368",
+          "metadata_country": "DOM",
+          "metadata_period_id": "6",
+          "metadata_period_label": "2015-19",
+          "predict_dd_corrected": "0.389405",
+          "predict_baseline": "0.333928"
+        },
+        {
+          "input": "{\"country_iso3\": \"DOM\", \"period_id\": 7, \"E_ter_std\": 0.466, \"G_std\": -0.3512, \"S_std\": 0.5361}",
+          "output": "0.470333",
+          "metadata_country": "DOM",
+          "metadata_period_id": "7",
+          "metadata_period_label": "2020-22",
+          "predict_dd_corrected": "0.417728",
+          "predict_baseline": "0.473205"
+        },
+        {
+          "input": "{\"country_iso3\": \"FJI\", \"period_id\": 6, \"E_ter_std\": 1.1746, \"G_std\": -0.3656, \"S_std\": 0.5859}",
+          "output": "0.2744",
+          "metadata_country": "FJI",
+          "metadata_period_id": "6",
+          "metadata_period_label": "2015-19",
+          "predict_dd_corrected": "0.2744",
+          "predict_baseline": "0.2744"
+        },
+        {
+          "input": "{\"country_iso3\": \"GEO\", \"period_id\": 6, \"E_ter_std\": 0.649, \"G_std\": -0.2079, \"S_std\": 2.0472}",
+          "output": "0.5028",
+          "metadata_country": "GEO",
+          "metadata_period_id": "6",
+          "metadata_period_label": "2015-19",
+          "predict_dd_corrected": "0.494831",
+          "predict_baseline": "0.496395"
+        },
+        {
+          "input": "{\"country_iso3\": \"GEO\", \"period_id\": 7, \"E_ter_std\": 1.1436, \"G_std\": -0.5758, \"S_std\": 1.9515}",
+          "output": "0.462667",
+          "metadata_country": "GEO",
+          "metadata_period_id": "7",
+          "metadata_period_label": "2020-22",
+          "predict_dd_corrected": "0.470636",
+          "predict_baseline": "0.469072"
+        },
+        {
+          "input": "{\"country_iso3\": \"GHA\", \"period_id\": 6, \"E_ter_std\": -0.9589, \"G_std\": 0.5734, \"S_std\": -0.8334}",
+          "output": "0.6196",
+          "metadata_country": "GHA",
+          "metadata_period_id": "6",
+          "metadata_period_label": "2015-19",
+          "predict_dd_corrected": "0.6196",
+          "predict_baseline": "0.6196"
+        },
+        {
+          "input": "{\"country_iso3\": \"GTM\", \"period_id\": 6, \"E_ter_std\": -0.7441, \"G_std\": 0.5175, \"S_std\": -1.1713}",
+          "output": "0.43",
+          "metadata_country": "GTM",
+          "metadata_period_id": "6",
+          "metadata_period_label": "2015-19",
+          "predict_dd_corrected": "0.43",
+          "predict_baseline": "0.43"
+        },
+        {
+          "input": "{\"country_iso3\": \"HND\", \"period_id\": 6, \"E_ter_std\": -0.7, \"G_std\": 0.8902, \"S_std\": -0.6498}",
+          "output": "0.241",
+          "metadata_country": "HND",
+          "metadata_period_id": "6",
+          "metadata_period_label": "2015-19",
+          "predict_dd_corrected": "0.241",
+          "predict_baseline": "0.241"
+        },
+        {
+          "input": "{\"country_iso3\": \"IDN\", \"period_id\": 6, \"E_ter_std\": -0.2854, \"G_std\": 0.8787, \"S_std\": -0.6039}",
+          "output": "0.4826",
+          "metadata_country": "IDN",
+          "metadata_period_id": "6",
+          "metadata_period_label": "2015-19",
+          "predict_dd_corrected": "0.469693",
+          "predict_baseline": "0.454481"
+        },
+        {
+          "input": "{\"country_iso3\": \"IDN\", \"period_id\": 7, \"E_ter_std\": -0.1092, \"G_std\": 0.7908, \"S_std\": 0.4099}",
+          "output": "0.399667",
+          "metadata_country": "IDN",
+          "metadata_period_id": "7",
+          "metadata_period_label": "2020-22",
+          "predict_dd_corrected": "0.412574",
+          "predict_baseline": "0.427786"
+        },
+        {
+          "input": "{\"country_iso3\": \"KEN\", \"period_id\": 6, \"E_ter_std\": -1.1458, \"G_std\": 0.3884, \"S_std\": -1.2752}",
+          "output": "0.4102",
+          "metadata_country": "KEN",
+          "metadata_period_id": "6",
+          "metadata_period_label": "2015-19",
+          "predict_dd_corrected": "0.4102",
+          "predict_baseline": "0.4102"
+        },
+        {
+          "input": "{\"country_iso3\": \"LKA\", \"period_id\": 6, \"E_ter_std\": -0.8943, \"G_std\": 1.1941, \"S_std\": -0.3896}",
+          "output": "0.443",
+          "metadata_country": "LKA",
+          "metadata_period_id": "6",
+          "metadata_period_label": "2015-19",
+          "predict_dd_corrected": "0.443",
+          "predict_baseline": "0.443"
+        },
+        {
+          "input": "{\"country_iso3\": \"LSO\", \"period_id\": 6, \"E_ter_std\": -1.174, \"G_std\": 1.2304, \"S_std\": -1.3154}",
+          "output": "0.434",
+          "metadata_country": "LSO",
+          "metadata_period_id": "6",
+          "metadata_period_label": "2015-19",
+          "predict_dd_corrected": "0.434",
+          "predict_baseline": "0.434"
+        },
+        {
+          "input": "{\"country_iso3\": \"MDA\", \"period_id\": 6, \"E_ter_std\": 0.3299, \"G_std\": -1.2515, \"S_std\": -0.0606}",
+          "output": "0.4276",
+          "metadata_country": "MDA",
+          "metadata_period_id": "6",
+          "metadata_period_label": "2015-19",
+          "predict_dd_corrected": "0.525145",
+          "predict_baseline": "0.457407"
+        },
+        {
+          "input": "{\"country_iso3\": \"MDA\", \"period_id\": 7, \"E_ter_std\": 0.6442, \"G_std\": -1.24, \"S_std\": 0.1498}",
+          "output": "0.593",
+          "metadata_country": "MDA",
+          "metadata_period_id": "7",
+          "metadata_period_label": "2020-22",
+          "predict_dd_corrected": "0.495455",
+          "predict_baseline": "0.563193"
+        },
+        {
+          "input": "{\"country_iso3\": \"MDG\", \"period_id\": 7, \"E_ter_std\": -1.333, \"G_std\": 0.2723, \"S_std\": -1.0782}",
+          "output": "0.24",
+          "metadata_country": "MDG",
+          "metadata_period_id": "7",
+          "metadata_period_label": "2020-22",
+          "predict_dd_corrected": "0.24",
+          "predict_baseline": "0.24"
+        },
+        {
+          "input": "{\"country_iso3\": \"MKD\", \"period_id\": 6, \"E_ter_std\": -0.0115, \"G_std\": -1.1827, \"S_std\": -0.1754}",
+          "output": "0.3444",
+          "metadata_country": "MKD",
+          "metadata_period_id": "6",
+          "metadata_period_label": "2015-19",
+          "predict_dd_corrected": "0.371975",
+          "predict_baseline": "0.302365"
+        },
+        {
+          "input": "{\"country_iso3\": \"MKD\", \"period_id\": 7, \"E_ter_std\": 0.1259, \"G_std\": -1.2782, \"S_std\": 0.2645}",
+          "output": "0.387333",
+          "metadata_country": "MKD",
+          "metadata_period_id": "7",
+          "metadata_period_label": "2020-22",
+          "predict_dd_corrected": "0.359758",
+          "predict_baseline": "0.429369"
+        },
+        {
+          "input": "{\"country_iso3\": \"MLI\", \"period_id\": 6, \"E_ter_std\": -1.3445, \"G_std\": -0.4545, \"S_std\": -1.3116}",
+          "output": "0.33",
+          "metadata_country": "MLI",
+          "metadata_period_id": "6",
+          "metadata_period_label": "2015-19",
+          "predict_dd_corrected": "0.33",
+          "predict_baseline": "0.33"
+        },
+        {
+          "input": "{\"country_iso3\": \"MNG\", \"period_id\": 6, \"E_ter_std\": 0.8106, \"G_std\": -0.8616, \"S_std\": 1.6302}",
+          "output": "0.5448",
+          "metadata_country": "MNG",
+          "metadata_period_id": "6",
+          "metadata_period_label": "2015-19",
+          "predict_dd_corrected": "0.510861",
+          "predict_baseline": "0.560514"
+        },
+        {
+          "input": "{\"country_iso3\": \"MNG\", \"period_id\": 7, \"E_ter_std\": 0.8284, \"G_std\": -0.8864, \"S_std\": 2.0338}",
+          "output": "0.493333",
+          "metadata_country": "MNG",
+          "metadata_period_id": "7",
+          "metadata_period_label": "2020-22",
+          "predict_dd_corrected": "0.527272",
+          "predict_baseline": "0.477619"
+        },
+        {
+          "input": "{\"country_iso3\": \"MWI\", \"period_id\": 6, \"E_ter_std\": -1.4803, \"G_std\": 0.635, \"S_std\": -0.8525}",
+          "output": "0.4396",
+          "metadata_country": "MWI",
+          "metadata_period_id": "6",
+          "metadata_period_label": "2015-19",
+          "predict_dd_corrected": "0.4396",
+          "predict_baseline": "0.4396"
+        },
+        {
+          "input": "{\"country_iso3\": \"NAM\", \"period_id\": 6, \"E_ter_std\": -0.7309, \"G_std\": 3.5049, \"S_std\": -0.7416}",
+          "output": "0.5628",
+          "metadata_country": "NAM",
+          "metadata_period_id": "6",
+          "metadata_period_label": "2015-19",
+          "predict_dd_corrected": "0.5628",
+          "predict_baseline": "0.5628"
+        },
+        {
+          "input": "{\"country_iso3\": \"NPL\", \"period_id\": 6, \"E_ter_std\": -1.095, \"G_std\": -0.6179, \"S_std\": -1.017}",
+          "output": "0.5302",
+          "metadata_country": "NPL",
+          "metadata_period_id": "6",
+          "metadata_period_label": "2015-19",
+          "predict_dd_corrected": "0.500201",
+          "predict_baseline": "0.516741"
+        },
+        {
+          "input": "{\"country_iso3\": \"NPL\", \"period_id\": 7, \"E_ter_std\": -1.0068, \"G_std\": -0.7001, \"S_std\": -0.9424}",
+          "output": "0.489667",
+          "metadata_country": "NPL",
+          "metadata_period_id": "7",
+          "metadata_period_label": "2020-22",
+          "predict_dd_corrected": "0.519666",
+          "predict_baseline": "0.503125"
+        },
+        {
+          "input": "{\"country_iso3\": \"PAN\", \"period_id\": 6, \"E_ter_std\": 0.1574, \"G_std\": 0.8386, \"S_std\": 0.014}",
+          "output": "0.546",
+          "metadata_country": "PAN",
+          "metadata_period_id": "6",
+          "metadata_period_label": "2015-19",
+          "predict_dd_corrected": "0.555438",
+          "predict_baseline": "0.553895"
+        },
+        {
+          "input": "{\"country_iso3\": \"PAN\", \"period_id\": 7, \"E_ter_std\": 0.2921, \"G_std\": 0.8672, \"S_std\": 0.7637}",
+          "output": "0.545333",
+          "metadata_country": "PAN",
+          "metadata_period_id": "7",
+          "metadata_period_label": "2020-22",
+          "predict_dd_corrected": "0.535896",
+          "predict_baseline": "0.537438"
+        },
+        {
+          "input": "{\"country_iso3\": \"PER\", \"period_id\": 6, \"E_ter_std\": 1.0073, \"G_std\": 0.6809, \"S_std\": -0.6192}",
+          "output": "0.686",
+          "metadata_country": "PER",
+          "metadata_period_id": "6",
+          "metadata_period_label": "2015-19",
+          "predict_dd_corrected": "0.686",
+          "predict_baseline": "0.686"
+        },
+        {
+          "input": "{\"country_iso3\": \"PHL\", \"period_id\": 6, \"E_ter_std\": -0.3601, \"G_std\": -0.0932, \"S_std\": -0.0645}",
+          "output": "0.3302",
+          "metadata_country": "PHL",
+          "metadata_period_id": "6",
+          "metadata_period_label": "2015-19",
+          "predict_dd_corrected": "0.277014",
+          "predict_baseline": "0.348931"
+        },
+        {
+          "input": "{\"country_iso3\": \"PHL\", \"period_id\": 7, \"E_ter_std\": -0.3133, \"G_std\": -0.2939, \"S_std\": -0.3323}",
+          "output": "0.272667",
+          "metadata_country": "PHL",
+          "metadata_period_id": "7",
+          "metadata_period_label": "2020-22",
+          "predict_dd_corrected": "0.325853",
+          "predict_baseline": "0.253935"
+        },
+        {
+          "input": "{\"country_iso3\": \"POL\", \"period_id\": 6, \"E_ter_std\": 0.9415, \"G_std\": -1.5525, \"S_std\": 1.6398}",
+          "output": "0.5888",
+          "metadata_country": "POL",
+          "metadata_period_id": "6",
+          "metadata_period_label": "2015-19",
+          "predict_dd_corrected": "0.5888",
+          "predict_baseline": "0.5888"
+        },
+        {
+          "input": "{\"country_iso3\": \"SEN\", \"period_id\": 6, \"E_ter_std\": -1.1169, \"G_std\": 0.0444, \"S_std\": -0.9022}",
+          "output": "0.5598",
+          "metadata_country": "SEN",
+          "metadata_period_id": "6",
+          "metadata_period_label": "2015-19",
+          "predict_dd_corrected": "0.545977",
+          "predict_baseline": "0.585496"
+        },
+        {
+          "input": "{\"country_iso3\": \"SEN\", \"period_id\": 7, \"E_ter_std\": -1.0143, \"G_std\": 0.0071, \"S_std\": -0.9061}",
+          "output": "0.552333",
+          "metadata_country": "SEN",
+          "metadata_period_id": "7",
+          "metadata_period_label": "2020-22",
+          "predict_dd_corrected": "0.566156",
+          "predict_baseline": "0.526637"
+        },
+        {
+          "input": "{\"country_iso3\": \"SLV\", \"period_id\": 6, \"E_ter_std\": -0.5504, \"G_std\": -0.3254, \"S_std\": -0.8563}",
+          "output": "0.4418",
+          "metadata_country": "SLV",
+          "metadata_period_id": "6",
+          "metadata_period_label": "2015-19",
+          "predict_dd_corrected": "0.307089",
+          "predict_baseline": "0.345075"
+        },
+        {
+          "input": "{\"country_iso3\": \"SLV\", \"period_id\": 7, \"E_ter_std\": -0.4406, \"G_std\": -0.3943, \"S_std\": -0.9481}",
+          "output": "0.196667",
+          "metadata_country": "SLV",
+          "metadata_period_id": "7",
+          "metadata_period_label": "2020-22",
+          "predict_dd_corrected": "0.331378",
+          "predict_baseline": "0.293391"
+        },
+        {
+          "input": "{\"country_iso3\": \"SRB\", \"period_id\": 6, \"E_ter_std\": 0.7319, \"G_std\": -1.1081, \"S_std\": -0.1754}",
+          "output": "0.303",
+          "metadata_country": "SRB",
+          "metadata_period_id": "6",
+          "metadata_period_label": "2015-19",
+          "predict_dd_corrected": "0.293832",
+          "predict_baseline": "0.263417"
+        },
+        {
+          "input": "{\"country_iso3\": \"SRB\", \"period_id\": 7, \"E_ter_std\": 0.8956, \"G_std\": -1.2544, \"S_std\": 0.5017}",
+          "output": "0.246333",
+          "metadata_country": "SRB",
+          "metadata_period_id": "7",
+          "metadata_period_label": "2020-22",
+          "predict_dd_corrected": "0.255501",
+          "predict_baseline": "0.285917"
+        },
+        {
+          "input": "{\"country_iso3\": \"STP\", \"period_id\": 6, \"E_ter_std\": -1.0748, \"G_std\": -0.681, \"S_std\": -1.1012}",
+          "output": "0.5452",
+          "metadata_country": "STP",
+          "metadata_period_id": "6",
+          "metadata_period_label": "2015-19",
+          "predict_dd_corrected": "0.5452",
+          "predict_baseline": "0.5452"
+        },
+        {
+          "input": "{\"country_iso3\": \"THA\", \"period_id\": 6, \"E_ter_std\": 0.1133, \"G_std\": -0.2509, \"S_std\": 0.934}",
+          "output": "0.1212",
+          "metadata_country": "THA",
+          "metadata_period_id": "6",
+          "metadata_period_label": "2015-19",
+          "predict_dd_corrected": "0.123754",
+          "predict_baseline": "0.165913"
+        },
+        {
+          "input": "{\"country_iso3\": \"THA\", \"period_id\": 7, \"E_ter_std\": -0.013, \"G_std\": -0.4181, \"S_std\": 1.0143}",
+          "output": "0.189667",
+          "metadata_country": "THA",
+          "metadata_period_id": "7",
+          "metadata_period_label": "2020-22",
+          "predict_dd_corrected": "0.187113",
+          "predict_baseline": "0.144954"
+        },
+        {
+          "input": "{\"country_iso3\": \"TUN\", \"period_id\": 6, \"E_ter_std\": -0.4173, \"G_std\": -0.3025, \"S_std\": 0.253}",
+          "output": "0.6304",
+          "metadata_country": "TUN",
+          "metadata_period_id": "6",
+          "metadata_period_label": "2015-19",
+          "predict_dd_corrected": "0.521863",
+          "predict_baseline": "0.533594"
+        },
+        {
+          "input": "{\"country_iso3\": \"TUN\", \"period_id\": 7, \"E_ter_std\": -0.3218, \"G_std\": -0.3441, \"S_std\": 0.3908}",
+          "output": "0.427667",
+          "metadata_country": "TUN",
+          "metadata_period_id": "7",
+          "metadata_period_label": "2020-22",
+          "predict_dd_corrected": "0.536203",
+          "predict_baseline": "0.524473"
+        },
+        {
+          "input": "{\"country_iso3\": \"TUR\", \"period_id\": 6, \"E_ter_std\": 2.2769, \"G_std\": -0.0101, \"S_std\": 0.8096}",
+          "output": "0.137",
+          "metadata_country": "TUR",
+          "metadata_period_id": "6",
+          "metadata_period_label": "2015-19",
+          "predict_dd_corrected": "0.158013",
+          "predict_baseline": "0.152723"
+        },
+        {
+          "input": "{\"country_iso3\": \"TUR\", \"period_id\": 7, \"E_ter_std\": 2.8243, \"G_std\": 0.0931, \"S_std\": 0.7809}",
+          "output": "0.112667",
+          "metadata_country": "TUR",
+          "metadata_period_id": "7",
+          "metadata_period_label": "2020-22",
+          "predict_dd_corrected": "0.091654",
+          "predict_baseline": "0.096943"
+        },
+        {
+          "input": "{\"country_iso3\": \"UKR\", \"period_id\": 6, \"E_ter_std\": 1.2801, \"G_std\": -1.8622, \"S_std\": 1.1252}",
+          "output": "0.254",
+          "metadata_country": "UKR",
+          "metadata_period_id": "6",
+          "metadata_period_label": "2015-19",
+          "predict_dd_corrected": "0.254",
+          "predict_baseline": "0.254"
+        },
+        {
+          "input": "{\"country_iso3\": \"ZAF\", \"period_id\": 6, \"E_ter_std\": -0.7977, \"G_std\": 3.1809, \"S_std\": 0.1937}",
+          "output": "0.6366",
+          "metadata_country": "ZAF",
+          "metadata_period_id": "6",
+          "metadata_period_label": "2015-19",
+          "predict_dd_corrected": "0.6366",
+          "predict_baseline": "0.6366"
+        }
+      ]
+    },
+    {
+      "dataset": "corrected_table1_all_4specs_standardized",
+      "examples": [
+        {
+          "input": "{\"spec\": \"A_naive_mys_std\", \"coefficient\": \"beta_E\"}",
+          "output": "0.10096455",
+          "metadata_spec": "A_naive_mys_std",
+          "metadata_coef": "beta_E",
+          "metadata_se": "0.19664927",
+          "metadata_p": "0.6103",
+          "metadata_sig": "",
+          "metadata_N": "67",
+          "metadata_R2_within": "0.99186594",
+          "metadata_G_clusters": "44",
+          "metadata_estimator": "Naive FE",
+          "metadata_education_proxy": "UNDP MYS (standardized)",
+          "metadata_standardized": "True"
+        },
+        {
+          "input": "{\"spec\": \"A_naive_mys_std\", \"coefficient\": \"beta_G\"}",
+          "output": "-0.11814554",
+          "metadata_spec": "A_naive_mys_std",
+          "metadata_coef": "beta_G",
+          "metadata_se": "0.31875043",
+          "metadata_p": "0.7127",
+          "metadata_sig": "",
+          "metadata_N": "67",
+          "metadata_R2_within": "0.99186594",
+          "metadata_G_clusters": "44",
+          "metadata_estimator": "Naive FE",
+          "metadata_education_proxy": "UNDP MYS (standardized)",
+          "metadata_standardized": "True"
+        },
+        {
+          "input": "{\"spec\": \"A_naive_mys_std\", \"coefficient\": \"beta_S\"}",
+          "output": "0.10297196",
+          "metadata_spec": "A_naive_mys_std",
+          "metadata_coef": "beta_S",
+          "metadata_se": "0.08323184",
+          "metadata_p": "0.2227",
+          "metadata_sig": "",
+          "metadata_N": "67",
+          "metadata_R2_within": "0.99186594",
+          "metadata_G_clusters": "44",
+          "metadata_estimator": "Naive FE",
+          "metadata_education_proxy": "UNDP MYS (standardized)",
+          "metadata_standardized": "True"
+        },
+        {
+          "input": "{\"spec\": \"A_naive_mys_std\", \"coefficient\": \"beta_EG\"}",
+          "output": "-0.16145481",
+          "metadata_spec": "A_naive_mys_std",
+          "metadata_coef": "beta_EG",
+          "metadata_se": "0.28268794",
+          "metadata_p": "0.5709",
+          "metadata_sig": "",
+          "metadata_N": "67",
+          "metadata_R2_within": "0.99186594",
+          "metadata_G_clusters": "44",
+          "metadata_estimator": "Naive FE",
+          "metadata_education_proxy": "UNDP MYS (standardized)",
+          "metadata_standardized": "True"
+        },
+        {
+          "input": "{\"spec\": \"A_naive_mys_std\", \"coefficient\": \"beta_ES\"}",
+          "output": "0.04754988",
+          "metadata_spec": "A_naive_mys_std",
+          "metadata_coef": "beta_ES",
+          "metadata_se": "0.07755345",
+          "metadata_p": "0.543",
+          "metadata_sig": "",
+          "metadata_N": "67",
+          "metadata_R2_within": "0.99186594",
+          "metadata_G_clusters": "44",
+          "metadata_estimator": "Naive FE",
+          "metadata_education_proxy": "UNDP MYS (standardized)",
+          "metadata_standardized": "True"
+        },
+        {
+          "input": "{\"spec\": \"A_naive_mys_std\", \"coefficient\": \"beta_GS\"}",
+          "output": "-0.1538053",
+          "metadata_spec": "A_naive_mys_std",
+          "metadata_coef": "beta_GS",
+          "metadata_se": "0.09611847",
+          "metadata_p": "0.1169",
+          "metadata_sig": "",
+          "metadata_N": "67",
+          "metadata_R2_within": "0.99186594",
+          "metadata_G_clusters": "44",
+          "metadata_estimator": "Naive FE",
+          "metadata_education_proxy": "UNDP MYS (standardized)",
+          "metadata_standardized": "True"
+        },
+        {
+          "input": "{\"spec\": \"A_naive_mys_std\", \"coefficient\": \"beta_EGS\"}",
+          "output": "0.15532184",
+          "metadata_spec": "A_naive_mys_std",
+          "metadata_coef": "beta_EGS",
+          "metadata_se": "0.11698256",
+          "metadata_p": "0.1913",
+          "metadata_sig": "",
+          "metadata_N": "67",
+          "metadata_R2_within": "0.99186594",
+          "metadata_G_clusters": "44",
+          "metadata_estimator": "Naive FE",
+          "metadata_education_proxy": "UNDP MYS (standardized)",
+          "metadata_standardized": "True"
+        },
+        {
+          "input": "{\"spec\": \"B_dd_mys_std\", \"coefficient\": \"beta_E\"}",
+          "output": "-0.26091358",
+          "metadata_spec": "B_dd_mys_std",
+          "metadata_coef": "beta_E",
+          "metadata_se": "0.43056497",
+          "metadata_p": "0.5477",
+          "metadata_sig": "",
+          "metadata_N": "67",
+          "metadata_R2_within": "0.97873045",
+          "metadata_G_clusters": "44",
+          "metadata_estimator": "DD (Giesselmann-Schmidt-Catran 2022)",
+          "metadata_education_proxy": "UNDP MYS (standardized)",
+          "metadata_standardized": "True"
+        },
+        {
+          "input": "{\"spec\": \"B_dd_mys_std\", \"coefficient\": \"beta_G\"}",
+          "output": "0.10188666",
+          "metadata_spec": "B_dd_mys_std",
+          "metadata_coef": "beta_G",
+          "metadata_se": "0.51385234",
+          "metadata_p": "0.8438",
+          "metadata_sig": "",
+          "metadata_N": "67",
+          "metadata_R2_within": "0.97873045",
+          "metadata_G_clusters": "44",
+          "metadata_estimator": "DD (Giesselmann-Schmidt-Catran 2022)",
+          "metadata_education_proxy": "UNDP MYS (standardized)",
+          "metadata_standardized": "True"
+        },
+        {
+          "input": "{\"spec\": \"B_dd_mys_std\", \"coefficient\": \"beta_S\"}",
+          "output": "-0.13123866",
+          "metadata_spec": "B_dd_mys_std",
+          "metadata_coef": "beta_S",
+          "metadata_se": "0.28288106",
+          "metadata_p": "0.645",
+          "metadata_sig": "",
+          "metadata_N": "67",
+          "metadata_R2_within": "0.97873045",
+          "metadata_G_clusters": "44",
+          "metadata_estimator": "DD (Giesselmann-Schmidt-Catran 2022)",
+          "metadata_education_proxy": "UNDP MYS (standardized)",
+          "metadata_standardized": "True"
+        },
+        {
+          "input": "{\"spec\": \"B_dd_mys_std\", \"coefficient\": \"beta_EG\"}",
+          "output": "-0.0",
+          "metadata_spec": "B_dd_mys_std",
+          "metadata_coef": "beta_EG",
+          "metadata_se": "0.0",
+          "metadata_p": "0.6424",
+          "metadata_sig": "",
+          "metadata_N": "67",
+          "metadata_R2_within": "0.97873045",
+          "metadata_G_clusters": "44",
+          "metadata_estimator": "DD (Giesselmann-Schmidt-Catran 2022)",
+          "metadata_education_proxy": "UNDP MYS (standardized)",
+          "metadata_standardized": "True"
+        },
+        {
+          "input": "{\"spec\": \"B_dd_mys_std\", \"coefficient\": \"beta_ES\"}",
+          "output": "-0.0",
+          "metadata_spec": "B_dd_mys_std",
+          "metadata_coef": "beta_ES",
+          "metadata_se": "0.0",
+          "metadata_p": "0.6422",
+          "metadata_sig": "",
+          "metadata_N": "67",
+          "metadata_R2_within": "0.97873045",
+          "metadata_G_clusters": "44",
+          "metadata_estimator": "DD (Giesselmann-Schmidt-Catran 2022)",
+          "metadata_education_proxy": "UNDP MYS (standardized)",
+          "metadata_standardized": "True"
+        },
+        {
+          "input": "{\"spec\": \"B_dd_mys_std\", \"coefficient\": \"beta_GS\"}",
+          "output": "0.0",
+          "metadata_spec": "B_dd_mys_std",
+          "metadata_coef": "beta_GS",
+          "metadata_se": "0.0",
+          "metadata_p": "0.6419",
+          "metadata_sig": "",
+          "metadata_N": "67",
+          "metadata_R2_within": "0.97873045",
+          "metadata_G_clusters": "44",
+          "metadata_estimator": "DD (Giesselmann-Schmidt-Catran 2022)",
+          "metadata_education_proxy": "UNDP MYS (standardized)",
+          "metadata_standardized": "True"
+        },
+        {
+          "input": "{\"spec\": \"B_dd_mys_std\", \"coefficient\": \"beta_EGS\"}",
+          "output": "-19.63624745",
+          "metadata_spec": "B_dd_mys_std",
+          "metadata_coef": "beta_EGS",
+          "metadata_se": "41.91406398",
+          "metadata_p": "0.6418",
+          "metadata_sig": "",
+          "metadata_N": "67",
+          "metadata_R2_within": "0.97873045",
+          "metadata_G_clusters": "44",
+          "metadata_estimator": "DD (Giesselmann-Schmidt-Catran 2022)",
+          "metadata_education_proxy": "UNDP MYS (standardized)",
+          "metadata_standardized": "True"
+        },
+        {
+          "input": "{\"spec\": \"C_dd_wb_tertiary_std\", \"coefficient\": \"beta_E\"}",
+          "output": "-0.18722434",
+          "metadata_spec": "C_dd_wb_tertiary_std",
+          "metadata_coef": "beta_E",
+          "metadata_se": "0.42623963",
+          "metadata_p": "0.6627",
+          "metadata_sig": "",
+          "metadata_N": "67",
+          "metadata_R2_within": "0.97774016",
+          "metadata_G_clusters": "44",
+          "metadata_estimator": "DD (Giesselmann-Schmidt-Catran 2022)",
+          "metadata_education_proxy": "WB SE.TER.ENRR (standardized)",
+          "metadata_standardized": "True"
+        },
+        {
+          "input": "{\"spec\": \"C_dd_wb_tertiary_std\", \"coefficient\": \"beta_G\"}",
+          "output": "-0.01925959",
+          "metadata_spec": "C_dd_wb_tertiary_std",
+          "metadata_coef": "beta_G",
+          "metadata_se": "0.29914752",
+          "metadata_p": "0.949",
+          "metadata_sig": "",
+          "metadata_N": "67",
+          "metadata_R2_within": "0.97774016",
+          "metadata_G_clusters": "44",
+          "metadata_estimator": "DD (Giesselmann-Schmidt-Catran 2022)",
+          "metadata_education_proxy": "WB SE.TER.ENRR (standardized)",
+          "metadata_standardized": "True"
+        },
+        {
+          "input": "{\"spec\": \"C_dd_wb_tertiary_std\", \"coefficient\": \"beta_S\"}",
+          "output": "-0.04708735",
+          "metadata_spec": "C_dd_wb_tertiary_std",
+          "metadata_coef": "beta_S",
+          "metadata_se": "0.18726764",
+          "metadata_p": "0.8027",
+          "metadata_sig": "",
+          "metadata_N": "67",
+          "metadata_R2_within": "0.97774016",
+          "metadata_G_clusters": "44",
+          "metadata_estimator": "DD (Giesselmann-Schmidt-Catran 2022)",
+          "metadata_education_proxy": "WB SE.TER.ENRR (standardized)",
+          "metadata_standardized": "True"
+        },
+        {
+          "input": "{\"spec\": \"C_dd_wb_tertiary_std\", \"coefficient\": \"beta_EG\"}",
+          "output": "0.0",
+          "metadata_spec": "C_dd_wb_tertiary_std",
+          "metadata_coef": "beta_EG",
+          "metadata_se": "0.0",
+          "metadata_p": "0.7359",
+          "metadata_sig": "",
+          "metadata_N": "67",
+          "metadata_R2_within": "0.97774016",
+          "metadata_G_clusters": "44",
+          "metadata_estimator": "DD (Giesselmann-Schmidt-Catran 2022)",
+          "metadata_education_proxy": "WB SE.TER.ENRR (standardized)",
+          "metadata_standardized": "True"
+        },
+        {
+          "input": "{\"spec\": \"C_dd_wb_tertiary_std\", \"coefficient\": \"beta_ES\"}",
+          "output": "-0.0",
+          "metadata_spec": "C_dd_wb_tertiary_std",
+          "metadata_coef": "beta_ES",
+          "metadata_se": "0.0",
+          "metadata_p": "0.7651",
+          "metadata_sig": "",
+          "metadata_N": "67",
+          "metadata_R2_within": "0.97774016",
+          "metadata_G_clusters": "44",
+          "metadata_estimator": "DD (Giesselmann-Schmidt-Catran 2022)",
+          "metadata_education_proxy": "WB SE.TER.ENRR (standardized)",
+          "metadata_standardized": "True"
+        },
+        {
+          "input": "{\"spec\": \"C_dd_wb_tertiary_std\", \"coefficient\": \"beta_GS\"}",
+          "output": "-0.0",
+          "metadata_spec": "C_dd_wb_tertiary_std",
+          "metadata_coef": "beta_GS",
+          "metadata_se": "0.0",
+          "metadata_p": "0.7693",
+          "metadata_sig": "",
+          "metadata_N": "67",
+          "metadata_R2_within": "0.97774016",
+          "metadata_G_clusters": "44",
+          "metadata_estimator": "DD (Giesselmann-Schmidt-Catran 2022)",
+          "metadata_education_proxy": "WB SE.TER.ENRR (standardized)",
+          "metadata_standardized": "True"
+        },
+        {
+          "input": "{\"spec\": \"C_dd_wb_tertiary_std\", \"coefficient\": \"beta_EGS\"}",
+          "output": "4.21810729",
+          "metadata_spec": "C_dd_wb_tertiary_std",
+          "metadata_coef": "beta_EGS",
+          "metadata_se": "14.22088919",
+          "metadata_p": "0.7682",
+          "metadata_sig": "",
+          "metadata_N": "67",
+          "metadata_R2_within": "0.97774016",
+          "metadata_G_clusters": "44",
+          "metadata_estimator": "DD (Giesselmann-Schmidt-Catran 2022)",
+          "metadata_education_proxy": "WB SE.TER.ENRR (standardized)",
+          "metadata_standardized": "True"
+        },
+        {
+          "input": "{\"spec\": \"D_naive_wb_tertiary_std\", \"coefficient\": \"beta_E\"}",
+          "output": "0.20542266",
+          "metadata_spec": "D_naive_wb_tertiary_std",
+          "metadata_coef": "beta_E",
+          "metadata_se": "0.20201129",
+          "metadata_p": "0.3149",
+          "metadata_sig": "",
+          "metadata_N": "67",
+          "metadata_R2_within": "0.99285059",
+          "metadata_G_clusters": "44",
+          "metadata_estimator": "Naive FE",
+          "metadata_education_proxy": "WB SE.TER.ENRR (standardized)",
+          "metadata_standardized": "True"
+        },
+        {
+          "input": "{\"spec\": \"D_naive_wb_tertiary_std\", \"coefficient\": \"beta_G\"}",
+          "output": "-0.22457022",
+          "metadata_spec": "D_naive_wb_tertiary_std",
+          "metadata_coef": "beta_G",
+          "metadata_se": "0.25122862",
+          "metadata_p": "0.3764",
+          "metadata_sig": "",
+          "metadata_N": "67",
+          "metadata_R2_within": "0.99285059",
+          "metadata_G_clusters": "44",
+          "metadata_estimator": "Naive FE",
+          "metadata_education_proxy": "WB SE.TER.ENRR (standardized)",
+          "metadata_standardized": "True"
+        },
+        {
+          "input": "{\"spec\": \"D_naive_wb_tertiary_std\", \"coefficient\": \"beta_S\"}",
+          "output": "0.13952962",
+          "metadata_spec": "D_naive_wb_tertiary_std",
+          "metadata_coef": "beta_S",
+          "metadata_se": "0.07854834",
+          "metadata_p": "0.0828",
+          "metadata_sig": "*",
+          "metadata_N": "67",
+          "metadata_R2_within": "0.99285059",
+          "metadata_G_clusters": "44",
+          "metadata_estimator": "Naive FE",
+          "metadata_education_proxy": "WB SE.TER.ENRR (standardized)",
+          "metadata_standardized": "True"
+        },
+        {
+          "input": "{\"spec\": \"D_naive_wb_tertiary_std\", \"coefficient\": \"beta_EG\"}",
+          "output": "-0.28295484",
+          "metadata_spec": "D_naive_wb_tertiary_std",
+          "metadata_coef": "beta_EG",
+          "metadata_se": "0.2756543",
+          "metadata_p": "0.3104",
+          "metadata_sig": "",
+          "metadata_N": "67",
+          "metadata_R2_within": "0.99285059",
+          "metadata_G_clusters": "44",
+          "metadata_estimator": "Naive FE",
+          "metadata_education_proxy": "WB SE.TER.ENRR (standardized)",
+          "metadata_standardized": "True"
+        },
+        {
+          "input": "{\"spec\": \"D_naive_wb_tertiary_std\", \"coefficient\": \"beta_ES\"}",
+          "output": "-0.0996823",
+          "metadata_spec": "D_naive_wb_tertiary_std",
+          "metadata_coef": "beta_ES",
+          "metadata_se": "0.16686943",
+          "metadata_p": "0.5534",
+          "metadata_sig": "",
+          "metadata_N": "67",
+          "metadata_R2_within": "0.99285059",
+          "metadata_G_clusters": "44",
+          "metadata_estimator": "Naive FE",
+          "metadata_education_proxy": "WB SE.TER.ENRR (standardized)",
+          "metadata_standardized": "True"
+        },
+        {
+          "input": "{\"spec\": \"D_naive_wb_tertiary_std\", \"coefficient\": \"beta_GS\"}",
+          "output": "-0.09459855",
+          "metadata_spec": "D_naive_wb_tertiary_std",
+          "metadata_coef": "beta_GS",
+          "metadata_se": "0.11828594",
+          "metadata_p": "0.4283",
+          "metadata_sig": "",
+          "metadata_N": "67",
+          "metadata_R2_within": "0.99285059",
+          "metadata_G_clusters": "44",
+          "metadata_estimator": "Naive FE",
+          "metadata_education_proxy": "WB SE.TER.ENRR (standardized)",
+          "metadata_standardized": "True"
+        },
+        {
+          "input": "{\"spec\": \"D_naive_wb_tertiary_std\", \"coefficient\": \"beta_EGS\"}",
+          "output": "0.24819742",
+          "metadata_spec": "D_naive_wb_tertiary_std",
+          "metadata_coef": "beta_EGS",
+          "metadata_se": "0.14858167",
+          "metadata_p": "0.1021",
+          "metadata_sig": "",
+          "metadata_N": "67",
+          "metadata_R2_within": "0.99285059",
+          "metadata_G_clusters": "44",
+          "metadata_estimator": "Naive FE",
+          "metadata_education_proxy": "WB SE.TER.ENRR (standardized)",
+          "metadata_standardized": "True"
+        }
+      ]
+    },
+    {
+      "dataset": "oster_bounds_spec_c_only",
+      "examples": [
+        {
+          "input": "{\"analysis\": \"oster_bounds\", \"spec\": \"C_dd_wb_tertiary_std\"}",
+          "output": "numerically_undefined",
+          "metadata_status": "numerically_undefined",
+          "metadata_reason": "delta_R2=2.10e-05 < 1e-4 threshold; denominator near zero",
+          "metadata_note": "Oster bounds numerically undefined for Spec C",
+          "metadata_R2_full": "0.97774016",
+          "metadata_R2_partial": "0.97771917",
+          "metadata_delta_R2": "2.099e-05",
+          "metadata_R2_max": "1.271062",
+          "metadata_beta_EGS_full": "4.21810729",
+          "metadata_interpretation": "Near-zero delta_R2 implies triple interaction explains essentially no additional variance beyond two-way terms, making Oster comparison uninformative"
+        }
+      ]
+    },
+    {
+      "dataset": "subindex_dd_pre_registered_k2_v2jucomp_v2x_jucon",
+      "examples": [
+        {
+          "input": "{\"sub_index\": \"v2jucomp\"}",
+          "output": "139.84788039",
+          "metadata_index": "v2jucomp",
+          "metadata_status": "computed",
+          "metadata_N": "63",
+          "metadata_G": "42",
+          "metadata_R2_within": "0.95432413",
+          "metadata_p_egs": "0.2332",
+          "metadata_passes_bonferroni": "False",
+          "metadata_note": ""
+        },
+        {
+          "input": "{\"sub_index\": \"v2x_jucon\"}",
+          "output": "18.52865443",
+          "metadata_index": "v2x_jucon",
+          "metadata_status": "computed",
+          "metadata_N": "63",
+          "metadata_G": "42",
+          "metadata_R2_within": "0.97878464",
+          "metadata_p_egs": "0.5291",
+          "metadata_passes_bonferroni": "False",
+          "metadata_note": ""
+        }
+      ]
+    },
+    {
+      "dataset": "power_mde_from_spec_c_residuals",
+      "examples": [
+        {
+          "input": "{\"analysis\": \"power_mde\", \"spec\": \"C_primary\"}",
+          "output": "39.84693151",
+          "metadata_sigma_eps_from_spec_c_residuals": "0.068062",
+          "metadata_se_beta_EGS_spec_c": "14.22088919",
+          "metadata_mde_80pct_5pct": "39.84693151",
+          "metadata_mde_units": "1 SD change in LDem per SD change in E_ter_std × (G_std × S_std)",
+          "metadata_current_beta_EGS": "4.21810729",
+          "metadata_effect_over_mde_ratio": "0.1059",
+          "metadata_powered": "False",
+          "metadata_G_doubly_observed": "44",
+          "metadata_interpretation": "MDE=39.84693 vs |beta_EGS|=4.218107; ratio=0.11. Underpowered: estimated effect smaller than MDE at 80%/5%."
+        }
+      ]
+    },
+    {
+      "dataset": "marginal_effects_standardized_2x2_grid",
+      "examples": [
+        {
+          "input": "{\"cell\": \"gini_p25_sp_p25\"}",
+          "output": "2.08905439",
+          "metadata_gini_quantile": "p25",
+          "metadata_sp_quantile": "p25",
+          "metadata_gini_std": "-0.5969",
+          "metadata_sp_std": "-0.9042",
+          "metadata_gini_raw": "35.69",
+          "metadata_sp_raw": "19.95",
+          "metadata_me": "2.08905439",
+          "metadata_me_se": "7.68605366",
+          "metadata_me_95ci_lo": "-12.97561079",
+          "metadata_me_95ci_hi": "17.15371956",
+          "metadata_sign": "+",
+          "metadata_units": "LDem SD change per 1-SD change in E_ter_std"
+        },
+        {
+          "input": "{\"cell\": \"gini_p25_sp_p75\"}",
+          "output": "-2.13165855",
+          "metadata_gini_quantile": "p25",
+          "metadata_sp_quantile": "p75",
+          "metadata_gini_std": "-0.5969",
+          "metadata_sp_std": "0.7723",
+          "metadata_gini_raw": "35.69",
+          "metadata_sp_raw": "63.77",
+          "metadata_me": "-2.13165855",
+          "metadata_me_se": "6.56929068",
+          "metadata_me_95ci_lo": "-15.00746829",
+          "metadata_me_95ci_hi": "10.74415119",
+          "metadata_sign": "-",
+          "metadata_units": "LDem SD change per 1-SD change in E_ter_std"
+        },
+        {
+          "input": "{\"cell\": \"gini_p75_sp_p25\"}",
+          "output": "-2.6964947",
+          "metadata_gini_quantile": "p75",
+          "metadata_sp_quantile": "p25",
+          "metadata_gini_std": "0.6579",
+          "metadata_sp_std": "-0.9042",
+          "metadata_gini_raw": "44.44",
+          "metadata_sp_raw": "19.95",
+          "metadata_me": "-2.6964947",
+          "metadata_me_se": "8.47046277",
+          "metadata_me_95ci_lo": "-19.29860173",
+          "metadata_me_95ci_hi": "13.90561234",
+          "metadata_sign": "-",
+          "metadata_units": "LDem SD change per 1-SD change in E_ter_std"
+        },
+        {
+          "input": "{\"cell\": \"gini_p75_sp_p75\"}",
+          "output": "1.9562351",
+          "metadata_gini_quantile": "p75",
+          "metadata_sp_quantile": "p75",
+          "metadata_gini_std": "0.6579",
+          "metadata_sp_std": "0.7723",
+          "metadata_gini_raw": "44.44",
+          "metadata_sp_raw": "63.77",
+          "metadata_me": "1.9562351",
+          "metadata_me_se": "7.23899959",
+          "metadata_me_95ci_lo": "-12.2322041",
+          "metadata_me_95ci_hi": "16.1446743",
+          "metadata_sign": "+",
+          "metadata_units": "LDem SD change per 1-SD change in E_ter_std"
+        }
+      ]
+    },
+    {
+      "dataset": "dd_sanity_checks_zero_mean_and_se_bounds",
+      "examples": [
+        {
+          "input": "{\"check\": \"dd_zero_mean\", \"column\": \"dd_prod_EG\"}",
+          "output": "PASSED",
+          "metadata_column": "dd_prod_EG",
+          "metadata_max_within_mean": "3.469446951953614e-18",
+          "metadata_threshold": "1e-8"
+        },
+        {
+          "input": "{\"check\": \"dd_zero_mean\", \"column\": \"dd_prod_ES\"}",
+          "output": "PASSED",
+          "metadata_column": "dd_prod_ES",
+          "metadata_max_within_mean": "3.469446951953614e-18",
+          "metadata_threshold": "1e-8"
+        },
+        {
+          "input": "{\"check\": \"dd_zero_mean\", \"column\": \"dd_prod_GS\"}",
+          "output": "PASSED",
+          "metadata_column": "dd_prod_GS",
+          "metadata_max_within_mean": "1.734723475976807e-18",
+          "metadata_threshold": "1e-8"
+        },
+        {
+          "input": "{\"check\": \"dd_zero_mean\", \"column\": \"dd_prod_EGS\"}",
+          "output": "PASSED",
+          "metadata_column": "dd_prod_EGS",
+          "metadata_max_within_mean": "0.0",
+          "metadata_threshold": "1e-8"
+        },
+        {
+          "input": "{\"check\": \"se_bounded\", \"spec\": \"C\", \"coef\": \"beta_E\"}",
+          "output": "PASSED",
+          "metadata_coef": "beta_E",
+          "metadata_se": "0.42623963",
+          "metadata_threshold": "1e6"
+        },
+        {
+          "input": "{\"check\": \"se_bounded\", \"spec\": \"C\", \"coef\": \"beta_G\"}",
+          "output": "PASSED",
+          "metadata_coef": "beta_G",
+          "metadata_se": "0.29914752",
+          "metadata_threshold": "1e6"
+        },
+        {
+          "input": "{\"check\": \"se_bounded\", \"spec\": \"C\", \"coef\": \"beta_S\"}",
+          "output": "PASSED",
+          "metadata_coef": "beta_S",
+          "metadata_se": "0.18726764",
+          "metadata_threshold": "1e6"
+        },
+        {
+          "input": "{\"check\": \"se_bounded\", \"spec\": \"C\", \"coef\": \"beta_EG\"}",
+          "output": "PASSED",
+          "metadata_coef": "beta_EG",
+          "metadata_se": "0.0",
+          "metadata_threshold": "1e6"
+        },
+        {
+          "input": "{\"check\": \"se_bounded\", \"spec\": \"C\", \"coef\": \"beta_ES\"}",
+          "output": "PASSED",
+          "metadata_coef": "beta_ES",
+          "metadata_se": "0.0",
+          "metadata_threshold": "1e6"
+        },
+        {
+          "input": "{\"check\": \"se_bounded\", \"spec\": \"C\", \"coef\": \"beta_GS\"}",
+          "output": "PASSED",
+          "metadata_coef": "beta_GS",
+          "metadata_se": "0.0",
+          "metadata_threshold": "1e6"
+        },
+        {
+          "input": "{\"check\": \"se_bounded\", \"spec\": \"C\", \"coef\": \"beta_EGS\"}",
+          "output": "PASSED",
+          "metadata_coef": "beta_EGS",
+          "metadata_se": "14.22088919",
+          "metadata_threshold": "1e6"
+        }
+      ]
+    },
+    {
+      "dataset": "provenance_disclosure_beta7_original_vs_corrected",
+      "examples": [
+        {
+          "input": "{\"analysis\": \"provenance_disclosure\"}",
+          "output": "2.398",
+          "metadata_original_beta_EGS": "2.398",
+          "metadata_original_dataset": "2-period UNDP HDR25 MYS panel, post-1990 developing democratizers",
+          "metadata_original_education_proxy": "UNDP HDR25 Mean Years of Schooling (MYS)",
+          "metadata_original_within_SD_education_2period": "0.026",
+          "metadata_original_within_SD_units": "years of schooling, within-country SD across 2 periods",
+          "metadata_original_critical_flaw": "within-SD=0.026 is imputation noise (MYS frozen at 2017 in UNDP HDR25, linearly interpolated 2015-2022)",
+          "metadata_current_spec": "C_dd_wb_tertiary_standardized",
+          "metadata_current_education_proxy": "World Bank SE.TER.ENRR (gross tertiary enrollment rate, %)",
+          "metadata_current_standardization": "E_std = (educ_tertiary - mean_ter) / sd_ter within N analysis sample",
+          "metadata_current_standardization_params": "{'E_ter': {'mean': 43.489658, 'sd': 28.533111}, 'E_mys': {'mean': 8.257115, 'sd': 2.997103}, 'G': {'mean': 39.850249, 'sd': 6.975896}, 'S': {'mean': 43.585323, 'sd': 26.140919}}"
+        }
+      ]
+    }
+  ]
+}

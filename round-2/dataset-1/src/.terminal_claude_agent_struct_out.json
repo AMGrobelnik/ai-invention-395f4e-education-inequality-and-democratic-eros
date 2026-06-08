@@ -1,0 +1,15 @@
+{
+  "title": "Education Trap Multi-Source Panel Dataset (9 Datasets, 1985–2023)",
+  "layman_summary": "Country-year records from 9 authoritative sources covering democracy, inequality, schooling, social protection, IMF programs, and economic indicators — assembled to study why middle-income countries get stuck despite rising education.",
+  "summary": "Nine datasets combined into a single exp_sel_data_out corpus (51,594 examples, 18MB) for the Education Trap hypothesis. Sources: (1) V-Dem V16 slim — 6,779 examples, democracy sub-indices (v2x_libdem, v2x_polyarchy, v2x_corr, v2juhcind, v2cseeorgs, v2xcs_ccsi, v2csreprss, v2csprtcpt) + regime classification (0–3) as output, 1985–2023, 181 countries; (2) SWIID 9.2 — 5,552 examples, standardized disposable Gini (gini_disp) regression, 1985–2023, 199 countries; (3) OWID/UNDP HDR Mean Years of Schooling — 6,081 examples, UNDP-sourced MYS regression, 1985–2023, ISO3-filtered countries; (4) ILO SDG 1.3.1 Social Protection Coverage — 708 examples, total population coverage (%), directly-reported flag included, 2009–2023; (5) Dreher 2006 IMF Program Binary Dummies — 7,595 examples, binary IMF program active (SBA/EFF/PRGF/SAF max across sheets), 1985–2021, 222 countries; (6) WB WDI GDP per capita PPP — 6,597 examples, constant 2017 int$ regression, 1985–2023; (7) WB WDI Gross tertiary enrollment — 4,162 examples, gross enrollment rate (%) regression; (8) WB WDI GDP growth — 7,766 examples, annual % regression; (9) WB WDI Labour force participation — 6,354 examples, total (%) regression. All examples follow exp_sel_data_out schema: input = JSON string of identifying/contextual features, output = string of target variable. WB aggregate codes excluded. Schema validation passed.",
+  "out_expected_files": {
+    "script": "data.py",
+    "datasets": [
+      {
+        "full": ["full_data_out.json"],
+        "mini": "mini_data_out.json",
+        "preview": "preview_data_out.json"
+      }
+    ]
+  }
+}

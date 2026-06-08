@@ -1,0 +1,39 @@
+{
+  "datasets": [
+    {
+      "dataset": "vdem_ilo_gini_edu_panel_complete",
+      "examples": [
+        {
+          "input": "{\"country_iso3\":\"ALB\",\"period\":\"2020-22\",\"period_start\":2020,\"period_end\":2022,\"v2x_jucon\":0.725667,\"v2jucomp\":1.022333,\"v2cseeorgs\":1.762,\"v2csprtcpt\":1.420333,\"v2x_civlib\":0.888,\"v2xcl_rol\":0.913,\"v...",
+          "output": "0.437",
+          "metadata_row_index": 0,
+          "metadata_country_name": "Albania",
+          "metadata_task_type": "regression",
+          "metadata_target_variable": "v2x_libdem",
+          "metadata_is_democratizer": true,
+          "metadata_has_all_core_vars": true
+        },
+        {
+          "input": "{\"country_iso3\":\"ARG\",\"period\":\"2015-19\",\"period_start\":2015,\"period_end\":2019,\"v2x_jucon\":0.7254,\"v2jucomp\":0.9258,\"v2cseeorgs\":2.0338,\"v2csprtcpt\":2.462,\"v2x_civlib\":0.8822,\"v2xcl_rol\":0.8532,\"v2x_p...",
+          "output": "0.6184",
+          "metadata_row_index": 1,
+          "metadata_country_name": "Argentina",
+          "metadata_task_type": "regression",
+          "metadata_target_variable": "v2x_libdem",
+          "metadata_is_democratizer": true,
+          "metadata_has_all_core_vars": true
+        },
+        {
+          "input": "{\"country_iso3\":\"ARG\",\"period\":\"2020-22\",\"period_start\":2020,\"period_end\":2022,\"v2x_jucon\":0.766667,\"v2jucomp\":1.534333,\"v2cseeorgs\":1.717,\"v2csprtcpt\":2.462,\"v2x_civlib\":0.877667,\"v2xcl_rol\":0.842667...",
+          "output": "0.648333",
+          "metadata_row_index": 2,
+          "metadata_country_name": "Argentina",
+          "metadata_task_type": "regression",
+          "metadata_target_variable": "v2x_libdem",
+          "metadata_is_democratizer": true,
+          "metadata_has_all_core_vars": true
+        }
+      ]
+    }
+  ]
+}

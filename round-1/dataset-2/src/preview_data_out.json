@@ -1,0 +1,56 @@
+{
+  "datasets": [
+    {
+      "dataset": "ILO_PSE_ILOSTAT_Democratizers_1990_2019",
+      "examples": [
+        {
+          "input": "Country: ALB, Year: 1995",
+          "output": "public_sector_employment: 275.9 thousand workers, pse_share_of_total_employment: 24.24%",
+          "metadata_iso3": "ALB",
+          "metadata_year": 1995,
+          "metadata_source": "ILO ILOSTAT PSE_TPSE_GOV_NB via DBnomics"
+        },
+        {
+          "input": "Country: ALB, Year: 1996",
+          "output": "public_sector_employment: 238.8 thousand workers, pse_share_of_total_employment: 21.40%",
+          "metadata_iso3": "ALB",
+          "metadata_year": 1996,
+          "metadata_source": "ILO ILOSTAT PSE_TPSE_GOV_NB via DBnomics"
+        },
+        {
+          "input": "Country: ALB, Year: 1997",
+          "output": "public_sector_employment: 226.3 thousand workers, pse_share_of_total_employment: 20.44%",
+          "metadata_iso3": "ALB",
+          "metadata_year": 1997,
+          "metadata_source": "ILO ILOSTAT PSE_TPSE_GOV_NB via DBnomics"
+        }
+      ]
+    },
+    {
+      "dataset": "Dreher_IMF_SAP_Democratizers_1990_2019",
+      "examples": [
+        {
+          "input": "Country: ALB, Year: 1990",
+          "output": "imf_sap_active: 0 [IMF Structural Adjustment Program not active — SBA or EFF, source: Dreher 2006]",
+          "metadata_iso3": "ALB",
+          "metadata_year": 1990,
+          "metadata_source": "Dreher (2006) IMF SBA + EFF program dummies"
+        },
+        {
+          "input": "Country: ALB, Year: 1991",
+          "output": "imf_sap_active: 0 [IMF Structural Adjustment Program not active — SBA or EFF, source: Dreher 2006]",
+          "metadata_iso3": "ALB",
+          "metadata_year": 1991,
+          "metadata_source": "Dreher (2006) IMF SBA + EFF program dummies"
+        },
+        {
+          "input": "Country: ALB, Year: 1992",
+          "output": "imf_sap_active: 1 [IMF Structural Adjustment Program active — SBA or EFF, source: Dreher 2006]",
+          "metadata_iso3": "ALB",
+          "metadata_year": 1992,
+          "metadata_source": "Dreher (2006) IMF SBA + EFF program dummies"
+        }
+      ]
+    }
+  ]
+}

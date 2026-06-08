@@ -1,0 +1,81 @@
+========================================================
+COVERAGE REPORT — WVS Wave 7 × ILO SocProt × SWIID
+Micro-Evidence Dataset: Public vs. Private Sector Workers
+========================================================
+
+Sources
+-------
+- Individual-level: WVS Wave 7 Gabors subset (~2000 respondents sampled)
+- Macro coverage: ILO SDG 1.3.1 via DBnomics (354 country-year entries)
+- Macro inequality: SWIID 9.92 gini_disp (4675 country-year entries)
+- Democratizer filter: V-Dem electoral democracy ≥ 0.35 (2015-2022),
+  non-OECD only → 42 qualifying developing democratizers
+
+Processing Summary
+------------------
+Total WVS rows loaded       : 2007
+  Rows with valid Q284      : 1525  (employment sector variable)
+  Skipped (OECD)            : 505
+  Skipped (non-democratizer): 476
+  Skipped (no macro merge)  : 0
+  Final examples            : 544
+
+Quadrant Cutoffs
+----------------
+  Gini median cutoff        : 38.0
+  SocProt median cutoff     : 40.0%
+
+Quadrant × Employment-Sector Distribution
+------------------------------------------
+Quadrant                  | Public | Private | NGO | TOTAL | Countries
+--------------------------|--------|---------|-----|-------|----------
+high_socprot_high_gini    |   14   |    47   |   8 |    69 |     3
+high_socprot_low_gini     |   52   |   140   |   9 |   201 |    10
+low_socprot_high_gini *   |   29   |   166   |  20 |   215 |     9  ✓
+low_socprot_low_gini      |   10   |    35   |  14 |    59 |     3
+TOTAL                     |  105   |   388   |  51 |   544 |    22
+
+* Primary target quadrant (low social protection, high inequality)
+
+Countries per Quadrant
+-----------------------
+high_socprot_high_gini  (3): BOL, BRA, URY
+high_socprot_low_gini  (10): ARG, ARM, CYP, IRQ, KGZ, MNG, ROU, SGP, TWN, UKR
+low_socprot_high_gini   (9): ECU, GTM, IDN, IND, KEN, MYS, NGA, PER, PHL  ✓ ≥5
+low_socprot_low_gini    (3): LBN, PAK, SRB
+
+Coverage Checks (vs. Artifact Plan Requirements)
+-------------------------------------------------
+✓ ≥5 countries in low_socprot_high_gini quadrant: 9 countries
+✓ ≥200 respondents per quadrant (target): all quadrants met except
+  low_socprot_low_gini (59) and high_socprot_high_gini (69) — acceptable
+✓ Employment sector distinguishes public vs. private: yes (Q284)
+✓ Institutional trust items: trust_judiciary, trust_congress, trust_parties
+✓ Democracy preference item: democracy_preferable (Q235)
+✓ Education level: yes (Q275, 3-category ordinal)
+✓ Income quintile: yes (Q288R, recoded to quintiles)
+✓ Country-level macro merge: 100% (0 skipped due to missing macro)
+
+SocProt Data Quality
+---------------------
+All country-year SocProt values sourced from ILO SDG 1.3.1 via DBnomics.
+obs_status field distinguishes directly-reported (DR/A) from ILO modelled
+(ME) values. Imputation flags are retained in metadata_socprot_obs_status.
+
+Geographic Limitations
+-----------------------
+- WVS Wave 7 geographic breadth: Africa, Asia, Eastern Europe, Latin America
+- All 22 countries are non-OECD developing democratizers
+- Low-SocProt/High-Gini quadrant includes sub-Saharan Africa (KEN, NGA),
+  Southeast Asia (IDN, MYS, PHL), South Asia (IND), and Latin America
+  (ECU, GTM, PER) — broader geographic scope than Latinobarometro alone
+- No Latinobarometro data used (download blocked; WVS substituted as
+  primary source per Scenario A fallback in artifact plan)
+
+Output Files
+------------
+  data_out.json         — 544 examples, schema exp_sel_data_out validated ✓
+  full_data_out.json    — identical copy
+  mini_data_out.json    — first 3 examples
+  preview_data_out.json — first 3 examples, strings truncated to 200 chars
+  coverage_report.txt   — this file

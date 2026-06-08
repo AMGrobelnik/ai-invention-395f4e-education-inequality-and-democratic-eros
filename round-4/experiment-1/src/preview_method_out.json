@@ -1,0 +1,125 @@
+{
+  "metadata": {
+    "method": "Giesselmann-Schmidt-Catran Double-Demeaning (DD) Estimator",
+    "primary_spec": "C_dd_tertiary_PRIMARY",
+    "education_proxy": "WB SE.TER.ENRR (gross tertiary enrollment, %)",
+    "panel": "7-period (1990-2022), 61 post-1990 developing democratizers",
+    "reviewer_critiques_addressed": [
+      "C1",
+      "C2",
+      "C3"
+    ],
+    "dd_sanity_passed": true,
+    "primary_result_beta_EGS": 0.001051,
+    "primary_result_p": 0.7299,
+    "N_complete_obs": 67,
+    "N_countries_complete": 44
+  },
+  "datasets": [
+    {
+      "dataset": "DD_7period_libdem_predictions_spec_c_primary",
+      "examples": [
+        {
+          "input": "{\"country_iso3\": \"ALB\", \"period_id\": 7, \"educ_tertiary\": 61.401, \"gini\": 34.9333, \"socprot\": 78.1}",
+          "output": "0.436",
+          "metadata_country_iso3": "ALB",
+          "metadata_period_id": 7,
+          "metadata_period_label": "2020-22",
+          "predict_spec_c_dd_tertiary": "0.042306",
+          "predict_spec_b_dd_mys": "0.062835",
+          "predict_spec_d_naive_tertiary": "0.439807"
+        },
+        {
+          "input": "{\"country_iso3\": \"ARM\", \"period_id\": 6, \"educ_tertiary\": 53.9268, \"gini\": 36.48, \"socprot\": 50.85}",
+          "output": "0.33",
+          "metadata_country_iso3": "ARM",
+          "metadata_period_id": 6,
+          "metadata_period_label": "2015-19",
+          "predict_spec_c_dd_tertiary": "0.405338",
+          "predict_spec_b_dd_mys": "0.404149",
+          "predict_spec_d_naive_tertiary": "0.408114"
+        },
+        {
+          "input": "{\"country_iso3\": \"ARM\", \"period_id\": 7, \"educ_tertiary\": 55.3795, \"gini\": 34.0667, \"socprot\": 49.2}",
+          "output": "0.518667",
+          "metadata_country_iso3": "ARM",
+          "metadata_period_id": 7,
+          "metadata_period_label": "2020-22",
+          "predict_spec_c_dd_tertiary": "0.442719",
+          "predict_spec_b_dd_mys": "0.444483",
+          "predict_spec_d_naive_tertiary": "0.440553"
+        }
+      ]
+    },
+    {
+      "dataset": "Complete_regression_table_1_all_specs",
+      "examples": [
+        {
+          "input": "{\"spec\": \"A_naive_mys\", \"coefficient\": \"beta_E\"}",
+          "output": "0.149711",
+          "metadata_spec": "A_naive_mys",
+          "metadata_coef": "beta_E",
+          "metadata_se": "0.279404",
+          "metadata_p": "0.5995",
+          "metadata_sig": "",
+          "metadata_N": "67",
+          "metadata_R2_within": "0.992258",
+          "metadata_N_clusters": "44",
+          "metadata_estimator": "Naive FE",
+          "metadata_education_proxy": "UNDP HDR25 MYS"
+        },
+        {
+          "input": "{\"spec\": \"A_naive_mys\", \"coefficient\": \"beta_G\"}",
+          "output": "0.023255",
+          "metadata_spec": "A_naive_mys",
+          "metadata_coef": "beta_G",
+          "metadata_se": "0.03837",
+          "metadata_p": "0.553",
+          "metadata_sig": "",
+          "metadata_N": "67",
+          "metadata_R2_within": "0.992258",
+          "metadata_N_clusters": "44",
+          "metadata_estimator": "Naive FE",
+          "metadata_education_proxy": "UNDP HDR25 MYS"
+        },
+        {
+          "input": "{\"spec\": \"A_naive_mys\", \"coefficient\": \"beta_S\"}",
+          "output": "0.017285",
+          "metadata_spec": "A_naive_mys",
+          "metadata_coef": "beta_S",
+          "metadata_se": "0.057757",
+          "metadata_p": "0.7686",
+          "metadata_sig": "",
+          "metadata_N": "67",
+          "metadata_R2_within": "0.992258",
+          "metadata_N_clusters": "44",
+          "metadata_estimator": "Naive FE",
+          "metadata_education_proxy": "UNDP HDR25 MYS"
+        }
+      ]
+    },
+    {
+      "dataset": "Effective_ID_sample_audit",
+      "examples": [
+        {
+          "input": "{\"country\": \"ALB\"}",
+          "output": "singleton",
+          "metadata_country": "ALB",
+          "metadata_id_type": "singleton"
+        },
+        {
+          "input": "{\"country\": \"ARM\"}",
+          "output": "doubly_observed",
+          "metadata_country": "ARM",
+          "metadata_id_type": "doubly_observed"
+        },
+        {
+          "input": "{\"country\": \"BEN\"}",
+          "output": "doubly_observed",
+          "metadata_country": "BEN",
+          "metadata_id_type": "doubly_observed"
+        }
+      ]
+    }
+  ]
+}

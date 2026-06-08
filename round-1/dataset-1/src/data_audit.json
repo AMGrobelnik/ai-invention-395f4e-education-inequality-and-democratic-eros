@@ -1,0 +1,370 @@
+{
+  "n_democratizer_countries": 113,
+  "n_country_periods_all_vars": 161,
+  "n_country_periods_directly_reported": 161,
+  "fraction_directly_reported": 1.0,
+  "countries_qualifying": [
+    {
+      "country": "Argentina",
+      "iso3": "ARG",
+      "n_complete_periods": 2
+    },
+    {
+      "country": "Austria",
+      "iso3": "AUT",
+      "n_complete_periods": 2
+    },
+    {
+      "country": "Belgium",
+      "iso3": "BEL",
+      "n_complete_periods": 2
+    },
+    {
+      "country": "Benin",
+      "iso3": "BEN",
+      "n_complete_periods": 2
+    },
+    {
+      "country": "Burkina Faso",
+      "iso3": "BFA",
+      "n_complete_periods": 2
+    },
+    {
+      "country": "Bulgaria",
+      "iso3": "BGR",
+      "n_complete_periods": 2
+    },
+    {
+      "country": "Bolivia",
+      "iso3": "BOL",
+      "n_complete_periods": 2
+    },
+    {
+      "country": "Brazil",
+      "iso3": "BRA",
+      "n_complete_periods": 2
+    },
+    {
+      "country": "Bhutan",
+      "iso3": "BTN",
+      "n_complete_periods": 2
+    },
+    {
+      "country": "Canada",
+      "iso3": "CAN",
+      "n_complete_periods": 2
+    },
+    {
+      "country": "Chile",
+      "iso3": "CHL",
+      "n_complete_periods": 2
+    },
+    {
+      "country": "Colombia",
+      "iso3": "COL",
+      "n_complete_periods": 2
+    },
+    {
+      "country": "Costa Rica",
+      "iso3": "CRI",
+      "n_complete_periods": 2
+    },
+    {
+      "country": "Cyprus",
+      "iso3": "CYP",
+      "n_complete_periods": 2
+    },
+    {
+      "country": "Germany",
+      "iso3": "DEU",
+      "n_complete_periods": 2
+    },
+    {
+      "country": "Dominican Republic",
+      "iso3": "DOM",
+      "n_complete_periods": 2
+    },
+    {
+      "country": "Ecuador",
+      "iso3": "ECU",
+      "n_complete_periods": 2
+    },
+    {
+      "country": "Spain",
+      "iso3": "ESP",
+      "n_complete_periods": 2
+    },
+    {
+      "country": "Estonia",
+      "iso3": "EST",
+      "n_complete_periods": 2
+    },
+    {
+      "country": "Finland",
+      "iso3": "FIN",
+      "n_complete_periods": 2
+    },
+    {
+      "country": "France",
+      "iso3": "FRA",
+      "n_complete_periods": 2
+    },
+    {
+      "country": "Georgia",
+      "iso3": "GEO",
+      "n_complete_periods": 2
+    },
+    {
+      "country": "Guinea-Bissau",
+      "iso3": "GNB",
+      "n_complete_periods": 2
+    },
+    {
+      "country": "Guatemala",
+      "iso3": "GTM",
+      "n_complete_periods": 2
+    },
+    {
+      "country": "Honduras",
+      "iso3": "HND",
+      "n_complete_periods": 2
+    },
+    {
+      "country": "Croatia",
+      "iso3": "HRV",
+      "n_complete_periods": 2
+    },
+    {
+      "country": "Hungary",
+      "iso3": "HUN",
+      "n_complete_periods": 2
+    },
+    {
+      "country": "Indonesia",
+      "iso3": "IDN",
+      "n_complete_periods": 2
+    },
+    {
+      "country": "India",
+      "iso3": "IND",
+      "n_complete_periods": 2
+    },
+    {
+      "country": "Ireland",
+      "iso3": "IRL",
+      "n_complete_periods": 2
+    },
+    {
+      "country": "Israel",
+      "iso3": "ISR",
+      "n_complete_periods": 2
+    },
+    {
+      "country": "Italy",
+      "iso3": "ITA",
+      "n_complete_periods": 2
+    },
+    {
+      "country": "Jamaica",
+      "iso3": "JAM",
+      "n_complete_periods": 2
+    },
+    {
+      "country": "Japan",
+      "iso3": "JPN",
+      "n_complete_periods": 2
+    },
+    {
+      "country": "Kenya",
+      "iso3": "KEN",
+      "n_complete_periods": 2
+    },
+    {
+      "country": "Lithuania",
+      "iso3": "LTU",
+      "n_complete_periods": 2
+    },
+    {
+      "country": "Luxembourg",
+      "iso3": "LUX",
+      "n_complete_periods": 2
+    },
+    {
+      "country": "Latvia",
+      "iso3": "LVA",
+      "n_complete_periods": 2
+    },
+    {
+      "country": "Moldova",
+      "iso3": "MDA",
+      "n_complete_periods": 2
+    },
+    {
+      "country": "Mexico",
+      "iso3": "MEX",
+      "n_complete_periods": 2
+    },
+    {
+      "country": "North Macedonia",
+      "iso3": "MKD",
+      "n_complete_periods": 2
+    },
+    {
+      "country": "Mali",
+      "iso3": "MLI",
+      "n_complete_periods": 2
+    },
+    {
+      "country": "Montenegro",
+      "iso3": "MNE",
+      "n_complete_periods": 2
+    },
+    {
+      "country": "Mongolia",
+      "iso3": "MNG",
+      "n_complete_periods": 2
+    },
+    {
+      "country": "Nigeria",
+      "iso3": "NGA",
+      "n_complete_periods": 2
+    },
+    {
+      "country": "Netherlands",
+      "iso3": "NLD",
+      "n_complete_periods": 2
+    },
+    {
+      "country": "Nepal",
+      "iso3": "NPL",
+      "n_complete_periods": 2
+    },
+    {
+      "country": "Panama",
+      "iso3": "PAN",
+      "n_complete_periods": 2
+    },
+    {
+      "country": "Peru",
+      "iso3": "PER",
+      "n_complete_periods": 2
+    },
+    {
+      "country": "Philippines",
+      "iso3": "PHL",
+      "n_complete_periods": 2
+    },
+    {
+      "country": "Portugal",
+      "iso3": "PRT",
+      "n_complete_periods": 2
+    },
+    {
+      "country": "Paraguay",
+      "iso3": "PRY",
+      "n_complete_periods": 2
+    },
+    {
+      "country": "Romania",
+      "iso3": "ROU",
+      "n_complete_periods": 2
+    },
+    {
+      "country": "Senegal",
+      "iso3": "SEN",
+      "n_complete_periods": 2
+    },
+    {
+      "country": "El Salvador",
+      "iso3": "SLV",
+      "n_complete_periods": 2
+    },
+    {
+      "country": "Serbia",
+      "iso3": "SRB",
+      "n_complete_periods": 2
+    },
+    {
+      "country": "Suriname",
+      "iso3": "SUR",
+      "n_complete_periods": 2
+    },
+    {
+      "country": "Slovenia",
+      "iso3": "SVN",
+      "n_complete_periods": 2
+    },
+    {
+      "country": "Sweden",
+      "iso3": "SWE",
+      "n_complete_periods": 2
+    },
+    {
+      "country": "Thailand",
+      "iso3": "THA",
+      "n_complete_periods": 2
+    },
+    {
+      "country": "Tunisia",
+      "iso3": "TUN",
+      "n_complete_periods": 2
+    },
+    {
+      "country": "Uruguay",
+      "iso3": "URY",
+      "n_complete_periods": 2
+    },
+    {
+      "country": "Zambia",
+      "iso3": "ZMB",
+      "n_complete_periods": 2
+    }
+  ],
+  "qualifying_threshold": "n_complete_periods >= 2",
+  "quadrant_table": {
+    "low_socprot_low_gini": {
+      "n_obs": 18,
+      "n_directly_reported": 18,
+      "frac_directly_reported": 1.0
+    },
+    "low_socprot_high_gini": {
+      "n_obs": 62,
+      "n_directly_reported": 62,
+      "frac_directly_reported": 1.0
+    },
+    "high_socprot_low_gini": {
+      "n_obs": 62,
+      "n_directly_reported": 62,
+      "frac_directly_reported": 1.0
+    },
+    "high_socprot_high_gini": {
+      "n_obs": 19,
+      "n_directly_reported": 19,
+      "frac_directly_reported": 1.0
+    }
+  },
+  "quadrant_thresholds": {
+    "socprot_median": 57.6,
+    "gini_median": 36.96
+  },
+  "within_country_sds": {
+    "education_sd": 0.026052,
+    "gini_disp_sd": 0.556957,
+    "socprot_coverage_sd": 3.900466
+  },
+  "mde_estimate": {
+    "n_effective": 40,
+    "assumed_r2": 0.5,
+    "alpha": 0.05,
+    "power": 0.8,
+    "mde_std_units": 1.64447,
+    "interpretation": "Approximate MDE for DD triple-interaction coefficient \u03b27 \u2248 1.6445 SD-units of v2x_libdem given N_eff=40 country-period obs. Formula: MDE = 2.8 \u00d7 SD_ldem / (SD_educ \u00d7 SD_gini \u00d7 SD_sp \u00d7 \u221aN_eff). Rough lower bound; actual power depends on FE structure and clustering."
+  },
+  "data_quality_flags": [
+    "INSUFFICIENT_VARIATION: within-SD of Education (0.0261) < 0.05 threshold",
+    "ILO country-level (ISO) data only available from 2015 (rplumber.ilo.org API); 2010-14 data exists only as X* regional aggregates (excluded). Pre-2015 periods (1990-94, 1995-99, 2000-04, 2005-09, 2010-14) have no socprot_coverage.",
+    "Education source (Lee-Lee/Barro-Lee/UNDP) ends at 2017; 2020-22 period education values are forward-filled from 2017 (education_imputed=True). Education changes slowly so this is a minor bias, but treat 2020-22 education with caution.",
+    "70 complete observations use forward-filled (imputed) education values for 2020-22"
+  ],
+  "ilo_obs_status_note": "ILO data: rplumber.ilo.org/data/indicator/?id=SDG_0131_SEX_SOC_RT_A (SEX_T, SOC_CONTIG_TOTAL). obs_status='' \u2192 directly reported from ILO Social Security Inquiry Database. obs_status='U' \u2192 unreliable/unknown. X* codes (ILO regional groupings) excluded \u2014 country-level ISO codes only used."
+}

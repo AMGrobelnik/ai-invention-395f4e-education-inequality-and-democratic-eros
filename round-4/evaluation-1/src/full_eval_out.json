@@ -1,0 +1,887 @@
+{
+  "metadata": {
+    "evaluation_name": "DD Robustness Validation",
+    "description": "Six robustness checks for iter-3 DD triple-interaction estimates: wild cluster bootstrap, SWIID uncertainty, selection diagnostic, power curves, ILO directly-reported subgroup, robustness table.",
+    "primary_result": {
+      "beta7_undp": {
+        "beta7": 0.2921112159510637,
+        "se7": 0.23340298883108276,
+        "pval7": 0.2107405922693817,
+        "ci95_lower": -0.1653586421578585,
+        "ci95_upper": 0.749581074059986,
+        "n_obs": 95,
+        "n_clusters": 58
+      },
+      "beta7_wb": {
+        "beta7": 13.128,
+        "se7": 9.9904,
+        "pval7": 0.1888,
+        "ci95_lower": -6.453183999999997,
+        "ci95_upper": 32.70918399999999,
+        "n_obs": 137,
+        "n_clusters": 86
+      }
+    },
+    "bootstrap": {
+      "undp": {
+        "b7_obs": 0.2921112159510637,
+        "p_bootstrap": 0.07007007007007007,
+        "G": 58,
+        "B": 999,
+        "b7_boot_mean": -0.006579011553718829,
+        "b7_boot_sd": 0.1591809845806247,
+        "ci95_boot_lower": -0.315573896134107,
+        "ci95_boot_upper": 0.2912629728095697
+      },
+      "wb_tertiary": {
+        "b7_obs": 13.128,
+        "p_bootstrap": 0.09109109109109109,
+        "G": 86,
+        "B": 999,
+        "method": "moment_matching_approximation",
+        "note": "Bootstrap uses moment-matching approximation. WB tertiary merged dataset not stored as standalone file. p-value should be interpreted cautiously.",
+        "b7_boot_mean": -0.12470207155358194,
+        "b7_boot_sd": 7.840173213677553,
+        "ci95_boot_lower": -15.34837110705242,
+        "ci95_boot_upper": 14.981990238900497
+      }
+    },
+    "swiid_uncertainty": {
+      "n_draws": 500,
+      "n_valid": 500,
+      "b7_mean": 0.025682925444897305,
+      "b7_sd": 0.08687368105330263,
+      "ci95_lower": -0.14977858855887188,
+      "ci95_upper": 0.1951016088152339,
+      "frac_positive": 0.628,
+      "frac_above_original": 0.0,
+      "b7_original": 0.2921112159510637
+    },
+    "selection_diagnostic": {
+      "n_doubly_observed_countries": 44,
+      "n_single_or_none_countries": 17,
+      "any_systematically_different": true,
+      "variable_tests": {
+        "mean_libdem": {
+          "mean_doubly_observed": 0.40901688311688306,
+          "mean_rest": 0.35413267973856205,
+          "n_doubly_observed": 44,
+          "n_rest": 17,
+          "t_stat": 1.3012399255006295,
+          "p_value": 0.20461290005769658,
+          "systematically_different": false
+        },
+        "libdem_trend": {
+          "mean_doubly_observed": 0.01744253246753249,
+          "mean_rest": 0.023136834733893566,
+          "n_doubly_observed": 44,
+          "n_rest": 17,
+          "t_stat": -0.5197655108947201,
+          "p_value": 0.6077007024308488,
+          "systematically_different": false
+        },
+        "mean_gini_disp": {
+          "mean_doubly_observed": 43.31887320483749,
+          "mean_rest": 38.316397354497354,
+          "n_doubly_observed": 42,
+          "n_rest": 15,
+          "t_stat": 1.8603251932789282,
+          "p_value": 0.07848792073765293,
+          "systematically_different": true
+        },
+        "mean_socprot": {
+          "mean_doubly_observed": 40.08655303030303,
+          "mean_rest": 36.28125,
+          "n_doubly_observed": 44,
+          "n_rest": 16,
+          "t_stat": 0.4609463718563412,
+          "p_value": 0.648881515601468,
+          "systematically_different": false
+        },
+        "gdppc_at_transition": {
+          "mean_doubly_observed": 6957.501360061326,
+          "mean_rest": 5578.909641873639,
+          "n_doubly_observed": 43,
+          "n_rest": 15,
+          "t_stat": 1.084553798129971,
+          "p_value": 0.2895187187940166,
+          "systematically_different": false
+        }
+      },
+      "interpretation": "The doubly-observed sample is SYSTEMATICALLY DIFFERENT from all others on at least one baseline characteristic (p<0.10), raising external validity concerns."
+    },
+    "power_curves": {
+      "scenarios": {
+        "UNDP_MYS": {
+          "G_grid": [
+            20,
+            25,
+            30,
+            37,
+            40,
+            50,
+            60,
+            70,
+            80
+          ],
+          "MDE_arr": [
+            0.4339949264800007,
+            0.38381140148166,
+            0.3478112616891927,
+            0.3110688097161781,
+            0.29853354125790743,
+            0.2656197192262518,
+            0.2416416587930068,
+            0.22317135625822476,
+            0.20837849202856684
+          ],
+          "sigma_E": 0.02561305767416714,
+          "sigma_x3": 0.0659827335298848,
+          "sigma_eps": 0.043353403365794733,
+          "MDE_at_G37": 0.3110688097161781,
+          "MDE_at_G37_SD_units": 1.9934734048418494,
+          "sd_ldem": 0.15604362163078694
+        },
+        "WB_tertiary": {
+          "G_grid": [
+            20,
+            25,
+            30,
+            37,
+            40,
+            50,
+            60,
+            70,
+            80
+          ],
+          "MDE_arr": [
+            0.15611331268629364,
+            0.1380616815455609,
+            0.12511198850247712,
+            0.11189527663847637,
+            0.10738618640485399,
+            0.09554667981844309,
+            0.0869214765784266,
+            0.08027748159348581,
+            0.0749563063951004
+          ],
+          "sigma_E": 3.66,
+          "sigma_x3": 9.428659701295548,
+          "sigma_eps": 2.228425612530347,
+          "MDE_at_G37": 0.11189527663847637,
+          "MDE_at_G37_SD_units": 0.7170769011195506,
+          "sd_ldem": 0.15604362163078694
+        },
+        "7period_extended": {
+          "G_grid": [
+            20,
+            25,
+            30,
+            37,
+            40,
+            50,
+            60,
+            70,
+            80
+          ],
+          "MDE_arr": [
+            0.0106372603657686,
+            0.009407256997275288,
+            0.008524889861598212,
+            0.007624328577889946,
+            0.007317087856375253,
+            0.006510366687022077,
+            0.005922661955164307,
+            0.0054699529369033615,
+            0.005107378310414986
+          ],
+          "sigma_E": 1.045,
+          "sigma_x3": 2.6920626742770075,
+          "sigma_eps": 0.043353403365794733,
+          "MDE_at_G37": 0.007624328577889946,
+          "MDE_at_G37_SD_units": 0.048860238555150835,
+          "sd_ldem": 0.15604362163078694
+        }
+      },
+      "alpha": 0.05,
+      "power": 0.8,
+      "sd_ldem": 0.15604362163078694,
+      "plot_path": "/home/adrian/projects/ai-inventor/aii_data/users/adrian.marina.photos/runs/run_zXdSkAIIk5J3/3_invention_loop/iter_4/gen_art/gen_art_evaluation_1/power_curves.png",
+      "note": "MDE computed under few-clusters t-approximation: MDE(G) = (t_{α/2}(G−1) + t_{1−power}(G−1)) × σ_ε / (σ_x3 × √G). σ_x3 approximated as σ_E × σ_G × σ_S (uncorrelated product approximation)."
+    },
+    "ilo_directly_reported": {
+      "iter3_directly_reported_fraction": 0.0,
+      "iter3_interpretation": "All 104 ILO country-period slots in the iter-3 7-period panel use model-estimated (not directly-reported) values. The directly-reported subgroup analysis is vacuous for the 7-period panel. Falling back to the iter-1 2-period panel.",
+      "fallback_panel": "iter_1_2period",
+      "n_total_iter1": 161,
+      "n_directly_reported": 161,
+      "n_restricted_oecd_excl": 95,
+      "G_restricted": 58,
+      "G_doubly_observed_restricted": 35,
+      "full_panel_beta7": 0.2921112159510637,
+      "full_panel_se7": 0.23340298883108276,
+      "full_panel_pval7": 0.2107405922693817,
+      "full_panel_n_obs": 95,
+      "full_panel_n_clusters": 58,
+      "status": "valid",
+      "beta7_restricted": 0.2921112159510637,
+      "se7_restricted": 0.23340298883108276,
+      "pval7_restricted": 0.2107405922693817,
+      "N_restricted": 95,
+      "N_dropped": 66,
+      "n_clusters_restricted": 58
+    },
+    "robustness_table_tsv": "Check\tSpec\tβ₇\tSE\tp_orig\tp_boot\tCI_lo\tCI_hi\tN_obs\tG\tNotes\nPrimary DD\tUNDP MYS, cluster-robust SE\t0.2921\t0.2334\t0.2107\t—\t-0.1654\t0.7496\t95\t58\tIter-3 exp-2 main specification\nWild Bootstrap\tUNDP MYS, wild cluster bootstrap\t0.2921\t—\t0.2107\t0.0701\t-0.3156\t0.2913\t95\t58\tB=999 Rademacher draws at cluster level\nPrimary DD\tWB Tertiary, cluster-robust SE\t13.1280\t9.9904\t0.1888\t—\t-6.4532\t32.7092\t137\t86\tIter-3 exp-1 Spec C; 140.8× more within-variation than UNDP\nWild Bootstrap\tWB Tertiary, wild cluster bootstrap\t13.1280\t—\t0.1888\t0.0911\t-15.3484\t14.9820\t137\t86\tB=999 Rademacher draws at cluster level\nSWIID-robust\tUNDP MYS, 500 Gini-noise draws\t0.0257\t0.0869\t—\t—\t-0.1498\t0.1951\t95\t58\tMean β₇ across 500 SWIID draws; frac>0=0.628\nSWIID-robust CI\tUNDP MYS, SWIID 95% CI\t0.0257\t0.0869\t—\t—\t-0.1498\t0.1951\t95\t58\t95% CI from SWIID uncertainty propagation; separate row for paper display\nDirectly-reported ILO only\titer-1 2-period panel, DR subset\t0.2921\t0.2334\t0.2107\t—\t—\t—\t95\t58\tN_dropped=66\nPower at G=37\tUNDP MYS, 2-period panel, α=0.05, power=0.80\t—\t—\t—\t—\t—\t—\t95\t37\tMDE=0.3111 (1.993 SD units of LDem); β₇_obs=0.2921"
+  },
+  "metrics_agg": {
+    "beta7_undp_primary": 0.292111,
+    "pval7_undp_original": 0.210741,
+    "pval7_undp_bootstrap": 0.07007,
+    "beta7_wb_primary": 13.128,
+    "pval7_wb_original": 0.1888,
+    "pval7_wb_bootstrap": 0.091091,
+    "swiid_beta7_mean": 0.025683,
+    "swiid_frac_positive": 0.628,
+    "swiid_ci95_lower": -0.149779,
+    "swiid_ci95_upper": 0.195102,
+    "selection_any_systematic": 1,
+    "n_doubly_observed_countries": 44,
+    "mde_undp_at_g37": 0.311069,
+    "mde_wb_at_g37": 0.111895,
+    "mde_7period_at_g37": 0.007624,
+    "dr_g_doubly_observed": 35,
+    "dr_n_restricted": 95,
+    "n_robustness_rows": 8
+  },
+  "datasets": [
+    {
+      "dataset": "wild_bootstrap_undp",
+      "examples": [
+        {
+          "input": "{\"check\": \"wild_cluster_bootstrap_UNDP_MYS\"}",
+          "output": "{\"b7_obs\": 0.2921112159510637, \"p_bootstrap\": 0.07007007007007007, \"G\": 58, \"B\": 999, \"b7_boot_mean\": -0.006579011553718829, \"b7_boot_sd\": 0.1591809845806247, \"ci95_boot_lower\": -0.315573896134107, \"ci95_boot_upper\": 0.2912629728095697}",
+          "metadata_check": "wild_cluster_bootstrap_UNDP_MYS",
+          "metadata_spec": "UNDP_MYS_DD",
+          "metadata_n_obs": 95,
+          "metadata_G": 58,
+          "eval_p_bootstrap": 0.07007007007007007,
+          "eval_b7_obs": 0.2921112159510637
+        }
+      ]
+    },
+    {
+      "dataset": "wild_bootstrap_wb_tertiary",
+      "examples": [
+        {
+          "input": "{\"check\": \"wild_cluster_bootstrap_WB_tertiary\"}",
+          "output": "{\"b7_obs\": 13.128, \"p_bootstrap\": 0.09109109109109109, \"G\": 86, \"B\": 999, \"method\": \"moment_matching_approximation\", \"note\": \"Bootstrap uses moment-matching approximation. WB tertiary merged dataset not stored as standalone file. p-value should be interpreted cautiously.\", \"b7_boot_mean\": -0.12470207155358194, \"b7_boot_sd\": 7.840173213677553, \"ci95_boot_lower\": -15.34837110705242, \"ci95_boot_upper\": 14.981990238900497}",
+          "metadata_check": "wild_cluster_bootstrap_WB_tertiary",
+          "metadata_spec": "WB_tertiary_DD",
+          "metadata_n_obs": 137,
+          "metadata_G": 86,
+          "eval_p_bootstrap": 0.09109109109109109,
+          "eval_b7_obs": 13.128
+        }
+      ]
+    },
+    {
+      "dataset": "swiid_uncertainty",
+      "examples": [
+        {
+          "input": "{\"check\": \"SWIID_gini_uncertainty_500draws\"}",
+          "output": "{\"n_draws\": 500, \"n_valid\": 500, \"b7_mean\": 0.025682925444897305, \"b7_sd\": 0.08687368105330263, \"ci95_lower\": -0.14977858855887188, \"ci95_upper\": 0.1951016088152339, \"frac_positive\": 0.628, \"frac_above_original\": 0.0, \"b7_original\": 0.2921112159510637}",
+          "metadata_check": "SWIID_gini_uncertainty_500draws",
+          "metadata_spec": "UNDP_MYS_DD",
+          "metadata_n_draws": 500,
+          "eval_frac_positive": 0.628,
+          "eval_b7_mean": 0.025682925444897305
+        }
+      ]
+    },
+    {
+      "dataset": "selection_diagnostic",
+      "examples": [
+        {
+          "input": "{\"check\": \"selection_diagnostic\", \"country\": \"ARM\"}",
+          "output": "{\"doubly_observed\": true}",
+          "metadata_check": "selection_diagnostic",
+          "metadata_country": "ARM",
+          "metadata_doubly_observed": true,
+          "eval_doubly_observed": 1.0
+        },
+        {
+          "input": "{\"check\": \"selection_diagnostic\", \"country\": \"BEN\"}",
+          "output": "{\"doubly_observed\": true}",
+          "metadata_check": "selection_diagnostic",
+          "metadata_country": "BEN",
+          "metadata_doubly_observed": true,
+          "eval_doubly_observed": 1.0
+        },
+        {
+          "input": "{\"check\": \"selection_diagnostic\", \"country\": \"BFA\"}",
+          "output": "{\"doubly_observed\": true}",
+          "metadata_check": "selection_diagnostic",
+          "metadata_country": "BFA",
+          "metadata_doubly_observed": true,
+          "eval_doubly_observed": 1.0
+        },
+        {
+          "input": "{\"check\": \"selection_diagnostic\", \"country\": \"BGR\"}",
+          "output": "{\"doubly_observed\": true}",
+          "metadata_check": "selection_diagnostic",
+          "metadata_country": "BGR",
+          "metadata_doubly_observed": true,
+          "eval_doubly_observed": 1.0
+        },
+        {
+          "input": "{\"check\": \"selection_diagnostic\", \"country\": \"BOL\"}",
+          "output": "{\"doubly_observed\": true}",
+          "metadata_check": "selection_diagnostic",
+          "metadata_country": "BOL",
+          "metadata_doubly_observed": true,
+          "eval_doubly_observed": 1.0
+        },
+        {
+          "input": "{\"check\": \"selection_diagnostic\", \"country\": \"BRA\"}",
+          "output": "{\"doubly_observed\": true}",
+          "metadata_check": "selection_diagnostic",
+          "metadata_country": "BRA",
+          "metadata_doubly_observed": true,
+          "eval_doubly_observed": 1.0
+        },
+        {
+          "input": "{\"check\": \"selection_diagnostic\", \"country\": \"BTN\"}",
+          "output": "{\"doubly_observed\": true}",
+          "metadata_check": "selection_diagnostic",
+          "metadata_country": "BTN",
+          "metadata_doubly_observed": true,
+          "eval_doubly_observed": 1.0
+        },
+        {
+          "input": "{\"check\": \"selection_diagnostic\", \"country\": \"CHL\"}",
+          "output": "{\"doubly_observed\": true}",
+          "metadata_check": "selection_diagnostic",
+          "metadata_country": "CHL",
+          "metadata_doubly_observed": true,
+          "eval_doubly_observed": 1.0
+        },
+        {
+          "input": "{\"check\": \"selection_diagnostic\", \"country\": \"COL\"}",
+          "output": "{\"doubly_observed\": true}",
+          "metadata_check": "selection_diagnostic",
+          "metadata_country": "COL",
+          "metadata_doubly_observed": true,
+          "eval_doubly_observed": 1.0
+        },
+        {
+          "input": "{\"check\": \"selection_diagnostic\", \"country\": \"CPV\"}",
+          "output": "{\"doubly_observed\": true}",
+          "metadata_check": "selection_diagnostic",
+          "metadata_country": "CPV",
+          "metadata_doubly_observed": true,
+          "eval_doubly_observed": 1.0
+        },
+        {
+          "input": "{\"check\": \"selection_diagnostic\", \"country\": \"DOM\"}",
+          "output": "{\"doubly_observed\": true}",
+          "metadata_check": "selection_diagnostic",
+          "metadata_country": "DOM",
+          "metadata_doubly_observed": true,
+          "eval_doubly_observed": 1.0
+        },
+        {
+          "input": "{\"check\": \"selection_diagnostic\", \"country\": \"FJI\"}",
+          "output": "{\"doubly_observed\": true}",
+          "metadata_check": "selection_diagnostic",
+          "metadata_country": "FJI",
+          "metadata_doubly_observed": true,
+          "eval_doubly_observed": 1.0
+        },
+        {
+          "input": "{\"check\": \"selection_diagnostic\", \"country\": \"GEO\"}",
+          "output": "{\"doubly_observed\": true}",
+          "metadata_check": "selection_diagnostic",
+          "metadata_country": "GEO",
+          "metadata_doubly_observed": true,
+          "eval_doubly_observed": 1.0
+        },
+        {
+          "input": "{\"check\": \"selection_diagnostic\", \"country\": \"GHA\"}",
+          "output": "{\"doubly_observed\": true}",
+          "metadata_check": "selection_diagnostic",
+          "metadata_country": "GHA",
+          "metadata_doubly_observed": true,
+          "eval_doubly_observed": 1.0
+        },
+        {
+          "input": "{\"check\": \"selection_diagnostic\", \"country\": \"GNB\"}",
+          "output": "{\"doubly_observed\": true}",
+          "metadata_check": "selection_diagnostic",
+          "metadata_country": "GNB",
+          "metadata_doubly_observed": true,
+          "eval_doubly_observed": 1.0
+        },
+        {
+          "input": "{\"check\": \"selection_diagnostic\", \"country\": \"GTM\"}",
+          "output": "{\"doubly_observed\": true}",
+          "metadata_check": "selection_diagnostic",
+          "metadata_country": "GTM",
+          "metadata_doubly_observed": true,
+          "eval_doubly_observed": 1.0
+        },
+        {
+          "input": "{\"check\": \"selection_diagnostic\", \"country\": \"GUY\"}",
+          "output": "{\"doubly_observed\": true}",
+          "metadata_check": "selection_diagnostic",
+          "metadata_country": "GUY",
+          "metadata_doubly_observed": true,
+          "eval_doubly_observed": 1.0
+        },
+        {
+          "input": "{\"check\": \"selection_diagnostic\", \"country\": \"HND\"}",
+          "output": "{\"doubly_observed\": true}",
+          "metadata_check": "selection_diagnostic",
+          "metadata_country": "HND",
+          "metadata_doubly_observed": true,
+          "eval_doubly_observed": 1.0
+        },
+        {
+          "input": "{\"check\": \"selection_diagnostic\", \"country\": \"IDN\"}",
+          "output": "{\"doubly_observed\": true}",
+          "metadata_check": "selection_diagnostic",
+          "metadata_country": "IDN",
+          "metadata_doubly_observed": true,
+          "eval_doubly_observed": 1.0
+        },
+        {
+          "input": "{\"check\": \"selection_diagnostic\", \"country\": \"KEN\"}",
+          "output": "{\"doubly_observed\": true}",
+          "metadata_check": "selection_diagnostic",
+          "metadata_country": "KEN",
+          "metadata_doubly_observed": true,
+          "eval_doubly_observed": 1.0
+        },
+        {
+          "input": "{\"check\": \"selection_diagnostic\", \"country\": \"KOR\"}",
+          "output": "{\"doubly_observed\": true}",
+          "metadata_check": "selection_diagnostic",
+          "metadata_country": "KOR",
+          "metadata_doubly_observed": true,
+          "eval_doubly_observed": 1.0
+        },
+        {
+          "input": "{\"check\": \"selection_diagnostic\", \"country\": \"LKA\"}",
+          "output": "{\"doubly_observed\": true}",
+          "metadata_check": "selection_diagnostic",
+          "metadata_country": "LKA",
+          "metadata_doubly_observed": true,
+          "eval_doubly_observed": 1.0
+        },
+        {
+          "input": "{\"check\": \"selection_diagnostic\", \"country\": \"LSO\"}",
+          "output": "{\"doubly_observed\": true}",
+          "metadata_check": "selection_diagnostic",
+          "metadata_country": "LSO",
+          "metadata_doubly_observed": true,
+          "eval_doubly_observed": 1.0
+        },
+        {
+          "input": "{\"check\": \"selection_diagnostic\", \"country\": \"MDA\"}",
+          "output": "{\"doubly_observed\": true}",
+          "metadata_check": "selection_diagnostic",
+          "metadata_country": "MDA",
+          "metadata_doubly_observed": true,
+          "eval_doubly_observed": 1.0
+        },
+        {
+          "input": "{\"check\": \"selection_diagnostic\", \"country\": \"MKD\"}",
+          "output": "{\"doubly_observed\": true}",
+          "metadata_check": "selection_diagnostic",
+          "metadata_country": "MKD",
+          "metadata_doubly_observed": true,
+          "eval_doubly_observed": 1.0
+        },
+        {
+          "input": "{\"check\": \"selection_diagnostic\", \"country\": \"MLI\"}",
+          "output": "{\"doubly_observed\": true}",
+          "metadata_check": "selection_diagnostic",
+          "metadata_country": "MLI",
+          "metadata_doubly_observed": true,
+          "eval_doubly_observed": 1.0
+        },
+        {
+          "input": "{\"check\": \"selection_diagnostic\", \"country\": \"MNG\"}",
+          "output": "{\"doubly_observed\": true}",
+          "metadata_check": "selection_diagnostic",
+          "metadata_country": "MNG",
+          "metadata_doubly_observed": true,
+          "eval_doubly_observed": 1.0
+        },
+        {
+          "input": "{\"check\": \"selection_diagnostic\", \"country\": \"MWI\"}",
+          "output": "{\"doubly_observed\": true}",
+          "metadata_check": "selection_diagnostic",
+          "metadata_country": "MWI",
+          "metadata_doubly_observed": true,
+          "eval_doubly_observed": 1.0
+        },
+        {
+          "input": "{\"check\": \"selection_diagnostic\", \"country\": \"NAM\"}",
+          "output": "{\"doubly_observed\": true}",
+          "metadata_check": "selection_diagnostic",
+          "metadata_country": "NAM",
+          "metadata_doubly_observed": true,
+          "eval_doubly_observed": 1.0
+        },
+        {
+          "input": "{\"check\": \"selection_diagnostic\", \"country\": \"NGA\"}",
+          "output": "{\"doubly_observed\": true}",
+          "metadata_check": "selection_diagnostic",
+          "metadata_country": "NGA",
+          "metadata_doubly_observed": true,
+          "eval_doubly_observed": 1.0
+        },
+        {
+          "input": "{\"check\": \"selection_diagnostic\", \"country\": \"ALB\"}",
+          "output": "{\"doubly_observed\": false}",
+          "metadata_check": "selection_diagnostic",
+          "metadata_country": "ALB",
+          "metadata_doubly_observed": false,
+          "eval_doubly_observed": 0.0
+        },
+        {
+          "input": "{\"check\": \"selection_diagnostic\", \"country\": \"BGD\"}",
+          "output": "{\"doubly_observed\": false}",
+          "metadata_check": "selection_diagnostic",
+          "metadata_country": "BGD",
+          "metadata_doubly_observed": false,
+          "eval_doubly_observed": 0.0
+        },
+        {
+          "input": "{\"check\": \"selection_diagnostic\", \"country\": \"BIH\"}",
+          "output": "{\"doubly_observed\": false}",
+          "metadata_check": "selection_diagnostic",
+          "metadata_country": "BIH",
+          "metadata_doubly_observed": false,
+          "eval_doubly_observed": 0.0
+        },
+        {
+          "input": "{\"check\": \"selection_diagnostic\", \"country\": \"BLR\"}",
+          "output": "{\"doubly_observed\": false}",
+          "metadata_check": "selection_diagnostic",
+          "metadata_country": "BLR",
+          "metadata_doubly_observed": false,
+          "eval_doubly_observed": 0.0
+        },
+        {
+          "input": "{\"check\": \"selection_diagnostic\", \"country\": \"CIV\"}",
+          "output": "{\"doubly_observed\": false}",
+          "metadata_check": "selection_diagnostic",
+          "metadata_country": "CIV",
+          "metadata_doubly_observed": false,
+          "eval_doubly_observed": 0.0
+        }
+      ]
+    },
+    {
+      "dataset": "power_curves",
+      "examples": [
+        {
+          "input": "{\"scenario\": \"UNDP_MYS\", \"G\": 20}",
+          "output": "{\"MDE\": 0.4339949264800007}",
+          "metadata_scenario": "UNDP_MYS",
+          "metadata_G": 20,
+          "eval_MDE": 0.4339949264800007
+        },
+        {
+          "input": "{\"scenario\": \"UNDP_MYS\", \"G\": 25}",
+          "output": "{\"MDE\": 0.38381140148166}",
+          "metadata_scenario": "UNDP_MYS",
+          "metadata_G": 25,
+          "eval_MDE": 0.38381140148166
+        },
+        {
+          "input": "{\"scenario\": \"UNDP_MYS\", \"G\": 30}",
+          "output": "{\"MDE\": 0.3478112616891927}",
+          "metadata_scenario": "UNDP_MYS",
+          "metadata_G": 30,
+          "eval_MDE": 0.3478112616891927
+        },
+        {
+          "input": "{\"scenario\": \"UNDP_MYS\", \"G\": 37}",
+          "output": "{\"MDE\": 0.3110688097161781}",
+          "metadata_scenario": "UNDP_MYS",
+          "metadata_G": 37,
+          "eval_MDE": 0.3110688097161781
+        },
+        {
+          "input": "{\"scenario\": \"UNDP_MYS\", \"G\": 40}",
+          "output": "{\"MDE\": 0.29853354125790743}",
+          "metadata_scenario": "UNDP_MYS",
+          "metadata_G": 40,
+          "eval_MDE": 0.29853354125790743
+        },
+        {
+          "input": "{\"scenario\": \"UNDP_MYS\", \"G\": 50}",
+          "output": "{\"MDE\": 0.2656197192262518}",
+          "metadata_scenario": "UNDP_MYS",
+          "metadata_G": 50,
+          "eval_MDE": 0.2656197192262518
+        },
+        {
+          "input": "{\"scenario\": \"UNDP_MYS\", \"G\": 60}",
+          "output": "{\"MDE\": 0.2416416587930068}",
+          "metadata_scenario": "UNDP_MYS",
+          "metadata_G": 60,
+          "eval_MDE": 0.2416416587930068
+        },
+        {
+          "input": "{\"scenario\": \"UNDP_MYS\", \"G\": 70}",
+          "output": "{\"MDE\": 0.22317135625822476}",
+          "metadata_scenario": "UNDP_MYS",
+          "metadata_G": 70,
+          "eval_MDE": 0.22317135625822476
+        },
+        {
+          "input": "{\"scenario\": \"UNDP_MYS\", \"G\": 80}",
+          "output": "{\"MDE\": 0.20837849202856684}",
+          "metadata_scenario": "UNDP_MYS",
+          "metadata_G": 80,
+          "eval_MDE": 0.20837849202856684
+        },
+        {
+          "input": "{\"scenario\": \"WB_tertiary\", \"G\": 20}",
+          "output": "{\"MDE\": 0.15611331268629364}",
+          "metadata_scenario": "WB_tertiary",
+          "metadata_G": 20,
+          "eval_MDE": 0.15611331268629364
+        },
+        {
+          "input": "{\"scenario\": \"WB_tertiary\", \"G\": 25}",
+          "output": "{\"MDE\": 0.1380616815455609}",
+          "metadata_scenario": "WB_tertiary",
+          "metadata_G": 25,
+          "eval_MDE": 0.1380616815455609
+        },
+        {
+          "input": "{\"scenario\": \"WB_tertiary\", \"G\": 30}",
+          "output": "{\"MDE\": 0.12511198850247712}",
+          "metadata_scenario": "WB_tertiary",
+          "metadata_G": 30,
+          "eval_MDE": 0.12511198850247712
+        },
+        {
+          "input": "{\"scenario\": \"WB_tertiary\", \"G\": 37}",
+          "output": "{\"MDE\": 0.11189527663847637}",
+          "metadata_scenario": "WB_tertiary",
+          "metadata_G": 37,
+          "eval_MDE": 0.11189527663847637
+        },
+        {
+          "input": "{\"scenario\": \"WB_tertiary\", \"G\": 40}",
+          "output": "{\"MDE\": 0.10738618640485399}",
+          "metadata_scenario": "WB_tertiary",
+          "metadata_G": 40,
+          "eval_MDE": 0.10738618640485399
+        },
+        {
+          "input": "{\"scenario\": \"WB_tertiary\", \"G\": 50}",
+          "output": "{\"MDE\": 0.09554667981844309}",
+          "metadata_scenario": "WB_tertiary",
+          "metadata_G": 50,
+          "eval_MDE": 0.09554667981844309
+        },
+        {
+          "input": "{\"scenario\": \"WB_tertiary\", \"G\": 60}",
+          "output": "{\"MDE\": 0.0869214765784266}",
+          "metadata_scenario": "WB_tertiary",
+          "metadata_G": 60,
+          "eval_MDE": 0.0869214765784266
+        },
+        {
+          "input": "{\"scenario\": \"WB_tertiary\", \"G\": 70}",
+          "output": "{\"MDE\": 0.08027748159348581}",
+          "metadata_scenario": "WB_tertiary",
+          "metadata_G": 70,
+          "eval_MDE": 0.08027748159348581
+        },
+        {
+          "input": "{\"scenario\": \"WB_tertiary\", \"G\": 80}",
+          "output": "{\"MDE\": 0.0749563063951004}",
+          "metadata_scenario": "WB_tertiary",
+          "metadata_G": 80,
+          "eval_MDE": 0.0749563063951004
+        },
+        {
+          "input": "{\"scenario\": \"7period_extended\", \"G\": 20}",
+          "output": "{\"MDE\": 0.0106372603657686}",
+          "metadata_scenario": "7period_extended",
+          "metadata_G": 20,
+          "eval_MDE": 0.0106372603657686
+        },
+        {
+          "input": "{\"scenario\": \"7period_extended\", \"G\": 25}",
+          "output": "{\"MDE\": 0.009407256997275288}",
+          "metadata_scenario": "7period_extended",
+          "metadata_G": 25,
+          "eval_MDE": 0.009407256997275288
+        },
+        {
+          "input": "{\"scenario\": \"7period_extended\", \"G\": 30}",
+          "output": "{\"MDE\": 0.008524889861598212}",
+          "metadata_scenario": "7period_extended",
+          "metadata_G": 30,
+          "eval_MDE": 0.008524889861598212
+        },
+        {
+          "input": "{\"scenario\": \"7period_extended\", \"G\": 37}",
+          "output": "{\"MDE\": 0.007624328577889946}",
+          "metadata_scenario": "7period_extended",
+          "metadata_G": 37,
+          "eval_MDE": 0.007624328577889946
+        },
+        {
+          "input": "{\"scenario\": \"7period_extended\", \"G\": 40}",
+          "output": "{\"MDE\": 0.007317087856375253}",
+          "metadata_scenario": "7period_extended",
+          "metadata_G": 40,
+          "eval_MDE": 0.007317087856375253
+        },
+        {
+          "input": "{\"scenario\": \"7period_extended\", \"G\": 50}",
+          "output": "{\"MDE\": 0.006510366687022077}",
+          "metadata_scenario": "7period_extended",
+          "metadata_G": 50,
+          "eval_MDE": 0.006510366687022077
+        },
+        {
+          "input": "{\"scenario\": \"7period_extended\", \"G\": 60}",
+          "output": "{\"MDE\": 0.005922661955164307}",
+          "metadata_scenario": "7period_extended",
+          "metadata_G": 60,
+          "eval_MDE": 0.005922661955164307
+        },
+        {
+          "input": "{\"scenario\": \"7period_extended\", \"G\": 70}",
+          "output": "{\"MDE\": 0.0054699529369033615}",
+          "metadata_scenario": "7period_extended",
+          "metadata_G": 70,
+          "eval_MDE": 0.0054699529369033615
+        },
+        {
+          "input": "{\"scenario\": \"7period_extended\", \"G\": 80}",
+          "output": "{\"MDE\": 0.005107378310414986}",
+          "metadata_scenario": "7period_extended",
+          "metadata_G": 80,
+          "eval_MDE": 0.005107378310414986
+        }
+      ]
+    },
+    {
+      "dataset": "ilo_directly_reported",
+      "examples": [
+        {
+          "input": "{\"check\": \"ILO_directly_reported_subgroup\"}",
+          "output": "{\"iter3_directly_reported_fraction\": 0.0, \"iter3_interpretation\": \"All 104 ILO country-period slots in the iter-3 7-period panel use model-estimated (not directly-reported) values. The directly-reported subgroup analysis is vacuous for the 7-period panel. Falling back to the iter-1 2-period panel.\", \"fallback_panel\": \"iter_1_2period\", \"n_total_iter1\": 161, \"n_directly_reported\": 161, \"n_restricted_oecd_excl\": 95, \"G_restricted\": 58, \"G_doubly_observed_restricted\": 35, \"full_panel_beta7\": 0.2921112159510637, \"full_panel_se7\": 0.23340298883108276, \"full_panel_pval7\": 0.2107405922693817, \"full_panel_n_obs\": 95, \"full_panel_n_clusters\": 58, \"status\": \"valid\", \"beta7_restricted\": 0.2921112159510637, \"se7_restricted\": 0.23340298883108276, \"pval7_restricted\": 0.2107405922693817, \"N_restricted\": 95, \"N_dropped\": 66, \"n_clusters_restricted\": 58}",
+          "metadata_check": "ILO_directly_reported_subgroup",
+          "metadata_status": "valid",
+          "eval_n_restricted": 95.0,
+          "eval_pval7_restricted": 0.2107405922693817
+        }
+      ]
+    },
+    {
+      "dataset": "robustness_summary_table",
+      "examples": [
+        {
+          "input": "{\"check\": \"Primary DD\", \"spec\": \"UNDP MYS, cluster-robust SE\"}",
+          "output": "{\"beta7\": 0.2921, \"se\": 0.2334, \"p_original\": 0.2107, \"p_bootstrap\": null}",
+          "metadata_check": "Primary DD",
+          "metadata_spec": "UNDP MYS, cluster-robust SE",
+          "metadata_n_obs": 95,
+          "metadata_g_clusters": 58,
+          "metadata_notes": "Iter-3 exp-2 main specification",
+          "eval_p_original": 0.2107,
+          "eval_g_clusters": 58.0
+        },
+        {
+          "input": "{\"check\": \"Wild Bootstrap\", \"spec\": \"UNDP MYS, wild cluster bootstrap\"}",
+          "output": "{\"beta7\": 0.2921, \"se\": null, \"p_original\": 0.2107, \"p_bootstrap\": 0.0701}",
+          "metadata_check": "Wild Bootstrap",
+          "metadata_spec": "UNDP MYS, wild cluster bootstrap",
+          "metadata_n_obs": 95,
+          "metadata_g_clusters": 58,
+          "metadata_notes": "B=999 Rademacher draws at cluster level",
+          "eval_p_original": 0.2107,
+          "eval_g_clusters": 58.0
+        },
+        {
+          "input": "{\"check\": \"Primary DD\", \"spec\": \"WB Tertiary, cluster-robust SE\"}",
+          "output": "{\"beta7\": 13.128, \"se\": 9.9904, \"p_original\": 0.1888, \"p_bootstrap\": null}",
+          "metadata_check": "Primary DD",
+          "metadata_spec": "WB Tertiary, cluster-robust SE",
+          "metadata_n_obs": 137,
+          "metadata_g_clusters": 86,
+          "metadata_notes": "Iter-3 exp-1 Spec C; 140.8× more within-variation than UNDP",
+          "eval_p_original": 0.1888,
+          "eval_g_clusters": 86.0
+        },
+        {
+          "input": "{\"check\": \"Wild Bootstrap\", \"spec\": \"WB Tertiary, wild cluster bootstrap\"}",
+          "output": "{\"beta7\": 13.128, \"se\": null, \"p_original\": 0.1888, \"p_bootstrap\": 0.0911}",
+          "metadata_check": "Wild Bootstrap",
+          "metadata_spec": "WB Tertiary, wild cluster bootstrap",
+          "metadata_n_obs": 137,
+          "metadata_g_clusters": 86,
+          "metadata_notes": "B=999 Rademacher draws at cluster level",
+          "eval_p_original": 0.1888,
+          "eval_g_clusters": 86.0
+        },
+        {
+          "input": "{\"check\": \"SWIID-robust\", \"spec\": \"UNDP MYS, 500 Gini-noise draws\"}",
+          "output": "{\"beta7\": 0.0257, \"se\": 0.0869, \"p_original\": null, \"p_bootstrap\": null}",
+          "metadata_check": "SWIID-robust",
+          "metadata_spec": "UNDP MYS, 500 Gini-noise draws",
+          "metadata_n_obs": 95,
+          "metadata_g_clusters": 58,
+          "metadata_notes": "Mean β₇ across 500 SWIID draws; frac>0=0.628",
+          "eval_p_original": 1.0,
+          "eval_g_clusters": 58.0
+        },
+        {
+          "input": "{\"check\": \"SWIID-robust CI\", \"spec\": \"UNDP MYS, SWIID 95% CI\"}",
+          "output": "{\"beta7\": 0.0257, \"se\": 0.0869, \"p_original\": null, \"p_bootstrap\": null}",
+          "metadata_check": "SWIID-robust CI",
+          "metadata_spec": "UNDP MYS, SWIID 95% CI",
+          "metadata_n_obs": 95,
+          "metadata_g_clusters": 58,
+          "metadata_notes": "95% CI from SWIID uncertainty propagation; separate row for paper display",
+          "eval_p_original": 1.0,
+          "eval_g_clusters": 58.0
+        },
+        {
+          "input": "{\"check\": \"Directly-reported ILO only\", \"spec\": \"iter-1 2-period panel, DR subset\"}",
+          "output": "{\"beta7\": 0.2921, \"se\": 0.2334, \"p_original\": 0.2107, \"p_bootstrap\": null}",
+          "metadata_check": "Directly-reported ILO only",
+          "metadata_spec": "iter-1 2-period panel, DR subset",
+          "metadata_n_obs": 95,
+          "metadata_g_clusters": 58,
+          "metadata_notes": "N_dropped=66",
+          "eval_p_original": 0.2107,
+          "eval_g_clusters": 58.0
+        },
+        {
+          "input": "{\"check\": \"Power at G=37\", \"spec\": \"UNDP MYS, 2-period panel, \\u03b1=0.05, power=0.80\"}",
+          "output": "{\"beta7\": null, \"se\": null, \"p_original\": null, \"p_bootstrap\": null}",
+          "metadata_check": "Power at G=37",
+          "metadata_spec": "UNDP MYS, 2-period panel, α=0.05, power=0.80",
+          "metadata_n_obs": 95,
+          "metadata_g_clusters": 37,
+          "metadata_notes": "MDE=0.3111 (1.993 SD units of LDem); β₇_obs=0.2921",
+          "eval_p_original": 1.0,
+          "eval_g_clusters": 37.0
+        }
+      ]
+    }
+  ]
+}

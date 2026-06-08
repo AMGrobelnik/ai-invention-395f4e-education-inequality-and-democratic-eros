@@ -1,0 +1,289 @@
+{
+  "datasets": [
+    {
+      "dataset": "V-Dem V16 Democracy Sub-Indices (post-1985)",
+      "examples": [
+        {
+          "input": "{\"iso3\": \"MEX\", \"country\": \"Mexico\", \"year\": 1985, \"v2x_libdem\": \"0.142\", \"v2x_polyarchy\": \"0.32\", \"v2juhcind\": \"-1.23\", \"v2cseeorgs\": \"0.239\", \"v2xcs_ccsi\": \"0.408\", \"v2x_corr\": \"0.772\", \"v2csreprss\": \"-0.655\", \"v2csprtcpt\": \"-0.609\"}",
+          "output": "1 (Electoral Autocracy)",
+          "metadata_iso3": "MEX",
+          "metadata_year": 1985,
+          "metadata_country": "Mexico",
+          "metadata_task_type": "classification",
+          "metadata_target": "v2x_regime",
+          "metadata_n_classes": 4
+        },
+        {
+          "input": "{\"iso3\": \"MEX\", \"country\": \"Mexico\", \"year\": 1986, \"v2x_libdem\": \"0.143\", \"v2x_polyarchy\": \"0.322\", \"v2juhcind\": \"-1.23\", \"v2cseeorgs\": \"0.239\", \"v2xcs_ccsi\": \"0.408\", \"v2x_corr\": \"0.772\", \"v2csreprss\": \"-0.655\", \"v2csprtcpt\": \"-0.609\"}",
+          "output": "1 (Electoral Autocracy)",
+          "metadata_iso3": "MEX",
+          "metadata_year": 1986,
+          "metadata_country": "Mexico",
+          "metadata_task_type": "classification",
+          "metadata_target": "v2x_regime",
+          "metadata_n_classes": 4
+        },
+        {
+          "input": "{\"iso3\": \"MEX\", \"country\": \"Mexico\", \"year\": 1987, \"v2x_libdem\": \"0.145\", \"v2x_polyarchy\": \"0.327\", \"v2juhcind\": \"-1.23\", \"v2cseeorgs\": \"0.239\", \"v2xcs_ccsi\": \"0.408\", \"v2x_corr\": \"0.772\", \"v2csreprss\": \"-0.655\", \"v2csprtcpt\": \"-0.609\"}",
+          "output": "1 (Electoral Autocracy)",
+          "metadata_iso3": "MEX",
+          "metadata_year": 1987,
+          "metadata_country": "Mexico",
+          "metadata_task_type": "classification",
+          "metadata_target": "v2x_regime",
+          "metadata_n_classes": 4
+        }
+      ]
+    },
+    {
+      "dataset": "SWIID 9.2 Standardized Gini Inequality",
+      "examples": [
+        {
+          "input": "{\"country\": \"Afghanistan\", \"year\": 2007, \"gini_disp_se\": \"2.48\", \"gini_mkt\": \"32.7\"}",
+          "output": "31.4",
+          "metadata_country": "Afghanistan",
+          "metadata_year": 2007,
+          "metadata_task_type": "regression",
+          "metadata_target": "gini_disp"
+        },
+        {
+          "input": "{\"country\": \"Afghanistan\", \"year\": 2008, \"gini_disp_se\": \"2.4\", \"gini_mkt\": \"32.8\"}",
+          "output": "31.4",
+          "metadata_country": "Afghanistan",
+          "metadata_year": 2008,
+          "metadata_task_type": "regression",
+          "metadata_target": "gini_disp"
+        },
+        {
+          "input": "{\"country\": \"Afghanistan\", \"year\": 2009, \"gini_disp_se\": \"2.45\", \"gini_mkt\": \"32.9\"}",
+          "output": "31.5",
+          "metadata_country": "Afghanistan",
+          "metadata_year": 2009,
+          "metadata_task_type": "regression",
+          "metadata_target": "gini_disp"
+        }
+      ]
+    },
+    {
+      "dataset": "UNDP HDR Mean Years of Schooling (OWID)",
+      "examples": [
+        {
+          "input": "{\"iso3\": \"AFG\", \"country\": \"Afghanistan\", \"year\": 1990}",
+          "output": "0.871962",
+          "metadata_iso3": "AFG",
+          "metadata_year": 1990,
+          "metadata_country": "Afghanistan",
+          "metadata_task_type": "regression",
+          "metadata_target": "mean_years_schooling",
+          "metadata_source": "UNDP_HDR"
+        },
+        {
+          "input": "{\"iso3\": \"AFG\", \"country\": \"Afghanistan\", \"year\": 1991}",
+          "output": "0.915267",
+          "metadata_iso3": "AFG",
+          "metadata_year": 1991,
+          "metadata_country": "Afghanistan",
+          "metadata_task_type": "regression",
+          "metadata_target": "mean_years_schooling",
+          "metadata_source": "UNDP_HDR"
+        },
+        {
+          "input": "{\"iso3\": \"AFG\", \"country\": \"Afghanistan\", \"year\": 1992}",
+          "output": "0.958573",
+          "metadata_iso3": "AFG",
+          "metadata_year": 1992,
+          "metadata_country": "Afghanistan",
+          "metadata_task_type": "regression",
+          "metadata_target": "mean_years_schooling",
+          "metadata_source": "UNDP_HDR"
+        }
+      ]
+    },
+    {
+      "dataset": "ILO SDG 1.3.1 Social Protection Coverage",
+      "examples": [
+        {
+          "input": "{\"iso3\": \"ABW\", \"year\": 2019, \"obs_status\": \"nan\", \"sex\": \"SEX_T\", \"soc_group\": \"SOC_CONTIG_TOTAL\", \"ilo_directly_reported\": false}",
+          "output": "87",
+          "metadata_iso3": "ABW",
+          "metadata_year": 2019,
+          "metadata_obs_status": "nan",
+          "metadata_directly_reported": false,
+          "metadata_task_type": "regression",
+          "metadata_target": "social_protection_coverage_pct"
+        },
+        {
+          "input": "{\"iso3\": \"ABW\", \"year\": 2020, \"obs_status\": \"nan\", \"sex\": \"SEX_T\", \"soc_group\": \"SOC_CONTIG_TOTAL\", \"ilo_directly_reported\": false}",
+          "output": "87",
+          "metadata_iso3": "ABW",
+          "metadata_year": 2020,
+          "metadata_obs_status": "nan",
+          "metadata_directly_reported": false,
+          "metadata_task_type": "regression",
+          "metadata_target": "social_protection_coverage_pct"
+        },
+        {
+          "input": "{\"iso3\": \"ABW\", \"year\": 2021, \"obs_status\": \"nan\", \"sex\": \"SEX_T\", \"soc_group\": \"SOC_CONTIG_TOTAL\", \"ilo_directly_reported\": false}",
+          "output": "94.3",
+          "metadata_iso3": "ABW",
+          "metadata_year": 2021,
+          "metadata_obs_status": "nan",
+          "metadata_directly_reported": false,
+          "metadata_task_type": "regression",
+          "metadata_target": "social_protection_coverage_pct"
+        }
+      ]
+    },
+    {
+      "dataset": "Dreher 2006 IMF Program Binary Dummies",
+      "examples": [
+        {
+          "input": "{\"iso3\": \"ABW\", \"country\": \"Aruba\", \"year\": 1985}",
+          "output": "0",
+          "metadata_iso3": "ABW",
+          "metadata_year": 1985,
+          "metadata_country": "Aruba",
+          "metadata_task_type": "classification",
+          "metadata_target": "imf_program_active",
+          "metadata_n_classes": 2
+        },
+        {
+          "input": "{\"iso3\": \"ABW\", \"country\": \"Aruba\", \"year\": 1986}",
+          "output": "0",
+          "metadata_iso3": "ABW",
+          "metadata_year": 1986,
+          "metadata_country": "Aruba",
+          "metadata_task_type": "classification",
+          "metadata_target": "imf_program_active",
+          "metadata_n_classes": 2
+        },
+        {
+          "input": "{\"iso3\": \"ABW\", \"country\": \"Aruba\", \"year\": 1987}",
+          "output": "0",
+          "metadata_iso3": "ABW",
+          "metadata_year": 1987,
+          "metadata_country": "Aruba",
+          "metadata_task_type": "classification",
+          "metadata_target": "imf_program_active",
+          "metadata_n_classes": 2
+        }
+      ]
+    },
+    {
+      "dataset": "WB WDI: GDP per capita PPP (constant 2017 int$)",
+      "examples": [
+        {
+          "input": "{\"iso3\": \"ABW\", \"year\": 1990}",
+          "output": "33063",
+          "metadata_iso3": "ABW",
+          "metadata_year": 1990,
+          "metadata_task_type": "regression",
+          "metadata_target": "gdp_pc_ppp_2017usd"
+        },
+        {
+          "input": "{\"iso3\": \"ABW\", \"year\": 1991}",
+          "output": "33993.2",
+          "metadata_iso3": "ABW",
+          "metadata_year": 1991,
+          "metadata_task_type": "regression",
+          "metadata_target": "gdp_pc_ppp_2017usd"
+        },
+        {
+          "input": "{\"iso3\": \"ABW\", \"year\": 1992}",
+          "output": "34371.2",
+          "metadata_iso3": "ABW",
+          "metadata_year": 1992,
+          "metadata_task_type": "regression",
+          "metadata_target": "gdp_pc_ppp_2017usd"
+        }
+      ]
+    },
+    {
+      "dataset": "WB WDI: Gross tertiary school enrollment (%)",
+      "examples": [
+        {
+          "input": "{\"iso3\": \"ABW\", \"year\": 1999}",
+          "output": "25.6338",
+          "metadata_iso3": "ABW",
+          "metadata_year": 1999,
+          "metadata_task_type": "regression",
+          "metadata_target": "gross_tertiary_enrolment_pct"
+        },
+        {
+          "input": "{\"iso3\": \"ABW\", \"year\": 2000}",
+          "output": "28.3303",
+          "metadata_iso3": "ABW",
+          "metadata_year": 2000,
+          "metadata_task_type": "regression",
+          "metadata_target": "gross_tertiary_enrolment_pct"
+        },
+        {
+          "input": "{\"iso3\": \"ABW\", \"year\": 2001}",
+          "output": "28.8601",
+          "metadata_iso3": "ABW",
+          "metadata_year": 2001,
+          "metadata_task_type": "regression",
+          "metadata_target": "gross_tertiary_enrolment_pct"
+        }
+      ]
+    },
+    {
+      "dataset": "WB WDI: GDP growth (annual %)",
+      "examples": [
+        {
+          "input": "{\"iso3\": \"ABW\", \"year\": 1987}",
+          "output": "16.0784",
+          "metadata_iso3": "ABW",
+          "metadata_year": 1987,
+          "metadata_task_type": "regression",
+          "metadata_target": "gdp_growth_pct"
+        },
+        {
+          "input": "{\"iso3\": \"ABW\", \"year\": 1988}",
+          "output": "18.6486",
+          "metadata_iso3": "ABW",
+          "metadata_year": 1988,
+          "metadata_task_type": "regression",
+          "metadata_target": "gdp_growth_pct"
+        },
+        {
+          "input": "{\"iso3\": \"ABW\", \"year\": 1989}",
+          "output": "12.1298",
+          "metadata_iso3": "ABW",
+          "metadata_year": 1989,
+          "metadata_task_type": "regression",
+          "metadata_target": "gdp_growth_pct"
+        }
+      ]
+    },
+    {
+      "dataset": "WB WDI: Labour force participation rate (%)",
+      "examples": [
+        {
+          "input": "{\"iso3\": \"AFG\", \"year\": 1990}",
+          "output": "47.186",
+          "metadata_iso3": "AFG",
+          "metadata_year": 1990,
+          "metadata_task_type": "regression",
+          "metadata_target": "labour_force_participation_pct"
+        },
+        {
+          "input": "{\"iso3\": \"AFG\", \"year\": 1991}",
+          "output": "47.14",
+          "metadata_iso3": "AFG",
+          "metadata_year": 1991,
+          "metadata_task_type": "regression",
+          "metadata_target": "labour_force_participation_pct"
+        },
+        {
+          "input": "{\"iso3\": \"AFG\", \"year\": 1992}",
+          "output": "47.087",
+          "metadata_iso3": "AFG",
+          "metadata_year": 1992,
+          "metadata_task_type": "regression",
+          "metadata_target": "labour_force_participation_pct"
+        }
+      ]
+    }
+  ]
+}

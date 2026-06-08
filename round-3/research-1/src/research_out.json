@@ -1,0 +1,170 @@
+{
+  "title": "NSTP Verification, SE.TER.ENRR Gap Audit, and Iteration-4 DD Pre-registration Specification",
+  "summary": "This research resolves three concrete data infrastructure questions for the iteration-4 DD triple interaction test. Track 1: NSTP (DOI 10.7802/1530) is freely downloadable; coverage is stored as raw beneficiary counts (not population rates), and the established literature aggregates to a binary program-presence dummy rather than a continuous rate. NSTP is a strict subset of ILO SDG 1.3.1, covering only non-contributory transfers. Track 2: SE.TER.ENRR has systematic 2020-22 gaps for developing countries (2-4 year UNESCO UIS lag plus COVID disruption); no clearly superior alternative exists, so SE.TER.ENRR remains recommended with explicit forward-fill documentation. Track 3: OSF Secondary Data Preregistration template is confirmed correct; Bonferroni threshold for two pre-registered sub-index tests (v2jucomp, v2x_jucon) is p < 0.025; register before constructing the NSTP-extended SocProt panel.",
+  "answer": "This research resolves three infrastructure questions for the iteration-4 DD triple interaction test.\n\n**Track 1 — NSTP Dataset (DOI 10.7802/1530)**\nThe NSTP dataset by Dodlova, Giolbas & Lay is freely downloadable without registration (CC BY 4.0 license) from GESIS [1, 2]. Files include NSTP_Data_V1.1.dta (Stata, 869 KB), NSTP_Data_V1.1.xlsx (Excel, 244 KB), NSTP_Codebook_V1.1.pdf (328 KB), and NSTP_Text_Format_V1.1.pdf (3.09 MB) [2]. The dataset covers 186 programs from 101 countries in an annual panel through 2015, with both country-year and program-period panel structures [3, 4].\n\nCRITICAL STRUCTURAL FINDING: Coverage in NSTP is reported as raw beneficiary counts only — individuals for 110 programs, households for 55 programs — with no normalized population-share rate [3]. Exact Stata variable names for coverage are not documented in publicly accessible sources without downloading the codebook. The literature's standard aggregation for country-year analysis is a binary dummy equal to 1 if at least one social transfer program exists [5], not a coverage rate. This binary approach is used in both Dodlova & Giolbas (2017) WIDER WP [5] and Dodlova et al. (2017) European Journal of Political Economy [6].\n\nSCOPE MISMATCH WITH ILO SDG 1.3.1: Confirmed and critical. NSTP covers only non-contributory transfers (social pensions, CCTs, family benefits, public works). ILO SDG 1.3.1 measures the proportion of population receiving at least one contributory OR non-contributory benefit, or actively contributing to a social security scheme [7, 8]. The ILO indicator explicitly encompasses both contributory social insurance and non-contributory social assistance. Therefore NSTP is a strict subset of what ILO SDG 1.3.1 measures. Any bridging requires acknowledging that NSTP-derived social protection values will be lower-bound estimates of the full ILO SDG 1.3.1 concept.\n\nPost-1990 democratizer overlap: The PMC paper confirms 91% of Europe/Central Asia and 90% of Latin America are in the NSTP 101-country set [3]. No published paper has explicitly counted V-Dem post-1990 democratizers among the 101; a rough estimate based on regional coverage suggests ~60-75 of the 101 NSTP countries overlap with post-1990 developing democratizers per V-Dem criteria.\n\n**Track 2 — SE.TER.ENRR Availability for 2020-22**\nSE.TER.ENRR (World Bank, sourced from UNESCO UIS) covers 1970-2025 in aggregate, but country-level data for 2020-2022 is systematically incomplete for developing countries [9, 10]. Two compounding factors: (a) a structural 2-4 year reporting lag for UNESCO UIS submissions from low/middle-income countries, and (b) COVID-19 pandemic disruptions to national data collection systems in 2020-2021 [10, 11]. The World Bank solely relies on the UIS pipeline with no gap-filling imputation, so UIS gaps flow directly into WDI [9]. Large-scale international assessment programs also postponed data collection for 2020-2022 [11].\n\nThe UNESCO UIS MYS (Mean Years of Schooling, OPRI indicator) faces similar or worse availability constraints: it depends on biennial household surveys and population censuses, covering only ~103 countries [12]. As of the September 2025 UIS database release, the LITEA survey engaged 100+ countries for new data, but the reference years and developing country coverage for 2020-2022 remain limited [12]. No clearly superior alternative to SE.TER.ENRR exists for 2020-2022 — both SE.TER.ENRR and MYS require forward-filling for many developing countries, but SE.TER.ENRR (enrollment-based, administrative source) is collected more frequently than MYS (household survey-based).\n\n**Track 3 — OSF Pre-registration Specification**\nThe OSF Secondary Data Preregistration template and the PsyArXiv tutorial by van den Akker et al. [13] are the appropriate platform. The OSF registry page [16] hosts secondary data preregistrations commonly used in political science. The template requires: (1) explicit hypothesis statement with directional prediction, (2) full statistical model specification including all interaction terms (any unspecified analysis must be labeled exploratory), (3) multiple comparison correction methodology — the template explicitly uses Bonferroni as the example (alpha = 0.05/k where k = number of planned tests) [14], (4) power analysis with sample size, effect size, and software documentation [19]. For two pre-registered sub-index tests, Bonferroni threshold = 0.05/2 = 0.025. AsPredicted [17] offers a simpler 9-question format but is less suited for complex observational panel data studies with triple interactions. Secondary data preregistration carries specific challenges including prior knowledge disclosure [18], which the OSF template handles with a dedicated field.\n\nGiesselmann & Schmidt-Catran (2022) [15] confirm that the double-demeaning procedure (demean product of already-demeaned predictors) yields a true within-unit estimator for interactions, eliminating between-unit contamination. Monte Carlo simulations confirm precision improves sharply from T=3 to T=10 [20]. For a triple interaction in a ~70-100 country x 6-period panel (~420-600 observations), effective within-country degrees of freedom are materially reduced after absorbing unit and period FEs plus all demeaned product terms.\n\nPrimary hypothesis (exact pre-registration wording): In post-1985 developing democratizers — countries experiencing a V-Dem Political Regime (v2x_regime) transition from closed autocracy (0) or electoral autocracy (1) to electoral democracy (2) or liberal democracy (3) after 1985 and before 2010, with GDP per capita <$15,000 PPP (constant 2017 international $) at year of democratic transition — the DD estimator coefficient beta7 on the triple interaction term (demeaned Education x demeaned Gini x demeaned SocProt) is positive and statistically significant at p < 0.05 (two-tailed), with country fixed effects and period fixed effects and cluster-robust standard errors at the country level.\n\nRecommended pre-registration timing: Register before constructing the NSTP-extended SocProt panel, i.e., before merging NSTP with ILO SDG 1.3.1 and running the first DD regression, making the registration genuinely prospective on the merged dataset.",
+
+  "sources": [
+    {
+      "index": 1,
+      "url": "https://search.gesis.org/research_data/SDN-10.7802-1530?doi=10.7802/1530",
+      "title": "NSTP Dataset — GESIS Landing Page (DOI 10.7802/1530)",
+      "summary": "Confirmed DOI 10.7802/1530 resolves to GESIS Data Archive. Free access without registration (CC BY 4.0). 186 programs, 101 countries, 29 variables."
+    },
+    {
+      "index": 2,
+      "url": "https://www.da-ra.de/dara/study/web_show?res_id=604354&lang=&mdlang=en&detail=true",
+      "title": "da-ra Registry: NSTP Dataset (DOI 10.7802/1530)",
+      "summary": "Confirmed file list: NSTP_Data_V1.1.dta (869 KB), NSTP_Data_V1.1.xlsx (244 KB), NSTP_Codebook_V1.1.pdf (328 KB), NSTP_Text_Format_V1.1.pdf (3.09 MB). Free access without registration."
+    },
+    {
+      "index": 3,
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5709306/",
+      "title": "Dodlova, Giolbas, Lay (2017): Non-contributory social transfer programs — PMC",
+      "summary": "Primary data paper. Confirms: coverage is raw beneficiary count (individuals for 110 programs, households for 55), not a population share. Both country-year and program-period panel structures. No methodology for normalized coverage rate. 91% Europe/Central Asia and 90% Latin America included."
+    },
+    {
+      "index": 4,
+      "url": "https://www.giga-hamburg.de/en/publications/research-data/non-contributory-social-transfer-programmes-nstp-developing-countries-data-set",
+      "title": "GIGA Hamburg: NSTP Dataset Research Data Page",
+      "summary": "Dataset landing page. Confirms file formats, DOI, free access, 186 programs in 101 countries up to 2015."
+    },
+    {
+      "index": 5,
+      "url": "https://www.wider.unu.edu/publication/regime-type-inequality-and-redistributive-transfers-developing-countries",
+      "title": "Dodlova & Giolbas (2017): Regime Type, Inequality, and Redistributive Transfers — WIDER WP 2017/30",
+      "summary": "Confirms that country-level social protection variable from NSTP is a BINARY DUMMY = 1 if at least one transfer program exists. Uses 1990-2015 panel. Democracies more likely to have a transfer program."
+    },
+    {
+      "index": 6,
+      "url": "https://econpapers.repec.org/article/eeepoleco/v_3a50_3ay_3a2017_3ai_3ac_3ap_3a141-156.htm",
+      "title": "Dodlova, Giolbas, Lay (2017): Social Transfers and Conditionalities under Different Regime Types — EJPE",
+      "summary": "Published article using NSTP data in country-level panel. Examines regime type effect on conditionality and transfer type (CCT vs unconditional)."
+    },
+    {
+      "index": 7,
+      "url": "https://unstats.un.org/sdgs/metadata/files/Metadata-01-03-01a.pdf",
+      "title": "UN Statistics: SDG Indicator 1.3.1 Official Metadata (2025)",
+      "summary": "Confirms ILO SDG 1.3.1 includes BOTH contributory and non-contributory programs. Effective coverage = proportion receiving any contributory or non-contributory benefit OR actively contributing to social insurance. Scope is broader than NSTP."
+    },
+    {
+      "index": 8,
+      "url": "https://unstats.un.org/wiki/spaces/SDGeHandbook/pages/35291384/Indicator+1.3.1",
+      "title": "UN Statistics eHandbook: SDG Indicator 1.3.1",
+      "summary": "Confirms scope definition: ratio of population receiving cash benefits under at least one contingency (contributory or non-contributory) or actively contributing to social security scheme."
+    },
+    {
+      "index": 9,
+      "url": "https://data.worldbank.org/indicator/SE.TER.ENRR",
+      "title": "World Bank: SE.TER.ENRR — School Enrollment, Tertiary (% Gross)",
+      "summary": "Series covers 1970-2025. Sourced from UNESCO UIS. Published February 2026, data accessed March 2026 from UNESCO UIS bulk CSV. No individual country imputation for gaps."
+    },
+    {
+      "index": 10,
+      "url": "https://databank.worldbank.org/metadataglossary/world-development-indicators/series/SE.TER.ENRR",
+      "title": "World Bank Metadata: SE.TER.ENRR",
+      "summary": "Confirms sole dependence on UNESCO UIS API pipeline. 2-4 year reporting lag documented for developing countries. Sub-Saharan Africa data sourced from UNESCO UIS API, some regional aggregates lag."
+    },
+    {
+      "index": 11,
+      "url": "https://ieg.worldbankgroup.org/evaluations/confronting-learning-crisis/chapter-3-world-banks-approach-basic-education-and-learning-outcomes",
+      "title": "World Bank IEG: Chapter 3 — Education Finance Watch 2022",
+      "summary": "Large-scale international assessments postponed for 2020-2022 due to COVID-19, creating data gaps. Bilateral aid to education fell post-pandemic. Explains 2020-2022 SE.TER.ENRR gaps for developing countries."
+    },
+    {
+      "index": 12,
+      "url": "https://download.uis.unesco.org/bdds/202509/background-information-education-statistics-uis-database-en-2025.pdf",
+      "title": "UNESCO UIS: Background Information on Education Statistics Database (September 2025)",
+      "summary": "Confirms MYS (OPRI indicator) collected via biennial LITEA survey covering 100+ countries. 2025 release engaged 100+ countries for new data. SDG 4.4.2 (digital skills) has data only to 2017 — shows persistent lag for household-survey-based indicators. SE.TER.ENRR (4.4.3) covers 211 countries 1970-2025."
+    },
+    {
+      "index": 13,
+      "url": "https://osf.io/preprints/psyarxiv/hvfmr",
+      "title": "van den Akker et al.: Preregistration of Secondary Data Analysis — Template and Tutorial",
+      "summary": "The methodological basis for the OSF Secondary Data Preregistration template. Required fields: hypothesis specification, statistical model specification, multiple comparison corrections (Bonferroni explicitly mentioned), power analysis. Available at osf.io/v4z3x."
+    },
+    {
+      "index": 14,
+      "url": "https://preregr.opens.science/articles/form_prereg2D_v1.html",
+      "title": "preregr R package: Secondary Data Preregistration Template (v1)",
+      "summary": "Structured digital template for secondary data preregistration. Explicitly shows Bonferroni correction example: alpha = 0.05/k tests. Mandates specifying all interaction terms a priori. Unspecified analyses become exploratory."
+    },
+    {
+      "index": 15,
+      "url": "https://www.zora.uzh.ch/entities/publication/d175ed4d-81f7-43b5-b077-f912ad84faa5",
+      "title": "Giesselmann & Schmidt-Catran (2022): Interactions in Fixed Effects Regression Models",
+      "summary": "Confirms double-demeaning procedure: demean product of already-demeaned predictors to get true within-unit estimator. Key caveat: efficiency loss when within-unit variation is small or T per unit is low. Monte Carlo simulations show T=10+ recommended."
+    },
+    {
+      "index": 16,
+      "url": "https://osf.io/x4gzt/",
+      "title": "OSF: Secondary Data Preregistration Registry Page",
+      "summary": "OSF registry for secondary data preregistrations. The recommended platform for observational panel data studies in political science."
+    },
+    {
+      "index": 17,
+      "url": "https://aspredicted.org/",
+      "title": "AsPredicted: Preregistration Platform",
+      "summary": "9-question preregistration platform. Less suited for complex secondary data observational studies with triple interactions and panel data than the OSF Secondary Data Preregistration template."
+    },
+    {
+      "index": 18,
+      "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6840585/",
+      "title": "Challenges in Pre-registration Using Secondary or Longitudinal Data (PMC 2019)",
+      "summary": "Documents specific challenges for secondary data preregistration. Recommends disclosing prior knowledge of dataset, hold-out subsamples, and explicitly distinguishing exploratory vs confirmatory claims."
+    },
+    {
+      "index": 19,
+      "url": "https://arxiv.org/pdf/2112.15273",
+      "title": "PUMP: Power Under Multiplicity Project — Power Calculations for Multiple Outcomes",
+      "summary": "Power calculation framework for panel data with fixed effects and multiple outcomes. Relevant for computing power for the Bonferroni-corrected sub-index tests (v2jucomp, v2x_jucon) at the corrected threshold of p < 0.025."
+    },
+    {
+      "index": 20,
+      "url": "https://www.diw.de/documents/publikationen/73/diw_01.c.594675.de/dp1748.pdf",
+      "title": "DIW Discussion Paper 1748: Interactions in Fixed Effects Regression Models",
+      "summary": "Earlier version of Giesselmann & Schmidt-Catran methodology. Confirms double demeaning yields consistent within-unit estimator. Monte Carlo with T=3, 10, 30: precision improves sharply from T=3 to T=10."
+    }
+  ],
+
+  "follow_up_questions": [
+    "Can the NSTP codebook PDF (NSTP_Codebook_V1.1.pdf) be downloaded and parsed to extract exact Stata variable names for beneficiary counts, and is there a normalized coverage rate variable or must one be constructed by dividing beneficiary counts by population figures from an external source like World Bank WDI SP.POP.TOTL?",
+    "Given that the standard literature uses a binary dummy (has-at-least-one-program) rather than a coverage rate, should the iteration-4 SocProt measure switch from a continuous coverage rate to this binary indicator for the NSTP-era (1990-2014) period while retaining ILO SDG 1.3.1 continuous rates for 2015-2022 — and what is the methodological implication for the DD triple interaction estimator of mixing a binary and continuous SocProt variable across periods?",
+    "For the SE.TER.ENRR forward-filling issue: what fraction of the 58 sample democratizer countries have non-missing 2020 and 2021 values in the current WDI download, and would a sensitivity analysis dropping all forward-filled observations meaningfully change the period-2 DD interaction results?"
+  ],
+
+  "nstp_track": {
+    "doi_confirmed": "10.7802/1530",
+    "registration_required": false,
+    "file_formats": ["Stata (.dta)", "Excel (.xlsx)", "Codebook PDF", "Text Format PDF"],
+    "coverage_variable_name": "Not documented in accessible sources without downloading NSTP_Codebook_V1.1.pdf; reported as beneficiary counts per program (individuals or households), no standard variable name confirmed",
+    "coverage_variable_type": "raw beneficiary count (not share of population); literature uses binary dummy (0/1 has at least one program) at country-year level",
+    "temporal_structure": "program-period panel AND country-year panel (both structures present in the .dta file); annual, earliest program 1912, most programs from 1990s; panel runs to 2015",
+    "country_count": 101,
+    "scope_vs_ilo_131": "NSTP is a strict subset — covers only non-contributory transfers (social pensions, CCT, family benefits, public works); ILO SDG 1.3.1 covers both contributory and non-contributory programs plus active contributors to social insurance schemes",
+    "bridging_variable": "No bridging variable found in literature; NSTP authors note dataset should not be used to assess all contributory and non-contributory components",
+    "post1990_democratizer_overlap": "Estimated 60-75 of the 101 NSTP countries based on regional coverage (91% of Europe/Central Asia and 90% of Latin America included per PMC paper); no published list specifically matching V-Dem post-1990 developing democratizers",
+    "download_url": "https://search.gesis.org/research_data/SDN-10.7802-1530?doi=10.7802/1530",
+    "codebook_url": "Downloadable as NSTP_Codebook_V1.1.pdf (328 KB) from GESIS landing page at https://doi.org/10.7802/1530"
+  },
+
+  "tertiary_enrollment_track": {
+    "se_ter_enrr_2022_coverage": "Systematically incomplete for developing countries due to 2-4 year UNESCO UIS reporting lag plus COVID-19 disruption; approximately 40-60% of Sub-Saharan African and South Asian countries are expected to have non-missing 2020-2022 data based on documentation patterns; World Bank cites data coverage extending to 2025 in aggregate but individual developing country 2022 values are patchy",
+    "better_alternative": "No clearly superior alternative for 2020-2022; UNESCO UIS Mean Years of Schooling (OPRI indicator, no WB code) is biennial household-survey-based and also has lags; Barro-Lee educational attainment (WB: SE.TER.CUAT.BA.ZS) uses 5-year interval interpolation; SE.TER.ENRR from administrative enrollment records is collected more frequently than household-based MYS",
+    "recommendation": "Use SE.TER.ENRR with explicit documentation of forward-fill limitation for 2020-2022 developing country observations; conduct sensitivity analysis dropping forward-filled values; document that SE.TER.ENRR and MYS face similar lag constraints but SE.TER.ENRR has broader theoretical coverage (211 countries 1970-2025 per UNESCO UIS) compared to MYS (~103 countries)"
+  },
+
+  "preregistration_track": {
+    "recommended_platform": "OSF.io",
+    "template_name": "Preregistration of Secondary Data Analysis (van den Akker et al. 2019; OSF template osf.io/v4z3x/)",
+    "template_url": "https://osf.io/v4z3x/",
+    "primary_hypothesis_wording": "In post-1985 developing democratizers (V-Dem RoW regime transitions from closed/electoral autocracy to electoral/liberal democracy after 1985 and before 2010, GDP per capita <$15,000 PPP constant 2017 international $ at year of democratic transition), the DD estimator coefficient beta7 on the triple interaction term (demeaned Education x demeaned Gini x demeaned SocProt) is positive and statistically significant at p < 0.05 (two-tailed) with country fixed effects and period fixed effects, where SocProt is measured by ILO SDG 1.3.1 (2015-2022) extended back to 1990-2014 using NSTP-derived program presence, Education is measured by SE.TER.ENRR (World Bank), and Gini is measured by SWIID or World Inequality Database.",
+    "pre_registered_sub_indices": ["v2jucomp", "v2x_jucon"],
+    "bonferroni_threshold": 0.025,
+    "power_calculation_inputs": {
+      "expected_n_countries": "70-100 post-1985 developing democratizers meeting GDP and V-Dem criteria",
+      "expected_periods": "6 five-year periods (1990-1994, 1995-1999, 2000-2004, 2005-2009, 2010-2014, 2015-2020) yielding approximately 420-600 country-period observations",
+      "within_sd_education": "Cannot be calculated without downloading NSTP-extended panel; for tertiary enrollment in developing countries typical within-country SD over a 30-year period is approximately 10-15 percentage points",
+      "dd_efficiency_note": "Giesselmann & Schmidt-Catran (2022) confirm double-demeaning reduces efficiency; cluster-robust SEs recommended at country level; effective within-country degrees of freedom substantially lower than nominal N due to FE absorption plus double demeaning of all interaction terms"
+    }
+  }
+}

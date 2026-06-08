@@ -1,0 +1,48 @@
+{
+  "datasets": [
+    {
+      "dataset": "extended_7period_democratizers_panel",
+      "examples": [
+        {
+          "input": "{\"socprot\": null, \"socprot_source\": null, \"ilo_direct\": null, \"gini_disp\": null, \"gini_disp_se\": null, \"education\": 7.324327267866667, \"educ_mys\": 7.324327267866667, \"educ_tertiary\": 9.447220230102534, \"educ_source\": \"mys\", \"v2jucomp\": null, \"v2x_jucon\": null, \"v2cseeorgs\": null, \"v2csprtcpt\": null, \"v2x_polyarchy\": 0.36319999999999997, \"gdppc_ppp\": 4402.72728488018, \"e_E\": -1.7398567705015884, \"e_G\": null, \"e_S\": null}",
+          "output": "{\"ldem\": 0.26480000000000004, \"v2x_libdem\": 0.26480000000000004, \"v2x_polyarchy\": 0.36319999999999997}",
+          "metadata_country_code": "ALB",
+          "metadata_country_name": "Albania",
+          "metadata_period": null,
+          "metadata_period_id": 1,
+          "metadata_transition_year": 2005,
+          "metadata_gdppc_at_transition": 8964.31799702863,
+          "metadata_n_obs_socprot": null,
+          "metadata_n_gini_disp": null,
+          "metadata_n_libdem": 5.0
+        },
+        {
+          "input": "{\"socprot\": null, \"socprot_source\": null, \"ilo_direct\": null, \"gini_disp\": 36.0, \"gini_disp_se\": 2.4275, \"education\": 7.901626178066667, \"educ_mys\": 7.901626178066667, \"educ_tertiary\": 12.46311588287352, \"educ_source\": \"mys\", \"v2jucomp\": null, \"v2x_jucon\": null, \"v2cseeorgs\": null, \"v2csprtcpt\": null, \"v2x_polyarchy\": 0.3934, \"gdppc_ppp\": 5426.354267915688, \"e_E\": -1.1625578603015887, \"e_G\": -0.32555555555556026, \"e_S\": null}",
+          "output": "{\"ldem\": 0.325, \"v2x_libdem\": 0.325, \"v2x_polyarchy\": 0.3934}",
+          "metadata_country_code": "ALB",
+          "metadata_country_name": "Albania",
+          "metadata_period": null,
+          "metadata_period_id": 2,
+          "metadata_transition_year": 2005,
+          "metadata_gdppc_at_transition": 8964.31799702863,
+          "metadata_n_obs_socprot": null,
+          "metadata_n_gini_disp": 4.0,
+          "metadata_n_libdem": 5.0
+        },
+        {
+          "input": "{\"socprot\": null, \"socprot_source\": null, \"ilo_direct\": null, \"gini_disp\": 36.660000000000004, \"gini_disp_se\": 2.2, \"education\": 8.894304092000002, \"educ_mys\": 8.894304092000002, \"educ_tertiary\": 16.55082798004152, \"educ_source\": \"mys\", \"v2jucomp\": null, \"v2x_jucon\": null, \"v2cseeorgs\": null, \"v2csprtcpt\": null, \"v2x_polyarchy\": 0.45940000000000003, \"gdppc_ppp\": 7582.81444950339, \"e_E\": -0.169879946368253, \"e_G\": 0.33444444444444343, \"e_S\": null}",
+          "output": "{\"ldem\": 0.3814, \"v2x_libdem\": 0.3814, \"v2x_polyarchy\": 0.45940000000000003}",
+          "metadata_country_code": "ALB",
+          "metadata_country_name": "Albania",
+          "metadata_period": null,
+          "metadata_period_id": 3,
+          "metadata_transition_year": 2005,
+          "metadata_gdppc_at_transition": 8964.31799702863,
+          "metadata_n_obs_socprot": null,
+          "metadata_n_gini_disp": 5.0,
+          "metadata_n_libdem": 5.0
+        }
+      ]
+    }
+  ]
+}

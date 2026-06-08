@@ -1,0 +1,29 @@
+03:42:17|INFO   |=== Building merged panel dataset ===
+03:42:17|INFO   |Fetching ILO PSE_TPSE_GOV_NB from DBnomics...
+03:42:39|INFO   |Raw PSE: 8494 rows, cols: ['@frequency', 'provider_code', 'dataset_code', 'dataset_name', 'series_code', 'series_name', 'original_period', 'period']
+03:42:39|INFO   |PSE after filtering: 1727 rows, 140 countries
+03:42:39|INFO   |Fetching ILO EMP_TEMP_SEX_ECO_NB (total economy, both sexes) from DBnomics...
+03:43:03|INFO   |Raw EMP: 16925 rows
+ANT not found in ISO3
+KOS not found in ISO3
+03:43:04|INFO   |EMP after filtering: 3541 rows, 217 countries
+03:43:04|INFO   |Loading Dreher XLS from /home/adrian/projects/ai-inventor/aii_data/users/adrian.marina.photos/runs/run_zXdSkAIIk5J3/3_invention_loop/iter_1/gen_art/gen_art_dataset_2/temp/datasets/Dreher_IMF_WB.xls
+03:43:04|INFO   |  IMF SBA: 6660 rows loaded
+03:43:04|INFO   |  IMF EFF: 6660 rows loaded
+03:43:04|INFO   |SAP dummy: 6660 country-year rows, 222 countries
+03:43:04|INFO   |Coverage stats:
+03:43:04|INFO   |  total_country_year_obs: 2040
+03:43:04|INFO   |  n_countries: 68
+03:43:04|INFO   |  n_years: 30
+03:43:04|INFO   |  year_range: 1990-2019
+03:43:04|INFO   |  pse_coverage_obs: 701
+03:43:04|INFO   |  pse_coverage_pct: 34.4
+03:43:04|INFO   |  pse_share_coverage_obs: 603
+03:43:04|INFO   |  pse_share_coverage_pct: 29.6
+03:43:04|INFO   |  sap_active_obs: 190
+03:43:04|INFO   |  sap_active_pct_of_total: 9.3
+03:43:04|INFO   |  countries_with_any_pse: 52
+03:43:04|INFO   |  countries_with_any_sap: 53
+03:43:05|INFO   |Wrote 2040 rows to /home/adrian/projects/ai-inventor/aii_data/users/adrian.marina.photos/runs/run_zXdSkAIIk5J3/3_invention_loop/iter_1/gen_art/gen_art_dataset_2/data_out.json
+03:43:05|INFO   |File size: 485.7 KB
+03:43:05|INFO   |=== Done ===

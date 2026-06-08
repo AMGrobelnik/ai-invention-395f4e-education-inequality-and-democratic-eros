@@ -1,0 +1,104 @@
+{
+  "datasets": [
+    {
+      "dataset": "spec_c_primary_predictions_per_country_period",
+      "examples": [
+        {
+          "input": "{\"country_iso3\": \"ALB\", \"period_id\": 7, \"E_ter_std\": 0.6277, \"G_std\": -0.7048, \"S_std\": 1.3203}",
+          "output": "0.436",
+          "metadata_country": "ALB",
+          "metadata_period_id": "7",
+          "metadata_period_label": "2020-22",
+          "predict_dd_corrected": "0.038472",
+          "predict_baseline": "0.385116"
+        },
+        {
+          "input": "{\"country_iso3\": \"ARM\", \"period_id\": 6, \"E_ter_std\": 0.3658, \"G_std\": -0.4831, \"S_std\": 0.2779}",
+          "output": "0.33",
+          "metadata_country": "ARM",
+          "metadata_period_id": "6",
+          "metadata_period_label": "2015-19",
+          "predict_dd_corrected": "0.40446",
+          "predict_baseline": "0.397206"
+        },
+        {
+          "input": "{\"country_iso3\": \"ARM\", \"period_id\": 7, \"E_ter_std\": 0.4167, \"G_std\": -0.8291, \"S_std\": 0.2148}",
+          "output": "0.518667",
+          "metadata_country": "ARM",
+          "metadata_period_id": "7",
+          "metadata_period_label": "2020-22",
+          "predict_dd_corrected": "0.444207",
+          "predict_baseline": "0.451461"
+        }
+      ]
+    },
+    {
+      "dataset": "corrected_table1_all_4specs_standardized",
+      "examples": [
+        {
+          "input": "{\"spec\": \"A_naive_mys_std\", \"coefficient\": \"beta_E\"}",
+          "output": "0.10096455",
+          "metadata_spec": "A_naive_mys_std",
+          "metadata_coef": "beta_E",
+          "metadata_se": "0.19664927",
+          "metadata_p": "0.6103",
+          "metadata_sig": "",
+          "metadata_N": "67",
+          "metadata_R2_within": "0.99186594",
+          "metadata_G_clusters": "44",
+          "metadata_estimator": "Naive FE",
+          "metadata_education_proxy": "UNDP MYS (standardized)",
+          "metadata_standardized": "True"
+        },
+        {
+          "input": "{\"spec\": \"A_naive_mys_std\", \"coefficient\": \"beta_G\"}",
+          "output": "-0.11814554",
+          "metadata_spec": "A_naive_mys_std",
+          "metadata_coef": "beta_G",
+          "metadata_se": "0.31875043",
+          "metadata_p": "0.7127",
+          "metadata_sig": "",
+          "metadata_N": "67",
+          "metadata_R2_within": "0.99186594",
+          "metadata_G_clusters": "44",
+          "metadata_estimator": "Naive FE",
+          "metadata_education_proxy": "UNDP MYS (standardized)",
+          "metadata_standardized": "True"
+        },
+        {
+          "input": "{\"spec\": \"A_naive_mys_std\", \"coefficient\": \"beta_S\"}",
+          "output": "0.10297196",
+          "metadata_spec": "A_naive_mys_std",
+          "metadata_coef": "beta_S",
+          "metadata_se": "0.08323184",
+          "metadata_p": "0.2227",
+          "metadata_sig": "",
+          "metadata_N": "67",
+          "metadata_R2_within": "0.99186594",
+          "metadata_G_clusters": "44",
+          "metadata_estimator": "Naive FE",
+          "metadata_education_proxy": "UNDP MYS (standardized)",
+          "metadata_standardized": "True"
+        }
+      ]
+    },
+    {
+      "dataset": "oster_bounds_spec_c_only",
+      "examples": [
+        {
+          "input": "{\"analysis\": \"oster_bounds\", \"spec\": \"C_dd_wb_tertiary_std\"}",
+          "output": "numerically_undefined",
+          "metadata_status": "numerically_undefined",
+          "metadata_reason": "delta_R2=2.10e-05 < 1e-4 threshold; denominator near zero",
+          "metadata_note": "Oster bounds numerically undefined for Spec C",
+          "metadata_R2_full": "0.97774016",
+          "metadata_R2_partial": "0.97771917",
+          "metadata_delta_R2": "2.099e-05",
+          "metadata_R2_max": "1.271062",
+          "metadata_beta_EGS_full": "4.21810729",
+          "metadata_interpretation": "Near-zero delta_R2 implies triple interaction explains essentially no additional variance beyond two-way terms, making Oster comparison uninformative"
+        }
+      ]
+    }
+  ]
+}

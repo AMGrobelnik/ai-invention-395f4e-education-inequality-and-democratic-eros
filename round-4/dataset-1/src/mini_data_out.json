@@ -1,0 +1,36 @@
+{
+  "datasets": [
+    {
+      "dataset": "polity5_democratizers",
+      "examples": [
+        {
+          "input": "{\"democ\": 3, \"autoc\": 2, \"xrreg\": 2, \"xrcomp\": 2, \"xropen\": 4, \"xconst\": 3, \"parreg\": 3, \"parcomp\": 3, \"exrec\": 7, \"exconst\": 3, \"polcomp\": 6, \"durable\": 0}",
+          "output": "1",
+          "metadata_country": "Albania",
+          "metadata_scode": "ALB",
+          "metadata_year": 1990,
+          "metadata_period": "1990-94",
+          "metadata_ccode": 339
+        },
+        {
+          "input": "{\"democ\": -88, \"autoc\": -88, \"xrreg\": -88, \"xrcomp\": -88, \"xropen\": -88, \"xconst\": -88, \"parreg\": -88, \"parcomp\": -88, \"exrec\": -88, \"exconst\": -88, \"polcomp\": -88, \"durable\": 0}",
+          "output": "3",
+          "metadata_country": "Albania",
+          "metadata_scode": "ALB",
+          "metadata_year": 1991,
+          "metadata_period": "1990-94",
+          "metadata_ccode": 339
+        },
+        {
+          "input": "{\"democ\": 6, \"autoc\": 1, \"xrreg\": 3, \"xrcomp\": 3, \"xropen\": 4, \"xconst\": 5, \"parreg\": 3, \"parcomp\": 3, \"exrec\": 8, \"exconst\": 5, \"polcomp\": 6, \"durable\": 0}",
+          "output": "5",
+          "metadata_country": "Albania",
+          "metadata_scode": "ALB",
+          "metadata_year": 1992,
+          "metadata_period": "1990-94",
+          "metadata_ccode": 339
+        }
+      ]
+    }
+  ]
+}

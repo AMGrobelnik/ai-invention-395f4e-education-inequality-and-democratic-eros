@@ -1,0 +1,15 @@
+{
+  "title": "V-Dem × ILO × Gini × Education Panel for Post-1990 Democratizers (1990–2022)",
+  "layman_summary": "A country-period dataset tracking how social protection coverage, inequality, and education levels relate to democratic institution strength across 96 countries that democratized after 1989, covering the periods from 1990 to 2022.",
+  "summary": "This dataset provides a five-year period-averaged unbalanced panel for 96 post-1990 democratizer countries (1990–2022), merging four authoritative data sources: V-Dem v15 (liberal democracy and sub-indices), ILO ILOSTAT SDG 1.3.1 (effective social protection coverage), SWIID (LIS-standardized Gini inequality), and OWID/Barro-Lee/UNDP (mean years of schooling). The chosen dataset 'vdem_ilo_gini_edu_panel_complete' contains 161 country-period observations (analysis sample) where all four core variables are simultaneously non-null — the directly usable sample for the DD triple-interaction estimator.\n\nEach example encodes: (input) 24 features including V-Dem sub-indices (v2x_jucon, v2jucomp, v2cseeorgs, v2csprtcpt, v2x_civlib, v2xcl_rol, v2x_polyarchy), education (mean years schooling), gini_disp (post-transfer Gini with SE), socprot_coverage (ILO SDG 1.3.1 %), directly_reported flags, country-period means and within-country deviations (e_education, e_gini_disp, e_socprot_coverage) for DD estimation, and imputation flags; (output) v2x_libdem (V-Dem Liberal Democracy Index, 0–1 scale).\n\nKey data notes: ILO country-level data available from 2015 only (X* regional aggregates excluded), so socprot_coverage is null for periods 1990–2014. Education source ends at 2017; 2020-22 period values are forward-filled from 2017 (education_imputed=True for 70 of 161 rows). The audit reports 63 qualifying countries with ≥2 complete periods, MDE ≈ 1.64 SD-units (limited by N_eff=40 with only 2 periods of ILO coverage). Within-SD of education (0.026) flags limited temporal variation for the DD estimator.\n\nTask type: regression. Target variable: v2x_libdem. All 161 rows are post-1990 democratizers with metadata_has_all_core_vars=True.",
+  "out_expected_files": {
+    "script": "data.py",
+    "datasets": [
+      {
+        "full": ["full_data_out.json"],
+        "mini": "mini_data_out.json",
+        "preview": "preview_data_out.json"
+      }
+    ]
+  }
+}

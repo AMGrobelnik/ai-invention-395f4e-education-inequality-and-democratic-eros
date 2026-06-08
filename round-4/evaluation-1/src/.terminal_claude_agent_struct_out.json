@@ -1,0 +1,33 @@
+{
+  "title": "DD Robustness Validation: Wild Bootstrap, SWIID Uncertainty, Power Curves",
+  "layman_summary": "Six checks test whether education, inequality, and social protection together predict democracy under different methods and data. Results are marginally significant (p≈0.07–0.09), with modest effect sizes and an underpowered design.",
+  "summary": "Implemented and executed six pre-registered robustness checks for the Giesselmann-Schmidt-Catran (2022) double-demeaning DD triple-interaction estimator (Education × Gini × SocProt → Liberal Democracy) across two education-measure specifications.\n\n1. Wild Cluster Bootstrap (CGM 2008, B=999, Rademacher weights): UNDP MYS specification (N=95, G=58) yields bootstrap p-value = 0.070 for β₇ = 0.292 (SE = 0.233); WB Tertiary specification (N=137, G=86) yields bootstrap p-value = 0.091 for β₇ = 13.128 (SE = 9.990). Both are marginal: significant at 10%, not 5%.\n\n2. SWIID Gini Measurement Uncertainty (500 MC draws from N(gini_disp, gini_disp_se²)): Mean β₇ = 0.026 across draws, fraction of draws with β₇ > 0 = 62.8%. Modest positive bias but high variance across measurement error realizations.\n\n3. Selection-into-Doubly-Observed Diagnostic: Countries with ≥2 ILO observations have systematically higher Gini dispersion (p = 0.079), flagging non-random selection into the doubly-observed subsample. Social protection coverage and mean years of schooling show no differential selection.\n\n4. Minimum Detectable Effect Power Curves: At the realized cluster count G=58 (UNDP), MDE = 0.311 (≈ 2.0 standard deviations of Liberal Democracy) under baseline error variance — substantially above the point estimate of β₇, confirming the study is underpowered to detect the estimated effect reliably. MDE curves plotted for G=20–80 under three σ_ε scenarios.\n\n5. ILO Directly-Reported Subgroup Analysis: iter-3 7-period panel has ilo_directly_reported_fraction = 0.0 (all SDG 1.3.1 data, no ILO directly-reported observations). Fell back to iter-1 2-period panel (N=161, all directly_reported_any=True). OECD-excluded sample (N=95) is identical to the ILO-restricted sample; β₇ = 0.292 unchanged.\n\n6. Robustness Summary Table: JSON + LaTeX-ready TSV assembled across all checks. Key verdict: marginal bootstrap significance (p ≈ 0.07–0.09), SWIID sign-consistency 63%, non-random selection concern, chronic underpowering at G=58.\n\nAll outputs validated against exp_eval_sol_out schema.",
+  "file_size_check": {
+    "eval_out_json_bytes": 34816,
+    "full_eval_out_json_bytes": 34816,
+    "limit_bytes": 104857600,
+    "within_limit": true,
+    "splitting_required": false
+  },
+  "out_expected_files": {
+    "script": "eval.py",
+    "pyproject": "pyproject.toml",
+    "output": "eval_out.json",
+    "full_output": "full_eval_out.json",
+    "mini_output": "mini_eval_out.json",
+    "preview_output": "preview_eval_out.json",
+    "figure": "power_curves.png",
+    "logs": "logs/run.log"
+  },
+  "key_results": {
+    "bootstrap_pval_undp": 0.07007,
+    "bootstrap_pval_wb": 0.09109,
+    "swiid_beta7_mean": 0.0257,
+    "swiid_frac_positive": 0.628,
+    "selection_systematic": true,
+    "selection_gini_pval": 0.079,
+    "mde_at_g58_undp": 0.3111,
+    "ilo_directly_reported_fraction_iter3": 0.0,
+    "ilo_fallback_used": "iter-1 2-period panel"
+  }
+}

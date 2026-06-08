@@ -1,0 +1,15 @@
+{
+  "title": "ILO Public Sector Employment + IMF SAP Instrument Panel Dataset (1990–2019)",
+  "layman_summary": "This dataset tracks public sector employment and IMF austerity program participation across 68 democratizing countries (1990–2019), enabling research into whether IMF conditions reduced government jobs.",
+  "summary": "Two panel datasets covering 68 post-1990 democratizing countries over 1990–2019, standardized into the exp_sel_data_out format for downstream experiment use:\n\n**Dataset 1 — ILO_PSE_ILOSTAT_Democratizers_1990_2019 (701 examples, 52 countries)**\nSource: ILO ILOSTAT PSE_TPSE_GOV_NB (public sector employment in thousands) and EMP_TEMP_SEX_ECO_NB (total employment) fetched via DBnomics Python client. Filtered to GOV_LVL_PSE (total public sector) and SEX_T, deduplicated by averaging across multiple survey sources per country-year. PSE share of total employment computed where both numerator and denominator are available. Coverage: 52/68 democratizers have at least one observation; 34.4% cell coverage (701/2040 possible country-years). Values are in thousands of workers and percent share. Albania examples confirm realistic declining PSE trajectory post-transition (24.2% in 1995 → 20.4% in 1997).\n\n**Dataset 2 — Dreher_IMF_SAP_Democratizers_1990_2019 (2040 examples, 68 countries, complete coverage)**\nSource: Dreher (2006) IMF program dummies XLS downloaded from axel-dreher.de (2.6MB, 25 sheets, 222 countries, 1970–2019). Binary SAP dummy = 1 if country had active IMF Standby Arrangement (SBA) OR Extended Fund Facility (EFF) program in that year. PRGF/ECF excluded as they explicitly protect social spending. Complete coverage for all 68 democratizers × 30 years = 2040 rows. 190 SAP-active observations (9.3%), covering 53/68 democratizers with at least one program episode. Albania 1992 SAP=1 is historically accurate (SBA signed after economic collapse).\n\n**Files generated:**\n- `data.py`: Self-contained pipeline script — fetches/caches ILO data from DBnomics to temp/datasets/, loads Dreher XLS, processes into 2 dataset groups, outputs full_data_out.json\n- `temp/datasets/Dreher_IMF_WB.xls`: Raw Dreher (2006) dataset (2.6MB)\n- `temp/datasets/ILO_PSE_TPSE_GOV_NB.csv`: Cached ILO PSE data (1727 rows, 140 countries)\n- `temp/datasets/ILO_EMP_TEMP_SEX_ECO_NB.csv`: Cached ILO total employment (3541 rows, 217 countries)\n- `full_data_out.json` (889KB): Complete 2741-example output\n- `mini_data_out.json` (2.2KB): 3 examples per dataset (6 total)\n- `preview_data_out.json` (2.2KB): 3 examples per dataset, strings truncated\n\n**Schema validation**: PASSED against exp_sel_data_out schema.\n**File size**: 889KB — well under 100MB limit, no splitting required.",
+  "out_expected_files": {
+    "script": "data.py",
+    "datasets": [
+      {
+        "full": ["full_data_out.json"],
+        "mini": "mini_data_out.json",
+        "preview": "preview_data_out.json"
+      }
+    ]
+  }
+}

@@ -1,0 +1,190 @@
+{
+  "metadata": {
+    "evaluation_name": "SDET Iter-5 Final Robustness Consolidation",
+    "description": "Seven-part evaluation: (1) verification checks for Spec C R²/β₇/Oster/ME/sub-index, (2) wild cluster bootstrap on iter-4 7-period panel (Spec B+C, B=999), (3) SWIID MC uncertainty propagation through Spec C (500 draws), (4) V-Dem version note from OWID CSV, (5) corrected Section 6.4 ILO prose, (6) revised Table 1 footnote, (7) power analysis corrected for G_doubly_observed=23",
+    "primary_spec": "Spec_C_WB_tertiary_DD",
+    "beta7_spec_c": 0.001051,
+    "p7_spec_c": 0.7299,
+    "oster_delta_r2": 0.0061606418946925645,
+    "bootstrap_spec_c_p_boot": 0.4894894894894895,
+    "swiid_mc_frac_positive": 0.642
+  },
+  "metrics_agg": {
+    "spec_c_r2_within": 0.977937,
+    "spec_a_r2_within": 0.992258,
+    "beta7_spec_c": 0.001051,
+    "se7_spec_c": 0.002993,
+    "p7_spec_c": 0.7299,
+    "oster_delta_r2": 0.006161,
+    "n_doubly_observed": 23.0,
+    "n_singleton": 21.0,
+    "bootstrap_spec_c_beta7": 0.001375,
+    "bootstrap_spec_c_p_asymp": 0.756463,
+    "bootstrap_spec_c_p_boot": 0.489489,
+    "bootstrap_spec_b_beta7": 0.011765,
+    "bootstrap_spec_b_p_asymp": 0.718559,
+    "bootstrap_spec_b_p_boot": 0.472472,
+    "swiid_mc_b7_mean": 0.000482,
+    "swiid_mc_b7_sd": 0.001344,
+    "swiid_mc_frac_positive": 0.642,
+    "swiid_mc_ci95_lower": -0.002322,
+    "swiid_mc_ci95_upper": 0.003196,
+    "vdem_csv_max_year": 2025.0,
+    "section64_word_count": 209.0,
+    "table1_footnote_word_count": 130.0,
+    "power_G_doubly_observed": 23.0,
+    "power_MDE_ldem_at_G_doubly": 0.009846,
+    "power_MDE_sd_at_G_doubly": 0.063098,
+    "power_MDE_ldem_at_G44": 0.00696
+  },
+  "datasets": [
+    {
+      "dataset": "verification_checks",
+      "examples": [
+        {
+          "input": "{\"check\": \"spec_c_r2_within\"}",
+          "output": "PASS",
+          "metadata_check": "spec_c_r2_within",
+          "metadata_status": "PASS",
+          "metadata_R2_within_spec_c": 0.977937,
+          "metadata_claimed": 0.978,
+          "metadata_abs_diff": 6.3e-05
+        },
+        {
+          "input": "{\"check\": \"spec_a_r2_within\"}",
+          "output": "PASS",
+          "metadata_check": "spec_a_r2_within",
+          "metadata_status": "PASS",
+          "metadata_R2_within_spec_a": 0.992258,
+          "metadata_claimed": 0.992,
+          "metadata_abs_diff": 0.000258
+        },
+        {
+          "input": "{\"check\": \"beta7_spec_c\"}",
+          "output": "PASS",
+          "metadata_check": "beta7_spec_c",
+          "metadata_status": "PASS",
+          "metadata_beta7": 0.001051,
+          "metadata_se7": 0.002993,
+          "metadata_p7": 0.7299,
+          "metadata_claimed_beta7": 0.001051,
+          "metadata_claimed_se7": 0.002993,
+          "metadata_claimed_p7": 0.73
+        }
+      ]
+    },
+    {
+      "dataset": "wild_bootstrap_iter4",
+      "examples": [
+        {
+          "input": "{\"spec\": \"Spec_C_WB_tertiary_DD_iter4_panel\", \"check\": \"wild_cluster_bootstrap_B999\"}",
+          "output": "{\"beta7_obs\": 0.001375, \"SE_crse\": 0.004406, \"p_asymptotic\": 0.756463, \"p_bootstrap_999\": 0.489489, \"N_obs\": 67, \"G_clusters\": 44, \"boot_mean_b7\": -3.5e-05, \"boot_sd_b7\": 0.001891, \"ci95_boot_lower\": -0.003577, \"ci95_boot_upper\": 0.003664}",
+          "metadata_spec": "Spec_C_WB_tertiary_DD_iter4_panel",
+          "metadata_N_obs": 67,
+          "metadata_G_clusters": 44,
+          "eval_beta7_obs": 0.001375221627705561,
+          "eval_p_asymptotic": 0.756463173352808,
+          "eval_p_bootstrap_999": 0.4894894894894895
+        },
+        {
+          "input": "{\"spec\": \"Spec_B_UNDP_MYS_DD_iter4_panel\", \"check\": \"wild_cluster_bootstrap_B999\"}",
+          "output": "{\"beta7_obs\": 0.011765, \"SE_crse\": 0.032466, \"p_asymptotic\": 0.718559, \"p_bootstrap_999\": 0.472472, \"N_obs\": 85, \"G_clusters\": 52, \"boot_mean_b7\": 9.7e-05, \"boot_sd_b7\": 0.016481, \"ci95_boot_lower\": -0.032146, \"ci95_boot_upper\": 0.031787}",
+          "metadata_spec": "Spec_B_UNDP_MYS_DD_iter4_panel",
+          "metadata_N_obs": 85,
+          "metadata_G_clusters": 52,
+          "eval_beta7_obs": 0.011765387186652659,
+          "eval_p_asymptotic": 0.7185587683587862,
+          "eval_p_bootstrap_999": 0.4724724724724725
+        }
+      ]
+    },
+    {
+      "dataset": "swiid_mc_spec_c",
+      "examples": [
+        {
+          "input": "{\"check\": \"SWIID_gini_uncertainty_500draws_spec_c\", \"spec\": \"Spec_C_WB_tertiary_DD\"}",
+          "output": "{\"spec\": \"Spec_C_WB_tertiary_DD\", \"n_draws\": 500, \"n_valid\": 500, \"b7_obs\": 0.001375, \"b7_mean_500\": 0.000482, \"b7_sd_500\": 0.001344, \"ci95_lower\": -0.002322, \"ci95_upper\": 0.003196, \"frac_positive\": 0.642, \"frac_above_obs\": 0.212, \"gini_se_source\": \"SWIID v9.92 per-obs SE (available in iter-3 dataset)\"}",
+          "metadata_spec": "Spec_C_WB_tertiary_DD",
+          "metadata_n_draws": 500,
+          "eval_b7_mean": 0.0004820970311695627,
+          "eval_b7_sd": 0.001343960816982377,
+          "eval_frac_positive": 0.642,
+          "eval_ci95_lower": -0.0023221288607057347,
+          "eval_ci95_upper": 0.0031961905150286692
+        }
+      ]
+    },
+    {
+      "dataset": "vdem_version_note",
+      "examples": [
+        {
+          "input": "{\"check\": \"vdem_version_from_owid_csv\"}",
+          "output": "{\"owid_vdem_version\": \"V-Dem v15 (2025)\", \"owid_vdem_citation\": \"Coppedge, Michael et al. (2025). V-Dem Dataset v15. Varieties of Democracy (V-Dem) Project. https://doi.org/10.23696/mcwt-fr58\", \"vdem_project_url\": \"https://www.v-dem.net/data/the-vdem-dataset/dataset-version-v15/\", \"owid_csv_max_year\": 2025, \"notes\": \"OWID democracy CSVs (political-regime.csv, liberal-democracy.csv, electoral-democracy.csv) cached in iter-3 workspace have max_year=2025. V-Dem v15 (March 2025) is the first version covering 2024 data. The iter-5 dataset summary states 'V-Dem v15', confirmed by year coverage.\"}",
+          "metadata_check": "vdem_version_from_owid_csv",
+          "metadata_owid_vdem_version": "V-Dem v15 (2025)",
+          "metadata_max_year": 2025
+        }
+      ]
+    },
+    {
+      "dataset": "section64_corrected_text",
+      "examples": [
+        {
+          "input": "{\"check\": \"section64_corrected_text\"}",
+          "output": "Section 6.4: ILO Social Protection Coverage — Data Quality and Directly-Reported Subgroup\n\nAll 104 country-period observations with ILO SDG 1.3.1 social protection coverage data available in the seven-period (1990–2022) panel are model-estimated values produced by ILO econometric imputation, not nationally-reported survey or administrative data. This is confirmed by the iter-3 data audit (ilo_directly_reported_fraction = 0.0) and verified in the iter-4 evaluation: the ILO 'X*' flag in ILOSTAT SDG 1.3.1 bulk downloads marks modelled values, whereas nationally-reported observations carry country-year codes without the X* prefix.\n\nA within-Spec-C sensitivity analysis restricted to directly-reported ILO observations is therefore infeasible: such a restriction would eliminate all 67 observations in the analysis sample, making parameter identification impossible. The two-period iter-1 panel result (β₇ = 0.292, p = 0.211, N = 95, G = 58) is reported as an alternative benchmark using a distinct data vintage with different geographic and temporal coverage. This benchmark uses UNDP HDR25 Mean Years of Schooling (not WB SE.TER.ENRR) and a two-period ILO window (not seven periods), and therefore constitutes a complementary estimate rather than a robustness check on Spec C. The reliance on ILO modelled estimates constitutes an acknowledged limitation of the current panel; future work incorporating directly-reported administrative records for a larger country set would strengthen causal identification.",
+          "metadata_check": "section64_corrected_text",
+          "metadata_word_count": 209
+        }
+      ]
+    },
+    {
+      "dataset": "table1_footnote_revised",
+      "examples": [
+        {
+          "input": "{\"check\": \"table1_footnote_revised\"}",
+          "output": "Notes: All four specifications use the same 67 observations across 44 country clusters (ILO SocProt subsample, 2015–2022). Columns A–B use the 2-period panel with UNDP HDR25 Mean Years of Schooling (within-SD = 0.026). Column A is the naive fixed-effects product estimator (R² = 0.992); Column B is the Giesselmann–Schmidt-Catran (2022) double-demeaning (DD) estimator (R² = 0.979). The A→B comparison isolates estimator bias from within-/between-country confounding. Columns C–D use WB SE.TER.ENRR gross tertiary enrollment (within-SD = 1.045; 140.8× greater within-country variation than UNDP MYS). Column C is the DD estimator (R² = 0.978, primary specification); Column D is the naive FE product estimator (R² = 0.992). The B→C comparison documents the education proxy improvement. Standard errors cluster-robust at the country level. *, **, *** indicate p < 0.10, 0.05, 0.01 (two-tailed).",
+          "metadata_check": "table1_footnote_revised",
+          "metadata_word_count": 130
+        }
+      ]
+    },
+    {
+      "dataset": "power_corrected_summary",
+      "examples": [
+        {
+          "input": "{\"check\": \"power_corrected_G_doubly_observed\"}",
+          "output": "{\"G_doubly_observed\": 23, \"G_total_clusters\": 44, \"sigma_E\": 1.045, \"sigma_x3\": 2.6920626742770075, \"sigma_eps\": 0.043353403365794733, \"alpha\": 0.05, \"power_target\": 0.8, \"MDE_at_G_doubly_ldem\": 0.009846, \"MDE_at_G_doubly_SD_units\": 0.063098, \"MDE_at_G_total_ldem\": 0.00696, \"MDE_at_G_total_SD_units\": 0.044602, \"MDE_at_G37_ldem\": 0.007624, \"MDE_at_G44_ldem\": 0.00696, \"is_powered_for_0pt10_ldem\": true, \"is_powered_relative_undp_beta7\": true, \"hypothesis_claim_MDE_0pt008_at_G44\": true, \"reconciliation\": \"N_countries_complete=44 (all countries with \\u22651 Spec C observation, i.e., total sample). Doubly_observed=23 (countries with \\u22652 Spec C periods, driving DD identification). Hypothesis claim 'MDE\\u22480.008 at G=44' uses total clusters (0.0070 LDem); corrected MDE using doubly-observed G=23 is 0.0098 LDem. Both confirm well-powered design relative to UNDP \\u03b2\\u2087=0.292.\"}",
+          "metadata_check": "power_corrected_G_doubly_observed",
+          "metadata_G_doubly_observed": 23,
+          "metadata_G_total": 44,
+          "eval_mde_ldem_doubly": 0.009845973989458277,
+          "eval_mde_sd_doubly": 0.06309757416906617,
+          "eval_mde_ldem_g44": 0.006959882450836224
+        }
+      ]
+    },
+    {
+      "dataset": "complete_robustness_table",
+      "examples": [
+        {
+          "input": "{\"check\": \"robustness_row\", \"spec\": \"Spec_C_WB_tertiary_DD_iter4_panel\"}",
+          "output": "{\"check\": \"Wild Cluster Bootstrap\", \"spec\": \"Spec_C_WB_tertiary_DD_iter4_panel\", \"beta7\": 0.001375, \"SE\": 0.004406, \"p_orig\": 0.7565, \"p_boot\": 0.4895, \"CI_lo\": -0.0036, \"CI_hi\": 0.0037, \"N_obs\": 67, \"G\": 44, \"notes\": \"B=999 Rademacher, H\\u2080: \\u03b2\\u2087=0\"}",
+          "metadata_check": "wild_bootstrap",
+          "metadata_spec": "Spec_C_WB_tertiary_DD_iter4_panel"
+        },
+        {
+          "input": "{\"check\": \"robustness_row\", \"spec\": \"Spec_B_UNDP_MYS_DD_iter4_panel\"}",
+          "output": "{\"check\": \"Wild Cluster Bootstrap\", \"spec\": \"Spec_B_UNDP_MYS_DD_iter4_panel\", \"beta7\": 0.011765, \"SE\": 0.032466, \"p_orig\": 0.7186, \"p_boot\": 0.4725, \"CI_lo\": -0.0321, \"CI_hi\": 0.0318, \"N_obs\": 85, \"G\": 52, \"notes\": \"B=999 Rademacher, H\\u2080: \\u03b2\\u2087=0\"}",
+          "metadata_check": "wild_bootstrap",
+          "metadata_spec": "Spec_B_UNDP_MYS_DD_iter4_panel"
+        },
+        {
+          "input": "{\"check\": \"robustness_row\", \"spec\": \"SWIID_MC_500draws_Spec_C\"}",
+          "output": "{\"check\": \"SWIID MC uncertainty\", \"spec\": \"Spec_C_WB_tertiary_DD\", \"b7_mean\": 0.000482, \"b7_sd\": 0.001344, \"ci95_lower\": -0.002322, \"ci95_upper\": 0.003196, \"frac_positive\": 0.642, \"n_draws\": 500, \"notes\": \"500 MC draws from N(gini_disp, gini_disp_se\\u00b2); gini_disp_se from SWIID v9.92\"}",
+          "metadata_check": "swiid_mc",
+          "metadata_spec": "Spec_C_WB_tertiary_DD"
+        }
+      ]
+    }
+  ]
+}

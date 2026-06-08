@@ -1,0 +1,113 @@
+{
+  "metadata": {
+    "method_name": "DD_triple_interaction_WB_tertiary_Granger",
+    "description": "Giesselmann-Schmidt-Catran DD estimator with WB tertiary enrollment, panel Granger falsification, and reverse-causality tests for SDET hypothesis.",
+    "specs_run": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E"
+    ],
+    "n_examples": 13
+  },
+  "datasets": [
+    {
+      "dataset": "DD_results_WB_tertiary_enrollment",
+      "examples": [
+        {
+          "input": "{\"spec\": \"A_UNDP_MYS_naive\", \"edu_variable\": \"education\", \"estimator\": \"naive_FE_product\"}",
+          "output": "{\"beta7\": 0.019849367081870784, \"se\": 0.015307058637151297, \"pval\": 0.19471859572116257, \"ci_lower\": -0.010151916556188523, \"ci_upper\": 0.04985065071993009, \"N\": 161, \"n_countries\": 96, \"condition_number\": 32.219967585233114, \"within_sd_education\": 0.26051782242125743, \"bias_dd_minus_naive\": null, \"method_used\": \"OLS_dummies_fallback\", \"note\": \"Naive: raw products of within-deviations (biased for FE models)\"}",
+          "metadata_spec": "A_UNDP_MYS_naive",
+          "metadata_beta7": 0.019849367081870784,
+          "metadata_pval": 0.19471859572116257,
+          "metadata_type": "regression_spec"
+        },
+        {
+          "input": "{\"spec\": \"B_UNDP_MYS_DD\", \"edu_variable\": \"education\", \"estimator\": \"DD_Giesselmann_Schmidt_Catran_2022\"}",
+          "output": "{\"beta7\": 155.2324995836918, \"se\": 119.70925640694406, \"pval\": 0.19471859572117955, \"ci_lower\": -79.39333158998929, \"ci_upper\": 389.85833075737287, \"N\": 161, \"n_countries\": 96, \"condition_number\": 5.871181604576824e+16, \"within_sd_education\": 0.26051782242125743, \"bias_dd_minus_naive\": 155.21265021660994, \"method_used\": \"OLS_dummies_fallback\", \"note\": \"DD estimator (Giesselmann-Schmidt-Catran 2022); z-score standardized (condition number was high)\"}",
+          "metadata_spec": "B_UNDP_MYS_DD",
+          "metadata_beta7": 155.2324995836918,
+          "metadata_pval": 0.19471859572117955,
+          "metadata_type": "regression_spec"
+        },
+        {
+          "input": "{\"spec\": \"C_WB_tertiary_DD\", \"edu_variable\": \"ter_enroll\", \"estimator\": \"DD_Giesselmann_Schmidt_Catran_2022\"}",
+          "output": "{\"beta7\": 13.128000558939018, \"se\": 9.99038343309383, \"pval\": 0.18882475715728286, \"ci_lower\": -6.452791161670511, \"ci_upper\": 32.70879227954855, \"N\": 137, \"n_countries\": 86, \"condition_number\": 3.346586966762039e+16, \"within_sd_education\": 3.668453361475643, \"bias_dd_minus_naive\": 13.126087352509566, \"method_used\": \"OLS_dummies_fallback\", \"note\": \"DD estimator (Giesselmann-Schmidt-Catran 2022); z-score standardized (condition number was high)\"}",
+          "metadata_spec": "C_WB_tertiary_DD",
+          "metadata_beta7": 13.128000558939018,
+          "metadata_pval": 0.18882475715728286,
+          "metadata_type": "regression_spec"
+        },
+        {
+          "input": "{\"spec\": \"D_WB_tertiary_naive\", \"edu_variable\": \"ter_enroll\", \"estimator\": \"naive_FE_product\"}",
+          "output": "{\"beta7\": 0.00191320642945118, \"se\": 0.0014559464505706954, \"pval\": 0.18882475715727598, \"ci_lower\": -0.0009403961770863088, \"ci_upper\": 0.004766809035988669, \"N\": 137, \"n_countries\": 86, \"condition_number\": 31.42666451657263, \"within_sd_education\": 3.668453361475643, \"bias_dd_minus_naive\": null, \"method_used\": \"OLS_dummies_fallback\", \"note\": \"Naive: raw products of within-deviations (biased for FE models)\"}",
+          "metadata_spec": "D_WB_tertiary_naive",
+          "metadata_beta7": 0.00191320642945118,
+          "metadata_pval": 0.18882475715727598,
+          "metadata_type": "regression_spec"
+        },
+        {
+          "input": "{\"spec\": \"E_WB_tertiary_DD_lagged_soc\", \"edu_variable\": \"ter_enroll\", \"estimator\": \"DD_Giesselmann_Schmidt_Catran_2022\"}",
+          "output": "{\"beta7\": 7.046786210522088e-17, \"se\": NaN, \"pval\": NaN, \"ci_lower\": NaN, \"ci_upper\": NaN, \"N\": 51, \"n_countries\": 51, \"condition_number\": Infinity, \"within_sd_education\": NaN, \"bias_dd_minus_naive\": null, \"method_used\": \"OLS_dummies_fallback\", \"note\": \"DD estimator (Giesselmann-Schmidt-Catran 2022); SocProt lagged one period; z-score standardized (condition number was high)\"}",
+          "metadata_spec": "E_WB_tertiary_DD_lagged_soc",
+          "metadata_beta7": 7.046786210522088e-17,
+          "metadata_pval": NaN,
+          "metadata_type": "regression_spec"
+        },
+        {
+          "input": "{\"test_type\": \"panel_granger\", \"x_variable\": \"gini_disp\", \"dep_variable\": \"v2x_libdem\", \"label\": \"Gini\"}",
+          "output": "{\"coeff_X_lag1\": -0.0004512640967827296, \"se\": 0.0004611706046640599, \"pval\": 0.327906095142529, \"N_obs\": 2778, \"n_entities\": 95, \"T_avg\": 29.2, \"method\": \"PanelOLS_entity_FE_clustered\", \"interpretation\": \"FAIL TO REJECT H0: no Granger causation detected (p=0.328)\"}",
+          "metadata_variable": "gini_disp",
+          "metadata_granger_pval": 0.327906095142529,
+          "metadata_type": "granger_test"
+        },
+        {
+          "input": "{\"test_type\": \"panel_granger\", \"x_variable\": \"mys\", \"dep_variable\": \"v2x_libdem\", \"label\": \"MYS/Education\"}",
+          "output": "{\"coeff_X_lag1\": -0.0027374993064611768, \"se\": 0.0009699398076799121, \"pval\": 0.004802612692735186, \"N_obs\": 2778, \"n_entities\": 95, \"T_avg\": 29.2, \"method\": \"PanelOLS_entity_FE_clustered\", \"interpretation\": \"REJECT H0: mys Granger-causes v2x_libdem (p=0.005)\"}",
+          "metadata_variable": "mys",
+          "metadata_granger_pval": 0.004802612692735186,
+          "metadata_type": "granger_test"
+        },
+        {
+          "input": "{\"test_type\": \"panel_granger\", \"x_variable\": \"socprot_annual\", \"dep_variable\": \"v2x_libdem\", \"label\": \"SocProt (ILO annual)\"}",
+          "output": "{\"coeff_X_lag1\": -0.0016820803113964204, \"se\": 0.0006912987914089154, \"pval\": 0.01716706301679749, \"N_obs\": 168, \"n_entities\": 85, \"T_avg\": 2.0, \"method\": \"PanelOLS_entity_FE_clustered\", \"interpretation\": \"REJECT H0: socprot_annual Granger-causes v2x_libdem (p=0.017)\"}",
+          "metadata_variable": "socprot_annual",
+          "metadata_granger_pval": 0.01716706301679749,
+          "metadata_type": "granger_test"
+        },
+        {
+          "input": "{\"test_type\": \"reverse_causality\", \"path\": \"path_a_ldm_gini\"}",
+          "output": "{\"coeff_ldm_on_gini\": -0.6346187923459715, \"se\": 1.6912587311391336, \"pval\": 0.7075150542909932, \"N\": 2835, \"interpretation\": \"LDem\\u2192Gini path not significant (reassuring for SDET identification)\"}",
+          "metadata_path": "path_a_ldm_gini",
+          "metadata_pval": 0.7075150542909932,
+          "metadata_type": "reverse_causality"
+        },
+        {
+          "input": "{\"test_type\": \"reverse_causality\", \"path\": \"path_b_sap_socprot\"}",
+          "output": "{\"coeff_sap_on_socprot\": -1.3717261964285696, \"se\": 4.019394805305641, \"pval\": 0.7340308519831678, \"N_sap_active_obs\": 9, \"interpretation\": \"SAP does not significantly predict SocProt change (weak instrument)\"}",
+          "metadata_path": "path_b_sap_socprot",
+          "metadata_pval": 0.7340308519831678,
+          "metadata_type": "reverse_causality"
+        },
+        {
+          "input": "{\"test_type\": \"reverse_causality\", \"path\": \"path_b2_iv_first_stage\"}",
+          "output": "{\"first_stage_coeff\": -1.3717261964285696, \"first_stage_se\": 4.019394805305641, \"first_stage_pval\": 0.7340308519831678, \"first_stage_F\": 0.12, \"iv_feasible\": false, \"conclusion\": \"Weak instrument (F=0.1<10); IV unreliable \\u2014 report OLS with caution\", \"limitation\": \"Full IV estimation of DD terms requires product-instrument interactions; reported here as first-stage check only.\"}",
+          "metadata_path": "path_b2_iv_first_stage",
+          "metadata_pval": 0.7340308519831678,
+          "metadata_type": "reverse_causality"
+        },
+        {
+          "input": "{\"test_type\": \"marginal_effects\", \"spec\": \"C_WB_tertiary_DD\"}",
+          "output": "{\"grid\": [{\"gini_pctile\": 25, \"soc_pctile\": 25, \"e_G\": -6.2864, \"e_S\": -28.5578, \"dLDem_dEduc\": 2356.856022, \"se\": 1793.516071, \"ci_lo\": -1158.435477, \"ci_hi\": 5872.14752}, {\"gini_pctile\": 25, \"soc_pctile\": 75, \"e_G\": -6.2864, \"e_S\": 31.1422, \"dLDem_dEduc\": -2570.018481, \"se\": 1955.826047, \"ci_lo\": -6403.437533, \"ci_hi\": 1263.40057}, {\"gini_pctile\": 75, \"soc_pctile\": 25, \"e_G\": 5.4836, \"e_S\": -28.5578, \"dLDem_dEduc\": -2055.795003, \"se\": 1564.502959, \"ci_lo\": -5122.220802, \"ci_hi\": 1010.630796}, {\"gini_pctile\": 75, \"soc_pctile\": 75, \"e_G\": 5.4836, \"e_S\": 31.1422, \"dLDem_dEduc\": 2241.969519, \"se\": 1706.08766, \"ci_lo\": -1101.962296, \"ci_hi\": 5585.901333}], \"n_cells\": 4}",
+          "metadata_type": "marginal_effects"
+        },
+        {
+          "input": "{\"test_type\": \"diagnostics\"}",
+          "output": "{\"within_sd_comparison\": {\"undp_mys_within_sd\": 0.026051782242125735, \"ter_enroll_within_sd\": 3.668453361475643, \"ratio\": 140.81391159272601, \"conclusion\": \"Tertiary enrollment provides ~140.8\\u00d7 more within-country variation than frozen UNDP MYS\"}, \"condition_number_comparison\": {\"undp_mys_cond\": 5.871181604576824e+16, \"tertiary_cond\": 3.346586966762039e+16, \"improvement_note\": \"Lower condition number = better-conditioned design matrix. Scaling UNDP MYS \\u00d7 10 reduces collinearity in DD products.\"}, \"bias_summary\": {\"undp_mys_bias_dd_minus_naive\": 155.21265021660994, \"ter_enroll_bias_dd_minus_naive\": 13.126087352509566, \"interpretation\": \"Positive bias: naive FE-product UNDERSTATES the triple interaction effect. DD estimator corrects for within-group confounding of products.\"}, \"coverage_report\": {\"n_total\": 161, \"n_ter_observed\": 137, \"n_ter_observed_2015_19\": 80, \"n_ter_observed_2020_22\": 57, \"n_education_imputed_with_ter\": 57, \"within_sd_ter\": 3.668453361475643, \"within_sd_undp\": 0.026051782242125735}, \"granger_limitation\": \"ILO SocProt annual data is too sparse for Granger tests (10 democratizer countries with \\u22655 observations). SAP\\u2192SocProt path_b serves as the reverse-causality falsification for SocProt.\"}",
+          "metadata_type": "diagnostics"
+        }
+      ]
+    }
+  ]
+}

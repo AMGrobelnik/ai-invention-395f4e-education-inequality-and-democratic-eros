@@ -1,0 +1,18 @@
+03:49:48|INFO   |=== Standardizing datasets → full_data_out.json ===
+03:49:48|INFO   |Fetching ILO PSE_TPSE_GOV_NB from DBnomics (will cache)...
+03:50:12|INFO   |Cached PSE: 1727 rows → /home/adrian/projects/ai-inventor/aii_data/users/adrian.marina.photos/runs/run_zXdSkAIIk5J3/3_invention_loop/iter_1/gen_art/gen_art_dataset_2/temp/datasets/ILO_PSE_TPSE_GOV_NB.csv
+03:50:12|INFO   |Fetching ILO EMP_TEMP_SEX_ECO_NB from DBnomics (will cache)...
+ANT not found in ISO3
+KOS not found in ISO3
+03:50:33|INFO   |Cached EMP: 3541 rows → /home/adrian/projects/ai-inventor/aii_data/users/adrian.marina.photos/runs/run_zXdSkAIIk5J3/3_invention_loop/iter_1/gen_art/gen_art_dataset_2/temp/datasets/ILO_EMP_TEMP_SEX_ECO_NB.csv
+03:50:33|INFO   |Loading Dreher XLS: /home/adrian/projects/ai-inventor/aii_data/users/adrian.marina.photos/runs/run_zXdSkAIIk5J3/3_invention_loop/iter_1/gen_art/gen_art_dataset_2/temp/datasets/Dreher_IMF_WB.xls
+03:50:33|INFO   |  IMF SBA: 6660 rows
+03:50:33|INFO   |  IMF EFF: 6660 rows
+03:50:33|INFO   |SAP dummy: 6660 rows, 222 countries
+03:50:33|INFO   |ILO PSE dataset: 701 examples, 52 countries
+03:50:34|INFO   |Dreher SAP dataset: 2040 examples, 190 SAP-active obs (9.3%)
+03:50:34|INFO   |Wrote 2741 total examples to /home/adrian/projects/ai-inventor/aii_data/users/adrian.marina.photos/runs/run_zXdSkAIIk5J3/3_invention_loop/iter_1/gen_art/gen_art_dataset_2/full_data_out.json
+03:50:34|INFO   |  Dataset 1 (ILO PSE): 701 examples
+03:50:34|INFO   |  Dataset 2 (Dreher SAP): 2040 examples
+03:50:34|INFO   |File size: 888.3 KB
+03:50:34|INFO   |=== Done ===

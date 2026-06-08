@@ -1,0 +1,70 @@
+{
+  "metadata": {
+    "experiment_id": "experiment_iter2_dir4",
+    "description": "PSE Moderator Comparison + Causal Mediation with Quadrant Diagnostics",
+    "n_panel_rows_total": "161",
+    "n_complete_rows": 161
+  },
+  "datasets": [
+    {
+      "dataset": "PSE_Moderator_Comparison_DD_Triple_Interaction",
+      "examples": [
+        {
+          "input": "DD triple interaction Education\u00d7Gini\u00d7SocProt (reference/primary spec)",
+          "output": "{\"moderator\": \"SocProt_coverage\", \"estimation\": \"within_DD\", \"n_obs\": 161, \"n_countries\": 96, \"n_multi_period_countries\": 63, \"beta7\": -0.001714, \"se7\": 0.001484, \"t7\": -1.155, \"p7\": 0.2481, \"sign_reversal\": {\"me_at_low_moderator\": 0.003959, \"me_at_high_moderator\": -0.001358, \"signs_differ\": true}, \"rsquared\": 0.15991373006530452, \"all_coefs\": {\"const\": {\"coef\": 0.009605, \"p\": 0.0808}, \"e_education\": {\"coef\": -0.000161, \"p\": 0.9725}, \"e_gini_disp\": {\"coef\": -0.000239, \"p\": 0.8795}, \"e_socprot_coverage\": {\"coef\": 0.001707, \"p\": 0.1796}, \"dd_int_eg\": {\"coef\": 0.002606, \"p\": 0.704}, \"dd_int_em\": {\"coef\": -0.001342, \"p\": 0.3739}, \"dd_int_gm\": {\"coef\": 0.000971, \"p\": 0.5427}, \"dd_int_egm\": {\"coef\": -0.001714, \"p\": 0.2481}, \"pd_2020\": {\"coef\": -0.021454, \"p\": 0.0001}}}",
+          "metadata_moderator": "SocProt_coverage",
+          "metadata_n_obs": "161",
+          "metadata_beta7": "-0.001714",
+          "metadata_p7": "0.2481"
+        }
+      ]
+    },
+    {
+      "dataset": "Causal_Mediation_Analysis_BaronKenny",
+      "examples": [
+        {
+          "input": "Baron-Kenny mediation: T\u2192PSE_share\u2192v2jucomp (judicial compliance)",
+          "output": "{\"outcome\": \"v2jucomp\", \"mediator\": \"pse_share_period\", \"n_obs\": 25, \"n_countries\": 25, \"estimation\": \"cross_sectional_OLS_no_country_FE\", \"caveat\": \"All PSE obs are period_start=2015; within-country demeaning collapses T\\u21920. Cross-sectional mediation using level education\\u00d7gini\\u00d7(\\u2212socprot) as exposure. Captures cross-country differences, not within-country changes.\", \"total_effect_c\": -0.595189, \"total_effect_c_p\": 0.0189, \"a_coef_T_to_M\": 541.502003, \"a_p\": 0.3518, \"b_coef_M_to_Y\": -0.00026, \"b_p\": 0.9886, \"direct_effect_cp\": -0.454374, \"direct_effect_cp_p\": 0.0434, \"acme\": -0.140815, \"acme_ci_95\": [-0.508853, 0.121803], \"n_bootstrap_valid\": 1000, \"bootstrap_unstable\": false, \"proportion_mediated\": 0.2366, \"baron_kenny_satisfied\": false}",
+          "metadata_outcome": "v2jucomp",
+          "metadata_baron_kenny_satisfied": "False",
+          "metadata_acme": "-0.140815"
+        }
+      ]
+    },
+    {
+      "dataset": "Missing_Data_Diagnostics_and_Sensitivity",
+      "examples": [
+        {
+          "input": "Quadrant missing-data table: PSE coverage by (highGini \u00d7 highSocProt) quadrant",
+          "output": "{\"quadrant_coverage_table\": {\"highGini=0_highSocProt=0\": {\"n_observations\": 19, \"n_with_pse\": 2, \"pse_coverage_pct\": 10.5, \"countries\": [\"BGD\", \"BLR\", \"LBR\", \"MDA\", \"MDV\", \"MKD\", \"MLI\", \"MNE\", \"NGA\", \"NPL\", \"SRB\", \"STP\", \"VEN\"]}, \"highGini=0_highSocProt=1\": {\"n_observations\": 62, \"n_with_pse\": 10, \"pse_coverage_pct\": 16.1, \"countries\": [\"ALB\", \"AUT\", \"BEL\", \"CAN\", \"CYP\", \"CZE\", \"DEU\", \"DNK\", \"ESP\", \"EST\", \"FIN\", \"FRA\", \"GBR\", \"GEO\", \"GRC\", \"HRV\", \"HUN\", \"IRL\", \"ISL\", \"ISR\", \"ITA\", \"JPN\", \"LTU\", \"LUX\", \"LVA\", \"MLT\", \"MNE\", \"MNG\", \"NLD\", \"NOR\", \"POL\", \"PRT\", \"ROU\", \"SVN\", \"SWE\", \"THA\", \"UKR\", \"URY\"]}, \"highGini=1_highSocProt=0\": {\"n_observations\": 62, \"n_with_pse\": 7, \"pse_coverage_pct\": 11.3, \"countries\": [\"BEN\", \"BFA\", \"BIH\", \"BOL\", \"BTN\", \"BWA\", \"CIV\", \"COL\", \"CPV\", \"DOM\", \"ECU\", \"GHA\", \"GMB\", \"GNB\", \"GTM\", \"HND\", \"IDN\", \"IND\", \"JAM\", \"KEN\", \"LKA\", \"LSO\", \"MDG\", \"MWI\", \"MYS\", \"NAM\", \"NGA\", \"PAN\", \"PER\", \"PHL\", \"PRY\", \"SEN\", \"SLE\", \"SLV\", \"SUR\", \"TUN\", \"VUT\", \"ZAF\", \"ZMB\"]}, \"highGini=1_highSocProt=1\": {\"n_observations\": 18, \"n_with_pse\": 6, \"pse_coverage_pct\": 33.3, \"countries\": [\"ARG\", \"BGR\", \"BRA\", \"CHL\", \"CRI\", \"FJI\", \"GEO\", \"MEX\", \"PAN\", \"THA\", \"URY\", \"USA\"]}}, \"n_total_complete_panel\": 161, \"n_with_pse\": 25, \"n_mediation_sample\": 25, \"key_finding\": \"Reports PSE data coverage % in each (highGini\\u00d7highSocProt) quadrant. Critical concern if low-SocProt/high-Gini cell has <30% PSE coverage.\"}",
+          "metadata_diagnostic_type": "missing_data_quadrant"
+        }
+      ]
+    },
+    {
+      "dataset": "Reverse_Causality_and_Robustness_Tests",
+      "examples": [
+        {
+          "input": "Path (a): Does lagged LDem reduce Gini? (Gini\u2190LDem reverse causality)",
+          "output": "{\"path_a_description\": \"Regress gini on lagged LDem (country FE + period FE)\", \"n_obs\": 65, \"beta_ldem_on_gini\": -22.973972, \"p_value\": 0.6439, \"reverse_causality_concern\": false, \"interpretation\": \"Significant negative effect means democracies reduce inequality; if so, Gini is endogenous to LDem and must be instrumented or sample restricted.\"}",
+          "metadata_reverse_concern": "False",
+          "metadata_beta": "-22.973972"
+        }
+      ]
+    },
+    {
+      "dataset": "Summary_Verdict",
+      "examples": [
+        {
+          "input": "Synthesis of all analyses: opportunity cost channel, mediation, sensitivity, reverse causality",
+          "output": "(1) OppCost channel: SocProt \u03b2\u2087=-0.0017 (p=0.2481), PSE \u03b2\u2087=-0.0006 (p=0.548), opportunity-cost confirmed=NO; (2) Baron-Kenny mediation via judicial compliance: satisfied=False; (3) ACME extreme-values bound survives=True; (4) Reverse causality Gini\u2190LDem concern=False.",
+          "metadata_experiment_id": "experiment_iter2_dir4",
+          "metadata_opp_cost_confirmed": "False",
+          "metadata_bk_satisfied": "False",
+          "metadata_acme_survives": "True",
+          "metadata_reverse_concern": "False"
+        }
+      ]
+    }
+  ]
+}

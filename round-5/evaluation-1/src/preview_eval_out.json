@@ -1,0 +1,118 @@
+{
+  "metadata": {
+    "evaluation_name": "SDET Iter-5 Final Robustness Consolidation",
+    "description": "Seven-part evaluation: (1) verification checks for Spec C R²/β₇/Oster/ME/sub-index, (2) wild cluster bootstrap on iter-4 7-period panel (Spec B+C, B=999), (3) SWIID MC uncertainty propagation through ...",
+    "primary_spec": "Spec_C_WB_tertiary_DD",
+    "beta7_spec_c": 0.001051,
+    "p7_spec_c": 0.7299,
+    "oster_delta_r2": 0.0061606418946925645,
+    "bootstrap_spec_c_p_boot": 0.4894894894894895,
+    "swiid_mc_frac_positive": 0.642
+  },
+  "metrics_agg": {
+    "spec_c_r2_within": 0.977937,
+    "spec_a_r2_within": 0.992258,
+    "beta7_spec_c": 0.001051,
+    "se7_spec_c": 0.002993,
+    "p7_spec_c": 0.7299,
+    "oster_delta_r2": 0.006161,
+    "n_doubly_observed": 23.0,
+    "n_singleton": 21.0,
+    "bootstrap_spec_c_beta7": 0.001375,
+    "bootstrap_spec_c_p_asymp": 0.756463,
+    "bootstrap_spec_c_p_boot": 0.489489,
+    "bootstrap_spec_b_beta7": 0.011765,
+    "bootstrap_spec_b_p_asymp": 0.718559,
+    "bootstrap_spec_b_p_boot": 0.472472,
+    "swiid_mc_b7_mean": 0.000482,
+    "swiid_mc_b7_sd": 0.001344,
+    "swiid_mc_frac_positive": 0.642,
+    "swiid_mc_ci95_lower": -0.002322,
+    "swiid_mc_ci95_upper": 0.003196,
+    "vdem_csv_max_year": 2025.0,
+    "section64_word_count": 209.0,
+    "table1_footnote_word_count": 130.0,
+    "power_G_doubly_observed": 23.0,
+    "power_MDE_ldem_at_G_doubly": 0.009846,
+    "power_MDE_sd_at_G_doubly": 0.063098,
+    "power_MDE_ldem_at_G44": 0.00696
+  },
+  "datasets": [
+    {
+      "dataset": "verification_checks",
+      "examples": [
+        {
+          "input": "{\"check\": \"spec_c_r2_within\"}",
+          "output": "PASS",
+          "metadata_check": "spec_c_r2_within",
+          "metadata_status": "PASS",
+          "metadata_R2_within_spec_c": 0.977937,
+          "metadata_claimed": 0.978,
+          "metadata_abs_diff": 6.3e-05
+        },
+        {
+          "input": "{\"check\": \"spec_a_r2_within\"}",
+          "output": "PASS",
+          "metadata_check": "spec_a_r2_within",
+          "metadata_status": "PASS",
+          "metadata_R2_within_spec_a": 0.992258,
+          "metadata_claimed": 0.992,
+          "metadata_abs_diff": 0.000258
+        },
+        {
+          "input": "{\"check\": \"beta7_spec_c\"}",
+          "output": "PASS",
+          "metadata_check": "beta7_spec_c",
+          "metadata_status": "PASS",
+          "metadata_beta7": 0.001051,
+          "metadata_se7": 0.002993,
+          "metadata_p7": 0.7299,
+          "metadata_claimed_beta7": 0.001051,
+          "metadata_claimed_se7": 0.002993,
+          "metadata_claimed_p7": 0.73
+        }
+      ]
+    },
+    {
+      "dataset": "wild_bootstrap_iter4",
+      "examples": [
+        {
+          "input": "{\"spec\": \"Spec_C_WB_tertiary_DD_iter4_panel\", \"check\": \"wild_cluster_bootstrap_B999\"}",
+          "output": "{\"beta7_obs\": 0.001375, \"SE_crse\": 0.004406, \"p_asymptotic\": 0.756463, \"p_bootstrap_999\": 0.489489, \"N_obs\": 67, \"G_clusters\": 44, \"boot_mean_b7\": -3.5e-05, \"boot_sd_b7\": 0.001891, \"ci95_boot_lower\": ...",
+          "metadata_spec": "Spec_C_WB_tertiary_DD_iter4_panel",
+          "metadata_N_obs": 67,
+          "metadata_G_clusters": 44,
+          "eval_beta7_obs": 0.001375221627705561,
+          "eval_p_asymptotic": 0.756463173352808,
+          "eval_p_bootstrap_999": 0.4894894894894895
+        },
+        {
+          "input": "{\"spec\": \"Spec_B_UNDP_MYS_DD_iter4_panel\", \"check\": \"wild_cluster_bootstrap_B999\"}",
+          "output": "{\"beta7_obs\": 0.011765, \"SE_crse\": 0.032466, \"p_asymptotic\": 0.718559, \"p_bootstrap_999\": 0.472472, \"N_obs\": 85, \"G_clusters\": 52, \"boot_mean_b7\": 9.7e-05, \"boot_sd_b7\": 0.016481, \"ci95_boot_lower\": -...",
+          "metadata_spec": "Spec_B_UNDP_MYS_DD_iter4_panel",
+          "metadata_N_obs": 85,
+          "metadata_G_clusters": 52,
+          "eval_beta7_obs": 0.011765387186652659,
+          "eval_p_asymptotic": 0.7185587683587862,
+          "eval_p_bootstrap_999": 0.4724724724724725
+        }
+      ]
+    },
+    {
+      "dataset": "swiid_mc_spec_c",
+      "examples": [
+        {
+          "input": "{\"check\": \"SWIID_gini_uncertainty_500draws_spec_c\", \"spec\": \"Spec_C_WB_tertiary_DD\"}",
+          "output": "{\"spec\": \"Spec_C_WB_tertiary_DD\", \"n_draws\": 500, \"n_valid\": 500, \"b7_obs\": 0.001375, \"b7_mean_500\": 0.000482, \"b7_sd_500\": 0.001344, \"ci95_lower\": -0.002322, \"ci95_upper\": 0.003196, \"frac_positive\": ...",
+          "metadata_spec": "Spec_C_WB_tertiary_DD",
+          "metadata_n_draws": 500,
+          "eval_b7_mean": 0.0004820970311695627,
+          "eval_b7_sd": 0.001343960816982377,
+          "eval_frac_positive": 0.642,
+          "eval_ci95_lower": -0.0023221288607057347,
+          "eval_ci95_upper": 0.0031961905150286692
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,97 @@
+{
+  "datasets": [
+    {
+      "dataset": "DD_panel_libdem_predictions",
+      "examples": [
+        {
+          "input": "{\"country_iso3\": \"ALB\", \"period\": \"2020-22\", \"period_start\": 2020, \"education_mys\": 10.0, \"ter_enroll_pct\": 61.40103333333334, \"gini_disp\": 34.933333, \"socprot_coverage\": 78.1, \"v2x_polyarchy\": 0.5236...",
+          "output": "0.437000",
+          "metadata_country_iso3": "ALB",
+          "metadata_period": "2020-22",
+          "metadata_period_start": 2020,
+          "predict_spec_a_naive_undp": "0.000000",
+          "predict_spec_b_dd_undp": "0.000000",
+          "predict_spec_c_dd_tertiary": "0.000000",
+          "predict_spec_d_naive_tertiary": "0.000000"
+        },
+        {
+          "input": "{\"country_iso3\": \"ARG\", \"period\": \"2015-19\", \"period_start\": 2015, \"education_mys\": 9.866666, \"ter_enroll_pct\": 89.20746, \"gini_disp\": 37.98, \"socprot_coverage\": 65.4, \"v2x_polyarchy\": 0.7708}",
+          "output": "0.618400",
+          "metadata_country_iso3": "ARG",
+          "metadata_period": "2015-19",
+          "metadata_period_start": 2015,
+          "predict_spec_a_naive_undp": "0.007297",
+          "predict_spec_b_dd_undp": "0.006493",
+          "predict_spec_c_dd_tertiary": "-0.017322",
+          "predict_spec_d_naive_tertiary": "-0.011562"
+        },
+        {
+          "input": "{\"country_iso3\": \"ARG\", \"period\": \"2020-22\", \"period_start\": 2020, \"education_mys\": 9.9, \"ter_enroll_pct\": 104.56456666666666, \"gini_disp\": 38.0, \"socprot_coverage\": 65.9, \"v2x_polyarchy\": 0.811333}",
+          "output": "0.648333",
+          "metadata_country_iso3": "ARG",
+          "metadata_period": "2020-22",
+          "metadata_period_start": 2020,
+          "predict_spec_a_naive_undp": "-0.005689",
+          "predict_spec_b_dd_undp": "-0.006493",
+          "predict_spec_c_dd_tertiary": "0.017322",
+          "predict_spec_d_naive_tertiary": "0.023083"
+        }
+      ]
+    },
+    {
+      "dataset": "Annual_Granger_panel_predictions",
+      "examples": [
+        {
+          "input": "{\"iso3\": \"ALB\", \"year\": 1997, \"libdem_lag1\": 0.321, \"gini_lag1\": 35.8, \"mys_lag1\": 7.62384}",
+          "output": "0.311000",
+          "metadata_iso3": "ALB",
+          "metadata_year": 1997,
+          "predict_granger_mys_on_libdem": "0.268312",
+          "predict_granger_gini_on_libdem": "0.270907"
+        },
+        {
+          "input": "{\"iso3\": \"ALB\", \"year\": 1998, \"libdem_lag1\": 0.311, \"gini_lag1\": 35.9, \"mys_lag1\": 7.90551}",
+          "output": "0.323000",
+          "metadata_iso3": "ALB",
+          "metadata_year": 1998,
+          "predict_granger_mys_on_libdem": "0.258532",
+          "predict_granger_gini_on_libdem": "0.261920"
+        },
+        {
+          "input": "{\"iso3\": \"ALB\", \"year\": 1999, \"libdem_lag1\": 0.323, \"gini_lag1\": 36.1, \"mys_lag1\": 8.18718}",
+          "output": "0.326000",
+          "metadata_iso3": "ALB",
+          "metadata_year": 1999,
+          "predict_granger_mys_on_libdem": "0.268572",
+          "predict_granger_gini_on_libdem": "0.272561"
+        }
+      ]
+    },
+    {
+      "dataset": "Annual_reverse_causality_path_a",
+      "examples": [
+        {
+          "input": "{\"iso3\": \"ALB\", \"year\": 1997, \"libdem_lag1\": 0.321}",
+          "output": "35.900000",
+          "metadata_iso3": "ALB",
+          "metadata_year": 1997,
+          "predict_path_a_ldm_on_gini": "-0.203713"
+        },
+        {
+          "input": "{\"iso3\": \"ALB\", \"year\": 1998, \"libdem_lag1\": 0.311}",
+          "output": "36.100000",
+          "metadata_iso3": "ALB",
+          "metadata_year": 1998,
+          "predict_path_a_ldm_on_gini": "-0.197366"
+        },
+        {
+          "input": "{\"iso3\": \"ALB\", \"year\": 1999, \"libdem_lag1\": 0.323}",
+          "output": "36.200000",
+          "metadata_iso3": "ALB",
+          "metadata_year": 1999,
+          "predict_path_a_ldm_on_gini": "-0.204982"
+        }
+      ]
+    }
+  ]
+}

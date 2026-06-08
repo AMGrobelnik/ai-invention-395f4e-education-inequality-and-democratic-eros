@@ -1,0 +1,45 @@
+{
+  "n_countries_total": 61,
+  "n_country_periods_total": 425,
+  "n_country_periods_complete": 85,
+  "n_countries_3plus_periods": 61,
+  "coverage_by_period": {
+    "1990-94": 59,
+    "1995-99": 61,
+    "2000-04": 61,
+    "2005-09": 61,
+    "2010-14": 61,
+    "2015-19": 61,
+    "2020-22": 61
+  },
+  "nstp_countries": 0,
+  "nstp_fallback_countries": 0,
+  "ilo_sdg131_periods": 104,
+  "ilo_directly_reported_fraction": 0.0,
+  "within_sd_education_extended": 1.0446,
+  "within_sd_education_twoperiod": 0.3212,
+  "within_sd_education_ratio": 3.25,
+  "overlap_2015_ilo_vs_aspire": {
+    "n": 0,
+    "r": null,
+    "mean_diff": null
+  },
+  "case_countries_included": {
+    "Hungary": false,
+    "Turkey": true,
+    "Thailand": true,
+    "Venezuela": false
+  },
+  "vdem_subindices_available": false,
+  "mde_estimate_note": "N=61 countries, 61 with \u22653 periods. Within-SD education=1.045 vs 2-period=0.321. Ratio=3.25x larger in extended panel.",
+  "data_sources": {
+    "socprot_pre2015": "World Bank ASPIRE (SL.COV.TOTL.ZS) \u2014 fallback (NSTP requires GESIS login)",
+    "socprot_post2015": "ILO SDG 1.3.1 bulk download (SDG_0131_SEX_SOC_RT_A.csv.gz)",
+    "vdem_main": "Our World in Data V-Dem CSV (political-regime, liberal-democracy, electoral-democracy)",
+    "vdem_subindices": "Attempted Demscore/Harvard Dataverse \u2014 see vdem_subindices_available",
+    "swiid": "SWIID v9.92 (April 2026) GitHub raw CSV",
+    "education_primary": "UNDP HDR25 mean years of schooling (mys)",
+    "education_supplement": "World Bank SE.TER.ENRR gross tertiary enrollment",
+    "gdp": "World Bank NY.GDP.PCAP.PP.KD (GDP PPP constant 2017 international $)"
+  }
+}

@@ -1,0 +1,249 @@
+{
+  "datasets": [
+    {
+      "dataset": "spec_c_primary_predictions_per_country_period",
+      "examples": [
+        {
+          "input": "{\"country_iso3\": \"ALB\", \"period_id\": 7, \"E_ter_std\": 0.6277, \"G_std\": -0.7048, \"S_std\": 1.3203}",
+          "output": "0.436",
+          "metadata_country": "ALB",
+          "metadata_period_id": "7",
+          "metadata_period_label": "2020-22",
+          "predict_dd_corrected": "0.038472",
+          "predict_baseline": "0.385116"
+        },
+        {
+          "input": "{\"country_iso3\": \"ARM\", \"period_id\": 6, \"E_ter_std\": 0.3658, \"G_std\": -0.4831, \"S_std\": 0.2779}",
+          "output": "0.33",
+          "metadata_country": "ARM",
+          "metadata_period_id": "6",
+          "metadata_period_label": "2015-19",
+          "predict_dd_corrected": "0.40446",
+          "predict_baseline": "0.397206"
+        },
+        {
+          "input": "{\"country_iso3\": \"ARM\", \"period_id\": 7, \"E_ter_std\": 0.4167, \"G_std\": -0.8291, \"S_std\": 0.2148}",
+          "output": "0.518667",
+          "metadata_country": "ARM",
+          "metadata_period_id": "7",
+          "metadata_period_label": "2020-22",
+          "predict_dd_corrected": "0.444207",
+          "predict_baseline": "0.451461"
+        }
+      ]
+    },
+    {
+      "dataset": "corrected_table1_all_4specs_standardized",
+      "examples": [
+        {
+          "input": "{\"spec\": \"A_naive_mys_std\", \"coefficient\": \"beta_E\"}",
+          "output": "0.10096455",
+          "metadata_spec": "A_naive_mys_std",
+          "metadata_coef": "beta_E",
+          "metadata_se": "0.19664927",
+          "metadata_p": "0.6103",
+          "metadata_sig": "",
+          "metadata_N": "67",
+          "metadata_R2_within": "0.99186594",
+          "metadata_G_clusters": "44",
+          "metadata_estimator": "Naive FE",
+          "metadata_education_proxy": "UNDP MYS (standardized)",
+          "metadata_standardized": "True"
+        },
+        {
+          "input": "{\"spec\": \"A_naive_mys_std\", \"coefficient\": \"beta_G\"}",
+          "output": "-0.11814554",
+          "metadata_spec": "A_naive_mys_std",
+          "metadata_coef": "beta_G",
+          "metadata_se": "0.31875043",
+          "metadata_p": "0.7127",
+          "metadata_sig": "",
+          "metadata_N": "67",
+          "metadata_R2_within": "0.99186594",
+          "metadata_G_clusters": "44",
+          "metadata_estimator": "Naive FE",
+          "metadata_education_proxy": "UNDP MYS (standardized)",
+          "metadata_standardized": "True"
+        },
+        {
+          "input": "{\"spec\": \"A_naive_mys_std\", \"coefficient\": \"beta_S\"}",
+          "output": "0.10297196",
+          "metadata_spec": "A_naive_mys_std",
+          "metadata_coef": "beta_S",
+          "metadata_se": "0.08323184",
+          "metadata_p": "0.2227",
+          "metadata_sig": "",
+          "metadata_N": "67",
+          "metadata_R2_within": "0.99186594",
+          "metadata_G_clusters": "44",
+          "metadata_estimator": "Naive FE",
+          "metadata_education_proxy": "UNDP MYS (standardized)",
+          "metadata_standardized": "True"
+        }
+      ]
+    },
+    {
+      "dataset": "oster_bounds_spec_c_only",
+      "examples": [
+        {
+          "input": "{\"analysis\": \"oster_bounds\", \"spec\": \"C_dd_wb_tertiary_std\"}",
+          "output": "numerically_undefined",
+          "metadata_status": "numerically_undefined",
+          "metadata_reason": "delta_R2=2.10e-05 < 1e-4 threshold; denominator near zero",
+          "metadata_note": "Oster bounds numerically undefined for Spec C",
+          "metadata_R2_full": "0.97774016",
+          "metadata_R2_partial": "0.97771917",
+          "metadata_delta_R2": "2.099e-05",
+          "metadata_R2_max": "1.271062",
+          "metadata_beta_EGS_full": "4.21810729",
+          "metadata_interpretation": "Near-zero delta_R2 implies triple interaction explains essentially no additional variance beyond two-way terms, making Oster comparison uninformative"
+        }
+      ]
+    },
+    {
+      "dataset": "subindex_dd_pre_registered_k2_v2jucomp_v2x_jucon",
+      "examples": [
+        {
+          "input": "{\"sub_index\": \"v2jucomp\"}",
+          "output": "139.84788039",
+          "metadata_index": "v2jucomp",
+          "metadata_status": "computed",
+          "metadata_N": "63",
+          "metadata_G": "42",
+          "metadata_R2_within": "0.95432413",
+          "metadata_p_egs": "0.2332",
+          "metadata_passes_bonferroni": "False",
+          "metadata_note": ""
+        },
+        {
+          "input": "{\"sub_index\": \"v2x_jucon\"}",
+          "output": "18.52865443",
+          "metadata_index": "v2x_jucon",
+          "metadata_status": "computed",
+          "metadata_N": "63",
+          "metadata_G": "42",
+          "metadata_R2_within": "0.97878464",
+          "metadata_p_egs": "0.5291",
+          "metadata_passes_bonferroni": "False",
+          "metadata_note": ""
+        }
+      ]
+    },
+    {
+      "dataset": "power_mde_from_spec_c_residuals",
+      "examples": [
+        {
+          "input": "{\"analysis\": \"power_mde\", \"spec\": \"C_primary\"}",
+          "output": "39.84693151",
+          "metadata_sigma_eps_from_spec_c_residuals": "0.068062",
+          "metadata_se_beta_EGS_spec_c": "14.22088919",
+          "metadata_mde_80pct_5pct": "39.84693151",
+          "metadata_mde_units": "1 SD change in LDem per SD change in E_ter_std × (G_std × S_std)",
+          "metadata_current_beta_EGS": "4.21810729",
+          "metadata_effect_over_mde_ratio": "0.1059",
+          "metadata_powered": "False",
+          "metadata_G_doubly_observed": "44",
+          "metadata_interpretation": "MDE=39.84693 vs |beta_EGS|=4.218107; ratio=0.11. Underpowered: estimated effect smaller than MDE at 80%/5%."
+        }
+      ]
+    },
+    {
+      "dataset": "marginal_effects_standardized_2x2_grid",
+      "examples": [
+        {
+          "input": "{\"cell\": \"gini_p25_sp_p25\"}",
+          "output": "2.08905439",
+          "metadata_gini_quantile": "p25",
+          "metadata_sp_quantile": "p25",
+          "metadata_gini_std": "-0.5969",
+          "metadata_sp_std": "-0.9042",
+          "metadata_gini_raw": "35.69",
+          "metadata_sp_raw": "19.95",
+          "metadata_me": "2.08905439",
+          "metadata_me_se": "7.68605366",
+          "metadata_me_95ci_lo": "-12.97561079",
+          "metadata_me_95ci_hi": "17.15371956",
+          "metadata_sign": "+",
+          "metadata_units": "LDem SD change per 1-SD change in E_ter_std"
+        },
+        {
+          "input": "{\"cell\": \"gini_p25_sp_p75\"}",
+          "output": "-2.13165855",
+          "metadata_gini_quantile": "p25",
+          "metadata_sp_quantile": "p75",
+          "metadata_gini_std": "-0.5969",
+          "metadata_sp_std": "0.7723",
+          "metadata_gini_raw": "35.69",
+          "metadata_sp_raw": "63.77",
+          "metadata_me": "-2.13165855",
+          "metadata_me_se": "6.56929068",
+          "metadata_me_95ci_lo": "-15.00746829",
+          "metadata_me_95ci_hi": "10.74415119",
+          "metadata_sign": "-",
+          "metadata_units": "LDem SD change per 1-SD change in E_ter_std"
+        },
+        {
+          "input": "{\"cell\": \"gini_p75_sp_p25\"}",
+          "output": "-2.6964947",
+          "metadata_gini_quantile": "p75",
+          "metadata_sp_quantile": "p25",
+          "metadata_gini_std": "0.6579",
+          "metadata_sp_std": "-0.9042",
+          "metadata_gini_raw": "44.44",
+          "metadata_sp_raw": "19.95",
+          "metadata_me": "-2.6964947",
+          "metadata_me_se": "8.47046277",
+          "metadata_me_95ci_lo": "-19.29860173",
+          "metadata_me_95ci_hi": "13.90561234",
+          "metadata_sign": "-",
+          "metadata_units": "LDem SD change per 1-SD change in E_ter_std"
+        }
+      ]
+    },
+    {
+      "dataset": "dd_sanity_checks_zero_mean_and_se_bounds",
+      "examples": [
+        {
+          "input": "{\"check\": \"dd_zero_mean\", \"column\": \"dd_prod_EG\"}",
+          "output": "PASSED",
+          "metadata_column": "dd_prod_EG",
+          "metadata_max_within_mean": "3.469446951953614e-18",
+          "metadata_threshold": "1e-8"
+        },
+        {
+          "input": "{\"check\": \"dd_zero_mean\", \"column\": \"dd_prod_ES\"}",
+          "output": "PASSED",
+          "metadata_column": "dd_prod_ES",
+          "metadata_max_within_mean": "3.469446951953614e-18",
+          "metadata_threshold": "1e-8"
+        },
+        {
+          "input": "{\"check\": \"dd_zero_mean\", \"column\": \"dd_prod_GS\"}",
+          "output": "PASSED",
+          "metadata_column": "dd_prod_GS",
+          "metadata_max_within_mean": "1.734723475976807e-18",
+          "metadata_threshold": "1e-8"
+        }
+      ]
+    },
+    {
+      "dataset": "provenance_disclosure_beta7_original_vs_corrected",
+      "examples": [
+        {
+          "input": "{\"analysis\": \"provenance_disclosure\"}",
+          "output": "2.398",
+          "metadata_original_beta_EGS": "2.398",
+          "metadata_original_dataset": "2-period UNDP HDR25 MYS panel, post-1990 developing democratizers",
+          "metadata_original_education_proxy": "UNDP HDR25 Mean Years of Schooling (MYS)",
+          "metadata_original_within_SD_education_2period": "0.026",
+          "metadata_original_within_SD_units": "years of schooling, within-country SD across 2 periods",
+          "metadata_original_critical_flaw": "within-SD=0.026 is imputation noise (MYS frozen at 2017 in UNDP HDR25, linearly interpolated 2015-2022)",
+          "metadata_current_spec": "C_dd_wb_tertiary_standardized",
+          "metadata_current_education_proxy": "World Bank SE.TER.ENRR (gross tertiary enrollment rate, %)",
+          "metadata_current_standardization": "E_std = (educ_tertiary - mean_ter) / sd_ter within N analysis sample",
+          "metadata_current_standardization_params": "{'E_ter': {'mean': 43.489658, 'sd': 28.533111}, 'E_mys': {'mean': 8.257115, 'sd': 2.997103}, 'G': {'mean': 39.850249, 'sd': 6.975896}, 'S': {'mean': 43.585323, 'sd': 26.140919}}"
+        }
+      ]
+    }
+  ]
+}

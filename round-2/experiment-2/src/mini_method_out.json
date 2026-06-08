@@ -1,0 +1,141 @@
+{
+  "metadata": {
+    "experiment_id": "experiment_iter2_dir4",
+    "description": "PSE Moderator Comparison + Causal Mediation with Quadrant Diagnostics",
+    "n_panel_rows_total": 161,
+    "n_complete_rows": 161,
+    "n_total_examples": 196
+  },
+  "datasets": [
+    {
+      "dataset": "DD_SocProt_Panel_Predictions",
+      "examples": [
+        {
+          "input": "{\"country_iso3\": \"ALB\", \"period_start\": 2020, \"education\": 10.0, \"gini_disp\": 34.9333, \"socprot_coverage\": 78.1, \"e_education\": 0.904857, \"e_gini_disp\": -1.392222, \"e_socprot_coverage\": 0.0}",
+          "output": "0.437",
+          "predict_dd_socprot": "0.425338",
+          "metadata_country_iso3": "ALB",
+          "metadata_period_start": "2020",
+          "metadata_model_summary": "DD SocProt β₇=-0.001714, p=0.2481, n=161, sign_reversal=True"
+        },
+        {
+          "input": "{\"country_iso3\": \"ARG\", \"period_start\": 2015, \"education\": 9.8667, \"gini_disp\": 37.98, \"socprot_coverage\": 65.4, \"e_education\": 0.660571, \"e_gini_disp\": -3.837143, \"e_socprot_coverage\": -0.25}",
+          "output": "0.6184",
+          "predict_dd_socprot": "0.643551",
+          "metadata_country_iso3": "ARG",
+          "metadata_period_start": "2015",
+          "metadata_model_summary": "DD SocProt β₇=-0.001714, p=0.2481, n=161, sign_reversal=True"
+        },
+        {
+          "input": "{\"country_iso3\": \"ARG\", \"period_start\": 2020, \"education\": 9.9, \"gini_disp\": 38.0, \"socprot_coverage\": 65.9, \"e_education\": 0.693904, \"e_gini_disp\": -3.817143, \"e_socprot_coverage\": 0.25}",
+          "output": "0.648333",
+          "predict_dd_socprot": "0.622551",
+          "metadata_country_iso3": "ARG",
+          "metadata_period_start": "2020",
+          "metadata_model_summary": "DD SocProt β₇=-0.001714, p=0.2481, n=161, sign_reversal=True"
+        }
+      ]
+    },
+    {
+      "dataset": "DD_PSE_Comparison_Predictions",
+      "examples": [
+        {
+          "input": "{\"country_iso3\": \"ARG\", \"period_start\": 2015, \"education\": 9.8667, \"gini_disp\": 37.98, \"pse_share_period\": 17.88}",
+          "output": "0.6184",
+          "predict_dd_pse": "0.511583",
+          "metadata_country_iso3": "ARG",
+          "metadata_period_start": "2015",
+          "metadata_model_summary": "DD PSE β₇=-0.000587, p=0.548, n=25, estimation=cross_sectional_OLS_no_country_FE"
+        },
+        {
+          "input": "{\"country_iso3\": \"BOL\", \"period_start\": 2015, \"education\": 8.8333, \"gini_disp\": 41.42, \"pse_share_period\": 7.438}",
+          "output": "0.3418",
+          "predict_dd_pse": "0.500498",
+          "metadata_country_iso3": "BOL",
+          "metadata_period_start": "2015",
+          "metadata_model_summary": "DD PSE β₇=-0.000587, p=0.548, n=25, estimation=cross_sectional_OLS_no_country_FE"
+        },
+        {
+          "input": "{\"country_iso3\": \"BRA\", \"period_start\": 2015, \"education\": 7.7333, \"gini_disp\": 46.54, \"pse_share_period\": 11.3333}",
+          "output": "0.6482",
+          "predict_dd_pse": "0.570612",
+          "metadata_country_iso3": "BRA",
+          "metadata_period_start": "2015",
+          "metadata_model_summary": "DD PSE β₇=-0.000587, p=0.548, n=25, estimation=cross_sectional_OLS_no_country_FE"
+        }
+      ]
+    },
+    {
+      "dataset": "Causal_Mediation_BaronKenny",
+      "examples": [
+        {
+          "input": "{\"analysis\": \"Baron-Kenny_causal_mediation\", \"outcome\": \"v2jucomp\", \"mediator\": \"pse_share_period\", \"exposure\": \"education\\u00d7gini\\u00d7(\\u2212socprot)_within_demeaned\", \"n_obs\": 25}",
+          "output": "{\"acme\": -0.140815, \"acme_ci_95\": [-0.508853, 0.121803], \"baron_kenny_satisfied\": false, \"a_p\": 0.3518, \"b_p\": 0.9886}",
+          "predict_dd_socprot": "ACME=-0.140815",
+          "metadata_outcome": "v2jucomp",
+          "metadata_bk_satisfied": "False"
+        },
+        {
+          "input": "{\"analysis\": \"Baron-Kenny_causal_mediation\", \"outcome\": \"v2cseeorgs\", \"mediator\": \"pse_share_period\", \"exposure\": \"education\\u00d7gini\\u00d7(\\u2212socprot)_within_demeaned\", \"n_obs\": 25}",
+          "output": "{\"acme\": -0.094772, \"acme_ci_95\": [-0.342783, 0.193294], \"baron_kenny_satisfied\": false, \"a_p\": 0.3518, \"b_p\": 0.979}",
+          "predict_dd_socprot": "ACME=-0.094772",
+          "metadata_outcome": "v2cseeorgs",
+          "metadata_bk_satisfied": "False"
+        },
+        {
+          "input": "{\"analysis\": \"Baron-Kenny_causal_mediation\", \"outcome\": \"v2x_libdem\", \"mediator\": \"pse_share_period\", \"exposure\": \"education\\u00d7gini\\u00d7(\\u2212socprot)_within_demeaned\", \"n_obs\": 25}",
+          "output": "{\"acme\": -0.018097, \"acme_ci_95\": [-0.086667, 0.0034], \"baron_kenny_satisfied\": false, \"a_p\": 0.3518, \"b_p\": 0.9969}",
+          "predict_dd_socprot": "ACME=-0.018097",
+          "metadata_outcome": "v2x_libdem",
+          "metadata_bk_satisfied": "False"
+        }
+      ]
+    },
+    {
+      "dataset": "Missing_Data_Diagnostics",
+      "examples": [
+        {
+          "input": "{\"analysis\": \"quadrant_missing_data\", \"quadrants\": [\"highGini=0_highSocProt=0\", \"highGini=0_highSocProt=1\", \"highGini=1_highSocProt=0\", \"highGini=1_highSocProt=1\"]}",
+          "output": "{\"highGini=0_highSocProt=0\": {\"n_observations\": 19, \"n_with_pse\": 2, \"pse_coverage_pct\": 10.5, \"countries\": [\"BGD\", \"BLR\", \"LBR\", \"MDA\", \"MDV\", \"MKD\", \"MLI\", \"MNE\", \"NGA\", \"NPL\", \"SRB\", \"STP\", \"VEN\"]}, \"highGini=0_highSocProt=1\": {\"n_observations\": 62, \"n_with_pse\": 10, \"pse_coverage_pct\": 16.1, \"countries\": [\"ALB\", \"AUT\", \"BEL\", \"CAN\", \"CYP\", \"CZE\", \"DEU\", \"DNK\", \"ESP\", \"EST\", \"FIN\", \"FRA\", \"GBR\", \"GEO\", \"GRC\", \"HRV\", \"HUN\", \"IRL\", \"ISL\", \"ISR\", \"ITA\", \"JPN\", \"LTU\", \"LUX\", \"LVA\", \"MLT\", \"MNE\", \"MNG\", \"NLD\", \"NOR\", \"POL\", \"PRT\", \"ROU\", \"SVN\", \"SWE\", \"THA\", \"UKR\", \"URY\"]}, \"highGini=1_highSocProt=0\": {\"n_observations\": 62, \"n_with_pse\": 7, \"pse_coverage_pct\": 11.3, \"countries\": [\"BEN\", \"BFA\", \"BIH\", \"BOL\", \"BTN\", \"BWA\", \"CIV\", \"COL\", \"CPV\", \"DOM\", \"ECU\", \"GHA\", \"GMB\", \"GNB\", \"GTM\", \"HND\", \"IDN\", \"IND\", \"JAM\", \"KEN\", \"LKA\", \"LSO\", \"MDG\", \"MWI\", \"MYS\", \"NAM\", \"NGA\", \"PAN\", \"PER\", \"PHL\", \"PRY\", \"SEN\", \"SLE\", \"SLV\", \"SUR\", \"TUN\", \"VUT\", \"ZAF\", \"ZMB\"]}, \"highGini=1_highSocProt=1\": {\"n_observations\": 18, \"n_with_pse\": 6, \"pse_coverage_pct\": 33.3, \"countries\": [\"ARG\", \"BGR\", \"BRA\", \"CHL\", \"CRI\", \"FJI\", \"GEO\", \"MEX\", \"PAN\", \"THA\", \"URY\", \"USA\"]}}",
+          "predict_dd_socprot": "n_complete=161, n_with_pse=25",
+          "metadata_diagnostic": "quadrant_coverage"
+        },
+        {
+          "input": "{\"analysis\": \"extreme_values_ACME_sensitivity\", \"assumption\": \"ACME=0 for countries without PSE data\"}",
+          "output": "{\"acme_observed\": -0.140815, \"acme_conservative_bound\": -0.036671, \"survives_conservative_bound\": true, \"attenuation_factor\": null}",
+          "predict_dd_socprot": "survives_bound=True",
+          "metadata_diagnostic": "extreme_sensitivity"
+        },
+        {
+          "input": "{\"analysis\": \"sequential_ignorability_check\", \"test\": \"residual_correlation_between_mediator_and_outcome_equations\"}",
+          "output": "{\"rho_residual_correlation\": -0.6199, \"p_value\": null, \"sequential_ignorability_concern\": true}",
+          "predict_dd_socprot": "rho=-0.6199, concern=True",
+          "metadata_diagnostic": "sequential_ignorability"
+        }
+      ]
+    },
+    {
+      "dataset": "Reverse_Causality_Robustness",
+      "examples": [
+        {
+          "input": "{\"test\": \"reverse_causality_Gini_LDem\", \"hypothesis\": \"Does lagged LDem reduce Gini (path a)?\"}",
+          "output": "{\"beta_ldem_on_gini\": -22.973972, \"p_value\": 0.6439, \"reverse_causality_concern\": false}",
+          "predict_dd_socprot": "reverse_concern=False",
+          "metadata_test": "gini_ldem_reverse"
+        },
+        {
+          "input": "{\"test\": \"IMF_SAP_socprot_association\", \"hypothesis\": \"Does IMF SAP drive SocProt changes (IV candidate)?\"}",
+          "output": "{\"beta_imfsap_on_dsocprot\": 6.13125, \"p_value\": 0.6852}",
+          "predict_dd_socprot": "beta_imf=6.13125, p=0.6852",
+          "metadata_test": "imf_sap_socprot"
+        },
+        {
+          "input": "{\"test\": \"lagged_socprot_sensitivity\", \"hypothesis\": \"Lagged SocProt (t-5) in DD triple \\u2014 consistent sign?\"}",
+          "output": "{\"beta7\": -0.111609, \"p7\": 0.1504, \"n_obs\": 65, \"estimation\": \"cross_sectional_OLS_no_country_FE\"}",
+          "predict_dd_socprot": "lagged_beta7=-0.111609, p=0.1504",
+          "metadata_test": "lagged_socprot"
+        }
+      ]
+    }
+  ]
+}

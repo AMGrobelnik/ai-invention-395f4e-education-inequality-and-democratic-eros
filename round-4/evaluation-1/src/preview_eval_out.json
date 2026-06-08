@@ -1,0 +1,266 @@
+{
+  "metadata": {
+    "evaluation_name": "DD Robustness Validation",
+    "description": "Six robustness checks for iter-3 DD triple-interaction estimates: wild cluster bootstrap, SWIID uncertainty, selection diagnostic, power curves, ILO directly-reported subgroup, robustness table.",
+    "primary_result": {
+      "beta7_undp": {
+        "beta7": 0.2921112159510637,
+        "se7": 0.23340298883108276,
+        "pval7": 0.2107405922693817,
+        "ci95_lower": -0.1653586421578585,
+        "ci95_upper": 0.749581074059986,
+        "n_obs": 95,
+        "n_clusters": 58
+      },
+      "beta7_wb": {
+        "beta7": 13.128,
+        "se7": 9.9904,
+        "pval7": 0.1888,
+        "ci95_lower": -6.453183999999997,
+        "ci95_upper": 32.70918399999999,
+        "n_obs": 137,
+        "n_clusters": 86
+      }
+    },
+    "bootstrap": {
+      "undp": {
+        "b7_obs": 0.2921112159510637,
+        "p_bootstrap": 0.07007007007007007,
+        "G": 58,
+        "B": 999,
+        "b7_boot_mean": -0.006579011553718829,
+        "b7_boot_sd": 0.1591809845806247,
+        "ci95_boot_lower": -0.315573896134107,
+        "ci95_boot_upper": 0.2912629728095697
+      },
+      "wb_tertiary": {
+        "b7_obs": 13.128,
+        "p_bootstrap": 0.09109109109109109,
+        "G": 86,
+        "B": 999,
+        "method": "moment_matching_approximation",
+        "note": "Bootstrap uses moment-matching approximation. WB tertiary merged dataset not stored as standalone file. p-value should be interpreted cautiously.",
+        "b7_boot_mean": -0.12470207155358194,
+        "b7_boot_sd": 7.840173213677553,
+        "ci95_boot_lower": -15.34837110705242,
+        "ci95_boot_upper": 14.981990238900497
+      }
+    },
+    "swiid_uncertainty": {
+      "n_draws": 500,
+      "n_valid": 500,
+      "b7_mean": 0.025682925444897305,
+      "b7_sd": 0.08687368105330263,
+      "ci95_lower": -0.14977858855887188,
+      "ci95_upper": 0.1951016088152339,
+      "frac_positive": 0.628,
+      "frac_above_original": 0.0,
+      "b7_original": 0.2921112159510637
+    },
+    "selection_diagnostic": {
+      "n_doubly_observed_countries": 44,
+      "n_single_or_none_countries": 17,
+      "any_systematically_different": true,
+      "variable_tests": {
+        "mean_libdem": {
+          "mean_doubly_observed": 0.40901688311688306,
+          "mean_rest": 0.35413267973856205,
+          "n_doubly_observed": 44,
+          "n_rest": 17,
+          "t_stat": 1.3012399255006295,
+          "p_value": 0.20461290005769658,
+          "systematically_different": false
+        },
+        "libdem_trend": {
+          "mean_doubly_observed": 0.01744253246753249,
+          "mean_rest": 0.023136834733893566,
+          "n_doubly_observed": 44,
+          "n_rest": 17,
+          "t_stat": -0.5197655108947201,
+          "p_value": 0.6077007024308488,
+          "systematically_different": false
+        },
+        "mean_gini_disp": {
+          "mean_doubly_observed": 43.31887320483749,
+          "mean_rest": 38.316397354497354,
+          "n_doubly_observed": 42,
+          "n_rest": 15,
+          "t_stat": 1.8603251932789282,
+          "p_value": 0.07848792073765293,
+          "systematically_different": true
+        },
+        "mean_socprot": {
+          "mean_doubly_observed": 40.08655303030303,
+          "mean_rest": 36.28125,
+          "n_doubly_observed": 44,
+          "n_rest": 16,
+          "t_stat": 0.4609463718563412,
+          "p_value": 0.648881515601468,
+          "systematically_different": false
+        },
+        "gdppc_at_transition": {
+          "mean_doubly_observed": 6957.501360061326,
+          "mean_rest": 5578.909641873639,
+          "n_doubly_observed": 43,
+          "n_rest": 15,
+          "t_stat": 1.084553798129971,
+          "p_value": 0.2895187187940166,
+          "systematically_different": false
+        }
+      },
+      "interpretation": "The doubly-observed sample is SYSTEMATICALLY DIFFERENT from all others on at least one baseline characteristic (p<0.10), raising external validity concerns."
+    },
+    "power_curves": {
+      "scenarios": {
+        "UNDP_MYS": {
+          "G_grid": [
+            20,
+            25,
+            30
+          ],
+          "MDE_arr": [
+            0.4339949264800007,
+            0.38381140148166,
+            0.3478112616891927
+          ],
+          "sigma_E": 0.02561305767416714,
+          "sigma_x3": 0.0659827335298848,
+          "sigma_eps": 0.043353403365794733,
+          "MDE_at_G37": 0.3110688097161781,
+          "MDE_at_G37_SD_units": 1.9934734048418494,
+          "sd_ldem": 0.15604362163078694
+        },
+        "WB_tertiary": {
+          "G_grid": [
+            20,
+            25,
+            30
+          ],
+          "MDE_arr": [
+            0.15611331268629364,
+            0.1380616815455609,
+            0.12511198850247712
+          ],
+          "sigma_E": 3.66,
+          "sigma_x3": 9.428659701295548,
+          "sigma_eps": 2.228425612530347,
+          "MDE_at_G37": 0.11189527663847637,
+          "MDE_at_G37_SD_units": 0.7170769011195506,
+          "sd_ldem": 0.15604362163078694
+        },
+        "7period_extended": {
+          "G_grid": [
+            20,
+            25,
+            30
+          ],
+          "MDE_arr": [
+            0.0106372603657686,
+            0.009407256997275288,
+            0.008524889861598212
+          ],
+          "sigma_E": 1.045,
+          "sigma_x3": 2.6920626742770075,
+          "sigma_eps": 0.043353403365794733,
+          "MDE_at_G37": 0.007624328577889946,
+          "MDE_at_G37_SD_units": 0.048860238555150835,
+          "sd_ldem": 0.15604362163078694
+        }
+      },
+      "alpha": 0.05,
+      "power": 0.8,
+      "sd_ldem": 0.15604362163078694,
+      "plot_path": "/home/adrian/projects/ai-inventor/aii_data/users/adrian.marina.photos/runs/run_zXdSkAIIk5J3/3_invention_loop/iter_4/gen_art/gen_art_evaluation_1/power_curves.png",
+      "note": "MDE computed under few-clusters t-approximation: MDE(G) = (t_{α/2}(G−1) + t_{1−power}(G−1)) × σ_ε / (σ_x3 × √G). σ_x3 approximated as σ_E × σ_G × σ_S (uncorrelated product approximation)."
+    },
+    "ilo_directly_reported": {
+      "iter3_directly_reported_fraction": 0.0,
+      "iter3_interpretation": "All 104 ILO country-period slots in the iter-3 7-period panel use model-estimated (not directly-reported) values. The directly-reported subgroup analysis is vacuous for the 7-period panel. Falling bac...",
+      "fallback_panel": "iter_1_2period",
+      "n_total_iter1": 161,
+      "n_directly_reported": 161,
+      "n_restricted_oecd_excl": 95,
+      "G_restricted": 58,
+      "G_doubly_observed_restricted": 35,
+      "full_panel_beta7": 0.2921112159510637,
+      "full_panel_se7": 0.23340298883108276,
+      "full_panel_pval7": 0.2107405922693817,
+      "full_panel_n_obs": 95,
+      "full_panel_n_clusters": 58,
+      "status": "valid",
+      "beta7_restricted": 0.2921112159510637,
+      "se7_restricted": 0.23340298883108276,
+      "pval7_restricted": 0.2107405922693817,
+      "N_restricted": 95,
+      "N_dropped": 66,
+      "n_clusters_restricted": 58
+    },
+    "robustness_table_tsv": "Check\tSpec\tβ₇\tSE\tp_orig\tp_boot\tCI_lo\tCI_hi\tN_obs\tG\tNotes\nPrimary DD\tUNDP MYS, cluster-robust SE\t0.2921\t0.2334\t0.2107\t—\t-0.1654\t0.7496\t95\t58\tIter-3 exp-2 main specification\nWild Bootstrap\tUNDP MYS, wil..."
+  },
+  "metrics_agg": {
+    "beta7_undp_primary": 0.292111,
+    "pval7_undp_original": 0.210741,
+    "pval7_undp_bootstrap": 0.07007,
+    "beta7_wb_primary": 13.128,
+    "pval7_wb_original": 0.1888,
+    "pval7_wb_bootstrap": 0.091091,
+    "swiid_beta7_mean": 0.025683,
+    "swiid_frac_positive": 0.628,
+    "swiid_ci95_lower": -0.149779,
+    "swiid_ci95_upper": 0.195102,
+    "selection_any_systematic": 1,
+    "n_doubly_observed_countries": 44,
+    "mde_undp_at_g37": 0.311069,
+    "mde_wb_at_g37": 0.111895,
+    "mde_7period_at_g37": 0.007624,
+    "dr_g_doubly_observed": 35,
+    "dr_n_restricted": 95,
+    "n_robustness_rows": 8
+  },
+  "datasets": [
+    {
+      "dataset": "wild_bootstrap_undp",
+      "examples": [
+        {
+          "input": "{\"check\": \"wild_cluster_bootstrap_UNDP_MYS\"}",
+          "output": "{\"b7_obs\": 0.2921112159510637, \"p_bootstrap\": 0.07007007007007007, \"G\": 58, \"B\": 999, \"b7_boot_mean\": -0.006579011553718829, \"b7_boot_sd\": 0.1591809845806247, \"ci95_boot_lower\": -0.315573896134107, \"c...",
+          "metadata_check": "wild_cluster_bootstrap_UNDP_MYS",
+          "metadata_spec": "UNDP_MYS_DD",
+          "metadata_n_obs": 95,
+          "metadata_G": 58,
+          "eval_p_bootstrap": 0.07007007007007007,
+          "eval_b7_obs": 0.2921112159510637
+        }
+      ]
+    },
+    {
+      "dataset": "wild_bootstrap_wb_tertiary",
+      "examples": [
+        {
+          "input": "{\"check\": \"wild_cluster_bootstrap_WB_tertiary\"}",
+          "output": "{\"b7_obs\": 13.128, \"p_bootstrap\": 0.09109109109109109, \"G\": 86, \"B\": 999, \"method\": \"moment_matching_approximation\", \"note\": \"Bootstrap uses moment-matching approximation. WB tertiary merged dataset n...",
+          "metadata_check": "wild_cluster_bootstrap_WB_tertiary",
+          "metadata_spec": "WB_tertiary_DD",
+          "metadata_n_obs": 137,
+          "metadata_G": 86,
+          "eval_p_bootstrap": 0.09109109109109109,
+          "eval_b7_obs": 13.128
+        }
+      ]
+    },
+    {
+      "dataset": "swiid_uncertainty",
+      "examples": [
+        {
+          "input": "{\"check\": \"SWIID_gini_uncertainty_500draws\"}",
+          "output": "{\"n_draws\": 500, \"n_valid\": 500, \"b7_mean\": 0.025682925444897305, \"b7_sd\": 0.08687368105330263, \"ci95_lower\": -0.14977858855887188, \"ci95_upper\": 0.1951016088152339, \"frac_positive\": 0.628, \"frac_abov...",
+          "metadata_check": "SWIID_gini_uncertainty_500draws",
+          "metadata_spec": "UNDP_MYS_DD",
+          "metadata_n_draws": 500,
+          "eval_frac_positive": 0.628,
+          "eval_b7_mean": 0.025682925444897305
+        }
+      ]
+    }
+  ]
+}

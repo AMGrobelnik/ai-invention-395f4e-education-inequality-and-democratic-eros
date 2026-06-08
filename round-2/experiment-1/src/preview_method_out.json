@@ -1,0 +1,340 @@
+{
+  "metadata": {
+    "method_name": "DD Triple-Interaction Estimator (Giesselmann-Schmidt-Catran 2022)",
+    "description": "Double-demeaning estimator for triple interactions (Education×Gini×SocProt) on post-1990 democratizer panel, OECD-excluded via WB GDP 1995-2005 avg. Baseline: naïve FE product model. Implementation vi...",
+    "n_obs_full_sample": 161,
+    "n_obs_restricted": 95,
+    "n_countries_restricted": 58,
+    "excluded_countries": [
+      "ARG",
+      "AUT",
+      "BEL"
+    ],
+    "n_excluded": 38,
+    "within_sd": {
+      "education": 0.02561305767416714,
+      "gini_disp": 0.5599815677057803,
+      "socprot_coverage": 4.600395225440967
+    },
+    "mde_warning": "N_obs=95, N_countries=58, within-SD education=0.0256, gini=0.56, socprot=4.60. Very small education SD implies MDE >> 1 SD — interpret results cautiously.",
+    "periods": [
+      {
+        "period_start": 2015,
+        "n_countries": 53,
+        "n_obs": 54,
+        "pct_directly_reported": 1.0,
+        "pct_education_imputed": 0.0
+      },
+      {
+        "period_start": 2020,
+        "n_countries": 40,
+        "n_obs": 41,
+        "pct_directly_reported": 1.0,
+        "pct_education_imputed": 1.0
+      }
+    ],
+    "pct_education_imputed": 0.43157894736842106,
+    "lagged_10yr_feasible": false,
+    "lagged_10yr_reason": "ILO SDG 1.3.1 only available from 2015; t-2 period (2005-09) has no socprot_coverage",
+    "acemoglu_null": {
+      "coef_education_lag1": 0.043053688892264866,
+      "se": 0.006094498986874185,
+      "pval": 1.6136669331510365e-12,
+      "n_obs": 65,
+      "n_countries": 63,
+      "replicated": false,
+      "note": "Pooled OLS with period FE (not entity FE): each country has T=1 after 5-yr lag, entity FE inestimable.  OLS + period dummy + cluster SE."
+    },
+    "naive_estimator": {
+      "beta7": 0.00012221407416801108,
+      "se7": 0.0001677795324843006,
+      "pval7": 0.4663561333020111,
+      "rsquared": 0.9486656421113032,
+      "n_obs": 95,
+      "full_table": {
+        "education": {
+          "coef": -0.43229503912647305,
+          "se": 0.8473126573012951,
+          "pval": 0.6099145588344249
+        },
+        "gini_disp": {
+          "coef": 0.0470757662610617,
+          "se": 0.10705384119418412,
+          "pval": 0.660126036282986
+        },
+        "socprot_coverage": {
+          "coef": 0.028907863811834106,
+          "se": 0.07823747854557729,
+          "pval": 0.7117634984015753
+        },
+        "EG_naive": {
+          "coef": -0.007240863815691859,
+          "se": 0.012978638404139773,
+          "pval": 0.5769083859123807
+        },
+        "ES_naive": {
+          "coef": -0.0037323850222383535,
+          "se": 0.0075000766027050894,
+          "pval": 0.6187333966125381
+        },
+        "GS_naive": {
+          "coef": -0.0009320878245221419,
+          "se": 0.0016762624776591561,
+          "pval": 0.5781758287379758
+        },
+        "EGS_naive": {
+          "coef": 0.00012221407416801108,
+          "se": 0.0001677795324843006,
+          "pval": 0.4663561333020111
+        }
+      }
+    },
+    "dd_estimator": {
+      "beta7": 0.2921112159510637,
+      "se7": 0.23340298883108276,
+      "pval7": 0.2107405922693817,
+      "ci95_lower": -0.1653586421578585,
+      "ci95_upper": 0.749581074059986,
+      "identified": true,
+      "rsquared": 0.9474459160195601,
+      "n_obs": 95,
+      "full_table": {
+        "e_education_new": {
+          "coef": -0.5020295575985223,
+          "se": 0.6798863256973904,
+          "pval": 0.4602700790339761
+        },
+        "e_gini_disp_new": {
+          "coef": -0.017483660869131785,
+          "se": 0.024862864108102647,
+          "pval": 0.48192874268136254
+        },
+        "e_socprot_coverage_new": {
+          "coef": 0.0022185451241267026,
+          "se": 0.002028934015038338,
+          "pval": 0.27419470787326405
+        },
+        "dd_EG_dd": {
+          "coef": 7.728285126099019e-06,
+          "se": 8.178634028179566e-06,
+          "pval": 0.34469158832794244
+        },
+        "dd_ES_dd": {
+          "coef": 5.079138460155555e-15,
+          "se": 1.73474144013075e-14,
+          "pval": 0.7696831571336132
+        },
+        "dd_GS_dd": {
+          "coef": 0.0008230582506625554,
+          "se": 0.000871020168911981,
+          "pval": 0.34469158832020186
+        },
+        "dd_EGS_dd": {
+          "coef": 0.2921112159510637,
+          "se": 0.23340298883108276,
+          "pval": 0.2107405922693817
+        }
+      }
+    },
+    "bias_documentation": {
+      "bias_absolute": -0.2919890018768957,
+      "bias_in_DD_SEs": -1.251007981256883,
+      "interpretation": "Substantial bias (>0.3 SE): naive mixes within- and between-country variation"
+    },
+    "lagged_education_5yr": {
+      "beta7": -0.19181095216138191,
+      "se7": 0.05302391517696616,
+      "pval7": 0.0002975286622378043,
+      "n_obs": 37,
+      "lagged_10yr_feasible": false,
+      "lagged_10yr_reason": "ILO SDG 1.3.1 only available from 2015; t-2 period (2005-09) has no socprot_coverage — 10-yr lag is infeasible."
+    },
+    "sub_index_results": {
+      "v2x_libdem": {
+        "label": "Liberal Democracy Index (primary)",
+        "beta7_DD": 0.2921112159510637,
+        "se7_DD": 0.23340298883108276,
+        "pval7_DD": 0.2107405922693817,
+        "ci95_lower": -0.1653586421578585,
+        "ci95_upper": 0.749581074059986,
+        "n_obs": 95
+      },
+      "v2x_jucon": {
+        "label": "Judicial Constraints Aggregate",
+        "beta7_DD": 0.5036334279595005,
+        "se7_DD": 0.3208639927066234,
+        "pval7_DD": 0.11650434971845887,
+        "ci95_lower": -0.12525999774548136,
+        "ci95_upper": 1.1325268536644824,
+        "n_obs": 95
+      },
+      "v2jucomp": {
+        "label": "Judicial Government Compliance",
+        "beta7_DD": 2.3975061516931047,
+        "se7_DD": 1.0626613261053042,
+        "pval7_DD": 0.024062251971075466,
+        "ci95_lower": 0.3146899525267086,
+        "ci95_upper": 4.480322350859501,
+        "n_obs": 95
+      },
+      "v2cseeorgs": {
+        "label": "CSO Entry/Exit Autonomy",
+        "beta7_DD": -0.2573642191021011,
+        "se7_DD": 1.6408257785502933,
+        "pval7_DD": 0.875362732020639,
+        "ci95_lower": -3.4733827450606762,
+        "ci95_upper": 2.9586543068564737,
+        "n_obs": 95
+      },
+      "v2csprtcpt": {
+        "label": "CSO Population Participation",
+        "beta7_DD": -0.2225870835260294,
+        "se7_DD": 1.0102234646788106,
+        "pval7_DD": 0.8256106519859227,
+        "ci95_lower": -2.202625074296498,
+        "ci95_upper": 1.7574509072444395,
+        "n_obs": 95
+      },
+      "v2x_polyarchy": {
+        "label": "Electoral Democracy Index",
+        "beta7_DD": 0.2582740274218459,
+        "se7_DD": 0.2392866303541253,
+        "pval7_DD": 0.2804317258339921,
+        "ci95_lower": -0.2107277680722397,
+        "ci95_upper": 0.7272758229159315,
+        "n_obs": 95
+      }
+    },
+    "marginal_effects": [
+      {
+        "gini_label": "p25",
+        "gini_value": -0.14499999999999957,
+        "socprot_grid_within": [
+          -6.68,
+          -6.545050505050505,
+          -6.41010101010101
+        ],
+        "socprot_grid_original_scale": [
+          29.5075438631579,
+          29.642493358107394,
+          29.77744285305689
+        ],
+        "marginal_effect": [
+          -0.21909175442970008,
+          -0.22480769228364272,
+          -0.23052363013758548
+        ],
+        "ci_lower": [
+          -1.5800331603503253,
+          -1.5837527826476343,
+          -1.587528519584822
+        ],
+        "ci_upper": [
+          1.1418496514909253,
+          1.134137398080349,
+          1.1264812593096512
+        ],
+        "zero_crossing_socprot_within": null,
+        "zero_crossing_socprot_original": null
+      },
+      {
+        "gini_label": "p75",
+        "gini_value": 0.14500000000000313,
+        "socprot_grid_within": [
+          -6.68,
+          -6.545050505050505,
+          -6.41010101010101
+        ],
+        "socprot_grid_original_scale": [
+          29.5075438631579,
+          29.642493358107394,
+          29.77744285305689
+        ],
+        "marginal_effect": [
+          -0.7849673607674195,
+          -0.779251422913475,
+          -0.7735354850595308
+        ],
+        "ci_lower": [
+          -2.231357745691904,
+          -2.2220851466594826,
+          -2.2128594326959434
+        ],
+        "ci_upper": [
+          0.6614230241570649,
+          0.6635823008325328,
+          0.6657884625768817
+        ],
+        "zero_crossing_socprot_within": null,
+        "zero_crossing_socprot_original": null
+      }
+    ],
+    "oster_bounds": {
+      "rmax": 1.0,
+      "delta": 1.0,
+      "R2_uncontrolled": 0.9428937070790888,
+      "R2_controlled": 0.9474459160195601,
+      "beta1_uncontrolled": -0.5067645120303318,
+      "beta1_controlled": -0.5020295575985223,
+      "beta1_oster_adjusted": -0.44736572381871537,
+      "beta7_naive": 0.00012221407416801108,
+      "beta7_DD": 0.2921112159510637,
+      "beta7_oster_adjusted": -12.28875807091721,
+      "interpretation": "β7* sign reversal or unavailable — confounding cannot be ruled out"
+    },
+    "oecd_falsification": {
+      "beta7_DD": -0.02645232417636774,
+      "se7_DD": 0.11187687802109252,
+      "pval7_DD": 0.813090184496492,
+      "n_obs": 66,
+      "n_countries": 38,
+      "interpretation": "Theory predicts near-zero or positive β7 in OECD sample"
+    },
+    "figure_files": [
+      "marginal_effects.png"
+    ]
+  },
+  "datasets": [
+    {
+      "dataset": "vdem_ilo_gini_edu_panel_complete",
+      "examples": [
+        {
+          "input": "{\"country_iso3\":\"ALB\",\"period\":\"2020-22\",\"period_start\":2020,\"period_end\":2022,\"v2x_jucon\":0.725667,\"v2jucomp\":1.022333,\"v2cseeorgs\":1.762,\"v2csprtcpt\":1.420333,\"v2x_civlib\":0.888,\"v2xcl_rol\":0.913,\"v...",
+          "output": "0.437",
+          "metadata_row_index": 0,
+          "metadata_country_name": "Albania",
+          "metadata_task_type": "regression",
+          "metadata_target_variable": "v2x_libdem",
+          "metadata_is_democratizer": true,
+          "metadata_has_all_core_vars": true,
+          "predict_naive_fe": "0.437",
+          "predict_dd_estimator": "0.437"
+        },
+        {
+          "input": "{\"country_iso3\":\"ARG\",\"period\":\"2015-19\",\"period_start\":2015,\"period_end\":2019,\"v2x_jucon\":0.7254,\"v2jucomp\":0.9258,\"v2cseeorgs\":2.0338,\"v2csprtcpt\":2.462,\"v2x_civlib\":0.8822,\"v2xcl_rol\":0.8532,\"v2x_p...",
+          "output": "0.6184",
+          "metadata_row_index": 1,
+          "metadata_country_name": "Argentina",
+          "metadata_task_type": "regression",
+          "metadata_target_variable": "v2x_libdem",
+          "metadata_is_democratizer": true,
+          "metadata_has_all_core_vars": true,
+          "predict_naive_fe": "",
+          "predict_dd_estimator": ""
+        },
+        {
+          "input": "{\"country_iso3\":\"ARG\",\"period\":\"2020-22\",\"period_start\":2020,\"period_end\":2022,\"v2x_jucon\":0.766667,\"v2jucomp\":1.534333,\"v2cseeorgs\":1.717,\"v2csprtcpt\":2.462,\"v2x_civlib\":0.877667,\"v2xcl_rol\":0.842667...",
+          "output": "0.648333",
+          "metadata_row_index": 2,
+          "metadata_country_name": "Argentina",
+          "metadata_task_type": "regression",
+          "metadata_target_variable": "v2x_libdem",
+          "metadata_is_democratizer": true,
+          "metadata_has_all_core_vars": true,
+          "predict_naive_fe": "",
+          "predict_dd_estimator": ""
+        }
+      ]
+    }
+  ]
+}

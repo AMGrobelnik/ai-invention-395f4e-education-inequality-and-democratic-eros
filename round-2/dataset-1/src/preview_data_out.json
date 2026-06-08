@@ -1,0 +1,103 @@
+{
+  "datasets": [
+    {
+      "dataset": "V-Dem V16 Democracy Sub-Indices (post-1985)",
+      "examples": [
+        {
+          "input": "{\"iso3\": \"MEX\", \"country\": \"Mexico\", \"year\": 1985, \"v2x_libdem\": \"0.142\", \"v2x_polyarchy\": \"0.32\", \"v2juhcind\": \"-1.23\", \"v2cseeorgs\": \"0.239\", \"v2xcs_ccsi\": \"0.408\", \"v2x_corr\": \"0.772\", \"v2csreprss\"...",
+          "output": "1 (Electoral Autocracy)",
+          "metadata_iso3": "MEX",
+          "metadata_year": 1985,
+          "metadata_country": "Mexico",
+          "metadata_task_type": "classification",
+          "metadata_target": "v2x_regime",
+          "metadata_n_classes": 4
+        },
+        {
+          "input": "{\"iso3\": \"MEX\", \"country\": \"Mexico\", \"year\": 1986, \"v2x_libdem\": \"0.143\", \"v2x_polyarchy\": \"0.322\", \"v2juhcind\": \"-1.23\", \"v2cseeorgs\": \"0.239\", \"v2xcs_ccsi\": \"0.408\", \"v2x_corr\": \"0.772\", \"v2csreprss...",
+          "output": "1 (Electoral Autocracy)",
+          "metadata_iso3": "MEX",
+          "metadata_year": 1986,
+          "metadata_country": "Mexico",
+          "metadata_task_type": "classification",
+          "metadata_target": "v2x_regime",
+          "metadata_n_classes": 4
+        },
+        {
+          "input": "{\"iso3\": \"MEX\", \"country\": \"Mexico\", \"year\": 1987, \"v2x_libdem\": \"0.145\", \"v2x_polyarchy\": \"0.327\", \"v2juhcind\": \"-1.23\", \"v2cseeorgs\": \"0.239\", \"v2xcs_ccsi\": \"0.408\", \"v2x_corr\": \"0.772\", \"v2csreprss...",
+          "output": "1 (Electoral Autocracy)",
+          "metadata_iso3": "MEX",
+          "metadata_year": 1987,
+          "metadata_country": "Mexico",
+          "metadata_task_type": "classification",
+          "metadata_target": "v2x_regime",
+          "metadata_n_classes": 4
+        }
+      ]
+    },
+    {
+      "dataset": "SWIID 9.2 Standardized Gini Inequality",
+      "examples": [
+        {
+          "input": "{\"country\": \"Afghanistan\", \"year\": 2007, \"gini_disp_se\": \"2.48\", \"gini_mkt\": \"32.7\"}",
+          "output": "31.4",
+          "metadata_country": "Afghanistan",
+          "metadata_year": 2007,
+          "metadata_task_type": "regression",
+          "metadata_target": "gini_disp"
+        },
+        {
+          "input": "{\"country\": \"Afghanistan\", \"year\": 2008, \"gini_disp_se\": \"2.4\", \"gini_mkt\": \"32.8\"}",
+          "output": "31.4",
+          "metadata_country": "Afghanistan",
+          "metadata_year": 2008,
+          "metadata_task_type": "regression",
+          "metadata_target": "gini_disp"
+        },
+        {
+          "input": "{\"country\": \"Afghanistan\", \"year\": 2009, \"gini_disp_se\": \"2.45\", \"gini_mkt\": \"32.9\"}",
+          "output": "31.5",
+          "metadata_country": "Afghanistan",
+          "metadata_year": 2009,
+          "metadata_task_type": "regression",
+          "metadata_target": "gini_disp"
+        }
+      ]
+    },
+    {
+      "dataset": "UNDP HDR Mean Years of Schooling (OWID)",
+      "examples": [
+        {
+          "input": "{\"iso3\": \"AFG\", \"country\": \"Afghanistan\", \"year\": 1990}",
+          "output": "0.871962",
+          "metadata_iso3": "AFG",
+          "metadata_year": 1990,
+          "metadata_country": "Afghanistan",
+          "metadata_task_type": "regression",
+          "metadata_target": "mean_years_schooling",
+          "metadata_source": "UNDP_HDR"
+        },
+        {
+          "input": "{\"iso3\": \"AFG\", \"country\": \"Afghanistan\", \"year\": 1991}",
+          "output": "0.915267",
+          "metadata_iso3": "AFG",
+          "metadata_year": 1991,
+          "metadata_country": "Afghanistan",
+          "metadata_task_type": "regression",
+          "metadata_target": "mean_years_schooling",
+          "metadata_source": "UNDP_HDR"
+        },
+        {
+          "input": "{\"iso3\": \"AFG\", \"country\": \"Afghanistan\", \"year\": 1992}",
+          "output": "0.958573",
+          "metadata_iso3": "AFG",
+          "metadata_year": 1992,
+          "metadata_country": "Afghanistan",
+          "metadata_task_type": "regression",
+          "metadata_target": "mean_years_schooling",
+          "metadata_source": "UNDP_HDR"
+        }
+      ]
+    }
+  ]
+}
