@@ -1,0 +1,129 @@
+\begin{thebibliography}{16}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi: #1}\else
+  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[Acemoglu et~al.(2008)Acemoglu, Johnson, Robinson, and
+  Yared]{Acemoglu2008}
+Daron Acemoglu, Simon Johnson, James~A. Robinson, and Pierre Yared.
+\newblock Income and democracy.
+\newblock \emph{American Economic Review}, 98\penalty0 (3):\penalty0 808--842,
+  2008.
+\newblock \doi{10.1257/aer.98.3.808}.
+
+\bibitem[Barro(1999)]{Barro1999}
+Robert~J. Barro.
+\newblock Determinants of democracy.
+\newblock \emph{Journal of Political Economy}, 107\penalty0 (S6):\penalty0
+  S158--S183, 1999.
+\newblock \doi{10.1086/250049}.
+
+\bibitem[Cameron and Miller(2015)]{Cameron2015}
+A.~Colin Cameron and Douglas~L. Miller.
+\newblock A practitioner's guide to cluster-robust inference.
+\newblock \emph{Journal of Human Resources}, 50\penalty0 (2):\penalty0
+  317--372, 2015.
+\newblock \doi{10.3368/jhr.50.2.317}.
+
+\bibitem[Cameron et~al.(2008)Cameron, Gelbach, and Miller]{Cameron2008}
+A.~Colin Cameron, Jonah~B. Gelbach, and Douglas~L. Miller.
+\newblock Bootstrap-based improvements for inference with clustered errors.
+\newblock \emph{The Review of Economics and Statistics}, 90\penalty0
+  (3):\penalty0 414--427, 2008.
+\newblock \doi{10.1162/rest.90.3.414}.
+
+\bibitem[Carothers(2002)]{Carothers2002}
+Thomas Carothers.
+\newblock The end of the transition paradigm.
+\newblock \emph{Journal of Democracy}, 13\penalty0 (1):\penalty0 5--21, 2002.
+\newblock \doi{10.1353/JOD.2002.0003}.
+
+\bibitem[Coppedge et~al.(2025)Coppedge, Gerring, Knutsen, Lindberg, Teorell,
+  Marquardt, Medzihorsky, Pemstein, Gastaldi, Skaaning, {von R{\"o}mer},
+  Wilson, Alizada, Angiolillo, Bernhard, Borella, Cornell, Edelmann, Gaber,
+  Grahn, God, Grahn, G{\"u}nther, Kinzelbach, Krusell, Lundh, Piccolino,
+  Stepanova, Sundstr{\"o}m, Tzelgov, ting Wang, Wig, and
+  Zimmermann]{Coppedge2025}
+Michael Coppedge, John Gerring, Carl~Henrik Knutsen, Staffan~I. Lindberg, Jan
+  Teorell, Kyle~L. Marquardt, Juraj Medzihorsky, Daniel Pemstein, Lisa
+  Gastaldi, Svend-Erik Skaaning, Johannes {von R{\"o}mer}, Steven Wilson,
+  Nazifa Alizada, Fabio Angiolillo, Luca Bernhard, Cecilia Borella, Agnes
+  Cornell, Martin Edelmann, Reinhold Gaber, Ruth Grahn, Ana~Good God, Sandra
+  Grahn, Anna G{\"u}nther, Katrin Kinzelbach, Joshua Krusell, Thomas Lundh,
+  Gianni Piccolino, Natalia Stepanova, Aksel Sundstr{\"o}m, Eitan Tzelgov,
+  Yi~ting Wang, Tore Wig, and Felix Zimmermann.
+\newblock {V-Dem Dataset v15}, 2025.
+
+\bibitem[Giesselmann and Schmidt-Catran(2022)]{Giesselmann2022}
+Marco Giesselmann and Alexander~W. Schmidt-Catran.
+\newblock Interactions in fixed effects regression models.
+\newblock \emph{Sociological Methods \& Research}, 51\penalty0 (3):\penalty0
+  1100--1127, 2022.
+\newblock \doi{10.1177/0049124119882515}.
+
+\bibitem[Glaeser et~al.(2007)Glaeser, Ponzetto, and Shleifer]{Glaeser2007}
+Edward~L. Glaeser, Giacomo A.~M. Ponzetto, and Andrei Shleifer.
+\newblock Why does democracy need education?
+\newblock \emph{Journal of Economic Growth}, 12\penalty0 (2):\penalty0 77--99,
+  2007.
+\newblock \doi{10.1007/s10887-007-9015-1}.
+
+\bibitem[Granger(1969)]{Granger1969}
+Clive W.~J. Granger.
+\newblock Investigating causal relations by econometric models and
+  cross-spectral methods.
+\newblock \emph{Econometrica}, 37\penalty0 (3):\penalty0 424--438, 1969.
+\newblock \doi{10.2307/1912791}.
+
+\bibitem[Huntington(1991)]{Huntington1991}
+Samuel~P. Huntington.
+\newblock \emph{The Third Wave: Democratization in the Late Twentieth Century}.
+\newblock University of Oklahoma Press, Norman, OK, 1991.
+
+\bibitem[{International Labour Organization}(2023)]{ILO2023}
+{International Labour Organization}.
+\newblock {ILOSTAT} {SDG} 1.3.1: Proportion of population covered by social
+  protection floors/systems.
+\newblock Technical report, ILO Department of Statistics, 2023.
+\newblock URL \url{https://ilostat.ilo.org/topics/social-protection/}.
+
+\bibitem[Lipset(1959)]{Lipset1959}
+Seymour~Martin Lipset.
+\newblock Some social requisites of democracy: Economic development and
+  political legitimacy.
+\newblock \emph{American Political Science Review}, 53\penalty0 (1):\penalty0
+  69--105, 1959.
+\newblock \doi{10.2307/1951731}.
+
+\bibitem[Murtin and Wacziarg(2014)]{Murtin2014}
+Fabrice Murtin and Romain Wacziarg.
+\newblock The democratic transition.
+\newblock \emph{Journal of Economic Growth}, 19\penalty0 (2):\penalty0
+  141--181, 2014.
+\newblock \doi{10.1007/s10887-013-9097-z}.
+
+\bibitem[Oster(2019)]{Oster2019}
+Emily Oster.
+\newblock Unobservable selection and coefficient stability: Theory and
+  evidence.
+\newblock \emph{Journal of Business \& Economic Statistics}, 37\penalty0
+  (2):\penalty0 187--204, 2019.
+\newblock \doi{10.1080/07350015.2016.1227535}.
+
+\bibitem[Solt(2020)]{Solt2020}
+Frederick Solt.
+\newblock Measuring income inequality across countries and over time: The
+  standardized world income inequality database.
+\newblock \emph{Social Science Quarterly}, 101\penalty0 (3):\penalty0
+  1183--1199, 2020.
+\newblock \doi{10.1111/ssqu.12795}.
+
+\bibitem[{World Bank}(2024)]{WorldBank2024}
+{World Bank}.
+\newblock School enrollment, tertiary (\% gross) [{SE.TER.ENRR}].
+\newblock World Bank Open Data, 2024.
+\newblock URL \url{https://data.worldbank.org/indicator/SE.TER.ENRR}.
+
+\end{thebibliography}

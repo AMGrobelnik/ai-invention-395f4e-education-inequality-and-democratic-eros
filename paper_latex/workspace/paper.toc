@@ -1,0 +1,29 @@
+\contentsline {section}{\numberline {1}Introduction}{3}{section.1}%
+\contentsline {section}{\numberline {2}The State-Dependent Education Trap: Theory}{4}{section.2}%
+\contentsline {subsection}{\numberline {2.1}Mechanism}{4}{subsection.2.1}%
+\contentsline {subsection}{\numberline {2.2}Testable Predictions}{5}{subsection.2.2}%
+\contentsline {section}{\numberline {3}Data and Measurement}{6}{section.3}%
+\contentsline {subsection}{\numberline {3.1}Outcome Variable}{6}{subsection.3.1}%
+\contentsline {subsection}{\numberline {3.2}Education Variables}{6}{subsection.3.2}%
+\contentsline {subsection}{\numberline {3.3}Variable Standardization}{6}{subsection.3.3}%
+\contentsline {subsection}{\numberline {3.4}Inequality and Social Protection}{7}{subsection.3.4}%
+\contentsline {subsection}{\numberline {3.5}Sample Construction}{7}{subsection.3.5}%
+\contentsline {section}{\numberline {4}Identification Strategy}{8}{section.4}%
+\contentsline {subsection}{\numberline {4.1}The Double-Demeaning Estimator}{8}{subsection.4.1}%
+\contentsline {subsection}{\numberline {4.2}Estimating Equation}{8}{subsection.4.2}%
+\contentsline {section}{\numberline {5}Results}{8}{section.5}%
+\contentsline {subsection}{\numberline {5.1}Main Estimates}{8}{subsection.5.1}%
+\contentsline {subsection}{\numberline {5.2}Sub-Index Analysis}{10}{subsection.5.2}%
+\contentsline {subsection}{\numberline {5.3}Granger Precedence}{11}{subsection.5.3}%
+\contentsline {section}{\numberline {6}Robustness and Sensitivity}{11}{section.6}%
+\contentsline {subsection}{\numberline {6.1}Sensitivity to Unobservable Selection (Oster Bounds)}{11}{subsection.6.1}%
+\contentsline {subsection}{\numberline {6.2}SWIID Gini Measurement Uncertainty}{12}{subsection.6.2}%
+\contentsline {subsection}{\numberline {6.3}Selection Bias in the Effective Identification Base}{12}{subsection.6.3}%
+\contentsline {subsection}{\numberline {6.4}ILO Social Protection Coverage: Data Quality and Directly-Reported Subgroup}{12}{subsection.6.4}%
+\contentsline {subsection}{\numberline {6.5}Power Analysis}{13}{subsection.6.5}%
+\contentsline {section}{\numberline {7}Discussion}{13}{section.7}%
+\contentsline {subsection}{\numberline {7.1}Interpreting the Null}{13}{subsection.7.1}%
+\contentsline {subsection}{\numberline {7.2}The Education Proxy Problem}{15}{subsection.7.2}%
+\contentsline {subsection}{\numberline {7.3}Marginal Effects and the Sign Pattern}{15}{subsection.7.3}%
+\contentsline {subsection}{\numberline {7.4}Relationship to Prior Literature}{16}{subsection.7.4}%
+\contentsline {section}{\numberline {8}Conclusion}{16}{section.8}%

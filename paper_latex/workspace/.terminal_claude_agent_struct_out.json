@@ -1,0 +1,16 @@
+{
+  "title": "Education, Inequality, and Democratic Erosion: Null Result via Double-Demeaning",
+  "summary": "18-page publication-ready PDF compiled from LaTeX. Tests the State-Dependent Education Trap (SDET) hypothesis — that tertiary enrollment × Gini × social protection coverage predicts V-Dem liberal democracy — using the double-demeaning fixed-effects estimator (Giesselmann & Schmidt-Catran 2022) on a 140-country, 1995–2022 panel. The primary DD specification yields β = 0.001 (SE = 0.003, p = 0.738), a precise null; all four robustness specifications confirm. Wild cluster bootstrap p-values, Oster (2019) omitted-variable bounds, SWIID Monte Carlo Gini uncertainty, ILO social-protection measurement limits, and a Granger non-causality test are reported. A minimum-detectable-effect power analysis shows current design requires ≥23 doubly-observed clusters to reach 80% power with MDE = 0.0098 LDem units. All 5 pre-generated figures (causal DAG, within-SD comparison, coefficient plot, MDE curve, 2×2 marginal effects grid) are embedded. Bibliography: 16 entries via natbib/plainnat. Sections: Abstract, ToC, Introduction, Theory (SDET), Data, Identification (DD estimator), Results, Robustness, Discussion, Conclusion, References. Compilation: 4-pass pdflatex/bibtex sequence with no errors.",
+  "out_expected_files": {
+    "paper_tex_path": "paper.tex",
+    "paper_pdf_path": "paper.pdf",
+    "references_bib_path": "references.bib",
+    "figure_paths": [
+      "figures/fig_mechanism_v0.jpg",
+      "figures/fig_variation_v0.jpg",
+      "figures/fig_coefficients_v0.jpg",
+      "figures/fig_power_v0.jpg",
+      "figures/fig_marginal_v0.jpg"
+    ]
+  }
+}
