@@ -1,0 +1,616 @@
+{
+  "datasets": [
+    {
+      "dataset": "ILO_PSE_ILOSTAT_Democratizers_1990_2019",
+      "examples": [
+        {
+          "input": "Country: POL, Year: 1990",
+          "output": "public_sector_employment: 8927.3 thousand workers, pse_share_of_total_employment: NA",
+          "metadata_iso3": "POL",
+          "metadata_year": 1990,
+          "metadata_source": "ILO ILOSTAT PSE_TPSE_GOV_NB via DBnomics"
+        },
+        {
+          "input": "Country: POL, Year: 1995",
+          "output": "public_sector_employment: 5554.3 thousand workers, pse_share_of_total_employment: 37.55%",
+          "metadata_iso3": "POL",
+          "metadata_year": 1995,
+          "metadata_source": "ILO ILOSTAT PSE_TPSE_GOV_NB via DBnomics"
+        },
+        {
+          "input": "Country: POL, Year: 1996",
+          "output": "public_sector_employment: 5341.3 thousand workers, pse_share_of_total_employment: 35.68%",
+          "metadata_iso3": "POL",
+          "metadata_year": 1996,
+          "metadata_source": "ILO ILOSTAT PSE_TPSE_GOV_NB via DBnomics"
+        },
+        {
+          "input": "Country: POL, Year: 1997",
+          "output": "public_sector_employment: 5426.5 thousand workers, pse_share_of_total_employment: 35.77%",
+          "metadata_iso3": "POL",
+          "metadata_year": 1997,
+          "metadata_source": "ILO ILOSTAT PSE_TPSE_GOV_NB via DBnomics"
+        },
+        {
+          "input": "Country: POL, Year: 1998",
+          "output": "public_sector_employment: 5017.3 thousand workers, pse_share_of_total_employment: 32.66%",
+          "metadata_iso3": "POL",
+          "metadata_year": 1998,
+          "metadata_source": "ILO ILOSTAT PSE_TPSE_GOV_NB via DBnomics"
+        },
+        {
+          "input": "Country: POL, Year: 1999",
+          "output": "public_sector_employment: 4656.0 thousand workers, pse_share_of_total_employment: 31.17%",
+          "metadata_iso3": "POL",
+          "metadata_year": 1999,
+          "metadata_source": "ILO ILOSTAT PSE_TPSE_GOV_NB via DBnomics"
+        },
+        {
+          "input": "Country: POL, Year: 2000",
+          "output": "public_sector_employment: 4318.1 thousand workers, pse_share_of_total_employment: 29.73%",
+          "metadata_iso3": "POL",
+          "metadata_year": 2000,
+          "metadata_source": "ILO ILOSTAT PSE_TPSE_GOV_NB via DBnomics"
+        },
+        {
+          "input": "Country: POL, Year: 2001",
+          "output": "public_sector_employment: 4027.7 thousand workers, pse_share_of_total_employment: 28.33%",
+          "metadata_iso3": "POL",
+          "metadata_year": 2001,
+          "metadata_source": "ILO ILOSTAT PSE_TPSE_GOV_NB via DBnomics"
+        },
+        {
+          "input": "Country: POL, Year: 2002",
+          "output": "public_sector_employment: 3905.1 thousand workers, pse_share_of_total_employment: 28.57%",
+          "metadata_iso3": "POL",
+          "metadata_year": 2002,
+          "metadata_source": "ILO ILOSTAT PSE_TPSE_GOV_NB via DBnomics"
+        },
+        {
+          "input": "Country: POL, Year: 2003",
+          "output": "public_sector_employment: 3780.2 thousand workers, pse_share_of_total_employment: 27.75%",
+          "metadata_iso3": "POL",
+          "metadata_year": 2003,
+          "metadata_source": "ILO ILOSTAT PSE_TPSE_GOV_NB via DBnomics"
+        },
+        {
+          "input": "Country: POL, Year: 2004",
+          "output": "public_sector_employment: 3695.6 thousand workers, pse_share_of_total_employment: 26.84%",
+          "metadata_iso3": "POL",
+          "metadata_year": 2004,
+          "metadata_source": "ILO ILOSTAT PSE_TPSE_GOV_NB via DBnomics"
+        },
+        {
+          "input": "Country: POL, Year: 2005",
+          "output": "public_sector_employment: 3660.4 thousand workers, pse_share_of_total_employment: 25.93%",
+          "metadata_iso3": "POL",
+          "metadata_year": 2005,
+          "metadata_source": "ILO ILOSTAT PSE_TPSE_GOV_NB via DBnomics"
+        },
+        {
+          "input": "Country: POL, Year: 2006",
+          "output": "public_sector_employment: 3635.3 thousand workers, pse_share_of_total_employment: 24.91%",
+          "metadata_iso3": "POL",
+          "metadata_year": 2006,
+          "metadata_source": "ILO ILOSTAT PSE_TPSE_GOV_NB via DBnomics"
+        },
+        {
+          "input": "Country: POL, Year: 2007",
+          "output": "public_sector_employment: 3619.8 thousand workers, pse_share_of_total_employment: 23.75%",
+          "metadata_iso3": "POL",
+          "metadata_year": 2007,
+          "metadata_source": "ILO ILOSTAT PSE_TPSE_GOV_NB via DBnomics"
+        },
+        {
+          "input": "Country: POL, Year: 2008",
+          "output": "public_sector_employment: 3621.2 thousand workers, pse_share_of_total_employment: 22.92%",
+          "metadata_iso3": "POL",
+          "metadata_year": 2008,
+          "metadata_source": "ILO ILOSTAT PSE_TPSE_GOV_NB via DBnomics"
+        },
+        {
+          "input": "Country: POL, Year: 2009",
+          "output": "public_sector_employment: 3606.5 thousand workers, pse_share_of_total_employment: 22.73%",
+          "metadata_iso3": "POL",
+          "metadata_year": 2009,
+          "metadata_source": "ILO ILOSTAT PSE_TPSE_GOV_NB via DBnomics"
+        },
+        {
+          "input": "Country: POL, Year: 2010",
+          "output": "public_sector_employment: 3570.7 thousand workers, pse_share_of_total_employment: 23.08%",
+          "metadata_iso3": "POL",
+          "metadata_year": 2010,
+          "metadata_source": "ILO ILOSTAT PSE_TPSE_GOV_NB via DBnomics"
+        },
+        {
+          "input": "Country: POL, Year: 2011",
+          "output": "public_sector_employment: 3486.5 thousand workers, pse_share_of_total_employment: 22.40%",
+          "metadata_iso3": "POL",
+          "metadata_year": 2011,
+          "metadata_source": "ILO ILOSTAT PSE_TPSE_GOV_NB via DBnomics"
+        },
+        {
+          "input": "Country: POL, Year: 2012",
+          "output": "public_sector_employment: 3427.0 thousand workers, pse_share_of_total_employment: 21.98%",
+          "metadata_iso3": "POL",
+          "metadata_year": 2012,
+          "metadata_source": "ILO ILOSTAT PSE_TPSE_GOV_NB via DBnomics"
+        },
+        {
+          "input": "Country: POL, Year: 2013",
+          "output": "public_sector_employment: 3375.0 thousand workers, pse_share_of_total_employment: 21.68%",
+          "metadata_iso3": "POL",
+          "metadata_year": 2013,
+          "metadata_source": "ILO ILOSTAT PSE_TPSE_GOV_NB via DBnomics"
+        },
+        {
+          "input": "Country: POL, Year: 2014",
+          "output": "public_sector_employment: 3377.1 thousand workers, pse_share_of_total_employment: 21.29%",
+          "metadata_iso3": "POL",
+          "metadata_year": 2014,
+          "metadata_source": "ILO ILOSTAT PSE_TPSE_GOV_NB via DBnomics"
+        },
+        {
+          "input": "Country: POL, Year: 2015",
+          "output": "public_sector_employment: 3343.6 thousand workers, pse_share_of_total_employment: 20.79%",
+          "metadata_iso3": "POL",
+          "metadata_year": 2015,
+          "metadata_source": "ILO ILOSTAT PSE_TPSE_GOV_NB via DBnomics"
+        },
+        {
+          "input": "Country: POL, Year: 2016",
+          "output": "public_sector_employment: 3356.3 thousand workers, pse_share_of_total_employment: 20.72%",
+          "metadata_iso3": "POL",
+          "metadata_year": 2016,
+          "metadata_source": "ILO ILOSTAT PSE_TPSE_GOV_NB via DBnomics"
+        },
+        {
+          "input": "Country: POL, Year: 2017",
+          "output": "public_sector_employment: 3371.3 thousand workers, pse_share_of_total_employment: 20.53%",
+          "metadata_iso3": "POL",
+          "metadata_year": 2017,
+          "metadata_source": "ILO ILOSTAT PSE_TPSE_GOV_NB via DBnomics"
+        },
+        {
+          "input": "Country: POL, Year: 2018",
+          "output": "public_sector_employment: 3403.7 thousand workers, pse_share_of_total_employment: 20.65%",
+          "metadata_iso3": "POL",
+          "metadata_year": 2018,
+          "metadata_source": "ILO ILOSTAT PSE_TPSE_GOV_NB via DBnomics"
+        },
+        {
+          "input": "Country: POL, Year: 2019",
+          "output": "public_sector_employment: 3423.4 thousand workers, pse_share_of_total_employment: 20.80%",
+          "metadata_iso3": "POL",
+          "metadata_year": 2019,
+          "metadata_source": "ILO ILOSTAT PSE_TPSE_GOV_NB via DBnomics"
+        }
+      ]
+    },
+    {
+      "dataset": "Dreher_IMF_SAP_Democratizers_1990_2019",
+      "examples": [
+        {
+          "input": "Country: ALB, Year: 1990",
+          "output": "imf_sap_active: 0 [IMF Structural Adjustment Program not active \u2014 SBA or EFF, source: Dreher 2006]",
+          "metadata_iso3": "ALB",
+          "metadata_year": 1990,
+          "metadata_source": "Dreher (2006) IMF SBA + EFF program dummies"
+        },
+        {
+          "input": "Country: ALB, Year: 1992",
+          "output": "imf_sap_active: 1 [IMF Structural Adjustment Program active \u2014 SBA or EFF, source: Dreher 2006]",
+          "metadata_iso3": "ALB",
+          "metadata_year": 1992,
+          "metadata_source": "Dreher (2006) IMF SBA + EFF program dummies"
+        },
+        {
+          "input": "Country: ALB, Year: 1994",
+          "output": "imf_sap_active: 0 [IMF Structural Adjustment Program not active \u2014 SBA or EFF, source: Dreher 2006]",
+          "metadata_iso3": "ALB",
+          "metadata_year": 1994,
+          "metadata_source": "Dreher (2006) IMF SBA + EFF program dummies"
+        },
+        {
+          "input": "Country: ALB, Year: 1996",
+          "output": "imf_sap_active: 0 [IMF Structural Adjustment Program not active \u2014 SBA or EFF, source: Dreher 2006]",
+          "metadata_iso3": "ALB",
+          "metadata_year": 1996,
+          "metadata_source": "Dreher (2006) IMF SBA + EFF program dummies"
+        },
+        {
+          "input": "Country: ALB, Year: 1998",
+          "output": "imf_sap_active: 0 [IMF Structural Adjustment Program not active \u2014 SBA or EFF, source: Dreher 2006]",
+          "metadata_iso3": "ALB",
+          "metadata_year": 1998,
+          "metadata_source": "Dreher (2006) IMF SBA + EFF program dummies"
+        },
+        {
+          "input": "Country: ALB, Year: 2000",
+          "output": "imf_sap_active: 0 [IMF Structural Adjustment Program not active \u2014 SBA or EFF, source: Dreher 2006]",
+          "metadata_iso3": "ALB",
+          "metadata_year": 2000,
+          "metadata_source": "Dreher (2006) IMF SBA + EFF program dummies"
+        },
+        {
+          "input": "Country: ALB, Year: 2002",
+          "output": "imf_sap_active: 0 [IMF Structural Adjustment Program not active \u2014 SBA or EFF, source: Dreher 2006]",
+          "metadata_iso3": "ALB",
+          "metadata_year": 2002,
+          "metadata_source": "Dreher (2006) IMF SBA + EFF program dummies"
+        },
+        {
+          "input": "Country: ALB, Year: 2004",
+          "output": "imf_sap_active: 0 [IMF Structural Adjustment Program not active \u2014 SBA or EFF, source: Dreher 2006]",
+          "metadata_iso3": "ALB",
+          "metadata_year": 2004,
+          "metadata_source": "Dreher (2006) IMF SBA + EFF program dummies"
+        },
+        {
+          "input": "Country: ALB, Year: 2006",
+          "output": "imf_sap_active: 1 [IMF Structural Adjustment Program active \u2014 SBA or EFF, source: Dreher 2006]",
+          "metadata_iso3": "ALB",
+          "metadata_year": 2006,
+          "metadata_source": "Dreher (2006) IMF SBA + EFF program dummies"
+        },
+        {
+          "input": "Country: ALB, Year: 2008",
+          "output": "imf_sap_active: 0 [IMF Structural Adjustment Program not active \u2014 SBA or EFF, source: Dreher 2006]",
+          "metadata_iso3": "ALB",
+          "metadata_year": 2008,
+          "metadata_source": "Dreher (2006) IMF SBA + EFF program dummies"
+        },
+        {
+          "input": "Country: ALB, Year: 2010",
+          "output": "imf_sap_active: 0 [IMF Structural Adjustment Program not active \u2014 SBA or EFF, source: Dreher 2006]",
+          "metadata_iso3": "ALB",
+          "metadata_year": 2010,
+          "metadata_source": "Dreher (2006) IMF SBA + EFF program dummies"
+        },
+        {
+          "input": "Country: ALB, Year: 2012",
+          "output": "imf_sap_active: 0 [IMF Structural Adjustment Program not active \u2014 SBA or EFF, source: Dreher 2006]",
+          "metadata_iso3": "ALB",
+          "metadata_year": 2012,
+          "metadata_source": "Dreher (2006) IMF SBA + EFF program dummies"
+        },
+        {
+          "input": "Country: ALB, Year: 2014",
+          "output": "imf_sap_active: 1 [IMF Structural Adjustment Program active \u2014 SBA or EFF, source: Dreher 2006]",
+          "metadata_iso3": "ALB",
+          "metadata_year": 2014,
+          "metadata_source": "Dreher (2006) IMF SBA + EFF program dummies"
+        },
+        {
+          "input": "Country: ALB, Year: 2016",
+          "output": "imf_sap_active: 0 [IMF Structural Adjustment Program not active \u2014 SBA or EFF, source: Dreher 2006]",
+          "metadata_iso3": "ALB",
+          "metadata_year": 2016,
+          "metadata_source": "Dreher (2006) IMF SBA + EFF program dummies"
+        },
+        {
+          "input": "Country: ALB, Year: 2018",
+          "output": "imf_sap_active: 0 [IMF Structural Adjustment Program not active \u2014 SBA or EFF, source: Dreher 2006]",
+          "metadata_iso3": "ALB",
+          "metadata_year": 2018,
+          "metadata_source": "Dreher (2006) IMF SBA + EFF program dummies"
+        },
+        {
+          "input": "Country: POL, Year: 1990",
+          "output": "imf_sap_active: 1 [IMF Structural Adjustment Program active \u2014 SBA or EFF, source: Dreher 2006]",
+          "metadata_iso3": "POL",
+          "metadata_year": 1990,
+          "metadata_source": "Dreher (2006) IMF SBA + EFF program dummies"
+        },
+        {
+          "input": "Country: POL, Year: 1992",
+          "output": "imf_sap_active: 0 [IMF Structural Adjustment Program not active \u2014 SBA or EFF, source: Dreher 2006]",
+          "metadata_iso3": "POL",
+          "metadata_year": 1992,
+          "metadata_source": "Dreher (2006) IMF SBA + EFF program dummies"
+        },
+        {
+          "input": "Country: POL, Year: 1994",
+          "output": "imf_sap_active: 1 [IMF Structural Adjustment Program active \u2014 SBA or EFF, source: Dreher 2006]",
+          "metadata_iso3": "POL",
+          "metadata_year": 1994,
+          "metadata_source": "Dreher (2006) IMF SBA + EFF program dummies"
+        },
+        {
+          "input": "Country: POL, Year: 1996",
+          "output": "imf_sap_active: 0 [IMF Structural Adjustment Program not active \u2014 SBA or EFF, source: Dreher 2006]",
+          "metadata_iso3": "POL",
+          "metadata_year": 1996,
+          "metadata_source": "Dreher (2006) IMF SBA + EFF program dummies"
+        },
+        {
+          "input": "Country: POL, Year: 1998",
+          "output": "imf_sap_active: 0 [IMF Structural Adjustment Program not active \u2014 SBA or EFF, source: Dreher 2006]",
+          "metadata_iso3": "POL",
+          "metadata_year": 1998,
+          "metadata_source": "Dreher (2006) IMF SBA + EFF program dummies"
+        },
+        {
+          "input": "Country: POL, Year: 2000",
+          "output": "imf_sap_active: 0 [IMF Structural Adjustment Program not active \u2014 SBA or EFF, source: Dreher 2006]",
+          "metadata_iso3": "POL",
+          "metadata_year": 2000,
+          "metadata_source": "Dreher (2006) IMF SBA + EFF program dummies"
+        },
+        {
+          "input": "Country: POL, Year: 2002",
+          "output": "imf_sap_active: 0 [IMF Structural Adjustment Program not active \u2014 SBA or EFF, source: Dreher 2006]",
+          "metadata_iso3": "POL",
+          "metadata_year": 2002,
+          "metadata_source": "Dreher (2006) IMF SBA + EFF program dummies"
+        },
+        {
+          "input": "Country: POL, Year: 2004",
+          "output": "imf_sap_active: 0 [IMF Structural Adjustment Program not active \u2014 SBA or EFF, source: Dreher 2006]",
+          "metadata_iso3": "POL",
+          "metadata_year": 2004,
+          "metadata_source": "Dreher (2006) IMF SBA + EFF program dummies"
+        },
+        {
+          "input": "Country: POL, Year: 2006",
+          "output": "imf_sap_active: 0 [IMF Structural Adjustment Program not active \u2014 SBA or EFF, source: Dreher 2006]",
+          "metadata_iso3": "POL",
+          "metadata_year": 2006,
+          "metadata_source": "Dreher (2006) IMF SBA + EFF program dummies"
+        },
+        {
+          "input": "Country: POL, Year: 2008",
+          "output": "imf_sap_active: 0 [IMF Structural Adjustment Program not active \u2014 SBA or EFF, source: Dreher 2006]",
+          "metadata_iso3": "POL",
+          "metadata_year": 2008,
+          "metadata_source": "Dreher (2006) IMF SBA + EFF program dummies"
+        },
+        {
+          "input": "Country: POL, Year: 2010",
+          "output": "imf_sap_active: 0 [IMF Structural Adjustment Program not active \u2014 SBA or EFF, source: Dreher 2006]",
+          "metadata_iso3": "POL",
+          "metadata_year": 2010,
+          "metadata_source": "Dreher (2006) IMF SBA + EFF program dummies"
+        },
+        {
+          "input": "Country: POL, Year: 2012",
+          "output": "imf_sap_active: 0 [IMF Structural Adjustment Program not active \u2014 SBA or EFF, source: Dreher 2006]",
+          "metadata_iso3": "POL",
+          "metadata_year": 2012,
+          "metadata_source": "Dreher (2006) IMF SBA + EFF program dummies"
+        },
+        {
+          "input": "Country: POL, Year: 2014",
+          "output": "imf_sap_active: 0 [IMF Structural Adjustment Program not active \u2014 SBA or EFF, source: Dreher 2006]",
+          "metadata_iso3": "POL",
+          "metadata_year": 2014,
+          "metadata_source": "Dreher (2006) IMF SBA + EFF program dummies"
+        },
+        {
+          "input": "Country: POL, Year: 2016",
+          "output": "imf_sap_active: 0 [IMF Structural Adjustment Program not active \u2014 SBA or EFF, source: Dreher 2006]",
+          "metadata_iso3": "POL",
+          "metadata_year": 2016,
+          "metadata_source": "Dreher (2006) IMF SBA + EFF program dummies"
+        },
+        {
+          "input": "Country: POL, Year: 2018",
+          "output": "imf_sap_active: 0 [IMF Structural Adjustment Program not active \u2014 SBA or EFF, source: Dreher 2006]",
+          "metadata_iso3": "POL",
+          "metadata_year": 2018,
+          "metadata_source": "Dreher (2006) IMF SBA + EFF program dummies"
+        },
+        {
+          "input": "Country: KEN, Year: 1990",
+          "output": "imf_sap_active: 0 [IMF Structural Adjustment Program not active \u2014 SBA or EFF, source: Dreher 2006]",
+          "metadata_iso3": "KEN",
+          "metadata_year": 1990,
+          "metadata_source": "Dreher (2006) IMF SBA + EFF program dummies"
+        },
+        {
+          "input": "Country: KEN, Year: 1992",
+          "output": "imf_sap_active: 0 [IMF Structural Adjustment Program not active \u2014 SBA or EFF, source: Dreher 2006]",
+          "metadata_iso3": "KEN",
+          "metadata_year": 1992,
+          "metadata_source": "Dreher (2006) IMF SBA + EFF program dummies"
+        },
+        {
+          "input": "Country: KEN, Year: 1994",
+          "output": "imf_sap_active: 0 [IMF Structural Adjustment Program not active \u2014 SBA or EFF, source: Dreher 2006]",
+          "metadata_iso3": "KEN",
+          "metadata_year": 1994,
+          "metadata_source": "Dreher (2006) IMF SBA + EFF program dummies"
+        },
+        {
+          "input": "Country: KEN, Year: 1996",
+          "output": "imf_sap_active: 0 [IMF Structural Adjustment Program not active \u2014 SBA or EFF, source: Dreher 2006]",
+          "metadata_iso3": "KEN",
+          "metadata_year": 1996,
+          "metadata_source": "Dreher (2006) IMF SBA + EFF program dummies"
+        },
+        {
+          "input": "Country: KEN, Year: 1998",
+          "output": "imf_sap_active: 0 [IMF Structural Adjustment Program not active \u2014 SBA or EFF, source: Dreher 2006]",
+          "metadata_iso3": "KEN",
+          "metadata_year": 1998,
+          "metadata_source": "Dreher (2006) IMF SBA + EFF program dummies"
+        },
+        {
+          "input": "Country: KEN, Year: 2000",
+          "output": "imf_sap_active: 0 [IMF Structural Adjustment Program not active \u2014 SBA or EFF, source: Dreher 2006]",
+          "metadata_iso3": "KEN",
+          "metadata_year": 2000,
+          "metadata_source": "Dreher (2006) IMF SBA + EFF program dummies"
+        },
+        {
+          "input": "Country: KEN, Year: 2002",
+          "output": "imf_sap_active: 0 [IMF Structural Adjustment Program not active \u2014 SBA or EFF, source: Dreher 2006]",
+          "metadata_iso3": "KEN",
+          "metadata_year": 2002,
+          "metadata_source": "Dreher (2006) IMF SBA + EFF program dummies"
+        },
+        {
+          "input": "Country: KEN, Year: 2004",
+          "output": "imf_sap_active: 0 [IMF Structural Adjustment Program not active \u2014 SBA or EFF, source: Dreher 2006]",
+          "metadata_iso3": "KEN",
+          "metadata_year": 2004,
+          "metadata_source": "Dreher (2006) IMF SBA + EFF program dummies"
+        },
+        {
+          "input": "Country: KEN, Year: 2006",
+          "output": "imf_sap_active: 0 [IMF Structural Adjustment Program not active \u2014 SBA or EFF, source: Dreher 2006]",
+          "metadata_iso3": "KEN",
+          "metadata_year": 2006,
+          "metadata_source": "Dreher (2006) IMF SBA + EFF program dummies"
+        },
+        {
+          "input": "Country: KEN, Year: 2008",
+          "output": "imf_sap_active: 0 [IMF Structural Adjustment Program not active \u2014 SBA or EFF, source: Dreher 2006]",
+          "metadata_iso3": "KEN",
+          "metadata_year": 2008,
+          "metadata_source": "Dreher (2006) IMF SBA + EFF program dummies"
+        },
+        {
+          "input": "Country: KEN, Year: 2010",
+          "output": "imf_sap_active: 0 [IMF Structural Adjustment Program not active \u2014 SBA or EFF, source: Dreher 2006]",
+          "metadata_iso3": "KEN",
+          "metadata_year": 2010,
+          "metadata_source": "Dreher (2006) IMF SBA + EFF program dummies"
+        },
+        {
+          "input": "Country: KEN, Year: 2012",
+          "output": "imf_sap_active: 0 [IMF Structural Adjustment Program not active \u2014 SBA or EFF, source: Dreher 2006]",
+          "metadata_iso3": "KEN",
+          "metadata_year": 2012,
+          "metadata_source": "Dreher (2006) IMF SBA + EFF program dummies"
+        },
+        {
+          "input": "Country: KEN, Year: 2014",
+          "output": "imf_sap_active: 0 [IMF Structural Adjustment Program not active \u2014 SBA or EFF, source: Dreher 2006]",
+          "metadata_iso3": "KEN",
+          "metadata_year": 2014,
+          "metadata_source": "Dreher (2006) IMF SBA + EFF program dummies"
+        },
+        {
+          "input": "Country: KEN, Year: 2016",
+          "output": "imf_sap_active: 0 [IMF Structural Adjustment Program not active \u2014 SBA or EFF, source: Dreher 2006]",
+          "metadata_iso3": "KEN",
+          "metadata_year": 2016,
+          "metadata_source": "Dreher (2006) IMF SBA + EFF program dummies"
+        },
+        {
+          "input": "Country: KEN, Year: 2018",
+          "output": "imf_sap_active: 0 [IMF Structural Adjustment Program not active \u2014 SBA or EFF, source: Dreher 2006]",
+          "metadata_iso3": "KEN",
+          "metadata_year": 2018,
+          "metadata_source": "Dreher (2006) IMF SBA + EFF program dummies"
+        },
+        {
+          "input": "Country: ARG, Year: 1990",
+          "output": "imf_sap_active: 0 [IMF Structural Adjustment Program not active \u2014 SBA or EFF, source: Dreher 2006]",
+          "metadata_iso3": "ARG",
+          "metadata_year": 1990,
+          "metadata_source": "Dreher (2006) IMF SBA + EFF program dummies"
+        },
+        {
+          "input": "Country: ARG, Year: 1992",
+          "output": "imf_sap_active: 1 [IMF Structural Adjustment Program active \u2014 SBA or EFF, source: Dreher 2006]",
+          "metadata_iso3": "ARG",
+          "metadata_year": 1992,
+          "metadata_source": "Dreher (2006) IMF SBA + EFF program dummies"
+        },
+        {
+          "input": "Country: ARG, Year: 1994",
+          "output": "imf_sap_active: 0 [IMF Structural Adjustment Program not active \u2014 SBA or EFF, source: Dreher 2006]",
+          "metadata_iso3": "ARG",
+          "metadata_year": 1994,
+          "metadata_source": "Dreher (2006) IMF SBA + EFF program dummies"
+        },
+        {
+          "input": "Country: ARG, Year: 1996",
+          "output": "imf_sap_active: 1 [IMF Structural Adjustment Program active \u2014 SBA or EFF, source: Dreher 2006]",
+          "metadata_iso3": "ARG",
+          "metadata_year": 1996,
+          "metadata_source": "Dreher (2006) IMF SBA + EFF program dummies"
+        },
+        {
+          "input": "Country: ARG, Year: 1998",
+          "output": "imf_sap_active: 1 [IMF Structural Adjustment Program active \u2014 SBA or EFF, source: Dreher 2006]",
+          "metadata_iso3": "ARG",
+          "metadata_year": 1998,
+          "metadata_source": "Dreher (2006) IMF SBA + EFF program dummies"
+        },
+        {
+          "input": "Country: ARG, Year: 2000",
+          "output": "imf_sap_active: 1 [IMF Structural Adjustment Program active \u2014 SBA or EFF, source: Dreher 2006]",
+          "metadata_iso3": "ARG",
+          "metadata_year": 2000,
+          "metadata_source": "Dreher (2006) IMF SBA + EFF program dummies"
+        },
+        {
+          "input": "Country: ARG, Year: 2002",
+          "output": "imf_sap_active: 0 [IMF Structural Adjustment Program not active \u2014 SBA or EFF, source: Dreher 2006]",
+          "metadata_iso3": "ARG",
+          "metadata_year": 2002,
+          "metadata_source": "Dreher (2006) IMF SBA + EFF program dummies"
+        },
+        {
+          "input": "Country: ARG, Year: 2004",
+          "output": "imf_sap_active: 0 [IMF Structural Adjustment Program not active \u2014 SBA or EFF, source: Dreher 2006]",
+          "metadata_iso3": "ARG",
+          "metadata_year": 2004,
+          "metadata_source": "Dreher (2006) IMF SBA + EFF program dummies"
+        },
+        {
+          "input": "Country: ARG, Year: 2006",
+          "output": "imf_sap_active: 0 [IMF Structural Adjustment Program not active \u2014 SBA or EFF, source: Dreher 2006]",
+          "metadata_iso3": "ARG",
+          "metadata_year": 2006,
+          "metadata_source": "Dreher (2006) IMF SBA + EFF program dummies"
+        },
+        {
+          "input": "Country: ARG, Year: 2008",
+          "output": "imf_sap_active: 0 [IMF Structural Adjustment Program not active \u2014 SBA or EFF, source: Dreher 2006]",
+          "metadata_iso3": "ARG",
+          "metadata_year": 2008,
+          "metadata_source": "Dreher (2006) IMF SBA + EFF program dummies"
+        },
+        {
+          "input": "Country: ARG, Year: 2010",
+          "output": "imf_sap_active: 0 [IMF Structural Adjustment Program not active \u2014 SBA or EFF, source: Dreher 2006]",
+          "metadata_iso3": "ARG",
+          "metadata_year": 2010,
+          "metadata_source": "Dreher (2006) IMF SBA + EFF program dummies"
+        },
+        {
+          "input": "Country: ARG, Year: 2012",
+          "output": "imf_sap_active: 0 [IMF Structural Adjustment Program not active \u2014 SBA or EFF, source: Dreher 2006]",
+          "metadata_iso3": "ARG",
+          "metadata_year": 2012,
+          "metadata_source": "Dreher (2006) IMF SBA + EFF program dummies"
+        },
+        {
+          "input": "Country: ARG, Year: 2014",
+          "output": "imf_sap_active: 0 [IMF Structural Adjustment Program not active \u2014 SBA or EFF, source: Dreher 2006]",
+          "metadata_iso3": "ARG",
+          "metadata_year": 2014,
+          "metadata_source": "Dreher (2006) IMF SBA + EFF program dummies"
+        },
+        {
+          "input": "Country: ARG, Year: 2016",
+          "output": "imf_sap_active: 0 [IMF Structural Adjustment Program not active \u2014 SBA or EFF, source: Dreher 2006]",
+          "metadata_iso3": "ARG",
+          "metadata_year": 2016,
+          "metadata_source": "Dreher (2006) IMF SBA + EFF program dummies"
+        },
+        {
+          "input": "Country: ARG, Year: 2018",
+          "output": "imf_sap_active: 1 [IMF Structural Adjustment Program active \u2014 SBA or EFF, source: Dreher 2006]",
+          "metadata_iso3": "ARG",
+          "metadata_year": 2018,
+          "metadata_source": "Dreher (2006) IMF SBA + EFF program dummies"
+        }
+      ]
+    }
+  ]
+}

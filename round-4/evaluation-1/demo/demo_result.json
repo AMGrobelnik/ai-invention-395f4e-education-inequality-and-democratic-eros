@@ -1,0 +1,15 @@
+{
+  "kind": "code_demo",
+  "id": "gen_art_evaluation_1",
+  "type": "code",
+  "iteration": 4,
+  "title": "DD Robustness Validation: Wild Bootstrap, SWIID Uncertainty, Power Curves",
+  "summary": "Implemented and executed six pre-registered robustness checks for the Giesselmann-Schmidt-Catran (2022) double-demeaning DD triple-interaction estimator (Education \u00d7 Gini \u00d7 SocProt \u2192 Liberal Democracy) across two education-measure specifications.\n\n1. Wild Cluster Bootstrap (CGM 2008, B=999, Rademacher weights): UNDP MYS specification (N=95, G=58) yields bootstrap p-value = 0.070 for \u03b2\u2087 = 0.292 (SE = 0.233); WB Tertiary specification (N=137, G=86) yields bootstrap p-value = 0.091 for \u03b2\u2087 = 13.128 (SE = 9.990). Both are marginal: significant at 10%, not 5%.\n\n2. SWIID Gini Measurement Uncertainty (500 MC draws from N(gini_disp, gini_disp_se\u00b2)): Mean \u03b2\u2087 = 0.026 across draws, fraction of draws with \u03b2\u2087 > 0 = 62.8%. Modest positive bias but high variance across measurement error realizations.\n\n3. Selection-into-Doubly-Observed Diagnostic: Countries with \u22652 ILO observations have systematically higher Gini dispersion (p = 0.079), flagging non-random selection into the doubly-observed subsample. Social protection coverage and mean years of schooling show no differential selection.\n\n4. Minimum Detectable Effect Power Curves: At the realized cluster count G=58 (UNDP), MDE = 0.311 (\u2248 2.0 standard deviations of Liberal Democracy) under baseline error variance \u2014 substantially above the point estimate of \u03b2\u2087, confirming the study is underpowered to detect the estimated effect reliably. MDE curves plotted for G=20\u201380 under three \u03c3_\u03b5 scenarios.\n\n5. ILO Directly-Reported Subgroup Analysis: iter-3 7-period panel has ilo_directly_reported_fraction = 0.0 (all SDG 1.3.1 data, no ILO directly-reported observations). Fell back to iter-1 2-period panel (N=161, all directly_reported_any=True). OECD-excluded sample (N=95) is identical to the ILO-restricted sample; \u03b2\u2087 = 0.292 unchanged.\n\n6. Robustness Summary Table: JSON + LaTeX-ready TSV assembled across all checks. Key verdict: marginal bootstrap significance (p \u2248 0.07\u20130.09), SWIID sign-consistency 63%, non-random selection concern, chronic underpowering at G=58.\n\nAll outputs validated against exp_eval_sol_out schema.",
+  "original_path": "/home/adrian/projects/ai-inventor/aii_data/users/adrian.marina.photos/runs/run_zXdSkAIIk5J3/3_invention_loop/iter_4/gen_art/gen_art_evaluation_1",
+  "demo_path": "/home/adrian/projects/ai-inventor/aii_data/users/adrian.marina.photos/runs/run_zXdSkAIIk5J3/4_gen_paper_repo/_3_gen_art_demo/iter_4/gen_art_evaluation_1",
+  "out_expected_files": {
+    "notebook": "",
+    "mini_data_file": ""
+  },
+  "notebook_path": "/home/adrian/projects/ai-inventor/aii_data/users/adrian.marina.photos/runs/run_zXdSkAIIk5J3/4_gen_paper_repo/_3_gen_art_demo/iter_4/gen_art_evaluation_1/eval_code_demo.ipynb"
+}

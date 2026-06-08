@@ -1,0 +1,2220 @@
+{
+  "metadata": {
+    "description": "Pre-processed SDET iter-5 panel data for robustness demo",
+    "spec_c_N": 67,
+    "spec_c_countries": 44,
+    "spec_b_N": 85
+  },
+  "spec_c_rows": [
+    {
+      "country": "ALB",
+      "period_id": 7,
+      "E": 61.40103098618136,
+      "G": 34.93333333333334,
+      "S": 78.1,
+      "G_se": 2.0,
+      "Y": 0.436
+    },
+    {
+      "country": "ARM",
+      "period_id": 6,
+      "E": 53.92683232793267,
+      "G": 36.48,
+      "S": 50.849999999999994,
+      "G_se": 1.212,
+      "Y": 0.32999999999999996
+    },
+    {
+      "country": "ARM",
+      "period_id": 7,
+      "E": 55.37950339680063,
+      "G": 34.06666666666666,
+      "S": 49.2,
+      "G_se": 1.26,
+      "Y": 0.5186666666666667
+    },
+    {
+      "country": "BEN",
+      "period_id": 6,
+      "E": 11.548137855529799,
+      "G": 44.18,
+      "S": 7.8,
+      "G_se": 2.476,
+      "Y": 0.5004
+    },
+    {
+      "country": "BEN",
+      "period_id": 7,
+      "E": 10.147926648457842,
+      "G": 43.2,
+      "S": 8.4,
+      "G_se": 2.9000000000000004,
+      "Y": 0.27999999999999997
+    },
+    {
+      "country": "BFA",
+      "period_id": 6,
+      "E": 5.873351683019996,
+      "G": 40.839999999999996,
+      "S": 8.7,
+      "G_se": 2.712,
+      "Y": 0.4566
+    },
+    {
+      "country": "BFA",
+      "period_id": 7,
+      "E": 8.872865488894464,
+      "G": 40.75,
+      "S": 9.7,
+      "G_se": 3.05,
+      "Y": 0.38866666666666666
+    },
+    {
+      "country": "BGD",
+      "period_id": 7,
+      "E": 23.3644967262799,
+      "G": 33.53333333333333,
+      "S": 22.0,
+      "G_se": 3.236666666666667,
+      "Y": 0.09233333333333334
+    },
+    {
+      "country": "BGR",
+      "period_id": 6,
+      "E": 81.60993957519531,
+      "G": 37.9,
+      "S": 88.3,
+      "G_se": 1.21,
+      "Y": 0.5324
+    },
+    {
+      "country": "BGR",
+      "period_id": 7,
+      "E": 84.98807271321613,
+      "G": 38.03333333333333,
+      "S": 82.8,
+      "G_se": 1.2766666666666666,
+      "Y": 0.5506666666666667
+    },
+    {
+      "country": "BIH",
+      "period_id": 7,
+      "E": 44.82307306925457,
+      "G": 38.25,
+      "S": 54.5,
+      "G_se": 3.365,
+      "Y": 0.3356666666666667
+    },
+    {
+      "country": "BLR",
+      "period_id": 6,
+      "E": 88.15642542188888,
+      "G": 24.64,
+      "S": 36.0,
+      "G_se": 1.05,
+      "Y": 0.1066
+    },
+    {
+      "country": "BRA",
+      "period_id": 6,
+      "E": 50.89167633056642,
+      "G": 46.54,
+      "S": 68.2,
+      "G_se": 0.51,
+      "Y": 0.6397999999999999
+    },
+    {
+      "country": "BRA",
+      "period_id": 7,
+      "E": 58.053466796875,
+      "G": 45.9,
+      "S": 71.95,
+      "G_se": 0.5233333333333333,
+      "Y": 0.535
+    },
+    {
+      "country": "BTN",
+      "period_id": 6,
+      "E": 15.235969635273799,
+      "G": 38.06,
+      "S": 8.8,
+      "G_se": 2.818,
+      "Y": 0.48719999999999997
+    },
+    {
+      "country": "BTN",
+      "period_id": 7,
+      "E": 15.393796198423367,
+      "G": 36.96666666666667,
+      "S": 11.9,
+      "G_se": 3.143333333333333,
+      "Y": 0.4876666666666667
+    },
+    {
+      "country": "CHL",
+      "period_id": 6,
+      "E": 89.68988800048831,
+      "G": 45.96,
+      "S": 69.7,
+      "G_se": 0.8940000000000001,
+      "Y": 0.8168
+    },
+    {
+      "country": "CHL",
+      "period_id": 7,
+      "E": 94.89085388183598,
+      "G": 45.199999999999996,
+      "S": 75.3,
+      "G_se": 0.7233333333333333,
+      "Y": 0.773
+    },
+    {
+      "country": "CIV",
+      "period_id": 7,
+      "E": 10.717495042291766,
+      "G": 48.95,
+      "S": 12.1,
+      "G_se": 2.5549999999999997,
+      "Y": 0.24333333333333332
+    },
+    {
+      "country": "COL",
+      "period_id": 6,
+      "E": 56.86455307006834,
+      "G": 47.06,
+      "S": 46.65,
+      "G_se": 0.45199999999999996,
+      "Y": 0.538
+    },
+    {
+      "country": "COL",
+      "period_id": 7,
+      "E": 57.77972284952799,
+      "G": 49.9,
+      "S": 52.0,
+      "G_se": 0.5033333333333333,
+      "Y": 0.5186666666666667
+    },
+    {
+      "country": "DOM",
+      "period_id": 6,
+      "E": 55.3872355599698,
+      "G": 41.239999999999995,
+      "S": 53.6,
+      "G_se": 1.036,
+      "Y": 0.33680000000000004
+    },
+    {
+      "country": "DOM",
+      "period_id": 7,
+      "E": 56.78734164083426,
+      "G": 37.4,
+      "S": 57.6,
+      "G_se": 0.9933333333333333,
+      "Y": 0.4703333333333333
+    },
+    {
+      "country": "FJI",
+      "period_id": 6,
+      "E": 77.0046187141324,
+      "G": 37.3,
+      "S": 58.9,
+      "G_se": 3.17,
+      "Y": 0.27440000000000003
+    },
+    {
+      "country": "GEO",
+      "period_id": 6,
+      "E": 62.00662447333508,
+      "G": 38.4,
+      "S": 97.1,
+      "G_se": 1.114,
+      "Y": 0.5028
+    },
+    {
+      "country": "GEO",
+      "period_id": 7,
+      "E": 76.12070031550518,
+      "G": 35.833333333333336,
+      "S": 94.6,
+      "G_se": 1.08,
+      "Y": 0.4626666666666666
+    },
+    {
+      "country": "GHA",
+      "period_id": 6,
+      "E": 16.128002417159003,
+      "G": 43.849999999999994,
+      "S": 21.8,
+      "G_se": 2.9749999999999996,
+      "Y": 0.6195999999999999
+    },
+    {
+      "country": "GTM",
+      "period_id": 6,
+      "E": 22.2584349279442,
+      "G": 43.46,
+      "S": 12.966666666666667,
+      "G_se": 1.902,
+      "Y": 0.43
+    },
+    {
+      "country": "HND",
+      "period_id": 6,
+      "E": 23.51666610329,
+      "G": 46.06,
+      "S": 26.6,
+      "G_se": 1.184,
+      "Y": 0.24100000000000002
+    },
+    {
+      "country": "IDN",
+      "period_id": 6,
+      "E": 35.34586476484472,
+      "G": 45.980000000000004,
+      "S": 27.8,
+      "G_se": 1.61,
+      "Y": 0.48260000000000003
+    },
+    {
+      "country": "IDN",
+      "period_id": 7,
+      "E": 40.37347422479357,
+      "G": 45.36666666666667,
+      "S": 54.3,
+      "G_se": 1.6633333333333333,
+      "Y": 0.39966666666666667
+    },
+    {
+      "country": "KEN",
+      "period_id": 6,
+      "E": 10.797616513241003,
+      "G": 42.56,
+      "S": 10.25,
+      "G_se": 2.5940000000000003,
+      "Y": 0.4102
+    },
+    {
+      "country": "LKA",
+      "period_id": 6,
+      "E": 17.972223242756638,
+      "G": 48.18,
+      "S": 33.4,
+      "G_se": 2.846,
+      "Y": 0.44299999999999995
+    },
+    {
+      "country": "LSO",
+      "period_id": 6,
+      "E": 9.992228644456619,
+      "G": 48.43333333333334,
+      "S": 9.2,
+      "G_se": 4.66,
+      "Y": 0.434
+    },
+    {
+      "country": "MDA",
+      "period_id": 6,
+      "E": 52.903235487746734,
+      "G": 31.119999999999997,
+      "S": 42.0,
+      "G_se": 1.1800000000000002,
+      "Y": 0.4276
+    },
+    {
+      "country": "MDA",
+      "period_id": 7,
+      "E": 61.869486003830396,
+      "G": 31.2,
+      "S": 47.5,
+      "G_se": 1.3466666666666667,
+      "Y": 0.593
+    },
+    {
+      "country": "MDG",
+      "period_id": 7,
+      "E": 5.454185256559956,
+      "G": 41.75,
+      "S": 15.4,
+      "G_se": 3.49,
+      "Y": 0.24
+    },
+    {
+      "country": "MKD",
+      "period_id": 6,
+      "E": 43.16121006011965,
+      "G": 31.6,
+      "S": 39.0,
+      "G_se": 1.61,
+      "Y": 0.3444
+    },
+    {
+      "country": "MKD",
+      "period_id": 7,
+      "E": 47.081436157226534,
+      "G": 30.933333333333334,
+      "S": 50.5,
+      "G_se": 2.0,
+      "Y": 0.3873333333333333
+    },
+    {
+      "country": "MLI",
+      "period_id": 6,
+      "E": 5.12750941173932,
+      "G": 36.68,
+      "S": 9.3,
+      "G_se": 0.974,
+      "Y": 0.32999999999999996
+    },
+    {
+      "country": "MNG",
+      "period_id": 6,
+      "E": 66.61717529296874,
+      "G": 33.839999999999996,
+      "S": 86.2,
+      "G_se": 2.434,
+      "Y": 0.5448000000000001
+    },
+    {
+      "country": "MNG",
+      "period_id": 7,
+      "E": 67.1272413857844,
+      "G": 33.666666666666664,
+      "S": 96.75,
+      "G_se": 2.9,
+      "Y": 0.49333333333333335
+    },
+    {
+      "country": "MWI",
+      "period_id": 6,
+      "E": 1.252020675411223,
+      "G": 44.28,
+      "S": 21.3,
+      "G_se": 2.832,
+      "Y": 0.4396
+    },
+    {
+      "country": "NAM",
+      "period_id": 6,
+      "E": 22.63376996526458,
+      "G": 64.3,
+      "S": 24.2,
+      "G_se": 3.31,
+      "Y": 0.5628
+    },
+    {
+      "country": "NPL",
+      "period_id": 6,
+      "E": 12.2465844412731,
+      "G": 35.54,
+      "S": 17.0,
+      "G_se": 3.34,
+      "Y": 0.5302
+    },
+    {
+      "country": "NPL",
+      "period_id": 7,
+      "E": 14.762321969770133,
+      "G": 34.96666666666667,
+      "S": 18.95,
+      "G_se": 3.5499999999999994,
+      "Y": 0.48966666666666664
+    },
+    {
+      "country": "PAN",
+      "period_id": 6,
+      "E": 47.98096976716135,
+      "G": 45.7,
+      "S": 43.95,
+      "G_se": 0.976,
+      "Y": 0.546
+    },
+    {
+      "country": "PAN",
+      "period_id": 7,
+      "E": 51.82278698393727,
+      "G": 45.9,
+      "S": 63.55,
+      "G_se": 0.9066666666666666,
+      "Y": 0.5453333333333333
+    },
+    {
+      "country": "PER",
+      "period_id": 6,
+      "E": 72.23139572143555,
+      "G": 44.6,
+      "S": 27.4,
+      "G_se": 0.6839999999999999,
+      "Y": 0.6859999999999999
+    },
+    {
+      "country": "PHL",
+      "period_id": 6,
+      "E": 33.21498459460398,
+      "G": 39.2,
+      "S": 41.900000000000006,
+      "G_se": 2.058,
+      "Y": 0.3302
+    },
+    {
+      "country": "PHL",
+      "period_id": 7,
+      "E": 34.5498388353993,
+      "G": 37.800000000000004,
+      "S": 34.9,
+      "G_se": 2.1233333333333335,
+      "Y": 0.27266666666666667
+    },
+    {
+      "country": "POL",
+      "period_id": 6,
+      "E": 70.353857421875,
+      "G": 29.02,
+      "S": 86.45,
+      "G_se": 0.524,
+      "Y": 0.5888
+    },
+    {
+      "country": "SEN",
+      "period_id": 6,
+      "E": 11.620813264105161,
+      "G": 40.160000000000004,
+      "S": 20.0,
+      "G_se": 2.9859999999999998,
+      "Y": 0.5598
+    },
+    {
+      "country": "SEN",
+      "period_id": 7,
+      "E": 14.5479719898253,
+      "G": 39.9,
+      "S": 19.9,
+      "G_se": 3.225,
+      "Y": 0.5523333333333333
+    },
+    {
+      "country": "SLV",
+      "period_id": 6,
+      "E": 27.78509196627932,
+      "G": 37.58,
+      "S": 21.2,
+      "G_se": 1.096,
+      "Y": 0.4418
+    },
+    {
+      "country": "SLV",
+      "period_id": 7,
+      "E": 30.918953524064932,
+      "G": 37.1,
+      "S": 18.8,
+      "G_se": 1.2366666666666666,
+      "Y": 0.19666666666666666
+    },
+    {
+      "country": "SRB",
+      "period_id": 6,
+      "E": 64.37198028564454,
+      "G": 32.12,
+      "S": 39.0,
+      "G_se": 0.8480000000000001,
+      "Y": 0.30300000000000005
+    },
+    {
+      "country": "SRB",
+      "period_id": 7,
+      "E": 69.04260508219403,
+      "G": 31.099999999999998,
+      "S": 56.7,
+      "G_se": 0.94,
+      "Y": 0.24633333333333332
+    },
+    {
+      "country": "STP",
+      "period_id": 6,
+      "E": 12.8210802078247,
+      "G": 35.1,
+      "S": 14.8,
+      "G_se": 3.516666666666667,
+      "Y": 0.5452
+    },
+    {
+      "country": "THA",
+      "period_id": 6,
+      "E": 46.72362770682134,
+      "G": 38.1,
+      "S": 68.0,
+      "G_se": 1.464,
+      "Y": 0.1212
+    },
+    {
+      "country": "THA",
+      "period_id": 7,
+      "E": 43.117992683545765,
+      "G": 36.93333333333334,
+      "S": 70.1,
+      "G_se": 1.6533333333333333,
+      "Y": 0.18966666666666665
+    },
+    {
+      "country": "TUN",
+      "period_id": 6,
+      "E": 31.58299446105956,
+      "G": 37.739999999999995,
+      "S": 50.2,
+      "G_se": 2.83,
+      "Y": 0.6304000000000001
+    },
+    {
+      "country": "TUN",
+      "period_id": 7,
+      "E": 34.306639353434264,
+      "G": 37.45,
+      "S": 53.8,
+      "G_se": 3.165,
+      "Y": 0.42766666666666664
+    },
+    {
+      "country": "TUR",
+      "period_id": 6,
+      "E": 108.45641937255873,
+      "G": 39.78,
+      "S": 64.75,
+      "G_se": 1.126,
+      "Y": 0.137
+    },
+    {
+      "country": "TUR",
+      "period_id": 7,
+      "E": 124.07514699300134,
+      "G": 40.5,
+      "S": 64.0,
+      "G_se": 1.1666666666666667,
+      "Y": 0.11266666666666668
+    },
+    {
+      "country": "UKR",
+      "period_id": 6,
+      "E": 80.01590912875409,
+      "G": 26.860000000000003,
+      "S": 73.0,
+      "G_se": 1.4380000000000002,
+      "Y": 0.254
+    },
+    {
+      "country": "ZAF",
+      "period_id": 6,
+      "E": 20.7297345950656,
+      "G": 62.04,
+      "S": 48.65,
+      "G_se": 2.02,
+      "Y": 0.6365999999999999
+    }
+  ],
+  "spec_b_rows": [
+    {
+      "country": "ALB",
+      "period_id": 7,
+      "E": 10.158787040111113,
+      "G": 34.93333333333334,
+      "S": 78.1,
+      "G_se": 2.0,
+      "Y": 0.436
+    },
+    {
+      "country": "ARM",
+      "period_id": 6,
+      "E": 11.392751184666668,
+      "G": 36.48,
+      "S": 50.849999999999994,
+      "G_se": 1.212,
+      "Y": 0.32999999999999996
+    },
+    {
+      "country": "ARM",
+      "period_id": 7,
+      "E": 11.339926135555556,
+      "G": 34.06666666666666,
+      "S": 49.2,
+      "G_se": 1.26,
+      "Y": 0.5186666666666667
+    },
+    {
+      "country": "BEN",
+      "period_id": 6,
+      "E": 2.8232504867333335,
+      "G": 44.18,
+      "S": 7.8,
+      "G_se": 2.476,
+      "Y": 0.5004
+    },
+    {
+      "country": "BEN",
+      "period_id": 7,
+      "E": 3.247750540666667,
+      "G": 43.2,
+      "S": 8.4,
+      "G_se": 2.9000000000000004,
+      "Y": 0.27999999999999997
+    },
+    {
+      "country": "BFA",
+      "period_id": 6,
+      "E": 1.7909999728000003,
+      "G": 40.839999999999996,
+      "S": 8.7,
+      "G_se": 2.712,
+      "Y": 0.4566
+    },
+    {
+      "country": "BFA",
+      "period_id": 7,
+      "E": 2.290861136222222,
+      "G": 40.75,
+      "S": 9.7,
+      "G_se": 3.05,
+      "Y": 0.38866666666666666
+    },
+    {
+      "country": "BGD",
+      "period_id": 7,
+      "E": 6.89666652688889,
+      "G": 33.53333333333333,
+      "S": 22.0,
+      "G_se": 3.236666666666667,
+      "Y": 0.09233333333333334
+    },
+    {
+      "country": "BGR",
+      "period_id": 6,
+      "E": 11.259333355999999,
+      "G": 37.9,
+      "S": 88.3,
+      "G_se": 1.21,
+      "Y": 0.5324
+    },
+    {
+      "country": "BGR",
+      "period_id": 7,
+      "E": 11.44060174888889,
+      "G": 38.03333333333333,
+      "S": 82.8,
+      "G_se": 1.2766666666666666,
+      "Y": 0.5506666666666667
+    },
+    {
+      "country": "BIH",
+      "period_id": 7,
+      "E": 10.769999979222222,
+      "G": 38.25,
+      "S": 54.5,
+      "G_se": 3.365,
+      "Y": 0.3356666666666667
+    },
+    {
+      "country": "BLR",
+      "period_id": 6,
+      "E": 11.952000045333333,
+      "G": 24.64,
+      "S": 36.0,
+      "G_se": 1.05,
+      "Y": 0.1066
+    },
+    {
+      "country": "BOL",
+      "period_id": 6,
+      "E": 9.401666641333334,
+      "G": 41.42,
+      "S": 37.15,
+      "G_se": 1.062,
+      "Y": 0.337
+    },
+    {
+      "country": "BOL",
+      "period_id": 7,
+      "E": 9.976340060111111,
+      "G": 39.26666666666667,
+      "S": 38.4,
+      "G_se": 1.0766666666666669,
+      "Y": 0.303
+    },
+    {
+      "country": "BRA",
+      "period_id": 6,
+      "E": 7.829679921,
+      "G": 46.54,
+      "S": 68.2,
+      "G_se": 0.51,
+      "Y": 0.6397999999999999
+    },
+    {
+      "country": "BRA",
+      "period_id": 7,
+      "E": 8.36303607888889,
+      "G": 45.9,
+      "S": 71.95,
+      "G_se": 0.5233333333333333,
+      "Y": 0.535
+    },
+    {
+      "country": "BTN",
+      "period_id": 6,
+      "E": 4.133795544733333,
+      "G": 38.06,
+      "S": 8.8,
+      "G_se": 2.818,
+      "Y": 0.48719999999999997
+    },
+    {
+      "country": "BTN",
+      "period_id": 7,
+      "E": 5.792528425,
+      "G": 36.96666666666667,
+      "S": 11.9,
+      "G_se": 3.143333333333333,
+      "Y": 0.4876666666666667
+    },
+    {
+      "country": "CHL",
+      "period_id": 6,
+      "E": 10.600648115999999,
+      "G": 45.96,
+      "S": 69.7,
+      "G_se": 0.8940000000000001,
+      "Y": 0.8168
+    },
+    {
+      "country": "CHL",
+      "period_id": 7,
+      "E": 11.236542182222223,
+      "G": 45.199999999999996,
+      "S": 75.3,
+      "G_se": 0.7233333333333333,
+      "Y": 0.773
+    },
+    {
+      "country": "CIV",
+      "period_id": 7,
+      "E": 4.838095218444444,
+      "G": 48.95,
+      "S": 12.1,
+      "G_se": 2.5549999999999997,
+      "Y": 0.24333333333333332
+    },
+    {
+      "country": "COL",
+      "period_id": 6,
+      "E": 8.351666768333335,
+      "G": 47.06,
+      "S": 46.65,
+      "G_se": 0.45199999999999996,
+      "Y": 0.538
+    },
+    {
+      "country": "COL",
+      "period_id": 7,
+      "E": 8.974901587333333,
+      "G": 49.9,
+      "S": 52.0,
+      "G_se": 0.5033333333333333,
+      "Y": 0.5186666666666667
+    },
+    {
+      "country": "DOM",
+      "period_id": 6,
+      "E": 8.7015801112,
+      "G": 41.239999999999995,
+      "S": 53.6,
+      "G_se": 1.036,
+      "Y": 0.33680000000000004
+    },
+    {
+      "country": "DOM",
+      "period_id": 7,
+      "E": 9.342990983333332,
+      "G": 37.4,
+      "S": 57.6,
+      "G_se": 0.9933333333333333,
+      "Y": 0.4703333333333333
+    },
+    {
+      "country": "FJI",
+      "period_id": 6,
+      "E": 10.50783135,
+      "G": 37.3,
+      "S": 58.9,
+      "G_se": 3.17,
+      "Y": 0.27440000000000003
+    },
+    {
+      "country": "GEO",
+      "period_id": 6,
+      "E": 12.814333374666665,
+      "G": 38.4,
+      "S": 97.1,
+      "G_se": 1.114,
+      "Y": 0.5028
+    },
+    {
+      "country": "GEO",
+      "period_id": 7,
+      "E": 12.737777815555555,
+      "G": 35.833333333333336,
+      "S": 94.6,
+      "G_se": 1.08,
+      "Y": 0.4626666666666666
+    },
+    {
+      "country": "GHA",
+      "period_id": 6,
+      "E": 6.281746914666667,
+      "G": 43.849999999999994,
+      "S": 21.8,
+      "G_se": 2.9749999999999996,
+      "Y": 0.6195999999999999
+    },
+    {
+      "country": "GMB",
+      "period_id": 6,
+      "E": 4.073088318533334,
+      "G": 40.62,
+      "S": 6.3,
+      "G_se": 2.6420000000000003,
+      "Y": 0.2904
+    },
+    {
+      "country": "GNB",
+      "period_id": 6,
+      "E": 3.6511006666666668,
+      "G": 40.839999999999996,
+      "S": 0.9,
+      "G_se": 3.008,
+      "Y": 0.29979999999999996
+    },
+    {
+      "country": "GNB",
+      "period_id": 7,
+      "E": 3.735368,
+      "G": 40.05,
+      "S": 2.5,
+      "G_se": 3.26,
+      "Y": 0.26533333333333337
+    },
+    {
+      "country": "GTM",
+      "period_id": 6,
+      "E": 5.3473498820000005,
+      "G": 43.46,
+      "S": 12.966666666666667,
+      "G_se": 1.902,
+      "Y": 0.43
+    },
+    {
+      "country": "GTM",
+      "period_id": 7,
+      "E": 5.831126584111111,
+      "G": 42.53333333333333,
+      "S": 12.7,
+      "G_se": 1.5866666666666667,
+      "Y": 0.35833333333333334
+    },
+    {
+      "country": "HND",
+      "period_id": 6,
+      "E": 6.5173333486,
+      "G": 46.06,
+      "S": 26.6,
+      "G_se": 1.184,
+      "Y": 0.24100000000000002
+    },
+    {
+      "country": "HND",
+      "period_id": 7,
+      "E": 7.455004691444444,
+      "G": 45.03333333333333,
+      "S": 30.1,
+      "G_se": 1.5266666666666666,
+      "Y": 0.29
+    },
+    {
+      "country": "IDN",
+      "period_id": 6,
+      "E": 8.134662659933333,
+      "G": 45.980000000000004,
+      "S": 27.8,
+      "G_se": 1.61,
+      "Y": 0.48260000000000003
+    },
+    {
+      "country": "IDN",
+      "period_id": 7,
+      "E": 8.650784518555556,
+      "G": 45.36666666666667,
+      "S": 54.3,
+      "G_se": 1.6633333333333333,
+      "Y": 0.39966666666666667
+    },
+    {
+      "country": "KEN",
+      "period_id": 6,
+      "E": 7.522657888933333,
+      "G": 42.56,
+      "S": 10.25,
+      "G_se": 2.5940000000000003,
+      "Y": 0.4102
+    },
+    {
+      "country": "KEN",
+      "period_id": 7,
+      "E": 8.184980074666667,
+      "G": 41.733333333333334,
+      "S": 9.0,
+      "G_se": 2.7433333333333336,
+      "Y": 0.4256666666666667
+    },
+    {
+      "country": "LBR",
+      "period_id": 6,
+      "E": 5.1388837856,
+      "G": 36.7,
+      "S": 6.2,
+      "G_se": 2.9400000000000004,
+      "Y": 0.43979999999999997
+    },
+    {
+      "country": "LKA",
+      "period_id": 6,
+      "E": 10.571618969333333,
+      "G": 48.18,
+      "S": 33.4,
+      "G_se": 2.846,
+      "Y": 0.44299999999999995
+    },
+    {
+      "country": "LSO",
+      "period_id": 6,
+      "E": 6.995518490266667,
+      "G": 48.43333333333334,
+      "S": 9.2,
+      "G_se": 4.66,
+      "Y": 0.434
+    },
+    {
+      "country": "MDA",
+      "period_id": 6,
+      "E": 11.742000007333333,
+      "G": 31.119999999999997,
+      "S": 42.0,
+      "G_se": 1.1800000000000002,
+      "Y": 0.4276
+    },
+    {
+      "country": "MDA",
+      "period_id": 7,
+      "E": 11.81444432888889,
+      "G": 31.2,
+      "S": 47.5,
+      "G_se": 1.3466666666666667,
+      "Y": 0.593
+    },
+    {
+      "country": "MDG",
+      "period_id": 7,
+      "E": 4.658986709666666,
+      "G": 41.75,
+      "S": 15.4,
+      "G_se": 3.49,
+      "Y": 0.24
+    },
+    {
+      "country": "MKD",
+      "period_id": 6,
+      "E": 11.205410072666666,
+      "G": 31.6,
+      "S": 39.0,
+      "G_se": 1.61,
+      "Y": 0.3444
+    },
+    {
+      "country": "MKD",
+      "period_id": 7,
+      "E": 10.229999859666668,
+      "G": 30.933333333333334,
+      "S": 50.5,
+      "G_se": 2.0,
+      "Y": 0.3873333333333333
+    },
+    {
+      "country": "MLI",
+      "period_id": 6,
+      "E": 1.8100219925333334,
+      "G": 36.68,
+      "S": 9.3,
+      "G_se": 0.974,
+      "Y": 0.32999999999999996
+    },
+    {
+      "country": "MLI",
+      "period_id": 7,
+      "E": 1.6433333556666667,
+      "G": 36.56666666666667,
+      "S": 12.6,
+      "G_se": 0.9500000000000001,
+      "Y": 0.18533333333333335
+    },
+    {
+      "country": "MNG",
+      "period_id": 6,
+      "E": 10.606144094733335,
+      "G": 33.839999999999996,
+      "S": 86.2,
+      "G_se": 2.434,
+      "Y": 0.5448000000000001
+    },
+    {
+      "country": "MNG",
+      "period_id": 7,
+      "E": 9.406666755333333,
+      "G": 33.666666666666664,
+      "S": 96.75,
+      "G_se": 2.9,
+      "Y": 0.49333333333333335
+    },
+    {
+      "country": "MWI",
+      "period_id": 6,
+      "E": 5.343285973866666,
+      "G": 44.28,
+      "S": 21.3,
+      "G_se": 2.832,
+      "Y": 0.4396
+    },
+    {
+      "country": "NAM",
+      "period_id": 6,
+      "E": 7.079090160600001,
+      "G": 64.3,
+      "S": 24.2,
+      "G_se": 3.31,
+      "Y": 0.5628
+    },
+    {
+      "country": "NGA",
+      "period_id": 6,
+      "E": 7.0046791622,
+      "G": 38.0,
+      "S": 7.7,
+      "G_se": 2.62,
+      "Y": 0.388
+    },
+    {
+      "country": "NGA",
+      "period_id": 7,
+      "E": 7.555635558111111,
+      "G": 37.8,
+      "S": 14.8,
+      "G_se": 3.0140000000000002,
+      "Y": 0.3336666666666666
+    },
+    {
+      "country": "NPL",
+      "period_id": 6,
+      "E": 4.049292236933334,
+      "G": 35.54,
+      "S": 17.0,
+      "G_se": 3.34,
+      "Y": 0.5302
+    },
+    {
+      "country": "NPL",
+      "period_id": 7,
+      "E": 4.560137642777778,
+      "G": 34.96666666666667,
+      "S": 18.95,
+      "G_se": 3.5499999999999994,
+      "Y": 0.48966666666666664
+    },
+    {
+      "country": "PAN",
+      "period_id": 6,
+      "E": 10.251481515266667,
+      "G": 45.7,
+      "S": 43.95,
+      "G_se": 0.976,
+      "Y": 0.546
+    },
+    {
+      "country": "PAN",
+      "period_id": 7,
+      "E": 10.773112382222223,
+      "G": 45.9,
+      "S": 63.55,
+      "G_se": 0.9066666666666666,
+      "Y": 0.5453333333333333
+    },
+    {
+      "country": "PER",
+      "period_id": 6,
+      "E": 9.520514532933333,
+      "G": 44.6,
+      "S": 27.4,
+      "G_se": 0.6839999999999999,
+      "Y": 0.6859999999999999
+    },
+    {
+      "country": "PER",
+      "period_id": 7,
+      "E": 10.108645512,
+      "G": 43.46666666666667,
+      "S": 26.1,
+      "G_se": 0.62,
+      "Y": 0.6623333333333333
+    },
+    {
+      "country": "PHL",
+      "period_id": 6,
+      "E": 8.557333270600001,
+      "G": 39.2,
+      "S": 41.900000000000006,
+      "G_se": 2.058,
+      "Y": 0.3302
+    },
+    {
+      "country": "PHL",
+      "period_id": 7,
+      "E": 9.432489872333333,
+      "G": 37.800000000000004,
+      "S": 34.9,
+      "G_se": 2.1233333333333335,
+      "Y": 0.27266666666666667
+    },
+    {
+      "country": "POL",
+      "period_id": 6,
+      "E": 13.028666656000002,
+      "G": 29.02,
+      "S": 86.45,
+      "G_se": 0.524,
+      "Y": 0.5888
+    },
+    {
+      "country": "PRY",
+      "period_id": 6,
+      "E": 8.547666835933333,
+      "G": 47.0,
+      "S": 31.4,
+      "G_se": 1.184,
+      "Y": 0.417
+    },
+    {
+      "country": "PRY",
+      "period_id": 7,
+      "E": 8.91046205,
+      "G": 45.13333333333333,
+      "S": 36.1,
+      "G_se": 1.0366666666666668,
+      "Y": 0.42566666666666664
+    },
+    {
+      "country": "SEN",
+      "period_id": 6,
+      "E": 2.887451307,
+      "G": 40.160000000000004,
+      "S": 20.0,
+      "G_se": 2.9859999999999998,
+      "Y": 0.5598
+    },
+    {
+      "country": "SEN",
+      "period_id": 7,
+      "E": 3.0440732878888888,
+      "G": 39.9,
+      "S": 19.9,
+      "G_se": 3.225,
+      "Y": 0.5523333333333333
+    },
+    {
+      "country": "SLE",
+      "period_id": 6,
+      "E": 3.540429459333333,
+      "G": 39.175,
+      "S": 4.4,
+      "G_se": 3.4075,
+      "Y": 0.35
+    },
+    {
+      "country": "SLV",
+      "period_id": 6,
+      "E": 6.8764443875333345,
+      "G": 37.58,
+      "S": 21.2,
+      "G_se": 1.096,
+      "Y": 0.4418
+    },
+    {
+      "country": "SLV",
+      "period_id": 7,
+      "E": 7.227777798999999,
+      "G": 37.1,
+      "S": 18.8,
+      "G_se": 1.2366666666666666,
+      "Y": 0.19666666666666666
+    },
+    {
+      "country": "SRB",
+      "period_id": 6,
+      "E": 11.20333341,
+      "G": 32.12,
+      "S": 39.0,
+      "G_se": 0.8480000000000001,
+      "Y": 0.30300000000000005
+    },
+    {
+      "country": "SRB",
+      "period_id": 7,
+      "E": 11.608899111111112,
+      "G": 31.099999999999998,
+      "S": 56.7,
+      "G_se": 0.94,
+      "Y": 0.24633333333333332
+    },
+    {
+      "country": "STP",
+      "period_id": 6,
+      "E": 5.7419499897333335,
+      "G": 35.1,
+      "S": 14.8,
+      "G_se": 3.516666666666667,
+      "Y": 0.5452
+    },
+    {
+      "country": "THA",
+      "period_id": 6,
+      "E": 8.389222134533332,
+      "G": 38.1,
+      "S": 68.0,
+      "G_se": 1.464,
+      "Y": 0.1212
+    },
+    {
+      "country": "THA",
+      "period_id": 7,
+      "E": 8.932222048444444,
+      "G": 36.93333333333334,
+      "S": 70.1,
+      "G_se": 1.6533333333333333,
+      "Y": 0.18966666666666665
+    },
+    {
+      "country": "TUN",
+      "period_id": 6,
+      "E": 7.333300240733334,
+      "G": 37.739999999999995,
+      "S": 50.2,
+      "G_se": 2.83,
+      "Y": 0.6304000000000001
+    },
+    {
+      "country": "TUN",
+      "period_id": 7,
+      "E": 7.508351008000001,
+      "G": 37.45,
+      "S": 53.8,
+      "G_se": 3.165,
+      "Y": 0.42766666666666664
+    },
+    {
+      "country": "TUR",
+      "period_id": 6,
+      "E": 8.287000052,
+      "G": 39.78,
+      "S": 64.75,
+      "G_se": 1.126,
+      "Y": 0.137
+    },
+    {
+      "country": "TUR",
+      "period_id": 7,
+      "E": 8.934919712333334,
+      "G": 40.5,
+      "S": 64.0,
+      "G_se": 1.1666666666666667,
+      "Y": 0.11266666666666668
+    },
+    {
+      "country": "UKR",
+      "period_id": 6,
+      "E": 11.124004711333335,
+      "G": 26.860000000000003,
+      "S": 73.0,
+      "G_se": 1.4380000000000002,
+      "Y": 0.254
+    },
+    {
+      "country": "ZAF",
+      "period_id": 6,
+      "E": 10.448666604,
+      "G": 62.04,
+      "S": 48.65,
+      "G_se": 2.02,
+      "Y": 0.6365999999999999
+    },
+    {
+      "country": "ZMB",
+      "period_id": 6,
+      "E": 7.007799060800001,
+      "G": 55.2,
+      "S": 19.950000000000003,
+      "G_se": 3.386,
+      "Y": 0.3176
+    },
+    {
+      "country": "ZMB",
+      "period_id": 7,
+      "E": 7.421875587444444,
+      "G": 55.03333333333333,
+      "S": 30.3,
+      "G_se": 3.77,
+      "Y": 0.35566666666666663
+    }
+  ],
+  "iter4_datasets": [
+    {
+      "dataset": "Complete_regression_table_1_all_specs",
+      "examples": [
+        {
+          "input": "{\"spec\": \"A_naive_mys\", \"coefficient\": \"beta_E\"}",
+          "output": "0.149711",
+          "metadata_spec": "A_naive_mys",
+          "metadata_coef": "beta_E",
+          "metadata_se": "0.279404",
+          "metadata_p": "0.5995",
+          "metadata_sig": "",
+          "metadata_N": "67",
+          "metadata_R2_within": "0.992258",
+          "metadata_N_clusters": "44",
+          "metadata_estimator": "Naive FE",
+          "metadata_education_proxy": "UNDP HDR25 MYS"
+        },
+        {
+          "input": "{\"spec\": \"A_naive_mys\", \"coefficient\": \"beta_G\"}",
+          "output": "0.023255",
+          "metadata_spec": "A_naive_mys",
+          "metadata_coef": "beta_G",
+          "metadata_se": "0.03837",
+          "metadata_p": "0.553",
+          "metadata_sig": "",
+          "metadata_N": "67",
+          "metadata_R2_within": "0.992258",
+          "metadata_N_clusters": "44",
+          "metadata_estimator": "Naive FE",
+          "metadata_education_proxy": "UNDP HDR25 MYS"
+        },
+        {
+          "input": "{\"spec\": \"A_naive_mys\", \"coefficient\": \"beta_S\"}",
+          "output": "0.017285",
+          "metadata_spec": "A_naive_mys",
+          "metadata_coef": "beta_S",
+          "metadata_se": "0.057757",
+          "metadata_p": "0.7686",
+          "metadata_sig": "",
+          "metadata_N": "67",
+          "metadata_R2_within": "0.992258",
+          "metadata_N_clusters": "44",
+          "metadata_estimator": "Naive FE",
+          "metadata_education_proxy": "UNDP HDR25 MYS"
+        },
+        {
+          "input": "{\"spec\": \"A_naive_mys\", \"coefficient\": \"beta_EG\"}",
+          "output": "-0.005361",
+          "metadata_spec": "A_naive_mys",
+          "metadata_coef": "beta_EG",
+          "metadata_se": "0.009561",
+          "metadata_p": "0.5828",
+          "metadata_sig": "",
+          "metadata_N": "67",
+          "metadata_R2_within": "0.992258",
+          "metadata_N_clusters": "44",
+          "metadata_estimator": "Naive FE",
+          "metadata_education_proxy": "UNDP HDR25 MYS"
+        },
+        {
+          "input": "{\"spec\": \"A_naive_mys\", \"coefficient\": \"beta_ES\"}",
+          "output": "-0.00198",
+          "metadata_spec": "A_naive_mys",
+          "metadata_coef": "beta_ES",
+          "metadata_se": "0.00523",
+          "metadata_p": "0.71",
+          "metadata_sig": "",
+          "metadata_N": "67",
+          "metadata_R2_within": "0.992258",
+          "metadata_N_clusters": "44",
+          "metadata_estimator": "Naive FE",
+          "metadata_education_proxy": "UNDP HDR25 MYS"
+        },
+        {
+          "input": "{\"spec\": \"A_naive_mys\", \"coefficient\": \"beta_GS\"}",
+          "output": "-0.000643",
+          "metadata_spec": "A_naive_mys",
+          "metadata_coef": "beta_GS",
+          "metadata_se": "0.001387",
+          "metadata_p": "0.6492",
+          "metadata_sig": "",
+          "metadata_N": "67",
+          "metadata_R2_within": "0.992258",
+          "metadata_N_clusters": "44",
+          "metadata_estimator": "Naive FE",
+          "metadata_education_proxy": "UNDP HDR25 MYS"
+        },
+        {
+          "input": "{\"spec\": \"A_naive_mys\", \"coefficient\": \"beta_EGS\"}",
+          "output": "7.3e-05",
+          "metadata_spec": "A_naive_mys",
+          "metadata_coef": "beta_EGS",
+          "metadata_se": "0.000134",
+          "metadata_p": "0.597",
+          "metadata_sig": "",
+          "metadata_N": "67",
+          "metadata_R2_within": "0.992258",
+          "metadata_N_clusters": "44",
+          "metadata_estimator": "Naive FE",
+          "metadata_education_proxy": "UNDP HDR25 MYS"
+        },
+        {
+          "input": "{\"spec\": \"B_dd_mys\", \"coefficient\": \"beta_E\"}",
+          "output": "-0.087411",
+          "metadata_spec": "B_dd_mys",
+          "metadata_coef": "beta_E",
+          "metadata_se": "0.142844",
+          "metadata_p": "0.5492",
+          "metadata_sig": "",
+          "metadata_N": "67",
+          "metadata_R2_within": "0.978759",
+          "metadata_N_clusters": "44",
+          "metadata_estimator": "DD (Giesselmann-Schmidt-Catran 2022)",
+          "metadata_education_proxy": "UNDP HDR25 MYS"
+        },
+        {
+          "input": "{\"spec\": \"B_dd_mys\", \"coefficient\": \"beta_G\"}",
+          "output": "0.015135",
+          "metadata_spec": "B_dd_mys",
+          "metadata_coef": "beta_G",
+          "metadata_se": "0.074722",
+          "metadata_p": "0.842",
+          "metadata_sig": "",
+          "metadata_N": "67",
+          "metadata_R2_within": "0.978759",
+          "metadata_N_clusters": "44",
+          "metadata_estimator": "DD (Giesselmann-Schmidt-Catran 2022)",
+          "metadata_education_proxy": "UNDP HDR25 MYS"
+        },
+        {
+          "input": "{\"spec\": \"B_dd_mys\", \"coefficient\": \"beta_S\"}",
+          "output": "-0.00557",
+          "metadata_spec": "B_dd_mys",
+          "metadata_coef": "beta_S",
+          "metadata_se": "0.012179",
+          "metadata_p": "0.6536",
+          "metadata_sig": "",
+          "metadata_N": "67",
+          "metadata_R2_within": "0.978759",
+          "metadata_N_clusters": "44",
+          "metadata_estimator": "DD (Giesselmann-Schmidt-Catran 2022)",
+          "metadata_education_proxy": "UNDP HDR25 MYS"
+        },
+        {
+          "input": "{\"spec\": \"B_dd_mys\", \"coefficient\": \"beta_EG\"}",
+          "output": "3634040917.344946",
+          "metadata_spec": "B_dd_mys",
+          "metadata_coef": "beta_EG",
+          "metadata_se": "19204856843.024513",
+          "metadata_p": "0.8523",
+          "metadata_sig": "",
+          "metadata_N": "67",
+          "metadata_R2_within": "0.978759",
+          "metadata_N_clusters": "44",
+          "metadata_estimator": "DD (Giesselmann-Schmidt-Catran 2022)",
+          "metadata_education_proxy": "UNDP HDR25 MYS"
+        },
+        {
+          "input": "{\"spec\": \"B_dd_mys\", \"coefficient\": \"beta_ES\"}",
+          "output": "9361431052.575935",
+          "metadata_spec": "B_dd_mys",
+          "metadata_coef": "beta_ES",
+          "metadata_se": "49472459804.31002",
+          "metadata_p": "0.8523",
+          "metadata_sig": "",
+          "metadata_N": "67",
+          "metadata_R2_within": "0.978759",
+          "metadata_N_clusters": "44",
+          "metadata_estimator": "DD (Giesselmann-Schmidt-Catran 2022)",
+          "metadata_education_proxy": "UNDP HDR25 MYS"
+        },
+        {
+          "input": "{\"spec\": \"B_dd_mys\", \"coefficient\": \"beta_GS\"}",
+          "output": "277722006851.5006",
+          "metadata_spec": "B_dd_mys",
+          "metadata_coef": "beta_GS",
+          "metadata_se": "1467680608185.7017",
+          "metadata_p": "0.8523",
+          "metadata_sig": "",
+          "metadata_N": "67",
+          "metadata_R2_within": "0.978759",
+          "metadata_N_clusters": "44",
+          "metadata_estimator": "DD (Giesselmann-Schmidt-Catran 2022)",
+          "metadata_education_proxy": "UNDP HDR25 MYS"
+        },
+        {
+          "input": "{\"spec\": \"B_dd_mys\", \"coefficient\": \"beta_EGS\"}",
+          "output": "-0.035566",
+          "metadata_spec": "B_dd_mys",
+          "metadata_coef": "beta_EGS",
+          "metadata_se": "0.075874",
+          "metadata_p": "0.6456",
+          "metadata_sig": "",
+          "metadata_N": "67",
+          "metadata_R2_within": "0.978759",
+          "metadata_N_clusters": "44",
+          "metadata_estimator": "DD (Giesselmann-Schmidt-Catran 2022)",
+          "metadata_education_proxy": "UNDP HDR25 MYS"
+        },
+        {
+          "input": "{\"spec\": \"C_dd_tertiary_PRIMARY\", \"coefficient\": \"beta_E\"}",
+          "output": "-0.006785",
+          "metadata_spec": "C_dd_tertiary_PRIMARY",
+          "metadata_coef": "beta_E",
+          "metadata_se": "0.015067",
+          "metadata_p": "0.6585",
+          "metadata_sig": "",
+          "metadata_N": "67",
+          "metadata_R2_within": "0.977937",
+          "metadata_N_clusters": "44",
+          "metadata_estimator": "DD (Giesselmann-Schmidt-Catran 2022)",
+          "metadata_education_proxy": "WB SE.TER.ENRR"
+        },
+        {
+          "input": "{\"spec\": \"C_dd_tertiary_PRIMARY\", \"coefficient\": \"beta_G\"}",
+          "output": "-0.000332",
+          "metadata_spec": "C_dd_tertiary_PRIMARY",
+          "metadata_coef": "beta_G",
+          "metadata_se": "0.045417",
+          "metadata_p": "0.9943",
+          "metadata_sig": "",
+          "metadata_N": "67",
+          "metadata_R2_within": "0.977937",
+          "metadata_N_clusters": "44",
+          "metadata_estimator": "DD (Giesselmann-Schmidt-Catran 2022)",
+          "metadata_education_proxy": "WB SE.TER.ENRR"
+        },
+        {
+          "input": "{\"spec\": \"C_dd_tertiary_PRIMARY\", \"coefficient\": \"beta_S\"}",
+          "output": "-0.004234",
+          "metadata_spec": "C_dd_tertiary_PRIMARY",
+          "metadata_coef": "beta_S",
+          "metadata_se": "0.011948",
+          "metadata_p": "0.7277",
+          "metadata_sig": "",
+          "metadata_N": "67",
+          "metadata_R2_within": "0.977937",
+          "metadata_N_clusters": "44",
+          "metadata_estimator": "DD (Giesselmann-Schmidt-Catran 2022)",
+          "metadata_education_proxy": "WB SE.TER.ENRR"
+        },
+        {
+          "input": "{\"spec\": \"C_dd_tertiary_PRIMARY\", \"coefficient\": \"beta_EG\"}",
+          "output": "198642290874.0198",
+          "metadata_spec": "C_dd_tertiary_PRIMARY",
+          "metadata_coef": "beta_EG",
+          "metadata_se": "420924094423.1528",
+          "metadata_p": "0.6434",
+          "metadata_sig": "",
+          "metadata_N": "67",
+          "metadata_R2_within": "0.977937",
+          "metadata_N_clusters": "44",
+          "metadata_estimator": "DD (Giesselmann-Schmidt-Catran 2022)",
+          "metadata_education_proxy": "WB SE.TER.ENRR"
+        },
+        {
+          "input": "{\"spec\": \"C_dd_tertiary_PRIMARY\", \"coefficient\": \"beta_ES\"}",
+          "output": "-570817755457.3036",
+          "metadata_spec": "C_dd_tertiary_PRIMARY",
+          "metadata_coef": "beta_ES",
+          "metadata_se": "1242198258951.574",
+          "metadata_p": "0.652",
+          "metadata_sig": "",
+          "metadata_N": "67",
+          "metadata_R2_within": "0.977937",
+          "metadata_N_clusters": "44",
+          "metadata_estimator": "DD (Giesselmann-Schmidt-Catran 2022)",
+          "metadata_education_proxy": "WB SE.TER.ENRR"
+        },
+        {
+          "input": "{\"spec\": \"C_dd_tertiary_PRIMARY\", \"coefficient\": \"beta_GS\"}",
+          "output": "919972731526.4254",
+          "metadata_spec": "C_dd_tertiary_PRIMARY",
+          "metadata_coef": "beta_GS",
+          "metadata_se": "2048243981450.0493",
+          "metadata_p": "0.6593",
+          "metadata_sig": "",
+          "metadata_N": "67",
+          "metadata_R2_within": "0.977937",
+          "metadata_N_clusters": "44",
+          "metadata_estimator": "DD (Giesselmann-Schmidt-Catran 2022)",
+          "metadata_education_proxy": "WB SE.TER.ENRR"
+        },
+        {
+          "input": "{\"spec\": \"C_dd_tertiary_PRIMARY\", \"coefficient\": \"beta_EGS\"}",
+          "output": "0.001051",
+          "metadata_spec": "C_dd_tertiary_PRIMARY",
+          "metadata_coef": "beta_EGS",
+          "metadata_se": "0.002993",
+          "metadata_p": "0.7299",
+          "metadata_sig": "",
+          "metadata_N": "67",
+          "metadata_R2_within": "0.977937",
+          "metadata_N_clusters": "44",
+          "metadata_estimator": "DD (Giesselmann-Schmidt-Catran 2022)",
+          "metadata_education_proxy": "WB SE.TER.ENRR"
+        },
+        {
+          "input": "{\"spec\": \"D_naive_tertiary\", \"coefficient\": \"beta_E\"}",
+          "output": "0.03232",
+          "metadata_spec": "D_naive_tertiary",
+          "metadata_coef": "beta_E",
+          "metadata_se": "0.038615",
+          "metadata_p": "0.4149",
+          "metadata_sig": "",
+          "metadata_N": "67",
+          "metadata_R2_within": "0.992296",
+          "metadata_N_clusters": "44",
+          "metadata_estimator": "Naive FE",
+          "metadata_education_proxy": "WB SE.TER.ENRR"
+        },
+        {
+          "input": "{\"spec\": \"D_naive_tertiary\", \"coefficient\": \"beta_G\"}",
+          "output": "0.003599",
+          "metadata_spec": "D_naive_tertiary",
+          "metadata_coef": "beta_G",
+          "metadata_se": "0.026397",
+          "metadata_p": "0.8932",
+          "metadata_sig": "",
+          "metadata_N": "67",
+          "metadata_R2_within": "0.992296",
+          "metadata_N_clusters": "44",
+          "metadata_estimator": "Naive FE",
+          "metadata_education_proxy": "WB SE.TER.ENRR"
+        },
+        {
+          "input": "{\"spec\": \"D_naive_tertiary\", \"coefficient\": \"beta_S\"}",
+          "output": "0.01248",
+          "metadata_spec": "D_naive_tertiary",
+          "metadata_coef": "beta_S",
+          "metadata_se": "0.066365",
+          "metadata_p": "0.8532",
+          "metadata_sig": "",
+          "metadata_N": "67",
+          "metadata_R2_within": "0.992296",
+          "metadata_N_clusters": "44",
+          "metadata_estimator": "Naive FE",
+          "metadata_education_proxy": "WB SE.TER.ENRR"
+        },
+        {
+          "input": "{\"spec\": \"D_naive_tertiary\", \"coefficient\": \"beta_EG\"}",
+          "output": "-0.000717",
+          "metadata_spec": "D_naive_tertiary",
+          "metadata_coef": "beta_EG",
+          "metadata_se": "0.001058",
+          "metadata_p": "0.5077",
+          "metadata_sig": "",
+          "metadata_N": "67",
+          "metadata_R2_within": "0.992296",
+          "metadata_N_clusters": "44",
+          "metadata_estimator": "Naive FE",
+          "metadata_education_proxy": "WB SE.TER.ENRR"
+        },
+        {
+          "input": "{\"spec\": \"D_naive_tertiary\", \"coefficient\": \"beta_ES\"}",
+          "output": "-0.000296",
+          "metadata_spec": "D_naive_tertiary",
+          "metadata_coef": "beta_ES",
+          "metadata_se": "0.000892",
+          "metadata_p": "0.7445",
+          "metadata_sig": "",
+          "metadata_N": "67",
+          "metadata_R2_within": "0.992296",
+          "metadata_N_clusters": "44",
+          "metadata_estimator": "Naive FE",
+          "metadata_education_proxy": "WB SE.TER.ENRR"
+        },
+        {
+          "input": "{\"spec\": \"D_naive_tertiary\", \"coefficient\": \"beta_GS\"}",
+          "output": "-0.000236",
+          "metadata_spec": "D_naive_tertiary",
+          "metadata_coef": "beta_GS",
+          "metadata_se": "0.001623",
+          "metadata_p": "0.8863",
+          "metadata_sig": "",
+          "metadata_N": "67",
+          "metadata_R2_within": "0.992296",
+          "metadata_N_clusters": "44",
+          "metadata_estimator": "Naive FE",
+          "metadata_education_proxy": "WB SE.TER.ENRR"
+        },
+        {
+          "input": "{\"spec\": \"D_naive_tertiary\", \"coefficient\": \"beta_EGS\"}",
+          "output": "6e-06",
+          "metadata_spec": "D_naive_tertiary",
+          "metadata_coef": "beta_EGS",
+          "metadata_se": "2.4e-05",
+          "metadata_p": "0.8026",
+          "metadata_sig": "",
+          "metadata_N": "67",
+          "metadata_R2_within": "0.992296",
+          "metadata_N_clusters": "44",
+          "metadata_estimator": "Naive FE",
+          "metadata_education_proxy": "WB SE.TER.ENRR"
+        }
+      ]
+    },
+    {
+      "dataset": "Effective_ID_sample_audit",
+      "examples": [
+        {
+          "input": "{\"country\": \"ALB\"}",
+          "output": "singleton",
+          "metadata_country": "ALB",
+          "metadata_id_type": "singleton"
+        },
+        {
+          "input": "{\"country\": \"ARM\"}",
+          "output": "doubly_observed",
+          "metadata_country": "ARM",
+          "metadata_id_type": "doubly_observed"
+        },
+        {
+          "input": "{\"country\": \"BEN\"}",
+          "output": "doubly_observed",
+          "metadata_country": "BEN",
+          "metadata_id_type": "doubly_observed"
+        },
+        {
+          "input": "{\"country\": \"BFA\"}",
+          "output": "doubly_observed",
+          "metadata_country": "BFA",
+          "metadata_id_type": "doubly_observed"
+        },
+        {
+          "input": "{\"country\": \"BGD\"}",
+          "output": "singleton",
+          "metadata_country": "BGD",
+          "metadata_id_type": "singleton"
+        },
+        {
+          "input": "{\"country\": \"BGR\"}",
+          "output": "doubly_observed",
+          "metadata_country": "BGR",
+          "metadata_id_type": "doubly_observed"
+        },
+        {
+          "input": "{\"country\": \"BIH\"}",
+          "output": "singleton",
+          "metadata_country": "BIH",
+          "metadata_id_type": "singleton"
+        },
+        {
+          "input": "{\"country\": \"BLR\"}",
+          "output": "singleton",
+          "metadata_country": "BLR",
+          "metadata_id_type": "singleton"
+        },
+        {
+          "input": "{\"country\": \"BOL\"}",
+          "output": "missing",
+          "metadata_country": "BOL",
+          "metadata_id_type": "missing"
+        },
+        {
+          "input": "{\"country\": \"BRA\"}",
+          "output": "doubly_observed",
+          "metadata_country": "BRA",
+          "metadata_id_type": "doubly_observed"
+        },
+        {
+          "input": "{\"country\": \"BTN\"}",
+          "output": "doubly_observed",
+          "metadata_country": "BTN",
+          "metadata_id_type": "doubly_observed"
+        },
+        {
+          "input": "{\"country\": \"CHL\"}",
+          "output": "doubly_observed",
+          "metadata_country": "CHL",
+          "metadata_id_type": "doubly_observed"
+        },
+        {
+          "input": "{\"country\": \"CIV\"}",
+          "output": "singleton",
+          "metadata_country": "CIV",
+          "metadata_id_type": "singleton"
+        },
+        {
+          "input": "{\"country\": \"COL\"}",
+          "output": "doubly_observed",
+          "metadata_country": "COL",
+          "metadata_id_type": "doubly_observed"
+        },
+        {
+          "input": "{\"country\": \"CPV\"}",
+          "output": "missing",
+          "metadata_country": "CPV",
+          "metadata_id_type": "missing"
+        },
+        {
+          "input": "{\"country\": \"DOM\"}",
+          "output": "doubly_observed",
+          "metadata_country": "DOM",
+          "metadata_id_type": "doubly_observed"
+        },
+        {
+          "input": "{\"country\": \"FJI\"}",
+          "output": "singleton",
+          "metadata_country": "FJI",
+          "metadata_id_type": "singleton"
+        },
+        {
+          "input": "{\"country\": \"GEO\"}",
+          "output": "doubly_observed",
+          "metadata_country": "GEO",
+          "metadata_id_type": "doubly_observed"
+        },
+        {
+          "input": "{\"country\": \"GHA\"}",
+          "output": "singleton",
+          "metadata_country": "GHA",
+          "metadata_id_type": "singleton"
+        },
+        {
+          "input": "{\"country\": \"GMB\"}",
+          "output": "missing",
+          "metadata_country": "GMB",
+          "metadata_id_type": "missing"
+        },
+        {
+          "input": "{\"country\": \"GNB\"}",
+          "output": "missing",
+          "metadata_country": "GNB",
+          "metadata_id_type": "missing"
+        },
+        {
+          "input": "{\"country\": \"GTM\"}",
+          "output": "singleton",
+          "metadata_country": "GTM",
+          "metadata_id_type": "singleton"
+        },
+        {
+          "input": "{\"country\": \"GUY\"}",
+          "output": "missing",
+          "metadata_country": "GUY",
+          "metadata_id_type": "missing"
+        },
+        {
+          "input": "{\"country\": \"HND\"}",
+          "output": "singleton",
+          "metadata_country": "HND",
+          "metadata_id_type": "singleton"
+        },
+        {
+          "input": "{\"country\": \"IDN\"}",
+          "output": "doubly_observed",
+          "metadata_country": "IDN",
+          "metadata_id_type": "doubly_observed"
+        },
+        {
+          "input": "{\"country\": \"KEN\"}",
+          "output": "singleton",
+          "metadata_country": "KEN",
+          "metadata_id_type": "singleton"
+        },
+        {
+          "input": "{\"country\": \"KOR\"}",
+          "output": "missing",
+          "metadata_country": "KOR",
+          "metadata_id_type": "missing"
+        },
+        {
+          "input": "{\"country\": \"LBR\"}",
+          "output": "missing",
+          "metadata_country": "LBR",
+          "metadata_id_type": "missing"
+        },
+        {
+          "input": "{\"country\": \"LKA\"}",
+          "output": "singleton",
+          "metadata_country": "LKA",
+          "metadata_id_type": "singleton"
+        },
+        {
+          "input": "{\"country\": \"LSO\"}",
+          "output": "singleton",
+          "metadata_country": "LSO",
+          "metadata_id_type": "singleton"
+        },
+        {
+          "input": "{\"country\": \"MDA\"}",
+          "output": "doubly_observed",
+          "metadata_country": "MDA",
+          "metadata_id_type": "doubly_observed"
+        },
+        {
+          "input": "{\"country\": \"MDG\"}",
+          "output": "singleton",
+          "metadata_country": "MDG",
+          "metadata_id_type": "singleton"
+        },
+        {
+          "input": "{\"country\": \"MKD\"}",
+          "output": "doubly_observed",
+          "metadata_country": "MKD",
+          "metadata_id_type": "doubly_observed"
+        },
+        {
+          "input": "{\"country\": \"MLI\"}",
+          "output": "singleton",
+          "metadata_country": "MLI",
+          "metadata_id_type": "singleton"
+        },
+        {
+          "input": "{\"country\": \"MNG\"}",
+          "output": "doubly_observed",
+          "metadata_country": "MNG",
+          "metadata_id_type": "doubly_observed"
+        },
+        {
+          "input": "{\"country\": \"MWI\"}",
+          "output": "singleton",
+          "metadata_country": "MWI",
+          "metadata_id_type": "singleton"
+        },
+        {
+          "input": "{\"country\": \"NAM\"}",
+          "output": "singleton",
+          "metadata_country": "NAM",
+          "metadata_id_type": "singleton"
+        },
+        {
+          "input": "{\"country\": \"NER\"}",
+          "output": "missing",
+          "metadata_country": "NER",
+          "metadata_id_type": "missing"
+        },
+        {
+          "input": "{\"country\": \"NGA\"}",
+          "output": "missing",
+          "metadata_country": "NGA",
+          "metadata_id_type": "missing"
+        },
+        {
+          "input": "{\"country\": \"NIC\"}",
+          "output": "missing",
+          "metadata_country": "NIC",
+          "metadata_id_type": "missing"
+        },
+        {
+          "input": "{\"country\": \"NPL\"}",
+          "output": "doubly_observed",
+          "metadata_country": "NPL",
+          "metadata_id_type": "doubly_observed"
+        },
+        {
+          "input": "{\"country\": \"OWID_KOS\"}",
+          "output": "missing",
+          "metadata_country": "OWID_KOS",
+          "metadata_id_type": "missing"
+        },
+        {
+          "input": "{\"country\": \"PAN\"}",
+          "output": "doubly_observed",
+          "metadata_country": "PAN",
+          "metadata_id_type": "doubly_observed"
+        },
+        {
+          "input": "{\"country\": \"PER\"}",
+          "output": "singleton",
+          "metadata_country": "PER",
+          "metadata_id_type": "singleton"
+        },
+        {
+          "input": "{\"country\": \"PHL\"}",
+          "output": "doubly_observed",
+          "metadata_country": "PHL",
+          "metadata_id_type": "doubly_observed"
+        },
+        {
+          "input": "{\"country\": \"POL\"}",
+          "output": "singleton",
+          "metadata_country": "POL",
+          "metadata_id_type": "singleton"
+        },
+        {
+          "input": "{\"country\": \"PRY\"}",
+          "output": "missing",
+          "metadata_country": "PRY",
+          "metadata_id_type": "missing"
+        },
+        {
+          "input": "{\"country\": \"SEN\"}",
+          "output": "doubly_observed",
+          "metadata_country": "SEN",
+          "metadata_id_type": "doubly_observed"
+        },
+        {
+          "input": "{\"country\": \"SLB\"}",
+          "output": "missing",
+          "metadata_country": "SLB",
+          "metadata_id_type": "missing"
+        },
+        {
+          "input": "{\"country\": \"SLE\"}",
+          "output": "missing",
+          "metadata_country": "SLE",
+          "metadata_id_type": "missing"
+        },
+        {
+          "input": "{\"country\": \"SLV\"}",
+          "output": "doubly_observed",
+          "metadata_country": "SLV",
+          "metadata_id_type": "doubly_observed"
+        },
+        {
+          "input": "{\"country\": \"SRB\"}",
+          "output": "doubly_observed",
+          "metadata_country": "SRB",
+          "metadata_id_type": "doubly_observed"
+        },
+        {
+          "input": "{\"country\": \"STP\"}",
+          "output": "singleton",
+          "metadata_country": "STP",
+          "metadata_id_type": "singleton"
+        },
+        {
+          "input": "{\"country\": \"THA\"}",
+          "output": "doubly_observed",
+          "metadata_country": "THA",
+          "metadata_id_type": "doubly_observed"
+        },
+        {
+          "input": "{\"country\": \"TLS\"}",
+          "output": "missing",
+          "metadata_country": "TLS",
+          "metadata_id_type": "missing"
+        },
+        {
+          "input": "{\"country\": \"TUN\"}",
+          "output": "doubly_observed",
+          "metadata_country": "TUN",
+          "metadata_id_type": "doubly_observed"
+        },
+        {
+          "input": "{\"country\": \"TUR\"}",
+          "output": "doubly_observed",
+          "metadata_country": "TUR",
+          "metadata_id_type": "doubly_observed"
+        },
+        {
+          "input": "{\"country\": \"TWN\"}",
+          "output": "missing",
+          "metadata_country": "TWN",
+          "metadata_id_type": "missing"
+        },
+        {
+          "input": "{\"country\": \"UKR\"}",
+          "output": "singleton",
+          "metadata_country": "UKR",
+          "metadata_id_type": "singleton"
+        },
+        {
+          "input": "{\"country\": \"ZAF\"}",
+          "output": "singleton",
+          "metadata_country": "ZAF",
+          "metadata_id_type": "singleton"
+        },
+        {
+          "input": "{\"country\": \"ZMB\"}",
+          "output": "missing",
+          "metadata_country": "ZMB",
+          "metadata_id_type": "missing"
+        }
+      ]
+    },
+    {
+      "dataset": "Marginal_effects_grid_dLdem_dE",
+      "examples": [
+        {
+          "input": "{\"cell\": \"gini_p25_sp_p25\", \"gini_q\": \"p25\", \"sp_q\": \"p25\"}",
+          "output": "550639662405.3353",
+          "metadata_cell": "gini_p25_sp_p25",
+          "metadata_gini_value": "-0.1375",
+          "metadata_socprot_value": "-1.0125",
+          "metadata_me_se": "1259056704205.9043",
+          "metadata_ci_ninety_five": "[-1917111477838.2368, 3018390802648.9077]",
+          "metadata_sign": "+"
+        },
+        {
+          "input": "{\"cell\": \"gini_p25_sp_p75\", \"gini_q\": \"p25\", \"sp_q\": \"p75\"}",
+          "output": "-605266292395.7029",
+          "metadata_cell": "gini_p25_sp_p75",
+          "metadata_gini_value": "-0.1375",
+          "metadata_socprot_value": "1.0125",
+          "metadata_me_se": "1259056704205.902",
+          "metadata_ci_ninety_five": "[-3073017432639.2705, 1862484847847.865]",
+          "metadata_sign": "-"
+        },
+        {
+          "input": "{\"cell\": \"gini_p75_sp_p25\", \"gini_q\": \"p75\", \"sp_q\": \"p25\"}",
+          "output": "605266292395.6902",
+          "metadata_cell": "gini_p75_sp_p25",
+          "metadata_gini_value": "0.1375",
+          "metadata_socprot_value": "-1.0125",
+          "metadata_me_se": "1259056704205.9043",
+          "metadata_ci_ninety_five": "[-1862484847847.882, 3073017432639.2627]",
+          "metadata_sign": "+"
+        },
+        {
+          "input": "{\"cell\": \"gini_p75_sp_p75\", \"gini_q\": \"p75\", \"sp_q\": \"p75\"}",
+          "output": "-550639662405.3475",
+          "metadata_cell": "gini_p75_sp_p75",
+          "metadata_gini_value": "0.1375",
+          "metadata_socprot_value": "1.0125",
+          "metadata_me_se": "1259056704205.902",
+          "metadata_ci_ninety_five": "[-3018390802648.9155, 1917111477838.2202]",
+          "metadata_sign": "-"
+        }
+      ]
+    },
+    {
+      "dataset": "SubIndex_pre_registered_k2",
+      "examples": [
+        {
+          "input": "{\"sub_index\": \"v2jucomp\"}",
+          "output": "insufficient_data",
+          "metadata_index": "v2jucomp",
+          "metadata_status": "insufficient_data",
+          "metadata_N": "",
+          "metadata_passes_bonferroni": "",
+          "metadata_p_egs": "",
+          "metadata_bonferroni_threshold": "0.025"
+        },
+        {
+          "input": "{\"sub_index\": \"v2x_jucon\"}",
+          "output": "insufficient_data",
+          "metadata_index": "v2x_jucon",
+          "metadata_status": "insufficient_data",
+          "metadata_N": "",
+          "metadata_passes_bonferroni": "",
+          "metadata_p_egs": "",
+          "metadata_bonferroni_threshold": "0.025"
+        }
+      ]
+    }
+  ]
+}

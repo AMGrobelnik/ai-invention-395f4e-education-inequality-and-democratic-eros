@@ -1,0 +1,15 @@
+{
+  "kind": "code_demo",
+  "id": "gen_art_dataset_1",
+  "type": "code",
+  "iteration": 1,
+  "title": "V-Dem \u00d7 ILO \u00d7 Gini \u00d7 Education Panel for Post-1990 Democratizers (1990\u20132022)",
+  "summary": "This dataset provides a five-year period-averaged unbalanced panel for 96 post-1990 democratizer countries (1990\u20132022), merging four authoritative data sources: V-Dem v15 (liberal democracy and sub-indices), ILO ILOSTAT SDG 1.3.1 (effective social protection coverage), SWIID (LIS-standardized Gini inequality), and OWID/Barro-Lee/UNDP (mean years of schooling). The chosen dataset 'vdem_ilo_gini_edu_panel_complete' contains 161 country-period observations (analysis sample) where all four core variables are simultaneously non-null \u2014 the directly usable sample for the DD triple-interaction estimator.\n\nEach example encodes: (input) 24 features including V-Dem sub-indices (v2x_jucon, v2jucomp, v2cseeorgs, v2csprtcpt, v2x_civlib, v2xcl_rol, v2x_polyarchy), education (mean years schooling), gini_disp (post-transfer Gini with SE), socprot_coverage (ILO SDG 1.3.1 %), directly_reported flags, country-period means and within-country deviations (e_education, e_gini_disp, e_socprot_coverage) for DD estimation, and imputation flags; (output) v2x_libdem (V-Dem Liberal Democracy Index, 0\u20131 scale).\n\nKey data notes: ILO country-level data available from 2015 only (X* regional aggregates excluded), so socprot_coverage is null for periods 1990\u20132014. Education source ends at 2017; 2020-22 period values are forward-filled from 2017 (education_imputed=True for 70 of 161 rows). The audit reports 63 qualifying countries with \u22652 complete periods, MDE \u2248 1.64 SD-units (limited by N_eff=40 with only 2 periods of ILO coverage). Within-SD of education (0.026) flags limited temporal variation for the DD estimator.\n\nTask type: regression. Target variable: v2x_libdem. All 161 rows are post-1990 democratizers with metadata_has_all_core_vars=True.",
+  "original_path": "/home/adrian/projects/ai-inventor/aii_data/users/adrian.marina.photos/runs/run_zXdSkAIIk5J3/3_invention_loop/iter_1/gen_art/gen_art_dataset_1",
+  "demo_path": "/home/adrian/projects/ai-inventor/aii_data/users/adrian.marina.photos/runs/run_zXdSkAIIk5J3/4_gen_paper_repo/_3_gen_art_demo/iter_1/gen_art_dataset_1",
+  "out_expected_files": {
+    "notebook": "code_demo.ipynb",
+    "mini_data_file": "mini_demo_data.json"
+  },
+  "notebook_path": "/home/adrian/projects/ai-inventor/aii_data/users/adrian.marina.photos/runs/run_zXdSkAIIk5J3/4_gen_paper_repo/_3_gen_art_demo/iter_1/gen_art_dataset_1/data_code_demo.ipynb"
+}

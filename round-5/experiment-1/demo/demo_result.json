@@ -1,0 +1,15 @@
+{
+  "kind": "code_demo",
+  "id": "gen_art_experiment_1",
+  "type": "code",
+  "iteration": 5,
+  "title": "Iter-5 Corrected DD: Standardized Variables, Per-Spec R\u00b2, Oster Bounds, Sub-Index Merge",
+  "summary": "Implements the Iter-5 Corrected Double-Demeaning (DD) analysis for the State-Dependent Education Trap (SDET) hypothesis, fixing five iter-4 computational errors: (a) standardizes E/G/S to mean-zero unit-variance BEFORE computing within-country deviations and DD interaction products, eliminating O(10^11) coefficient blow-up; (b) computes R\u00b2 independently per-spec from each spec's own fitted model; (c) recomputes Oster bounds for Spec C only with \u0394R\u00b2 threshold check (delta_R2=2.10e-05 < 1e-4 \u2192 numerically_undefined); (d) merges v2jucomp and v2x_jucon sub-indices from the iter-1 dataset (159 non-null rows each) onto the 7-period WB panel by country \u00d7 period_id; (e) extracts sigma_eps directly from Spec C residuals for MDE calculation.\n\nAnalysis sample: N=67 country-period observations, G=44 countries. Four specifications: Spec A (Naive FE, MYS std, R\u00b2=0.9919), Spec B (DD, MYS std, R\u00b2=0.9787), Spec C (DD, WB Tertiary std, R\u00b2=0.9777, PRIMARY), Spec D (Naive FE, WB Tertiary std, R\u00b2=0.9929). All interaction SEs bounded (11/11 sanity checks PASSED). Spec C primary estimate: beta_EGS=4.218, SE=14.221, p=0.768 (not significant). Oster bounds numerically undefined (delta_R2 near zero \u2014 triple interaction adds negligible R\u00b2 beyond two-way terms). Sub-index DD: v2jucomp beta_EGS=139.8, p=0.233; v2x_jucon beta_EGS=18.5, p=0.529 \u2014 neither passes Bonferroni threshold p<0.025. Power/MDE: sigma_eps=0.068, MDE=39.85, effect/MDE ratio=0.106 (underpowered at current N=67). Marginal effects grid shows alternating sign pattern. Full provenance disclosure included (original beta_7=2.398 from imputation-noise MYS vs corrected WB tertiary).\n\nOutput: 8 datasets \u2014 corrected Table 1 (all 4 specs), Oster bounds, sub-index DD results (both indices computed), power/MDE analysis, 2\u00d72 marginal effects grid, DD sanity checks, provenance disclosure, per-country-period Spec C predictions.",
+  "original_path": "/home/adrian/projects/ai-inventor/aii_data/users/adrian.marina.photos/runs/run_zXdSkAIIk5J3/3_invention_loop/iter_5/gen_art/gen_art_experiment_1",
+  "demo_path": "/home/adrian/projects/ai-inventor/aii_data/users/adrian.marina.photos/runs/run_zXdSkAIIk5J3/4_gen_paper_repo/_3_gen_art_demo/iter_5/gen_art_experiment_1",
+  "out_expected_files": {
+    "notebook": "",
+    "mini_data_file": ""
+  },
+  "notebook_path": "/home/adrian/projects/ai-inventor/aii_data/users/adrian.marina.photos/runs/run_zXdSkAIIk5J3/4_gen_paper_repo/_3_gen_art_demo/iter_5/gen_art_experiment_1/method_code_demo.ipynb"
+}

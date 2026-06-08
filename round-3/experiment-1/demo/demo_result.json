@@ -1,0 +1,15 @@
+{
+  "kind": "code_demo",
+  "id": "gen_art_experiment_1",
+  "type": "code",
+  "iteration": 3,
+  "title": "DD Triple-Interaction: WB Tertiary Enrollment + Granger & Reverse-Causality Tests",
+  "summary": "This experiment implements the Giesselmann-Schmidt-Catran (2022) Double-Demeaning (DD) panel estimator for a triple interaction (Education \u00d7 Gini \u00d7 SocProt \u2192 Liberal Democracy) using World Bank gross tertiary enrollment as a replacement for the frozen UNDP MYS proxy. Key findings: (1) WB tertiary enrollment has 140.8\u00d7 more within-country variation than the frozen UNDP MYS (within-SD 3.66 vs 0.026), resolving the near-zero-variation artifact that limited prior iterations. (2) Five regression specifications compared \u2014 Spec A (UNDP naive, \u03b2\u2087=0.0198, p=0.195, N=161), Spec B (UNDP DD, \u03b2\u2087=155.23, p=0.195, N=161; ill-conditioned due to 2-period panel), Spec C (WB tertiary DD, \u03b2\u2087=13.13, p=0.189, N=137; z-score fallback + OLS), Spec D (WB tertiary naive, \u03b2\u2087=0.0019, p=0.189, N=137), Spec E (lagged SocProt, \u03b2\u2087=0, p=nan, N=51; insufficient after lag). (3) Panel Granger causality: Education\u2192LDem significant (p=0.005), Gini\u2192LDem not significant (p=0.328), consistent with causal direction. (4) Reverse-causality checks: LDem\u2192Gini path not significant (p=0.708, reassuring), SAP\u2192SocProt borderline (p=0.154). (5) Marginal effect grid computed for 2\u00d72 (Gini p25/p75) \u00d7 (SocProt p25/p75) combinations. All results serialized to full_method_out.json (13 examples in exp_gen_sol_out schema). Schema validation passed. Mini and preview variants generated. Pyproject.toml updated with pinned dependency versions.",
+  "original_path": "/home/adrian/projects/ai-inventor/aii_data/users/adrian.marina.photos/runs/run_zXdSkAIIk5J3/3_invention_loop/iter_3/gen_art/gen_art_experiment_1",
+  "demo_path": "/home/adrian/projects/ai-inventor/aii_data/users/adrian.marina.photos/runs/run_zXdSkAIIk5J3/4_gen_paper_repo/_3_gen_art_demo/iter_3/gen_art_experiment_1",
+  "out_expected_files": {
+    "notebook": "code_demo.ipynb",
+    "mini_data_file": "mini_demo_data.json"
+  },
+  "notebook_path": "/home/adrian/projects/ai-inventor/aii_data/users/adrian.marina.photos/runs/run_zXdSkAIIk5J3/4_gen_paper_repo/_3_gen_art_demo/iter_3/gen_art_experiment_1/method_code_demo.ipynb"
+}

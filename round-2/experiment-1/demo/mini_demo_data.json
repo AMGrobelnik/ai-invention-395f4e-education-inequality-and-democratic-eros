@@ -1,0 +1,509 @@
+{
+  "datasets": [
+    {
+      "dataset": "vdem_ilo_gini_edu_panel_complete",
+      "examples": [
+        {
+          "input": "{\"country_iso3\":\"BEN\",\"period\":\"2015-19\",\"period_start\":2015,\"period_end\":2019,\"v2x_jucon\":0.6692,\"v2jucomp\":0.3594,\"v2cseeorgs\":1.7328,\"v2csprtcpt\":2.121,\"v2x_civlib\":0.8806,\"v2xcl_rol\":0.9034,\"v2x_polyarchy\":0.6292,\"education\":3.566667,\"gini_disp\":44.18,\"gini_mkt\":45.82,\"gini_disp_se\":2.476,\"socprot_coverage\":7.8,\"directly_reported_any\":true,\"directly_reported_all\":true,\"mean_education\":2.821524,\"mean_gini_disp\":44.181333,\"mean_socprot_coverage\":8.1,\"e_education\":0.745143,\"e_gini_disp\":-0.001333,\"e_socprot_coverage\":-0.3,\"education_imputed\":false}",
+          "output": "0.5046",
+          "metadata_row_index": 7,
+          "metadata_country_name": "Benin",
+          "metadata_task_type": "regression",
+          "metadata_target_variable": "v2x_libdem",
+          "metadata_is_democratizer": true,
+          "metadata_has_all_core_vars": true
+        },
+        {
+          "input": "{\"country_iso3\":\"BFA\",\"period\":\"2015-19\",\"period_start\":2015,\"period_end\":2019,\"v2x_jucon\":0.6918,\"v2jucomp\":0.5892,\"v2cseeorgs\":2.3502,\"v2csprtcpt\":2.0784,\"v2x_civlib\":0.835,\"v2xcl_rol\":0.8396,\"v2x_polyarchy\":0.6148,\"education\":1.466667,\"gini_disp\":40.84,\"gini_mkt\":42.82,\"gini_disp_se\":2.712,\"socprot_coverage\":8.7,\"directly_reported_any\":true,\"directly_reported_all\":true,\"mean_education\":1.393333,\"mean_gini_disp\":43.87,\"mean_socprot_coverage\":9.2,\"e_education\":0.073333,\"e_gini_disp\":-3.03,\"e_socprot_coverage\":-0.5,\"education_imputed\":false}",
+          "output": "0.4596",
+          "metadata_row_index": 9,
+          "metadata_country_name": "Burkina Faso",
+          "metadata_task_type": "regression",
+          "metadata_target_variable": "v2x_libdem",
+          "metadata_is_democratizer": true,
+          "metadata_has_all_core_vars": true
+        },
+        {
+          "input": "{\"country_iso3\":\"BGR\",\"period\":\"2015-19\",\"period_start\":2015,\"period_end\":2019,\"v2x_jucon\":0.8464,\"v2jucomp\":1.625,\"v2cseeorgs\":1.57,\"v2csprtcpt\":1.0082,\"v2x_civlib\":0.8516,\"v2xcl_rol\":0.8542,\"v2x_polyarchy\":0.638,\"education\":11.8,\"gini_disp\":37.9,\"gini_mkt\":48.98,\"gini_disp_se\":1.21,\"socprot_coverage\":88.3,\"directly_reported_any\":true,\"directly_reported_all\":true,\"mean_education\":10.435429,\"mean_gini_disp\":34.021905,\"mean_socprot_coverage\":85.55,\"e_education\":1.364572,\"e_gini_disp\":3.878095,\"e_socprot_coverage\":2.75,\"education_imputed\":false}",
+          "output": "0.536",
+          "metadata_row_index": 12,
+          "metadata_country_name": "Bulgaria",
+          "metadata_task_type": "regression",
+          "metadata_target_variable": "v2x_libdem",
+          "metadata_is_democratizer": true,
+          "metadata_has_all_core_vars": true
+        },
+        {
+          "input": "{\"country_iso3\":\"BLR\",\"period\":\"2015-19\",\"period_start\":2015,\"period_end\":2019,\"v2x_jucon\":0.0372,\"v2jucomp\":-1.8644,\"v2cseeorgs\":-0.6846,\"v2csprtcpt\":-0.5572,\"v2x_civlib\":0.6298,\"v2xcl_rol\":0.6616,\"v2x_polyarchy\":0.2558,\"education\":12.266667,\"gini_disp\":24.64,\"gini_mkt\":33.22,\"gini_disp_se\":1.05,\"socprot_coverage\":36.0,\"directly_reported_any\":true,\"directly_reported_all\":true,\"mean_education\":10.824445,\"mean_gini_disp\":24.531429,\"mean_socprot_coverage\":36.0,\"e_education\":1.442222,\"e_gini_disp\":0.108571,\"e_socprot_coverage\":0.0,\"education_imputed\":false}",
+          "output": "0.1084",
+          "metadata_row_index": 15,
+          "metadata_country_name": "Belarus",
+          "metadata_task_type": "regression",
+          "metadata_target_variable": "v2x_libdem",
+          "metadata_is_democratizer": true,
+          "metadata_has_all_core_vars": true
+        },
+        {
+          "input": "{\"country_iso3\":\"BOL\",\"period\":\"2015-19\",\"period_start\":2015,\"period_end\":2019,\"v2x_jucon\":0.3728,\"v2jucomp\":-0.6476,\"v2cseeorgs\":0.923,\"v2csprtcpt\":2.0664,\"v2x_civlib\":0.8116,\"v2xcl_rol\":0.74,\"v2x_polyarchy\":0.586,\"education\":8.833333,\"gini_disp\":41.42,\"gini_mkt\":39.9,\"gini_disp_se\":1.062,\"socprot_coverage\":37.15,\"directly_reported_any\":true,\"directly_reported_all\":true,\"mean_education\":7.779333,\"mean_gini_disp\":47.3,\"mean_socprot_coverage\":37.775,\"e_education\":1.054,\"e_gini_disp\":-5.88,\"e_socprot_coverage\":-0.625,\"education_imputed\":false}",
+          "output": "0.3418",
+          "metadata_row_index": 16,
+          "metadata_country_name": "Bolivia",
+          "metadata_task_type": "regression",
+          "metadata_target_variable": "v2x_libdem",
+          "metadata_is_democratizer": true,
+          "metadata_has_all_core_vars": true
+        },
+        {
+          "input": "{\"country_iso3\":\"BRA\",\"period\":\"2015-19\",\"period_start\":2015,\"period_end\":2019,\"v2x_jucon\":0.8746,\"v2jucomp\":2.1114,\"v2cseeorgs\":1.7828,\"v2csprtcpt\":1.506,\"v2x_civlib\":0.8002,\"v2xcl_rol\":0.7948,\"v2x_polyarchy\":0.7748,\"education\":7.733333,\"gini_disp\":46.54,\"gini_mkt\":58.28,\"gini_disp_se\":0.51,\"socprot_coverage\":68.2,\"directly_reported_any\":true,\"directly_reported_all\":true,\"mean_education\":6.345905,\"mean_gini_disp\":50.188571,\"mean_socprot_coverage\":70.075,\"e_education\":1.387429,\"e_gini_disp\":-3.648571,\"e_socprot_coverage\":-1.875,\"education_imputed\":false}",
+          "output": "0.6482",
+          "metadata_row_index": 18,
+          "metadata_country_name": "Brazil",
+          "metadata_task_type": "regression",
+          "metadata_target_variable": "v2x_libdem",
+          "metadata_is_democratizer": true,
+          "metadata_has_all_core_vars": true
+        },
+        {
+          "input": "{\"country_iso3\":\"BTN\",\"period\":\"2015-19\",\"period_start\":2015,\"period_end\":2019,\"v2x_jucon\":0.9012,\"v2jucomp\":1.343,\"v2cseeorgs\":1.001,\"v2csprtcpt\":0.8904,\"v2x_civlib\":0.74,\"v2xcl_rol\":0.8284,\"v2x_polyarchy\":0.5798,\"education\":3.1,\"gini_disp\":38.06,\"gini_mkt\":39.72,\"gini_disp_se\":2.818,\"socprot_coverage\":8.8,\"directly_reported_any\":true,\"directly_reported_all\":true,\"mean_education\":2.775,\"mean_gini_disp\":39.081333,\"mean_socprot_coverage\":10.35,\"e_education\":0.325,\"e_gini_disp\":-1.021333,\"e_socprot_coverage\":-1.55,\"education_imputed\":false}",
+          "output": "0.4926",
+          "metadata_row_index": 20,
+          "metadata_country_name": "Bhutan",
+          "metadata_task_type": "regression",
+          "metadata_target_variable": "v2x_libdem",
+          "metadata_is_democratizer": true,
+          "metadata_has_all_core_vars": true
+        },
+        {
+          "input": "{\"country_iso3\":\"BWA\",\"period\":\"2015-19\",\"period_start\":2015,\"period_end\":2019,\"v2x_jucon\":0.8334,\"v2jucomp\":1.177,\"v2cseeorgs\":2.0462,\"v2csprtcpt\":0.9212,\"v2x_civlib\":0.8726,\"v2xcl_rol\":0.9076,\"v2x_polyarchy\":0.6766,\"education\":9.266667,\"gini_disp\":57.5,\"gini_mkt\":61.1,\"gini_disp_se\":3.8,\"socprot_coverage\":15.05,\"directly_reported_any\":true,\"directly_reported_all\":true,\"mean_education\":8.150095,\"mean_gini_disp\":57.213333,\"mean_socprot_coverage\":14.275,\"e_education\":1.116571,\"e_gini_disp\":0.286667,\"e_socprot_coverage\":0.775,\"education_imputed\":false}",
+          "output": "0.5772",
+          "metadata_row_index": 22,
+          "metadata_country_name": "Botswana",
+          "metadata_task_type": "regression",
+          "metadata_target_variable": "v2x_libdem",
+          "metadata_is_democratizer": true,
+          "metadata_has_all_core_vars": true
+        },
+        {
+          "input": "{\"country_iso3\":\"COL\",\"period\":\"2015-19\",\"period_start\":2015,\"period_end\":2019,\"v2x_jucon\":0.8284,\"v2jucomp\":1.3952,\"v2cseeorgs\":2.3066,\"v2csprtcpt\":1.2108,\"v2x_civlib\":0.779,\"v2xcl_rol\":0.7482,\"v2x_polyarchy\":0.6778,\"education\":8.233334,\"gini_disp\":47.06,\"gini_mkt\":50.1,\"gini_disp_se\":0.452,\"socprot_coverage\":46.65,\"directly_reported_any\":true,\"directly_reported_all\":true,\"mean_education\":7.106476,\"mean_gini_disp\":50.234286,\"mean_socprot_coverage\":49.325,\"e_education\":1.126857,\"e_gini_disp\":-3.174286,\"e_socprot_coverage\":-2.675,\"education_imputed\":false}",
+          "output": "0.5442",
+          "metadata_row_index": 28,
+          "metadata_country_name": "Colombia",
+          "metadata_task_type": "regression",
+          "metadata_target_variable": "v2x_libdem",
+          "metadata_is_democratizer": true,
+          "metadata_has_all_core_vars": true
+        },
+        {
+          "input": "{\"country_iso3\":\"CPV\",\"period\":\"2015-19\",\"period_start\":2015,\"period_end\":2019,\"v2x_jucon\":0.9176,\"v2jucomp\":1.92,\"v2cseeorgs\":1.839,\"v2csprtcpt\":0.7176,\"v2x_civlib\":0.9296,\"v2xcl_rol\":0.9098,\"v2x_polyarchy\":0.795,\"education\":6.033333,\"gini_disp\":48.4,\"gini_mkt\":50.6,\"gini_disp_se\":3.07,\"socprot_coverage\":47.0,\"directly_reported_any\":true,\"directly_reported_all\":true,\"mean_education\":5.210667,\"mean_gini_disp\":49.692,\"mean_socprot_coverage\":51.25,\"e_education\":0.822667,\"e_gini_disp\":-1.292,\"e_socprot_coverage\":-4.25,\"education_imputed\":false}",
+          "output": "0.7098",
+          "metadata_row_index": 30,
+          "metadata_country_name": "Cape Verde",
+          "metadata_task_type": "regression",
+          "metadata_target_variable": "v2x_libdem",
+          "metadata_is_democratizer": true,
+          "metadata_has_all_core_vars": true
+        },
+        {
+          "input": "{\"country_iso3\":\"CRI\",\"period\":\"2015-19\",\"period_start\":2015,\"period_end\":2019,\"v2x_jucon\":0.954,\"v2jucomp\":2.959,\"v2cseeorgs\":3.2418,\"v2csprtcpt\":2.015,\"v2x_civlib\":0.9458,\"v2xcl_rol\":0.963,\"v2x_polyarchy\":0.8992,\"education\":8.8,\"gini_disp\":46.22,\"gini_mkt\":50.8,\"gini_disp_se\":0.948,\"socprot_coverage\":66.9,\"directly_reported_any\":true,\"directly_reported_all\":true,\"mean_education\":8.126286,\"mean_gini_disp\":44.919048,\"mean_socprot_coverage\":63.525,\"e_education\":0.673714,\"e_gini_disp\":1.300952,\"e_socprot_coverage\":3.375,\"education_imputed\":false}",
+          "output": "0.848",
+          "metadata_row_index": 31,
+          "metadata_country_name": "Costa Rica",
+          "metadata_task_type": "regression",
+          "metadata_target_variable": "v2x_libdem",
+          "metadata_is_democratizer": true,
+          "metadata_has_all_core_vars": true
+        },
+        {
+          "input": "{\"country_iso3\":\"DOM\",\"period\":\"2015-19\",\"period_start\":2015,\"period_end\":2019,\"v2x_jucon\":0.4018,\"v2jucomp\":-0.305,\"v2cseeorgs\":2.303,\"v2csprtcpt\":1.6492,\"v2x_civlib\":0.8428,\"v2xcl_rol\":0.7486,\"v2x_polyarchy\":0.5516,\"education\":7.8,\"gini_disp\":41.24,\"gini_mkt\":42.88,\"gini_disp_se\":1.036,\"socprot_coverage\":53.6,\"directly_reported_any\":true,\"directly_reported_all\":true,\"mean_education\":6.906857,\"mean_gini_disp\":44.942857,\"mean_socprot_coverage\":55.6,\"e_education\":0.893143,\"e_gini_disp\":-3.702857,\"e_socprot_coverage\":-2.0,\"education_imputed\":false}",
+          "output": "0.2894",
+          "metadata_row_index": 39,
+          "metadata_country_name": "Dominican Republic",
+          "metadata_task_type": "regression",
+          "metadata_target_variable": "v2x_libdem",
+          "metadata_is_democratizer": true,
+          "metadata_has_all_core_vars": true
+        },
+        {
+          "input": "{\"country_iso3\":\"ECU\",\"period\":\"2015-19\",\"period_start\":2015,\"period_end\":2019,\"v2x_jucon\":0.3318,\"v2jucomp\":-0.437,\"v2cseeorgs\":0.1354,\"v2csprtcpt\":1.1844,\"v2x_civlib\":0.8498,\"v2xcl_rol\":0.842,\"v2x_polyarchy\":0.5786,\"education\":8.6,\"gini_disp\":42.14,\"gini_mkt\":42.0,\"gini_disp_se\":1.098,\"socprot_coverage\":36.25,\"directly_reported_any\":true,\"directly_reported_all\":true,\"mean_education\":7.669714,\"mean_gini_disp\":46.798095,\"mean_socprot_coverage\":41.525,\"e_education\":0.930285,\"e_gini_disp\":-4.658095,\"e_socprot_coverage\":-5.275,\"education_imputed\":false}",
+          "output": "0.3566",
+          "metadata_row_index": 41,
+          "metadata_country_name": "Ecuador",
+          "metadata_task_type": "regression",
+          "metadata_target_variable": "v2x_libdem",
+          "metadata_is_democratizer": true,
+          "metadata_has_all_core_vars": true
+        },
+        {
+          "input": "{\"country_iso3\":\"FJI\",\"period\":\"2015-19\",\"period_start\":2015,\"period_end\":2019,\"v2x_jucon\":0.5252,\"v2jucomp\":0.98,\"v2cseeorgs\":1.015,\"v2csprtcpt\":1.6474,\"v2x_civlib\":0.7152,\"v2xcl_rol\":0.7482,\"v2x_polyarchy\":0.3974,\"education\":10.8,\"gini_disp\":37.3,\"gini_mkt\":39.22,\"gini_disp_se\":3.17,\"socprot_coverage\":58.9,\"directly_reported_any\":true,\"directly_reported_all\":true,\"mean_education\":9.867714,\"mean_gini_disp\":39.716667,\"mean_socprot_coverage\":62.25,\"e_education\":0.932286,\"e_gini_disp\":-2.416667,\"e_socprot_coverage\":-3.35,\"education_imputed\":false}",
+          "output": "0.277",
+          "metadata_row_index": 49,
+          "metadata_country_name": "Fiji",
+          "metadata_task_type": "regression",
+          "metadata_target_variable": "v2x_libdem",
+          "metadata_is_democratizer": true,
+          "metadata_has_all_core_vars": true
+        },
+        {
+          "input": "{\"country_iso3\":\"GEO\",\"period\":\"2015-19\",\"period_start\":2015,\"period_end\":2019,\"v2x_jucon\":0.6276,\"v2jucomp\":0.71,\"v2cseeorgs\":2.01,\"v2csprtcpt\":1.5624,\"v2x_civlib\":0.8908,\"v2xcl_rol\":0.8632,\"v2x_polyarchy\":0.6628,\"education\":12.766667,\"gini_disp\":38.4,\"gini_mkt\":48.2,\"gini_disp_se\":1.114,\"socprot_coverage\":97.1,\"directly_reported_any\":true,\"directly_reported_all\":true,\"mean_education\":12.401333,\"mean_gini_disp\":38.081905,\"mean_socprot_coverage\":95.85,\"e_education\":0.365333,\"e_gini_disp\":0.318095,\"e_socprot_coverage\":1.25,\"education_imputed\":false}",
+          "output": "0.5056",
+          "metadata_row_index": 53,
+          "metadata_country_name": "Georgia",
+          "metadata_task_type": "regression",
+          "metadata_target_variable": "v2x_libdem",
+          "metadata_is_democratizer": true,
+          "metadata_has_all_core_vars": true
+        },
+        {
+          "input": "{\"country_iso3\":\"GHA\",\"period\":\"2015-19\",\"period_start\":2015,\"period_end\":2019,\"v2x_jucon\":0.8308,\"v2jucomp\":1.3184,\"v2cseeorgs\":2.7828,\"v2csprtcpt\":1.523,\"v2x_civlib\":0.9212,\"v2xcl_rol\":0.8878,\"v2x_polyarchy\":0.7356,\"education\":7.033333,\"gini_disp\":43.85,\"gini_mkt\":45.25,\"gini_disp_se\":2.975,\"socprot_coverage\":21.8,\"directly_reported_any\":true,\"directly_reported_all\":true,\"mean_education\":6.399333,\"mean_gini_disp\":42.238333,\"mean_socprot_coverage\":23.5,\"e_education\":0.634,\"e_gini_disp\":1.611667,\"e_socprot_coverage\":-1.7,\"education_imputed\":false}",
+          "output": "0.6264",
+          "metadata_row_index": 55,
+          "metadata_country_name": "Ghana",
+          "metadata_task_type": "regression",
+          "metadata_target_variable": "v2x_libdem",
+          "metadata_is_democratizer": true,
+          "metadata_has_all_core_vars": true
+        },
+        {
+          "input": "{\"country_iso3\":\"GMB\",\"period\":\"2015-19\",\"period_start\":2015,\"period_end\":2019,\"v2x_jucon\":0.6142,\"v2jucomp\":0.226,\"v2cseeorgs\":0.698,\"v2csprtcpt\":0.793,\"v2x_civlib\":0.634,\"v2xcl_rol\":0.6506,\"v2x_polyarchy\":0.41,\"education\":3.433333,\"gini_disp\":40.62,\"gini_mkt\":42.54,\"gini_disp_se\":2.642,\"socprot_coverage\":6.3,\"directly_reported_any\":true,\"directly_reported_all\":true,\"mean_education\":2.577333,\"mean_gini_disp\":43.297143,\"mean_socprot_coverage\":6.3,\"e_education\":0.856,\"e_gini_disp\":-2.677143,\"e_socprot_coverage\":0.0,\"education_imputed\":false}",
+          "output": "0.289",
+          "metadata_row_index": 56,
+          "metadata_country_name": "The Gambia",
+          "metadata_task_type": "regression",
+          "metadata_target_variable": "v2x_libdem",
+          "metadata_is_democratizer": true,
+          "metadata_has_all_core_vars": true
+        },
+        {
+          "input": "{\"country_iso3\":\"GNB\",\"period\":\"2015-19\",\"period_start\":2015,\"period_end\":2019,\"v2x_jucon\":0.5758,\"v2jucomp\":0.1196,\"v2cseeorgs\":0.779,\"v2csprtcpt\":1.239,\"v2x_civlib\":0.7318,\"v2xcl_rol\":0.6452,\"v2x_polyarchy\":0.5098,\"education\":2.966667,\"gini_disp\":40.84,\"gini_mkt\":42.72,\"gini_disp_se\":3.008,\"socprot_coverage\":0.9,\"directly_reported_any\":true,\"directly_reported_all\":true,\"mean_education\":2.771667,\"mean_gini_disp\":41.876429,\"mean_socprot_coverage\":1.7,\"e_education\":0.195,\"e_gini_disp\":-1.036429,\"e_socprot_coverage\":-0.8,\"education_imputed\":false}",
+          "output": "0.315",
+          "metadata_row_index": 57,
+          "metadata_country_name": "Guinea-Bissau",
+          "metadata_task_type": "regression",
+          "metadata_target_variable": "v2x_libdem",
+          "metadata_is_democratizer": true,
+          "metadata_has_all_core_vars": true
+        },
+        {
+          "input": "{\"country_iso3\":\"GTM\",\"period\":\"2015-19\",\"period_start\":2015,\"period_end\":2019,\"v2x_jucon\":0.7322,\"v2jucomp\":0.1746,\"v2cseeorgs\":2.0506,\"v2csprtcpt\":0.735,\"v2x_civlib\":0.7346,\"v2xcl_rol\":0.5772,\"v2x_polyarchy\":0.6106,\"education\":6.433333,\"gini_disp\":43.46,\"gini_mkt\":46.56,\"gini_disp_se\":1.902,\"socprot_coverage\":12.966667,\"directly_reported_any\":true,\"directly_reported_all\":true,\"mean_education\":4.663333,\"mean_gini_disp\":47.221905,\"mean_socprot_coverage\":12.833333,\"e_education\":1.77,\"e_gini_disp\":-3.761905,\"e_socprot_coverage\":0.133333,\"education_imputed\":false}",
+          "output": "0.4362",
+          "metadata_row_index": 60,
+          "metadata_country_name": "Guatemala",
+          "metadata_task_type": "regression",
+          "metadata_target_variable": "v2x_libdem",
+          "metadata_is_democratizer": true,
+          "metadata_has_all_core_vars": true
+        },
+        {
+          "input": "{\"country_iso3\":\"HND\",\"period\":\"2015-19\",\"period_start\":2015,\"period_end\":2019,\"v2x_jucon\":0.544,\"v2jucomp\":1.0464,\"v2cseeorgs\":1.9622,\"v2csprtcpt\":1.0,\"v2x_civlib\":0.761,\"v2xcl_rol\":0.6284,\"v2x_polyarchy\":0.3974,\"education\":6.433333,\"gini_disp\":46.06,\"gini_mkt\":44.92,\"gini_disp_se\":1.184,\"socprot_coverage\":26.6,\"directly_reported_any\":true,\"directly_reported_all\":true,\"mean_education\":5.123905,\"mean_gini_disp\":49.57619,\"mean_socprot_coverage\":28.35,\"e_education\":1.309429,\"e_gini_disp\":-3.51619,\"e_socprot_coverage\":-1.75,\"education_imputed\":false}",
+          "output": "0.2396",
+          "metadata_row_index": 62,
+          "metadata_country_name": "Honduras",
+          "metadata_task_type": "regression",
+          "metadata_target_variable": "v2x_libdem",
+          "metadata_is_democratizer": true,
+          "metadata_has_all_core_vars": true
+        },
+        {
+          "input": "{\"country_iso3\":\"ALB\",\"period\":\"2020-22\",\"period_start\":2020,\"period_end\":2022,\"v2x_jucon\":0.725667,\"v2jucomp\":1.022333,\"v2cseeorgs\":1.762,\"v2csprtcpt\":1.420333,\"v2x_civlib\":0.888,\"v2xcl_rol\":0.913,\"v2x_polyarchy\":0.523667,\"education\":10.0,\"gini_disp\":34.933333,\"gini_mkt\":50.866667,\"gini_disp_se\":2.0,\"socprot_coverage\":78.1,\"directly_reported_any\":true,\"directly_reported_all\":true,\"mean_education\":9.095143,\"mean_gini_disp\":36.325556,\"mean_socprot_coverage\":78.1,\"e_education\":0.904857,\"e_gini_disp\":-1.392222,\"e_socprot_coverage\":0.0,\"education_imputed\":true}",
+          "output": "0.437",
+          "metadata_row_index": 0,
+          "metadata_country_name": "Albania",
+          "metadata_task_type": "regression",
+          "metadata_target_variable": "v2x_libdem",
+          "metadata_is_democratizer": true,
+          "metadata_has_all_core_vars": true
+        },
+        {
+          "input": "{\"country_iso3\":\"BEN\",\"period\":\"2020-22\",\"period_start\":2020,\"period_end\":2022,\"v2x_jucon\":0.547,\"v2jucomp\":0.376,\"v2cseeorgs\":1.408667,\"v2csprtcpt\":1.13,\"v2x_civlib\":0.818,\"v2xcl_rol\":0.867333,\"v2x_polyarchy\":0.413667,\"education\":3.6,\"gini_disp\":43.2,\"gini_mkt\":44.9,\"gini_disp_se\":2.9,\"socprot_coverage\":8.4,\"directly_reported_any\":true,\"directly_reported_all\":true,\"mean_education\":2.821524,\"mean_gini_disp\":44.181333,\"mean_socprot_coverage\":8.1,\"e_education\":0.778476,\"e_gini_disp\":-0.981333,\"e_socprot_coverage\":0.3,\"education_imputed\":true}",
+          "output": "0.284",
+          "metadata_row_index": 8,
+          "metadata_country_name": "Benin",
+          "metadata_task_type": "regression",
+          "metadata_target_variable": "v2x_libdem",
+          "metadata_is_democratizer": true,
+          "metadata_has_all_core_vars": true
+        },
+        {
+          "input": "{\"country_iso3\":\"BFA\",\"period\":\"2020-22\",\"period_start\":2020,\"period_end\":2022,\"v2x_jucon\":0.662,\"v2jucomp\":0.236333,\"v2cseeorgs\":1.900667,\"v2csprtcpt\":2.326,\"v2x_civlib\":0.81,\"v2xcl_rol\":0.818667,\"v2x_polyarchy\":0.521667,\"education\":1.5,\"gini_disp\":40.75,\"gini_mkt\":42.75,\"gini_disp_se\":3.05,\"socprot_coverage\":9.7,\"directly_reported_any\":true,\"directly_reported_all\":true,\"mean_education\":1.393333,\"mean_gini_disp\":43.87,\"mean_socprot_coverage\":9.2,\"e_education\":0.106667,\"e_gini_disp\":-3.12,\"e_socprot_coverage\":0.5,\"education_imputed\":true}",
+          "output": "0.389333",
+          "metadata_row_index": 10,
+          "metadata_country_name": "Burkina Faso",
+          "metadata_task_type": "regression",
+          "metadata_target_variable": "v2x_libdem",
+          "metadata_is_democratizer": true,
+          "metadata_has_all_core_vars": true
+        },
+        {
+          "input": "{\"country_iso3\":\"BGD\",\"period\":\"2020-22\",\"period_start\":2020,\"period_end\":2022,\"v2x_jucon\":0.147667,\"v2jucomp\":-0.882333,\"v2cseeorgs\":1.318667,\"v2csprtcpt\":1.335,\"v2x_civlib\":0.409667,\"v2xcl_rol\":0.339667,\"v2x_polyarchy\":0.258333,\"education\":5.8,\"gini_disp\":33.533333,\"gini_mkt\":36.333333,\"gini_disp_se\":3.236667,\"socprot_coverage\":22.0,\"directly_reported_any\":true,\"directly_reported_all\":true,\"mean_education\":4.558286,\"mean_gini_disp\":33.264762,\"mean_socprot_coverage\":22.0,\"e_education\":1.241714,\"e_gini_disp\":0.268571,\"e_socprot_coverage\":0.0,\"education_imputed\":true}",
+          "output": "0.094667",
+          "metadata_row_index": 11,
+          "metadata_country_name": "Bangladesh",
+          "metadata_task_type": "regression",
+          "metadata_target_variable": "v2x_libdem",
+          "metadata_is_democratizer": true,
+          "metadata_has_all_core_vars": true
+        },
+        {
+          "input": "{\"country_iso3\":\"BGR\",\"period\":\"2020-22\",\"period_start\":2020,\"period_end\":2022,\"v2x_jucon\":0.825667,\"v2jucomp\":1.500667,\"v2cseeorgs\":1.57,\"v2csprtcpt\":0.992333,\"v2x_civlib\":0.871333,\"v2xcl_rol\":0.867333,\"v2x_polyarchy\":0.654333,\"education\":11.8,\"gini_disp\":38.033333,\"gini_mkt\":49.6,\"gini_disp_se\":1.276667,\"socprot_coverage\":82.8,\"directly_reported_any\":true,\"directly_reported_all\":true,\"mean_education\":10.435429,\"mean_gini_disp\":34.021905,\"mean_socprot_coverage\":85.55,\"e_education\":1.364572,\"e_gini_disp\":4.011429,\"e_socprot_coverage\":-2.75,\"education_imputed\":true}",
+          "output": "0.555",
+          "metadata_row_index": 13,
+          "metadata_country_name": "Bulgaria",
+          "metadata_task_type": "regression",
+          "metadata_target_variable": "v2x_libdem",
+          "metadata_is_democratizer": true,
+          "metadata_has_all_core_vars": true
+        },
+        {
+          "input": "{\"country_iso3\":\"BIH\",\"period\":\"2020-22\",\"period_start\":2020,\"period_end\":2022,\"v2x_jucon\":0.562,\"v2jucomp\":0.170667,\"v2cseeorgs\":2.773,\"v2csprtcpt\":0.763,\"v2x_civlib\":0.815667,\"v2xcl_rol\":0.788333,\"v2x_polyarchy\":0.520667,\"education\":9.7,\"gini_disp\":38.25,\"gini_mkt\":49.6,\"gini_disp_se\":3.365,\"socprot_coverage\":54.5,\"directly_reported_any\":true,\"directly_reported_all\":true,\"mean_education\":8.389333,\"mean_gini_disp\":38.591,\"mean_socprot_coverage\":54.5,\"e_education\":1.310667,\"e_gini_disp\":-0.341,\"e_socprot_coverage\":0.0,\"education_imputed\":true}",
+          "output": "0.339667",
+          "metadata_row_index": 14,
+          "metadata_country_name": "Bosnia and Herzegovina",
+          "metadata_task_type": "regression",
+          "metadata_target_variable": "v2x_libdem",
+          "metadata_is_democratizer": true,
+          "metadata_has_all_core_vars": true
+        },
+        {
+          "input": "{\"country_iso3\":\"BOL\",\"period\":\"2020-22\",\"period_start\":2020,\"period_end\":2022,\"v2x_jucon\":0.324667,\"v2jucomp\":-0.632667,\"v2cseeorgs\":0.732,\"v2csprtcpt\":1.341667,\"v2x_civlib\":0.774667,\"v2xcl_rol\":0.728667,\"v2x_polyarchy\":0.511333,\"education\":8.9,\"gini_disp\":39.266667,\"gini_mkt\":37.966667,\"gini_disp_se\":1.076667,\"socprot_coverage\":38.4,\"directly_reported_any\":true,\"directly_reported_all\":true,\"mean_education\":7.779333,\"mean_gini_disp\":47.3,\"mean_socprot_coverage\":37.775,\"e_education\":1.120666,\"e_gini_disp\":-8.033333,\"e_socprot_coverage\":0.625,\"education_imputed\":true}",
+          "output": "0.313",
+          "metadata_row_index": 17,
+          "metadata_country_name": "Bolivia",
+          "metadata_task_type": "regression",
+          "metadata_target_variable": "v2x_libdem",
+          "metadata_is_democratizer": true,
+          "metadata_has_all_core_vars": true
+        },
+        {
+          "input": "{\"country_iso3\":\"BRA\",\"period\":\"2020-22\",\"period_start\":2020,\"period_end\":2022,\"v2x_jucon\":0.831333,\"v2jucomp\":1.308333,\"v2cseeorgs\":1.841,\"v2csprtcpt\":1.604333,\"v2x_civlib\":0.673333,\"v2xcl_rol\":0.656333,\"v2x_polyarchy\":0.695333,\"education\":7.8,\"gini_disp\":45.9,\"gini_mkt\":60.0,\"gini_disp_se\":0.523333,\"socprot_coverage\":71.95,\"directly_reported_any\":true,\"directly_reported_all\":true,\"mean_education\":6.345905,\"mean_gini_disp\":50.188571,\"mean_socprot_coverage\":70.075,\"e_education\":1.454095,\"e_gini_disp\":-4.288571,\"e_socprot_coverage\":1.875,\"education_imputed\":true}",
+          "output": "0.539",
+          "metadata_row_index": 19,
+          "metadata_country_name": "Brazil",
+          "metadata_task_type": "regression",
+          "metadata_target_variable": "v2x_libdem",
+          "metadata_is_democratizer": true,
+          "metadata_has_all_core_vars": true
+        },
+        {
+          "input": "{\"country_iso3\":\"BTN\",\"period\":\"2020-22\",\"period_start\":2020,\"period_end\":2022,\"v2x_jucon\":0.885,\"v2jucomp\":1.363667,\"v2cseeorgs\":0.851667,\"v2csprtcpt\":0.981667,\"v2x_civlib\":0.735,\"v2xcl_rol\":0.840667,\"v2x_polyarchy\":0.580667,\"education\":3.1,\"gini_disp\":36.966667,\"gini_mkt\":38.833333,\"gini_disp_se\":3.143333,\"socprot_coverage\":11.9,\"directly_reported_any\":true,\"directly_reported_all\":true,\"mean_education\":2.775,\"mean_gini_disp\":39.081333,\"mean_socprot_coverage\":10.35,\"e_education\":0.325,\"e_gini_disp\":-2.114667,\"e_socprot_coverage\":1.55,\"education_imputed\":true}",
+          "output": "0.492667",
+          "metadata_row_index": 21,
+          "metadata_country_name": "Bhutan",
+          "metadata_task_type": "regression",
+          "metadata_target_variable": "v2x_libdem",
+          "metadata_is_democratizer": true,
+          "metadata_has_all_core_vars": true
+        },
+        {
+          "input": "{\"country_iso3\":\"CIV\",\"period\":\"2020-22\",\"period_start\":2020,\"period_end\":2022,\"v2x_jucon\":0.452333,\"v2jucomp\":0.357333,\"v2cseeorgs\":1.638333,\"v2csprtcpt\":1.321667,\"v2x_civlib\":0.72,\"v2xcl_rol\":0.676333,\"v2x_polyarchy\":0.459333,\"education\":5.2,\"gini_disp\":48.95,\"gini_mkt\":52.85,\"gini_disp_se\":2.555,\"socprot_coverage\":12.1,\"directly_reported_any\":true,\"directly_reported_all\":true,\"mean_education\":3.866857,\"mean_gini_disp\":50.638571,\"mean_socprot_coverage\":12.1,\"e_education\":1.333143,\"e_gini_disp\":-1.688571,\"e_socprot_coverage\":0.0,\"education_imputed\":true}",
+          "output": "0.249333",
+          "metadata_row_index": 27,
+          "metadata_country_name": "Ivory Coast",
+          "metadata_task_type": "regression",
+          "metadata_target_variable": "v2x_libdem",
+          "metadata_is_democratizer": true,
+          "metadata_has_all_core_vars": true
+        },
+        {
+          "input": "{\"country_iso3\":\"COL\",\"period\":\"2020-22\",\"period_start\":2020,\"period_end\":2022,\"v2x_jucon\":0.819333,\"v2jucomp\":1.209,\"v2cseeorgs\":1.404667,\"v2csprtcpt\":0.983,\"v2x_civlib\":0.720333,\"v2xcl_rol\":0.706,\"v2x_polyarchy\":0.666333,\"education\":8.3,\"gini_disp\":49.9,\"gini_mkt\":53.866667,\"gini_disp_se\":0.503333,\"socprot_coverage\":52.0,\"directly_reported_any\":true,\"directly_reported_all\":true,\"mean_education\":7.106476,\"mean_gini_disp\":50.234286,\"mean_socprot_coverage\":49.325,\"e_education\":1.193524,\"e_gini_disp\":-0.334286,\"e_socprot_coverage\":2.675,\"education_imputed\":true}",
+          "output": "0.519333",
+          "metadata_row_index": 29,
+          "metadata_country_name": "Colombia",
+          "metadata_task_type": "regression",
+          "metadata_target_variable": "v2x_libdem",
+          "metadata_is_democratizer": true,
+          "metadata_has_all_core_vars": true
+        },
+        {
+          "input": "{\"country_iso3\":\"CRI\",\"period\":\"2020-22\",\"period_start\":2020,\"period_end\":2022,\"v2x_jucon\":0.953333,\"v2jucomp\":2.959,\"v2cseeorgs\":2.772,\"v2csprtcpt\":2.015,\"v2x_civlib\":0.939333,\"v2xcl_rol\":0.964,\"v2x_polyarchy\":0.886,\"education\":8.8,\"gini_disp\":45.933333,\"gini_mkt\":50.4,\"gini_disp_se\":0.963333,\"socprot_coverage\":60.15,\"directly_reported_any\":true,\"directly_reported_all\":true,\"mean_education\":8.126286,\"mean_gini_disp\":44.919048,\"mean_socprot_coverage\":63.525,\"e_education\":0.673714,\"e_gini_disp\":1.014286,\"e_socprot_coverage\":-3.375,\"education_imputed\":true}",
+          "output": "0.833667",
+          "metadata_row_index": 32,
+          "metadata_country_name": "Costa Rica",
+          "metadata_task_type": "regression",
+          "metadata_target_variable": "v2x_libdem",
+          "metadata_is_democratizer": true,
+          "metadata_has_all_core_vars": true
+        },
+        {
+          "input": "{\"country_iso3\":\"DOM\",\"period\":\"2020-22\",\"period_start\":2020,\"period_end\":2022,\"v2x_jucon\":0.704,\"v2jucomp\":0.281,\"v2cseeorgs\":1.791,\"v2csprtcpt\":2.175,\"v2x_civlib\":0.883333,\"v2xcl_rol\":0.796333,\"v2x_polyarchy\":0.671,\"education\":7.8,\"gini_disp\":37.4,\"gini_mkt\":39.533333,\"gini_disp_se\":0.993333,\"socprot_coverage\":57.6,\"directly_reported_any\":true,\"directly_reported_all\":true,\"mean_education\":6.906857,\"mean_gini_disp\":44.942857,\"mean_socprot_coverage\":55.6,\"e_education\":0.893143,\"e_gini_disp\":-7.542857,\"e_socprot_coverage\":2.0,\"education_imputed\":true}",
+          "output": "0.427",
+          "metadata_row_index": 40,
+          "metadata_country_name": "Dominican Republic",
+          "metadata_task_type": "regression",
+          "metadata_target_variable": "v2x_libdem",
+          "metadata_is_democratizer": true,
+          "metadata_has_all_core_vars": true
+        },
+        {
+          "input": "{\"country_iso3\":\"ECU\",\"period\":\"2020-22\",\"period_start\":2020,\"period_end\":2022,\"v2x_jucon\":0.56,\"v2jucomp\":0.036,\"v2cseeorgs\":1.101,\"v2csprtcpt\":1.486,\"v2x_civlib\":0.894333,\"v2xcl_rol\":0.857,\"v2x_polyarchy\":0.636667,\"education\":8.7,\"gini_disp\":42.066667,\"gini_mkt\":41.633333,\"gini_disp_se\":1.14,\"socprot_coverage\":46.8,\"directly_reported_any\":true,\"directly_reported_all\":true,\"mean_education\":7.669714,\"mean_gini_disp\":46.798095,\"mean_socprot_coverage\":41.525,\"e_education\":1.030286,\"e_gini_disp\":-4.731429,\"e_socprot_coverage\":5.275,\"education_imputed\":true}",
+          "output": "0.477",
+          "metadata_row_index": 42,
+          "metadata_country_name": "Ecuador",
+          "metadata_task_type": "regression",
+          "metadata_target_variable": "v2x_libdem",
+          "metadata_is_democratizer": true,
+          "metadata_has_all_core_vars": true
+        },
+        {
+          "input": "{\"country_iso3\":\"GEO\",\"period\":\"2020-22\",\"period_start\":2020,\"period_end\":2022,\"v2x_jucon\":0.622667,\"v2jucomp\":0.668667,\"v2cseeorgs\":2.431667,\"v2csprtcpt\":1.335,\"v2x_civlib\":0.888667,\"v2xcl_rol\":0.854667,\"v2x_polyarchy\":0.609333,\"education\":12.8,\"gini_disp\":35.833333,\"gini_mkt\":46.233333,\"gini_disp_se\":1.08,\"socprot_coverage\":94.6,\"directly_reported_any\":true,\"directly_reported_all\":true,\"mean_education\":12.401333,\"mean_gini_disp\":38.081905,\"mean_socprot_coverage\":95.85,\"e_education\":0.398667,\"e_gini_disp\":-2.248571,\"e_socprot_coverage\":-1.25,\"education_imputed\":true}",
+          "output": "0.463333",
+          "metadata_row_index": 54,
+          "metadata_country_name": "Georgia",
+          "metadata_task_type": "regression",
+          "metadata_target_variable": "v2x_libdem",
+          "metadata_is_democratizer": true,
+          "metadata_has_all_core_vars": true
+        },
+        {
+          "input": "{\"country_iso3\":\"GNB\",\"period\":\"2020-22\",\"period_start\":2020,\"period_end\":2022,\"v2x_jucon\":0.469333,\"v2jucomp\":-1.045,\"v2cseeorgs\":0.779,\"v2csprtcpt\":1.179,\"v2x_civlib\":0.774667,\"v2xcl_rol\":0.670667,\"v2x_polyarchy\":0.484,\"education\":3.0,\"gini_disp\":40.05,\"gini_mkt\":41.95,\"gini_disp_se\":3.26,\"socprot_coverage\":2.5,\"directly_reported_any\":true,\"directly_reported_all\":true,\"mean_education\":2.771667,\"mean_gini_disp\":41.876429,\"mean_socprot_coverage\":1.7,\"e_education\":0.228333,\"e_gini_disp\":-1.826429,\"e_socprot_coverage\":0.8,\"education_imputed\":true}",
+          "output": "0.273333",
+          "metadata_row_index": 58,
+          "metadata_country_name": "Guinea-Bissau",
+          "metadata_task_type": "regression",
+          "metadata_target_variable": "v2x_libdem",
+          "metadata_is_democratizer": true,
+          "metadata_has_all_core_vars": true
+        },
+        {
+          "input": "{\"country_iso3\":\"GTM\",\"period\":\"2020-22\",\"period_start\":2020,\"period_end\":2022,\"v2x_jucon\":0.641333,\"v2jucomp\":0.349,\"v2cseeorgs\":1.458667,\"v2csprtcpt\":0.655333,\"v2x_civlib\":0.725333,\"v2xcl_rol\":0.561333,\"v2x_polyarchy\":0.547667,\"education\":6.5,\"gini_disp\":42.533333,\"gini_mkt\":46.066667,\"gini_disp_se\":1.586667,\"socprot_coverage\":12.7,\"directly_reported_any\":true,\"directly_reported_all\":true,\"mean_education\":4.663333,\"mean_gini_disp\":47.221905,\"mean_socprot_coverage\":12.833333,\"e_education\":1.836667,\"e_gini_disp\":-4.688571,\"e_socprot_coverage\":-0.133333,\"education_imputed\":true}",
+          "output": "0.358",
+          "metadata_row_index": 61,
+          "metadata_country_name": "Guatemala",
+          "metadata_task_type": "regression",
+          "metadata_target_variable": "v2x_libdem",
+          "metadata_is_democratizer": true,
+          "metadata_has_all_core_vars": true
+        },
+        {
+          "input": "{\"country_iso3\":\"HND\",\"period\":\"2020-22\",\"period_start\":2020,\"period_end\":2022,\"v2x_jucon\":0.673,\"v2jucomp\":1.216333,\"v2cseeorgs\":2.378,\"v2csprtcpt\":1.057333,\"v2x_civlib\":0.789333,\"v2xcl_rol\":0.653667,\"v2x_polyarchy\":0.432,\"education\":6.5,\"gini_disp\":45.033333,\"gini_mkt\":44.1,\"gini_disp_se\":1.526667,\"socprot_coverage\":30.1,\"directly_reported_any\":true,\"directly_reported_all\":true,\"mean_education\":5.123905,\"mean_gini_disp\":49.57619,\"mean_socprot_coverage\":28.35,\"e_education\":1.376095,\"e_gini_disp\":-4.542857,\"e_socprot_coverage\":1.75,\"education_imputed\":true}",
+          "output": "0.285333",
+          "metadata_row_index": 63,
+          "metadata_country_name": "Honduras",
+          "metadata_task_type": "regression",
+          "metadata_target_variable": "v2x_libdem",
+          "metadata_is_democratizer": true,
+          "metadata_has_all_core_vars": true
+        },
+        {
+          "input": "{\"country_iso3\":\"IDN\",\"period\":\"2020-22\",\"period_start\":2020,\"period_end\":2022,\"v2x_jucon\":0.703333,\"v2jucomp\":1.013,\"v2cseeorgs\":1.175333,\"v2csprtcpt\":2.518,\"v2x_civlib\":0.719,\"v2xcl_rol\":0.697,\"v2x_polyarchy\":0.560667,\"education\":8.0,\"gini_disp\":45.366667,\"gini_mkt\":40.033333,\"gini_disp_se\":1.663333,\"socprot_coverage\":54.3,\"directly_reported_any\":true,\"directly_reported_all\":true,\"mean_education\":6.697524,\"mean_gini_disp\":43.378095,\"mean_socprot_coverage\":41.05,\"e_education\":1.302476,\"e_gini_disp\":1.988571,\"e_socprot_coverage\":13.25,\"education_imputed\":true}",
+          "output": "0.402667",
+          "metadata_row_index": 69,
+          "metadata_country_name": "Indonesia",
+          "metadata_task_type": "regression",
+          "metadata_target_variable": "v2x_libdem",
+          "metadata_is_democratizer": true,
+          "metadata_has_all_core_vars": true
+        },
+        {
+          "input": "{\"country_iso3\":\"IND\",\"period\":\"2020-22\",\"period_start\":2020,\"period_end\":2022,\"v2x_jucon\":0.762667,\"v2jucomp\":0.776333,\"v2cseeorgs\":-0.029333,\"v2csprtcpt\":1.284667,\"v2x_civlib\":0.569333,\"v2xcl_rol\":0.593,\"v2x_polyarchy\":0.393,\"education\":6.4,\"gini_disp\":47.0,\"gini_mkt\":42.866667,\"gini_disp_se\":1.926667,\"socprot_coverage\":48.8,\"directly_reported_any\":true,\"directly_reported_all\":true,\"mean_education\":5.014095,\"mean_gini_disp\":45.545714,\"mean_socprot_coverage\":35.3,\"e_education\":1.385905,\"e_gini_disp\":1.454286,\"e_socprot_coverage\":13.5,\"education_imputed\":true}",
+          "output": "0.298667",
+          "metadata_row_index": 71,
+          "metadata_country_name": "India",
+          "metadata_task_type": "regression",
+          "metadata_target_variable": "v2x_libdem",
+          "metadata_is_democratizer": true,
+          "metadata_has_all_core_vars": true
+        },
+        {
+          "input": "{\"country_iso3\":\"ARG\",\"period\":\"2015-19\",\"period_start\":2015,\"period_end\":2019,\"v2x_jucon\":0.7254,\"v2jucomp\":0.9258,\"v2cseeorgs\":2.0338,\"v2csprtcpt\":2.462,\"v2x_civlib\":0.8822,\"v2xcl_rol\":0.8532,\"v2x_polyarchy\":0.7708,\"education\":9.866666,\"gini_disp\":37.98,\"gini_mkt\":40.32,\"gini_disp_se\":1.158,\"socprot_coverage\":65.4,\"directly_reported_any\":true,\"directly_reported_all\":true,\"mean_education\":9.206095,\"mean_gini_disp\":41.817143,\"mean_socprot_coverage\":65.65,\"e_education\":0.660571,\"e_gini_disp\":-3.837143,\"e_socprot_coverage\":-0.25,\"education_imputed\":false}",
+          "output": "0.6184",
+          "metadata_row_index": 1,
+          "metadata_country_name": "Argentina",
+          "metadata_task_type": "regression",
+          "metadata_target_variable": "v2x_libdem",
+          "metadata_is_democratizer": true,
+          "metadata_has_all_core_vars": true
+        },
+        {
+          "input": "{\"country_iso3\":\"AUT\",\"period\":\"2015-19\",\"period_start\":2015,\"period_end\":2019,\"v2x_jucon\":0.907,\"v2jucomp\":1.8094,\"v2cseeorgs\":2.2118,\"v2csprtcpt\":1.846,\"v2x_civlib\":0.9376,\"v2xcl_rol\":0.9566,\"v2x_polyarchy\":0.8586,\"education\":12.1,\"gini_disp\":27.78,\"gini_mkt\":49.76,\"gini_disp_se\":0.878,\"socprot_coverage\":99.3,\"directly_reported_any\":true,\"directly_reported_all\":true,\"mean_education\":10.586857,\"mean_gini_disp\":27.838095,\"mean_socprot_coverage\":99.65,\"e_education\":1.513143,\"e_gini_disp\":-0.058095,\"e_socprot_coverage\":-0.35,\"education_imputed\":false}",
+          "output": "0.7908",
+          "metadata_row_index": 3,
+          "metadata_country_name": "Austria",
+          "metadata_task_type": "regression",
+          "metadata_target_variable": "v2x_libdem",
+          "metadata_is_democratizer": true,
+          "metadata_has_all_core_vars": true
+        },
+        {
+          "input": "{\"country_iso3\":\"BEL\",\"period\":\"2015-19\",\"period_start\":2015,\"period_end\":2019,\"v2x_jucon\":0.9292,\"v2jucomp\":1.6586,\"v2cseeorgs\":1.564,\"v2csprtcpt\":2.464,\"v2x_civlib\":0.9604,\"v2xcl_rol\":0.981,\"v2x_polyarchy\":0.9024,\"education\":11.766667,\"gini_disp\":26.1,\"gini_mkt\":49.3,\"gini_disp_se\":0.73,\"socprot_coverage\":100.0,\"directly_reported_any\":true,\"directly_reported_all\":true,\"mean_education\":10.778095,\"mean_gini_disp\":25.71619,\"mean_socprot_coverage\":100.0,\"e_education\":0.988571,\"e_gini_disp\":0.38381,\"e_socprot_coverage\":0.0,\"education_imputed\":false}",
+          "output": "0.8384",
+          "metadata_row_index": 5,
+          "metadata_country_name": "Belgium",
+          "metadata_task_type": "regression",
+          "metadata_target_variable": "v2x_libdem",
+          "metadata_is_democratizer": true,
+          "metadata_has_all_core_vars": true
+        },
+        {
+          "input": "{\"country_iso3\":\"CAN\",\"period\":\"2015-19\",\"period_start\":2015,\"period_end\":2019,\"v2x_jucon\":0.9314,\"v2jucomp\":1.371,\"v2cseeorgs\":1.9304,\"v2csprtcpt\":1.28,\"v2x_civlib\":0.934,\"v2xcl_rol\":0.961,\"v2x_polyarchy\":0.8364,\"education\":13.166667,\"gini_disp\":30.82,\"gini_mkt\":47.86,\"gini_disp_se\":0.598,\"socprot_coverage\":99.9,\"directly_reported_any\":true,\"directly_reported_all\":true,\"mean_education\":12.040381,\"mean_gini_disp\":30.641905,\"mean_socprot_coverage\":97.75,\"e_education\":1.126286,\"e_gini_disp\":0.178095,\"e_socprot_coverage\":2.15,\"education_imputed\":false}",
+          "output": "0.7624",
+          "metadata_row_index": 23,
+          "metadata_country_name": "Canada",
+          "metadata_task_type": "regression",
+          "metadata_target_variable": "v2x_libdem",
+          "metadata_is_democratizer": true,
+          "metadata_has_all_core_vars": true
+        },
+        {
+          "input": "{\"country_iso3\":\"CHL\",\"period\":\"2015-19\",\"period_start\":2015,\"period_end\":2019,\"v2x_jucon\":0.9426,\"v2jucomp\":2.3494,\"v2cseeorgs\":2.4772,\"v2csprtcpt\":1.2348,\"v2x_civlib\":0.931,\"v2xcl_rol\":0.938,\"v2x_polyarchy\":0.8734,\"education\":10.3,\"gini_disp\":45.96,\"gini_mkt\":51.68,\"gini_disp_se\":0.894,\"socprot_coverage\":69.7,\"directly_reported_any\":true,\"directly_reported_all\":true,\"mean_education\":9.440571,\"mean_gini_disp\":48.137143,\"mean_socprot_coverage\":72.5,\"e_education\":0.859429,\"e_gini_disp\":-2.177143,\"e_socprot_coverage\":-2.8,\"education_imputed\":false}",
+          "output": "0.818",
+          "metadata_row_index": 25,
+          "metadata_country_name": "Chile",
+          "metadata_task_type": "regression",
+          "metadata_target_variable": "v2x_libdem",
+          "metadata_is_democratizer": true,
+          "metadata_has_all_core_vars": true
+        },
+        {
+          "input": "{\"country_iso3\":\"ARG\",\"period\":\"2020-22\",\"period_start\":2020,\"period_end\":2022,\"v2x_jucon\":0.766667,\"v2jucomp\":1.534333,\"v2cseeorgs\":1.717,\"v2csprtcpt\":2.462,\"v2x_civlib\":0.877667,\"v2xcl_rol\":0.842667,\"v2x_polyarchy\":0.811333,\"education\":9.9,\"gini_disp\":38.0,\"gini_mkt\":39.9,\"gini_disp_se\":1.143333,\"socprot_coverage\":65.9,\"directly_reported_any\":true,\"directly_reported_all\":true,\"mean_education\":9.206095,\"mean_gini_disp\":41.817143,\"mean_socprot_coverage\":65.65,\"e_education\":0.693904,\"e_gini_disp\":-3.817143,\"e_socprot_coverage\":0.25,\"education_imputed\":true}",
+          "output": "0.648333",
+          "metadata_row_index": 2,
+          "metadata_country_name": "Argentina",
+          "metadata_task_type": "regression",
+          "metadata_target_variable": "v2x_libdem",
+          "metadata_is_democratizer": true,
+          "metadata_has_all_core_vars": true
+        },
+        {
+          "input": "{\"country_iso3\":\"AUT\",\"period\":\"2020-22\",\"period_start\":2020,\"period_end\":2022,\"v2x_jucon\":0.918333,\"v2jucomp\":1.578,\"v2cseeorgs\":2.076667,\"v2csprtcpt\":1.249333,\"v2x_civlib\":0.924667,\"v2xcl_rol\":0.946333,\"v2x_polyarchy\":0.85,\"education\":12.1,\"gini_disp\":27.866667,\"gini_mkt\":49.6,\"gini_disp_se\":0.91,\"socprot_coverage\":100.0,\"directly_reported_any\":true,\"directly_reported_all\":true,\"mean_education\":10.586857,\"mean_gini_disp\":27.838095,\"mean_socprot_coverage\":99.65,\"e_education\":1.513143,\"e_gini_disp\":0.028571,\"e_socprot_coverage\":0.35,\"education_imputed\":true}",
+          "output": "0.778",
+          "metadata_row_index": 4,
+          "metadata_country_name": "Austria",
+          "metadata_task_type": "regression",
+          "metadata_target_variable": "v2x_libdem",
+          "metadata_is_democratizer": true,
+          "metadata_has_all_core_vars": true
+        },
+        {
+          "input": "{\"country_iso3\":\"BEL\",\"period\":\"2020-22\",\"period_start\":2020,\"period_end\":2022,\"v2x_jucon\":0.924,\"v2jucomp\":1.408,\"v2cseeorgs\":1.564,\"v2csprtcpt\":2.464,\"v2x_civlib\":0.955333,\"v2xcl_rol\":0.978667,\"v2x_polyarchy\":0.897667,\"education\":11.8,\"gini_disp\":25.233333,\"gini_mkt\":48.633333,\"gini_disp_se\":0.783333,\"socprot_coverage\":100.0,\"directly_reported_any\":true,\"directly_reported_all\":true,\"mean_education\":10.778095,\"mean_gini_disp\":25.71619,\"mean_socprot_coverage\":100.0,\"e_education\":1.021905,\"e_gini_disp\":-0.482857,\"e_socprot_coverage\":0.0,\"education_imputed\":true}",
+          "output": "0.831333",
+          "metadata_row_index": 6,
+          "metadata_country_name": "Belgium",
+          "metadata_task_type": "regression",
+          "metadata_target_variable": "v2x_libdem",
+          "metadata_is_democratizer": true,
+          "metadata_has_all_core_vars": true
+        },
+        {
+          "input": "{\"country_iso3\":\"CAN\",\"period\":\"2020-22\",\"period_start\":2020,\"period_end\":2022,\"v2x_jucon\":0.901333,\"v2jucomp\":1.34,\"v2cseeorgs\":1.98,\"v2csprtcpt\":1.28,\"v2x_civlib\":0.923,\"v2xcl_rol\":0.935667,\"v2x_polyarchy\":0.847333,\"education\":13.3,\"gini_disp\":29.233333,\"gini_mkt\":47.833333,\"gini_disp_se\":0.533333,\"socprot_coverage\":95.6,\"directly_reported_any\":true,\"directly_reported_all\":true,\"mean_education\":12.040381,\"mean_gini_disp\":30.641905,\"mean_socprot_coverage\":97.75,\"e_education\":1.259619,\"e_gini_disp\":-1.408571,\"e_socprot_coverage\":-2.15,\"education_imputed\":true}",
+          "output": "0.751667",
+          "metadata_row_index": 24,
+          "metadata_country_name": "Canada",
+          "metadata_task_type": "regression",
+          "metadata_target_variable": "v2x_libdem",
+          "metadata_is_democratizer": true,
+          "metadata_has_all_core_vars": true
+        },
+        {
+          "input": "{\"country_iso3\":\"CHL\",\"period\":\"2020-22\",\"period_start\":2020,\"period_end\":2022,\"v2x_jucon\":0.941333,\"v2jucomp\":2.005,\"v2cseeorgs\":1.646,\"v2csprtcpt\":1.558667,\"v2x_civlib\":0.901667,\"v2xcl_rol\":0.907,\"v2x_polyarchy\":0.837333,\"education\":10.3,\"gini_disp\":45.2,\"gini_mkt\":50.166667,\"gini_disp_se\":0.723333,\"socprot_coverage\":75.3,\"directly_reported_any\":true,\"directly_reported_all\":true,\"mean_education\":9.440571,\"mean_gini_disp\":48.137143,\"mean_socprot_coverage\":72.5,\"e_education\":0.859429,\"e_gini_disp\":-2.937143,\"e_socprot_coverage\":2.8,\"education_imputed\":true}",
+          "output": "0.773667",
+          "metadata_row_index": 26,
+          "metadata_country_name": "Chile",
+          "metadata_task_type": "regression",
+          "metadata_target_variable": "v2x_libdem",
+          "metadata_is_democratizer": true,
+          "metadata_has_all_core_vars": true
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "datasets": [
+    {
+      "dataset": "vdem_ilo_gini_edu_panel_complete",
+      "examples": [
+        {
+          "input": "{\"country_iso3\":\"ALB\",\"period\":\"2020-22\",\"period_start\":2020,\"period_end\":2022,\"v2x_jucon\":0.725667,\"v2jucomp\":1.022333,\"v2cseeorgs\":1.762,\"v2csprtcpt\":1.420333,\"v2x_civlib\":0.888,\"v2xcl_rol\":0.913,\"v2x_polyarchy\":0.523667,\"education\":10.0,\"gini_disp\":34.933333,\"gini_mkt\":50.866667,\"gini_disp_se\":2.0,\"socprot_coverage\":78.1,\"directly_reported_any\":true,\"directly_reported_all\":true,\"mean_education\":9.095143,\"mean_gini_disp\":36.325556,\"mean_socprot_coverage\":78.1,\"e_education\":0.904857,\"e_gini_disp\":-1.392222,\"e_socprot_coverage\":0.0,\"education_imputed\":true}",
+          "output": "0.437",
+          "metadata_row_index": 0,
+          "metadata_country_name": "Albania",
+          "metadata_task_type": "regression",
+          "metadata_target_variable": "v2x_libdem",
+          "metadata_is_democratizer": true,
+          "metadata_has_all_core_vars": true
+        },
+        {
+          "input": "{\"country_iso3\":\"ARG\",\"period\":\"2015-19\",\"period_start\":2015,\"period_end\":2019,\"v2x_jucon\":0.7254,\"v2jucomp\":0.9258,\"v2cseeorgs\":2.0338,\"v2csprtcpt\":2.462,\"v2x_civlib\":0.8822,\"v2xcl_rol\":0.8532,\"v2x_polyarchy\":0.7708,\"education\":9.866666,\"gini_disp\":37.98,\"gini_mkt\":40.32,\"gini_disp_se\":1.158,\"socprot_coverage\":65.4,\"directly_reported_any\":true,\"directly_reported_all\":true,\"mean_education\":9.206095,\"mean_gini_disp\":41.817143,\"mean_socprot_coverage\":65.65,\"e_education\":0.660571,\"e_gini_disp\":-3.837143,\"e_socprot_coverage\":-0.25,\"education_imputed\":false}",
+          "output": "0.6184",
+          "metadata_row_index": 1,
+          "metadata_country_name": "Argentina",
+          "metadata_task_type": "regression",
+          "metadata_target_variable": "v2x_libdem",
+          "metadata_is_democratizer": true,
+          "metadata_has_all_core_vars": true
+        },
+        {
+          "input": "{\"country_iso3\":\"ARG\",\"period\":\"2020-22\",\"period_start\":2020,\"period_end\":2022,\"v2x_jucon\":0.766667,\"v2jucomp\":1.534333,\"v2cseeorgs\":1.717,\"v2csprtcpt\":2.462,\"v2x_civlib\":0.877667,\"v2xcl_rol\":0.842667,\"v2x_polyarchy\":0.811333,\"education\":9.9,\"gini_disp\":38.0,\"gini_mkt\":39.9,\"gini_disp_se\":1.143333,\"socprot_coverage\":65.9,\"directly_reported_any\":true,\"directly_reported_all\":true,\"mean_education\":9.206095,\"mean_gini_disp\":41.817143,\"mean_socprot_coverage\":65.65,\"e_education\":0.693904,\"e_gini_disp\":-3.817143,\"e_socprot_coverage\":0.25,\"education_imputed\":true}",
+          "output": "0.648333",
+          "metadata_row_index": 2,
+          "metadata_country_name": "Argentina",
+          "metadata_task_type": "regression",
+          "metadata_target_variable": "v2x_libdem",
+          "metadata_is_democratizer": true,
+          "metadata_has_all_core_vars": true
+        }
+      ]
+    }
+  ]
+}

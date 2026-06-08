@@ -1,0 +1,331 @@
+{
+  "datasets": [
+    {
+      "dataset": "DD_panel_libdem_predictions",
+      "examples": [
+        {
+          "input": "{\"country_iso3\": \"ALB\", \"period\": \"2020-22\", \"period_start\": 2020, \"education_mys\": 10.0, \"ter_enroll_pct\": 61.40103333333334, \"gini_disp\": 34.933333, \"socprot_coverage\": 78.1, \"v2x_polyarchy\": 0.523667}",
+          "output": "0.437000",
+          "metadata_country_iso3": "ALB",
+          "metadata_period": "2020-22",
+          "metadata_period_start": 2020,
+          "predict_spec_a_naive_undp": "0.000000",
+          "predict_spec_b_dd_undp": "0.000000",
+          "predict_spec_c_dd_tertiary": "0.000000",
+          "predict_spec_d_naive_tertiary": "0.000000"
+        },
+        {
+          "input": "{\"country_iso3\": \"BEL\", \"period\": \"2015-19\", \"period_start\": 2015, \"education_mys\": 11.766667, \"ter_enroll_pct\": 78.57388, \"gini_disp\": 26.1, \"socprot_coverage\": 100.0, \"v2x_polyarchy\": 0.9024}",
+          "output": "0.838400",
+          "metadata_country_iso3": "BEL",
+          "metadata_period": "2015-19",
+          "metadata_period_start": 2015,
+          "predict_spec_a_naive_undp": "0.011253",
+          "predict_spec_b_dd_undp": "0.002564",
+          "predict_spec_c_dd_tertiary": "-0.007237",
+          "predict_spec_d_naive_tertiary": "-0.002970"
+        },
+        {
+          "input": "{\"country_iso3\": \"BFA\", \"period\": \"2020-22\", \"period_start\": 2020, \"education_mys\": 1.5, \"ter_enroll_pct\": 8.872863333333333, \"gini_disp\": 40.75, \"socprot_coverage\": 9.7, \"v2x_polyarchy\": 0.521667}",
+          "output": "0.389333",
+          "metadata_country_iso3": "BFA",
+          "metadata_period": "2020-22",
+          "metadata_period_start": 2020,
+          "predict_spec_a_naive_undp": "-0.003137",
+          "predict_spec_b_dd_undp": "-0.005719",
+          "predict_spec_c_dd_tertiary": "0.004560",
+          "predict_spec_d_naive_tertiary": "0.006903"
+        },
+        {
+          "input": "{\"country_iso3\": \"BLR\", \"period\": \"2015-19\", \"period_start\": 2015, \"education_mys\": 12.266667, \"ter_enroll_pct\": 88.15642, \"gini_disp\": 24.64, \"socprot_coverage\": 36.0, \"v2x_polyarchy\": 0.2558}",
+          "output": "0.108400",
+          "metadata_country_iso3": "BLR",
+          "metadata_period": "2015-19",
+          "metadata_period_start": 2015,
+          "predict_spec_a_naive_undp": "0.000000",
+          "predict_spec_b_dd_undp": "0.000000",
+          "predict_spec_c_dd_tertiary": "0.000000",
+          "predict_spec_d_naive_tertiary": "0.000000"
+        },
+        {
+          "input": "{\"country_iso3\": \"BTN\", \"period\": \"2015-19\", \"period_start\": 2015, \"education_mys\": 3.1, \"ter_enroll_pct\": 15.235966666666668, \"gini_disp\": 38.06, \"socprot_coverage\": 8.8, \"v2x_polyarchy\": 0.5798}",
+          "output": "0.492600",
+          "metadata_country_iso3": "BTN",
+          "metadata_period": "2015-19",
+          "metadata_period_start": 2015,
+          "predict_spec_a_naive_undp": "-0.017423",
+          "predict_spec_b_dd_undp": "-0.007285",
+          "predict_spec_c_dd_tertiary": "-0.007499",
+          "predict_spec_d_naive_tertiary": "-0.024214"
+        },
+        {
+          "input": "{\"country_iso3\": \"CHL\", \"period\": \"2015-19\", \"period_start\": 2015, \"education_mys\": 10.3, \"ter_enroll_pct\": 89.6899, \"gini_disp\": 45.96, \"socprot_coverage\": 69.7, \"v2x_polyarchy\": 0.8734}",
+          "output": "0.818000",
+          "metadata_country_iso3": "CHL",
+          "metadata_period": "2015-19",
+          "metadata_period_start": 2015,
+          "predict_spec_a_naive_undp": "-0.020048",
+          "predict_spec_b_dd_undp": "-0.007317",
+          "predict_spec_c_dd_tertiary": "-0.008904",
+          "predict_spec_d_naive_tertiary": "-0.001519"
+        },
+        {
+          "input": "{\"country_iso3\": \"CPV\", \"period\": \"2015-19\", \"period_start\": 2015, \"education_mys\": 6.033333, \"ter_enroll_pct\": 23.7669, \"gini_disp\": 48.4, \"socprot_coverage\": 47.0, \"v2x_polyarchy\": 0.795}",
+          "output": "0.709800",
+          "metadata_country_iso3": "CPV",
+          "metadata_period": "2015-19",
+          "metadata_period_start": 2015,
+          "predict_spec_a_naive_undp": "0.000000",
+          "predict_spec_b_dd_undp": "0.000000",
+          "predict_spec_c_dd_tertiary": "0.000000",
+          "predict_spec_d_naive_tertiary": "0.000000"
+        },
+        {
+          "input": "{\"country_iso3\": \"CZE\", \"period\": \"2015-19\", \"period_start\": 2015, \"education_mys\": 12.7, \"ter_enroll_pct\": 67.22412, \"gini_disp\": 25.22, \"socprot_coverage\": 78.4, \"v2x_polyarchy\": 0.8362}",
+          "output": "0.743800",
+          "metadata_country_iso3": "CZE",
+          "metadata_period": "2015-19",
+          "metadata_period_start": 2015,
+          "predict_spec_a_naive_undp": "0.000000",
+          "predict_spec_b_dd_undp": "0.000000",
+          "predict_spec_c_dd_tertiary": "0.000000",
+          "predict_spec_d_naive_tertiary": "0.000000"
+        },
+        {
+          "input": "{\"country_iso3\": \"DOM\", \"period\": \"2020-22\", \"period_start\": 2020, \"education_mys\": 7.8, \"ter_enroll_pct\": 56.78733333333333, \"gini_disp\": 37.4, \"socprot_coverage\": 57.6, \"v2x_polyarchy\": 0.671}",
+          "output": "0.427000",
+          "metadata_country_iso3": "DOM",
+          "metadata_period": "2020-22",
+          "metadata_period_start": 2020,
+          "predict_spec_a_naive_undp": "-0.024865",
+          "predict_spec_b_dd_undp": "0.021082",
+          "predict_spec_c_dd_tertiary": "0.015984",
+          "predict_spec_d_naive_tertiary": "-0.050292"
+        },
+        {
+          "input": "{\"country_iso3\": \"EST\", \"period\": \"2015-19\", \"period_start\": 2015, \"education_mys\": 12.666667, \"ter_enroll_pct\": 72.90514, \"gini_disp\": 30.92, \"socprot_coverage\": 96.6, \"v2x_polyarchy\": 0.9022}",
+          "output": "0.856200",
+          "metadata_country_iso3": "EST",
+          "metadata_period": "2015-19",
+          "metadata_period_start": 2015,
+          "predict_spec_a_naive_undp": "0.007627",
+          "predict_spec_b_dd_undp": "0.006082",
+          "predict_spec_c_dd_tertiary": "0.000024",
+          "predict_spec_d_naive_tertiary": "-0.000467"
+        },
+        {
+          "input": "{\"country_iso3\": \"FRA\", \"period\": \"2015-19\", \"period_start\": 2015, \"education_mys\": 11.5, \"ter_enroll_pct\": 65.71848, \"gini_disp\": 29.86, \"socprot_coverage\": 100.0, \"v2x_polyarchy\": 0.8798}",
+          "output": "0.806200",
+          "metadata_country_iso3": "FRA",
+          "metadata_period": "2015-19",
+          "metadata_period_start": 2015,
+          "predict_spec_a_naive_undp": "0.000011",
+          "predict_spec_b_dd_undp": "-0.000217",
+          "predict_spec_c_dd_tertiary": "-0.004852",
+          "predict_spec_d_naive_tertiary": "-0.005758"
+        },
+        {
+          "input": "{\"country_iso3\": \"GHA\", \"period\": \"2015-19\", \"period_start\": 2015, \"education_mys\": 7.033333, \"ter_enroll_pct\": 16.12802, \"gini_disp\": 43.85, \"socprot_coverage\": 21.8, \"v2x_polyarchy\": 0.7356}",
+          "output": "0.626400",
+          "metadata_country_iso3": "GHA",
+          "metadata_period": "2015-19",
+          "metadata_period_start": 2015,
+          "predict_spec_a_naive_undp": "0.000000",
+          "predict_spec_b_dd_undp": "0.000000",
+          "predict_spec_c_dd_tertiary": "0.000000",
+          "predict_spec_d_naive_tertiary": "0.000000"
+        },
+        {
+          "input": "{\"country_iso3\": \"GTM\", \"period\": \"2015-19\", \"period_start\": 2015, \"education_mys\": 6.433333, \"ter_enroll_pct\": 22.25845, \"gini_disp\": 43.46, \"socprot_coverage\": 12.966667, \"v2x_polyarchy\": 0.6106}",
+          "output": "0.436200",
+          "metadata_country_iso3": "GTM",
+          "metadata_period": "2015-19",
+          "metadata_period_start": 2015,
+          "predict_spec_a_naive_undp": "0.027054",
+          "predict_spec_b_dd_undp": "0.008773",
+          "predict_spec_c_dd_tertiary": "0.000000",
+          "predict_spec_d_naive_tertiary": "0.000000"
+        },
+        {
+          "input": "{\"country_iso3\": \"HRV\", \"period\": \"2020-22\", \"period_start\": 2020, \"education_mys\": 11.3, \"ter_enroll_pct\": 77.83583333333333, \"gini_disp\": 28.133333, \"socprot_coverage\": 81.4, \"v2x_polyarchy\": 0.758667}",
+          "output": "0.654333",
+          "metadata_country_iso3": "HRV",
+          "metadata_period": "2020-22",
+          "metadata_period_start": 2020,
+          "predict_spec_a_naive_undp": "0.003172",
+          "predict_spec_b_dd_undp": "-0.003545",
+          "predict_spec_c_dd_tertiary": "0.009991",
+          "predict_spec_d_naive_tertiary": "0.025205"
+        },
+        {
+          "input": "{\"country_iso3\": \"IND\", \"period\": \"2015-19\", \"period_start\": 2015, \"education_mys\": 6.366667, \"ter_enroll_pct\": 28.010640000000002, \"gini_disp\": 47.68, \"socprot_coverage\": 21.8, \"v2x_polyarchy\": 0.492}",
+          "output": "0.375000",
+          "metadata_country_iso3": "IND",
+          "metadata_period": "2015-19",
+          "metadata_period_start": 2015,
+          "predict_spec_a_naive_undp": "0.005523",
+          "predict_spec_b_dd_undp": "0.000990",
+          "predict_spec_c_dd_tertiary": "-0.017621",
+          "predict_spec_d_naive_tertiary": "-0.035876"
+        },
+        {
+          "input": "{\"country_iso3\": \"ISR\", \"period\": \"2015-19\", \"period_start\": 2015, \"education_mys\": 13.0, \"ter_enroll_pct\": 59.896159999999995, \"gini_disp\": 34.6, \"socprot_coverage\": 89.6, \"v2x_polyarchy\": 0.7224}",
+          "output": "0.639800",
+          "metadata_country_iso3": "ISR",
+          "metadata_period": "2015-19",
+          "metadata_period_start": 2015,
+          "predict_spec_a_naive_undp": "-0.021168",
+          "predict_spec_b_dd_undp": "-0.008724",
+          "predict_spec_c_dd_tertiary": "-0.011494",
+          "predict_spec_d_naive_tertiary": "-0.041277"
+        },
+        {
+          "input": "{\"country_iso3\": \"JAM\", \"period\": \"2020-22\", \"period_start\": 2020, \"education_mys\": 9.8, \"gini_disp\": 43.05, \"socprot_coverage\": 32.6, \"v2x_polyarchy\": 0.807667}",
+          "output": "0.699667",
+          "metadata_country_iso3": "JAM",
+          "metadata_period": "2020-22",
+          "metadata_period_start": 2020,
+          "predict_spec_a_naive_undp": "-0.007743",
+          "predict_spec_b_dd_undp": "-0.012561"
+        },
+        {
+          "input": "{\"country_iso3\": \"LBR\", \"period\": \"2015-19\", \"period_start\": 2015, \"education_mys\": 4.533333, \"gini_disp\": 36.7, \"socprot_coverage\": 6.2, \"v2x_polyarchy\": 0.6164}",
+          "output": "0.440800",
+          "metadata_country_iso3": "LBR",
+          "metadata_period": "2015-19",
+          "metadata_period_start": 2015,
+          "predict_spec_a_naive_undp": "0.000000",
+          "predict_spec_b_dd_undp": "0.000000"
+        },
+        {
+          "input": "{\"country_iso3\": \"LUX\", \"period\": \"2015-19\", \"period_start\": 2015, \"education_mys\": 12.066667, \"ter_enroll_pct\": 19.7197, \"gini_disp\": 29.14, \"socprot_coverage\": 100.0, \"v2x_polyarchy\": 0.876}",
+          "output": "0.795000",
+          "metadata_country_iso3": "LUX",
+          "metadata_period": "2015-19",
+          "metadata_period_start": 2015,
+          "predict_spec_a_naive_undp": "0.008506",
+          "predict_spec_b_dd_undp": "0.005097",
+          "predict_spec_c_dd_tertiary": "-0.002337",
+          "predict_spec_d_naive_tertiary": "-0.001909"
+        },
+        {
+          "input": "{\"country_iso3\": \"MDA\", \"period\": \"2020-22\", \"period_start\": 2020, \"education_mys\": 11.6, \"ter_enroll_pct\": 61.86946666666666, \"gini_disp\": 31.2, \"socprot_coverage\": 47.5, \"v2x_polyarchy\": 0.723}",
+          "output": "0.600667",
+          "metadata_country_iso3": "MDA",
+          "metadata_period": "2020-22",
+          "metadata_period_start": 2020,
+          "predict_spec_a_naive_undp": "0.004528",
+          "predict_spec_b_dd_undp": "0.003212",
+          "predict_spec_c_dd_tertiary": "0.015739",
+          "predict_spec_d_naive_tertiary": "0.056506"
+        },
+        {
+          "input": "{\"country_iso3\": \"MKD\", \"period\": \"2015-19\", \"period_start\": 2015, \"education_mys\": 9.6, \"ter_enroll_pct\": 43.161225, \"gini_disp\": 31.6, \"socprot_coverage\": 39.0, \"v2x_polyarchy\": 0.5248}",
+          "output": "0.346600",
+          "metadata_country_iso3": "MKD",
+          "metadata_period": "2015-19",
+          "metadata_period_start": 2015,
+          "predict_spec_a_naive_undp": "-0.033659",
+          "predict_spec_b_dd_undp": "-0.010726",
+          "predict_spec_c_dd_tertiary": "-0.010864",
+          "predict_spec_d_naive_tertiary": "-0.010117"
+        },
+        {
+          "input": "{\"country_iso3\": \"MNE\", \"period\": \"2015-19\", \"period_start\": 2015, \"education_mys\": 11.3, \"ter_enroll_pct\": 59.69557999999999, \"gini_disp\": 33.34, \"socprot_coverage\": 41.0, \"v2x_polyarchy\": 0.4616}",
+          "output": "0.364400",
+          "metadata_country_iso3": "MNE",
+          "metadata_period": "2015-19",
+          "metadata_period_start": 2015,
+          "predict_spec_a_naive_undp": "-0.048863",
+          "predict_spec_b_dd_undp": "-0.021797",
+          "predict_spec_c_dd_tertiary": "-0.033031",
+          "predict_spec_d_naive_tertiary": "-0.126897"
+        },
+        {
+          "input": "{\"country_iso3\": \"MYS\", \"period\": \"2015-19\", \"period_start\": 2015, \"education_mys\": 10.2, \"ter_enroll_pct\": 43.220980000000004, \"gini_disp\": 38.84, \"socprot_coverage\": 27.3, \"v2x_polyarchy\": 0.3824}",
+          "output": "0.253800",
+          "metadata_country_iso3": "MYS",
+          "metadata_period": "2015-19",
+          "metadata_period_start": 2015,
+          "predict_spec_a_naive_undp": "0.000000",
+          "predict_spec_b_dd_undp": "0.000000",
+          "predict_spec_c_dd_tertiary": "0.000000",
+          "predict_spec_d_naive_tertiary": "0.000000"
+        },
+        {
+          "input": "{\"country_iso3\": \"NGA\", \"period\": \"2020-22\", \"period_start\": 2020, \"education_mys\": 6.2, \"gini_disp\": 38.5, \"socprot_coverage\": 14.8, \"v2x_polyarchy\": 0.498667}",
+          "output": "0.331000",
+          "metadata_country_iso3": "NGA",
+          "metadata_period": "2020-22",
+          "metadata_period_start": 2020,
+          "predict_spec_a_naive_undp": "0.030030",
+          "predict_spec_b_dd_undp": "0.002792"
+        },
+        {
+          "input": "{\"country_iso3\": \"NPL\", \"period\": \"2020-22\", \"period_start\": 2020, \"education_mys\": 4.9, \"ter_enroll_pct\": 14.762300000000002, \"gini_disp\": 34.966667, \"socprot_coverage\": 18.95, \"v2x_polyarchy\": 0.615333}",
+          "output": "0.489667",
+          "metadata_country_iso3": "NPL",
+          "metadata_period": "2020-22",
+          "metadata_period_start": 2020,
+          "predict_spec_a_naive_undp": "0.004474",
+          "predict_spec_b_dd_undp": "-0.011281",
+          "predict_spec_c_dd_tertiary": "0.006313",
+          "predict_spec_d_naive_tertiary": "0.006644"
+        },
+        {
+          "input": "{\"country_iso3\": \"PHL\", \"period\": \"2015-19\", \"period_start\": 2015, \"education_mys\": 9.3, \"ter_enroll_pct\": 33.214980000000004, \"gini_disp\": 39.2, \"socprot_coverage\": 41.9, \"v2x_polyarchy\": 0.5018}",
+          "output": "0.349800",
+          "metadata_country_iso3": "PHL",
+          "metadata_period": "2015-19",
+          "metadata_period_start": 2015,
+          "predict_spec_a_naive_undp": "0.027160",
+          "predict_spec_b_dd_undp": "-0.002155",
+          "predict_spec_c_dd_tertiary": "-0.003644",
+          "predict_spec_d_naive_tertiary": "0.041807"
+        },
+        {
+          "input": "{\"country_iso3\": \"PRY\", \"period\": \"2015-19\", \"period_start\": 2015, \"education_mys\": 8.433333, \"gini_disp\": 47.0, \"socprot_coverage\": 31.4, \"v2x_polyarchy\": 0.5888}",
+          "output": "0.417600",
+          "metadata_country_iso3": "PRY",
+          "metadata_period": "2015-19",
+          "metadata_period_start": 2015,
+          "predict_spec_a_naive_undp": "-0.080159",
+          "predict_spec_b_dd_undp": "-0.026038"
+        },
+        {
+          "input": "{\"country_iso3\": \"SEN\", \"period\": \"2020-22\", \"period_start\": 2020, \"education_mys\": 3.0, \"ter_enroll_pct\": 14.548, \"gini_disp\": 39.9, \"socprot_coverage\": 19.9, \"v2x_polyarchy\": 0.720333}",
+          "output": "0.559000",
+          "metadata_country_iso3": "SEN",
+          "metadata_period": "2020-22",
+          "metadata_period_start": 2020,
+          "predict_spec_a_naive_undp": "-0.007334",
+          "predict_spec_b_dd_undp": "-0.012236",
+          "predict_spec_c_dd_tertiary": "0.004209",
+          "predict_spec_d_naive_tertiary": "0.005227"
+        },
+        {
+          "input": "{\"country_iso3\": \"SRB\", \"period\": \"2020-22\", \"period_start\": 2020, \"education_mys\": 11.1, \"ter_enroll_pct\": 69.04260000000001, \"gini_disp\": 31.1, \"socprot_coverage\": 56.7, \"v2x_polyarchy\": 0.349}",
+          "output": "0.246000",
+          "metadata_country_iso3": "SRB",
+          "metadata_period": "2020-22",
+          "metadata_period_start": 2020,
+          "predict_spec_a_naive_undp": "-0.014456",
+          "predict_spec_b_dd_undp": "-0.005184",
+          "predict_spec_c_dd_tertiary": "0.006094",
+          "predict_spec_d_naive_tertiary": "-0.013044"
+        },
+        {
+          "input": "{\"country_iso3\": \"SVN\", \"period\": \"2020-22\", \"period_start\": 2020, \"education_mys\": 12.2, \"ter_enroll_pct\": 80.14966666666668, \"gini_disp\": 23.766667, \"socprot_coverage\": 97.0, \"v2x_polyarchy\": 0.760667}",
+          "output": "0.674000",
+          "metadata_country_iso3": "SVN",
+          "metadata_period": "2020-22",
+          "metadata_period_start": 2020,
+          "predict_spec_a_naive_undp": "0.002634",
+          "predict_spec_b_dd_undp": "-0.003931",
+          "predict_spec_c_dd_tertiary": "0.001702",
+          "predict_spec_d_naive_tertiary": "0.009998"
+        }
+      ]
+    }
+  ]
+}

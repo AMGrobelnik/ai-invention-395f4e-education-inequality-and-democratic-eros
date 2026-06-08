@@ -1,0 +1,15 @@
+{
+  "kind": "code_demo",
+  "id": "gen_art_dataset_1",
+  "type": "code",
+  "iteration": 4,
+  "title": "Polity5 Post-1990 Democratizers Panel (1990-2018, 38 Countries)",
+  "summary": "This artifact provides the polity5_democratizers dataset: 1,046 country-year observations for 38 post-1990 democratizer countries (1990-2018) drawn from the Polity5 Project (p5v2018.xls). Post-1990 democratizers are identified via the Polity5 polity2 score: countries with polity2 \u2264 0 in any year 1985-1994 AND polity2 \u2265 6 in any year 1990-2010, with the first democratic year after 1989.\n\nEach example (data row = one observation) has:\n- input: JSON string of 12 Polity5 component scores: democ, autoc, xrreg, xrcomp, xropen, xconst, parreg, parcomp, exrec, exconst, polcomp, durable\n- output: polity2 score as string (integer from -10 to +10)\n- metadata_country, metadata_scode (3-letter code), metadata_year, metadata_period (5-year bin), metadata_ccode\n\nCoverage: 38 countries, 1990-2018, 1,046 valid rows (polity2 in [-10, 10]). Average within-country SD of polity2 output = 3.11 (high variation supporting difference-in-differences identification). 5-year period bins: 1990-94, 1995-99, 2000-04, 2005-09, 2010-14, 2015-19.\n\nDataset choice rationale: polity5_democratizers was chosen over swiid_inequality because (1) democracy quality (polity2) is the direct outcome variable for the SDET triple-interaction DD experiment; (2) consistent 12-feature inputs vs SWIID's median of 2 features (64% of SWIID rows missing abs_red/rel_red); (3) higher within-country variation (SD=3.11 vs 1.63); (4) more countries (39 vs 36).\n\nData limitations: V-Dem sub-indices (v2jucomp, v2x_jucon, v2cseeorgs, v2csprtcpt, v2mecenefm) unavailable \u2014 uses polity2 as democracy proxy. NSTP/ILO social protection not included. Polity5 data ends at 2018 (p5v2018 version).\n\nOutput format follows exp_sel_data_out schema: {\"datasets\": [{\"dataset\": \"polity5_democratizers\", \"examples\": [...]}]}. Schema validation: PASSED.",
+  "original_path": "/home/adrian/projects/ai-inventor/aii_data/users/adrian.marina.photos/runs/run_zXdSkAIIk5J3/3_invention_loop/iter_4/gen_art/gen_art_dataset_1",
+  "demo_path": "/home/adrian/projects/ai-inventor/aii_data/users/adrian.marina.photos/runs/run_zXdSkAIIk5J3/4_gen_paper_repo/_3_gen_art_demo/iter_4/gen_art_dataset_1",
+  "out_expected_files": {
+    "notebook": "code_demo.ipynb",
+    "mini_data_file": "mini_demo_data.json"
+  },
+  "notebook_path": "/home/adrian/projects/ai-inventor/aii_data/users/adrian.marina.photos/runs/run_zXdSkAIIk5J3/4_gen_paper_repo/_3_gen_art_demo/iter_4/gen_art_dataset_1/data_code_demo.ipynb"
+}

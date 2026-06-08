@@ -1,0 +1,360 @@
+{
+  "datasets": [
+    {
+      "dataset": "polity5_democratizers",
+      "examples": [
+        {
+          "input": "{\"democ\": 3, \"autoc\": 2, \"xrreg\": 2, \"xrcomp\": 2, \"xropen\": 4, \"xconst\": 3, \"parreg\": 3, \"parcomp\": 3, \"exrec\": 7, \"exconst\": 3, \"polcomp\": 6, \"durable\": 0}",
+          "output": "1",
+          "metadata_country": "Albania",
+          "metadata_scode": "ALB",
+          "metadata_year": 1990,
+          "metadata_period": "1990-94",
+          "metadata_ccode": 339
+        },
+        {
+          "input": "{\"democ\": 6, \"autoc\": 1, \"xrreg\": 2, \"xrcomp\": 2, \"xropen\": 4, \"xconst\": 5, \"parreg\": 3, \"parcomp\": 4, \"exrec\": 7, \"exconst\": 5, \"polcomp\": 8, \"durable\": 3}",
+          "output": "5",
+          "metadata_country": "Albania",
+          "metadata_scode": "ALB",
+          "metadata_year": 2000,
+          "metadata_period": "2000-04",
+          "metadata_ccode": 339
+        },
+        {
+          "input": "{\"democ\": 9, \"autoc\": 0, \"xrreg\": 3, \"xrcomp\": 3, \"xropen\": 4, \"xconst\": 7, \"parreg\": 2, \"parcomp\": 4, \"exrec\": 8, \"exconst\": 7, \"polcomp\": 9, \"durable\": 13}",
+          "output": "9",
+          "metadata_country": "Albania",
+          "metadata_scode": "ALB",
+          "metadata_year": 2010,
+          "metadata_period": "2010-14",
+          "metadata_ccode": 339
+        },
+        {
+          "input": "{\"democ\": 7, \"autoc\": 0, \"xrreg\": 2, \"xrcomp\": 2, \"xropen\": 4, \"xconst\": 7, \"parreg\": 2, \"parcomp\": 3, \"exrec\": 7, \"exconst\": 7, \"polcomp\": 7, \"durable\": 0}",
+          "output": "7",
+          "metadata_country": "Bulgaria",
+          "metadata_scode": "BUL",
+          "metadata_year": 1990,
+          "metadata_period": "1990-94",
+          "metadata_ccode": 355
+        },
+        {
+          "input": "{\"democ\": 8, \"autoc\": 0, \"xrreg\": 3, \"xrcomp\": 3, \"xropen\": 4, \"xconst\": 7, \"parreg\": 2, \"parcomp\": 3, \"exrec\": 8, \"exconst\": 7, \"polcomp\": 7, \"durable\": 8}",
+          "output": "8",
+          "metadata_country": "Bulgaria",
+          "metadata_scode": "BUL",
+          "metadata_year": 2000,
+          "metadata_period": "2000-04",
+          "metadata_ccode": 355
+        },
+        {
+          "input": "{\"democ\": 9, \"autoc\": 0, \"xrreg\": 3, \"xrcomp\": 3, \"xropen\": 4, \"xconst\": 7, \"parreg\": 2, \"parcomp\": 4, \"exrec\": 8, \"exconst\": 7, \"polcomp\": 9, \"durable\": 18}",
+          "output": "9",
+          "metadata_country": "Bulgaria",
+          "metadata_scode": "BUL",
+          "metadata_year": 2010,
+          "metadata_period": "2010-14",
+          "metadata_ccode": 355
+        },
+        {
+          "input": "{\"democ\": 2, \"autoc\": 4, \"xrreg\": 2, \"xrcomp\": 1, \"xropen\": 4, \"xconst\": 5, \"parreg\": 3, \"parcomp\": 2, \"exrec\": 3, \"exconst\": 5, \"polcomp\": 3, \"durable\": 15}",
+          "output": "-2",
+          "metadata_country": "Cape Verde",
+          "metadata_scode": "CAP",
+          "metadata_year": 1990,
+          "metadata_period": "1990-94",
+          "metadata_ccode": 402
+        },
+        {
+          "input": "{\"democ\": 8, \"autoc\": 0, \"xrreg\": 3, \"xrcomp\": 3, \"xropen\": 4, \"xconst\": 6, \"parreg\": 2, \"parcomp\": 4, \"exrec\": 8, \"exconst\": 6, \"polcomp\": 9, \"durable\": 9}",
+          "output": "8",
+          "metadata_country": "Cape Verde",
+          "metadata_scode": "CAP",
+          "metadata_year": 2000,
+          "metadata_period": "2000-04",
+          "metadata_ccode": 402
+        },
+        {
+          "input": "{\"democ\": 10, \"autoc\": 0, \"xrreg\": 3, \"xrcomp\": 3, \"xropen\": 4, \"xconst\": 7, \"parreg\": 5, \"parcomp\": 5, \"exrec\": 8, \"exconst\": 7, \"polcomp\": 10, \"durable\": 19}",
+          "output": "10",
+          "metadata_country": "Cape Verde",
+          "metadata_scode": "CAP",
+          "metadata_year": 2010,
+          "metadata_period": "2010-14",
+          "metadata_ccode": 402
+        },
+        {
+          "input": "{\"democ\": 5, \"autoc\": 1, \"xrreg\": 2, \"xrcomp\": 2, \"xropen\": 4, \"xconst\": 5, \"parreg\": 3, \"parcomp\": 3, \"exrec\": 7, \"exconst\": 5, \"polcomp\": 6, \"durable\": 0}",
+          "output": "4",
+          "metadata_country": "Comoros",
+          "metadata_scode": "COM",
+          "metadata_year": 1990,
+          "metadata_period": "1990-94",
+          "metadata_ccode": 581
+        },
+        {
+          "input": "{\"democ\": 1, \"autoc\": 2, \"xrreg\": 1, \"xrcomp\": 0, \"xropen\": 0, \"xconst\": 2, \"parreg\": 2, \"parcomp\": 3, \"exrec\": 4, \"exconst\": 2, \"polcomp\": 7, \"durable\": 0}",
+          "output": "-1",
+          "metadata_country": "Comoros",
+          "metadata_scode": "COM",
+          "metadata_year": 2000,
+          "metadata_period": "2000-04",
+          "metadata_ccode": 581
+        },
+        {
+          "input": "{\"democ\": 9, \"autoc\": 0, \"xrreg\": 3, \"xrcomp\": 3, \"xropen\": 4, \"xconst\": 7, \"parreg\": 2, \"parcomp\": 4, \"exrec\": 8, \"exconst\": 7, \"polcomp\": 9, \"durable\": 4}",
+          "output": "9",
+          "metadata_country": "Comoros",
+          "metadata_scode": "COM",
+          "metadata_year": 2010,
+          "metadata_period": "2010-14",
+          "metadata_ccode": 581
+        },
+        {
+          "input": "{\"democ\": 1, \"autoc\": 4, \"xrreg\": 2, \"xrcomp\": 1, \"xropen\": 4, \"xconst\": 3, \"parreg\": 3, \"parcomp\": 3, \"exrec\": 3, \"exconst\": 3, \"polcomp\": 6, \"durable\": 0}",
+          "output": "-3",
+          "metadata_country": "Croatia",
+          "metadata_scode": "CRO",
+          "metadata_year": 1991,
+          "metadata_period": "1990-94",
+          "metadata_ccode": 344
+        },
+        {
+          "input": "{\"democ\": 8, \"autoc\": 0, \"xrreg\": 2, \"xrcomp\": 2, \"xropen\": 4, \"xconst\": 7, \"parreg\": 2, \"parcomp\": 4, \"exrec\": 7, \"exconst\": 7, \"polcomp\": 9, \"durable\": 0}",
+          "output": "8",
+          "metadata_country": "Croatia",
+          "metadata_scode": "CRO",
+          "metadata_year": 2000,
+          "metadata_period": "2000-04",
+          "metadata_ccode": 344
+        },
+        {
+          "input": "{\"democ\": 9, \"autoc\": 0, \"xrreg\": 3, \"xrcomp\": 3, \"xropen\": 4, \"xconst\": 7, \"parreg\": 2, \"parcomp\": 4, \"exrec\": 8, \"exconst\": 7, \"polcomp\": 9, \"durable\": 10}",
+          "output": "9",
+          "metadata_country": "Croatia",
+          "metadata_scode": "CRO",
+          "metadata_year": 2010,
+          "metadata_period": "2010-14",
+          "metadata_ccode": 344
+        },
+        {
+          "input": "{\"democ\": 4, \"autoc\": 1, \"xrreg\": 2, \"xrcomp\": 2, \"xropen\": 4, \"xconst\": 4, \"parreg\": 3, \"parcomp\": 3, \"exrec\": 7, \"exconst\": 4, \"polcomp\": 6, \"durable\": 0}",
+          "output": "3",
+          "metadata_country": "Georgia",
+          "metadata_scode": "GRG",
+          "metadata_year": 1991,
+          "metadata_period": "1990-94",
+          "metadata_ccode": 372
+        },
+        {
+          "input": "{\"democ\": 4, \"autoc\": 2, \"xrreg\": 2, \"xrcomp\": 2, \"xropen\": 4, \"xconst\": 5, \"parreg\": 3, \"parcomp\": 2, \"exrec\": 7, \"exconst\": 5, \"polcomp\": 3, \"durable\": 5}",
+          "output": "2",
+          "metadata_country": "Georgia",
+          "metadata_scode": "GRG",
+          "metadata_year": 2000,
+          "metadata_period": "2000-04",
+          "metadata_ccode": 372
+        },
+        {
+          "input": "{\"democ\": 7, \"autoc\": 1, \"xrreg\": 3, \"xrcomp\": 3, \"xropen\": 4, \"xconst\": 5, \"parreg\": 3, \"parcomp\": 4, \"exrec\": 8, \"exconst\": 5, \"polcomp\": 8, \"durable\": 6}",
+          "output": "6",
+          "metadata_country": "Georgia",
+          "metadata_scode": "GRG",
+          "metadata_year": 2010,
+          "metadata_period": "2010-14",
+          "metadata_ccode": 372
+        },
+        {
+          "input": "{\"democ\": 0, \"autoc\": 7, \"xrreg\": 2, \"xrcomp\": 1, \"xropen\": 4, \"xconst\": 2, \"parreg\": 4, \"parcomp\": 2, \"exrec\": 3, \"exconst\": 2, \"polcomp\": 2, \"durable\": 23}",
+          "output": "-7",
+          "metadata_country": "Indonesia",
+          "metadata_scode": "INS",
+          "metadata_year": 1990,
+          "metadata_period": "1990-94",
+          "metadata_ccode": 850
+        },
+        {
+          "input": "{\"democ\": 7, \"autoc\": 1, \"xrreg\": 2, \"xrcomp\": 2, \"xropen\": 4, \"xconst\": 6, \"parreg\": 3, \"parcomp\": 4, \"exrec\": 7, \"exconst\": 6, \"polcomp\": 8, \"durable\": 1}",
+          "output": "6",
+          "metadata_country": "Indonesia",
+          "metadata_scode": "INS",
+          "metadata_year": 2000,
+          "metadata_period": "2000-04",
+          "metadata_ccode": 850
+        },
+        {
+          "input": "{\"democ\": 8, \"autoc\": 0, \"xrreg\": 3, \"xrcomp\": 3, \"xropen\": 4, \"xconst\": 6, \"parreg\": 2, \"parcomp\": 4, \"exrec\": 8, \"exconst\": 6, \"polcomp\": 9, \"durable\": 11}",
+          "output": "8",
+          "metadata_country": "Indonesia",
+          "metadata_scode": "INS",
+          "metadata_year": 2010,
+          "metadata_period": "2010-14",
+          "metadata_ccode": 850
+        },
+        {
+          "input": "{\"democ\": 0, \"autoc\": 7, \"xrreg\": 2, \"xrcomp\": 1, \"xropen\": 4, \"xconst\": 3, \"parreg\": 4, \"parcomp\": 1, \"exrec\": 3, \"exconst\": 3, \"polcomp\": 1, \"durable\": 21}",
+          "output": "-7",
+          "metadata_country": "Kenya",
+          "metadata_scode": "KEN",
+          "metadata_year": 1990,
+          "metadata_period": "1990-94",
+          "metadata_ccode": 501
+        },
+        {
+          "input": "{\"democ\": 5, \"autoc\": 1, \"xrreg\": 2, \"xrcomp\": 2, \"xropen\": 4, \"xconst\": 4, \"parreg\": 3, \"parcomp\": 4, \"exrec\": 7, \"exconst\": 4, \"polcomp\": 8, \"durable\": 3}",
+          "output": "4",
+          "metadata_country": "Kenya",
+          "metadata_scode": "KEN",
+          "metadata_year": 2000,
+          "metadata_period": "2000-04",
+          "metadata_ccode": 501
+        },
+        {
+          "input": "{\"democ\": 8, \"autoc\": 0, \"xrreg\": 2, \"xrcomp\": 2, \"xropen\": 4, \"xconst\": 7, \"parreg\": 2, \"parcomp\": 4, \"exrec\": 7, \"exconst\": 7, \"polcomp\": 9, \"durable\": 8}",
+          "output": "8",
+          "metadata_country": "Kenya",
+          "metadata_scode": "KEN",
+          "metadata_year": 2010,
+          "metadata_period": "2010-14",
+          "metadata_ccode": 501
+        },
+        {
+          "input": "{\"democ\": 2, \"autoc\": 2, \"xrreg\": 2, \"xrcomp\": 1, \"xropen\": 4, \"xconst\": 4, \"parreg\": 2, \"parcomp\": 3, \"exrec\": 3, \"exconst\": 4, \"polcomp\": 7, \"durable\": 2}",
+          "output": "0",
+          "metadata_country": "Mexico",
+          "metadata_scode": "MEX",
+          "metadata_year": 1990,
+          "metadata_period": "1990-94",
+          "metadata_ccode": 70
+        },
+        {
+          "input": "{\"democ\": 8, \"autoc\": 0, \"xrreg\": 3, \"xrcomp\": 3, \"xropen\": 4, \"xconst\": 6, \"parreg\": 2, \"parcomp\": 4, \"exrec\": 8, \"exconst\": 6, \"polcomp\": 9, \"durable\": 3}",
+          "output": "8",
+          "metadata_country": "Mexico",
+          "metadata_scode": "MEX",
+          "metadata_year": 2000,
+          "metadata_period": "2000-04",
+          "metadata_ccode": 70
+        },
+        {
+          "input": "{\"democ\": 8, \"autoc\": 0, \"xrreg\": 3, \"xrcomp\": 3, \"xropen\": 4, \"xconst\": 6, \"parreg\": 2, \"parcomp\": 4, \"exrec\": 8, \"exconst\": 6, \"polcomp\": 9, \"durable\": 13}",
+          "output": "8",
+          "metadata_country": "Mexico",
+          "metadata_scode": "MEX",
+          "metadata_year": 2010,
+          "metadata_period": "2010-14",
+          "metadata_ccode": 70
+        },
+        {
+          "input": "{\"democ\": 4, \"autoc\": 2, \"xrreg\": 2, \"xrcomp\": 2, \"xropen\": 4, \"xconst\": 5, \"parreg\": 3, \"parcomp\": 2, \"exrec\": 7, \"exconst\": 5, \"polcomp\": 3, \"durable\": 0}",
+          "output": "2",
+          "metadata_country": "Mongolia",
+          "metadata_scode": "MON",
+          "metadata_year": 1990,
+          "metadata_period": "1990-94",
+          "metadata_ccode": 712
+        },
+        {
+          "input": "{\"democ\": 10, \"autoc\": 0, \"xrreg\": 3, \"xrcomp\": 3, \"xropen\": 4, \"xconst\": 7, \"parreg\": 5, \"parcomp\": 5, \"exrec\": 8, \"exconst\": 7, \"polcomp\": 10, \"durable\": 8}",
+          "output": "10",
+          "metadata_country": "Mongolia",
+          "metadata_scode": "MON",
+          "metadata_year": 2000,
+          "metadata_period": "2000-04",
+          "metadata_ccode": 712
+        },
+        {
+          "input": "{\"democ\": 10, \"autoc\": 0, \"xrreg\": 3, \"xrcomp\": 3, \"xropen\": 4, \"xconst\": 7, \"parreg\": 5, \"parcomp\": 5, \"exrec\": 8, \"exconst\": 7, \"polcomp\": 10, \"durable\": 18}",
+          "output": "10",
+          "metadata_country": "Mongolia",
+          "metadata_scode": "MON",
+          "metadata_year": 2010,
+          "metadata_period": "2010-14",
+          "metadata_ccode": 712
+        },
+        {
+          "input": "{\"democ\": 5, \"autoc\": 0, \"xrreg\": 2, \"xrcomp\": 2, \"xropen\": 4, \"xconst\": 4, \"parreg\": 2, \"parcomp\": 4, \"exrec\": 7, \"exconst\": 4, \"polcomp\": 9, \"durable\": 0}",
+          "output": "5",
+          "metadata_country": "Poland",
+          "metadata_scode": "POL",
+          "metadata_year": 1990,
+          "metadata_period": "1990-94",
+          "metadata_ccode": 290
+        },
+        {
+          "input": "{\"democ\": 9, \"autoc\": 0, \"xrreg\": 3, \"xrcomp\": 3, \"xropen\": 4, \"xconst\": 7, \"parreg\": 2, \"parcomp\": 4, \"exrec\": 8, \"exconst\": 7, \"polcomp\": 9, \"durable\": 9}",
+          "output": "9",
+          "metadata_country": "Poland",
+          "metadata_scode": "POL",
+          "metadata_year": 2000,
+          "metadata_period": "2000-04",
+          "metadata_ccode": 290
+        },
+        {
+          "input": "{\"democ\": 10, \"autoc\": 0, \"xrreg\": 3, \"xrcomp\": 3, \"xropen\": 4, \"xconst\": 7, \"parreg\": 5, \"parcomp\": 5, \"exrec\": 8, \"exconst\": 7, \"polcomp\": 10, \"durable\": 19}",
+          "output": "10",
+          "metadata_country": "Poland",
+          "metadata_scode": "POL",
+          "metadata_year": 2010,
+          "metadata_period": "2010-14",
+          "metadata_ccode": 290
+        },
+        {
+          "input": "{\"democ\": 5, \"autoc\": 0, \"xrreg\": 2, \"xrcomp\": 2, \"xropen\": 4, \"xconst\": 5, \"parreg\": 2, \"parcomp\": 3, \"exrec\": 7, \"exconst\": 5, \"polcomp\": 7, \"durable\": 0}",
+          "output": "5",
+          "metadata_country": "Romania",
+          "metadata_scode": "RUM",
+          "metadata_year": 1990,
+          "metadata_period": "1990-94",
+          "metadata_ccode": 360
+        },
+        {
+          "input": "{\"democ\": 8, \"autoc\": 0, \"xrreg\": 3, \"xrcomp\": 3, \"xropen\": 4, \"xconst\": 6, \"parreg\": 2, \"parcomp\": 4, \"exrec\": 8, \"exconst\": 6, \"polcomp\": 9, \"durable\": 4}",
+          "output": "8",
+          "metadata_country": "Romania",
+          "metadata_scode": "RUM",
+          "metadata_year": 2000,
+          "metadata_period": "2000-04",
+          "metadata_ccode": 360
+        },
+        {
+          "input": "{\"democ\": 9, \"autoc\": 0, \"xrreg\": 3, \"xrcomp\": 3, \"xropen\": 4, \"xconst\": 7, \"parreg\": 2, \"parcomp\": 4, \"exrec\": 8, \"exconst\": 7, \"polcomp\": 9, \"durable\": 14}",
+          "output": "9",
+          "metadata_country": "Romania",
+          "metadata_scode": "RUM",
+          "metadata_year": 2010,
+          "metadata_period": "2010-14",
+          "metadata_ccode": 360
+        },
+        {
+          "input": "{\"democ\": 4, \"autoc\": 1, \"xrreg\": 3, \"xrcomp\": 3, \"xropen\": 4, \"xconst\": 3, \"parreg\": 2, \"parcomp\": 3, \"exrec\": 8, \"exconst\": 3, \"polcomp\": 7, \"durable\": 12}",
+          "output": "3",
+          "metadata_country": "Thailand",
+          "metadata_scode": "THI",
+          "metadata_year": 1990,
+          "metadata_period": "1990-94",
+          "metadata_ccode": 800
+        },
+        {
+          "input": "{\"democ\": 9, \"autoc\": 0, \"xrreg\": 3, \"xrcomp\": 3, \"xropen\": 4, \"xconst\": 7, \"parreg\": 2, \"parcomp\": 4, \"exrec\": 8, \"exconst\": 7, \"polcomp\": 9, \"durable\": 8}",
+          "output": "9",
+          "metadata_country": "Thailand",
+          "metadata_scode": "THI",
+          "metadata_year": 2000,
+          "metadata_period": "2000-04",
+          "metadata_ccode": 800
+        },
+        {
+          "input": "{\"democ\": 5, \"autoc\": 1, \"xrreg\": 2, \"xrcomp\": 2, \"xropen\": 4, \"xconst\": 5, \"parreg\": 3, \"parcomp\": 3, \"exrec\": 7, \"exconst\": 5, \"polcomp\": 6, \"durable\": 2}",
+          "output": "4",
+          "metadata_country": "Thailand",
+          "metadata_scode": "THI",
+          "metadata_year": 2010,
+          "metadata_period": "2010-14",
+          "metadata_ccode": 800
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,463 @@
+{
+  "panel_observations": [
+    {
+      "country": "ALB",
+      "period_id": 7,
+      "period_label": "2020-22",
+      "ldem": 0.436,
+      "educ_tertiary": 61.401,
+      "gini": 34.9333,
+      "socprot": 78.1
+    },
+    {
+      "country": "ARM",
+      "period_id": 6,
+      "period_label": "2015-19",
+      "ldem": 0.33,
+      "educ_tertiary": 53.9268,
+      "gini": 36.48,
+      "socprot": 50.85
+    },
+    {
+      "country": "ARM",
+      "period_id": 7,
+      "period_label": "2020-22",
+      "ldem": 0.518667,
+      "educ_tertiary": 55.3795,
+      "gini": 34.0667,
+      "socprot": 49.2
+    },
+    {
+      "country": "BEN",
+      "period_id": 6,
+      "period_label": "2015-19",
+      "ldem": 0.5004,
+      "educ_tertiary": 11.5481,
+      "gini": 44.18,
+      "socprot": 7.8
+    },
+    {
+      "country": "BEN",
+      "period_id": 7,
+      "period_label": "2020-22",
+      "ldem": 0.28,
+      "educ_tertiary": 10.1479,
+      "gini": 43.2,
+      "socprot": 8.4
+    },
+    {
+      "country": "BFA",
+      "period_id": 6,
+      "period_label": "2015-19",
+      "ldem": 0.4566,
+      "educ_tertiary": 5.8734,
+      "gini": 40.84,
+      "socprot": 8.7
+    },
+    {
+      "country": "BFA",
+      "period_id": 7,
+      "period_label": "2020-22",
+      "ldem": 0.388667,
+      "educ_tertiary": 8.8729,
+      "gini": 40.75,
+      "socprot": 9.7
+    },
+    {
+      "country": "BGD",
+      "period_id": 7,
+      "period_label": "2020-22",
+      "ldem": 0.092333,
+      "educ_tertiary": 23.3645,
+      "gini": 33.5333,
+      "socprot": 22.0
+    },
+    {
+      "country": "BGR",
+      "period_id": 6,
+      "period_label": "2015-19",
+      "ldem": 0.5324,
+      "educ_tertiary": 81.6099,
+      "gini": 37.9,
+      "socprot": 88.3
+    },
+    {
+      "country": "BGR",
+      "period_id": 7,
+      "period_label": "2020-22",
+      "ldem": 0.550667,
+      "educ_tertiary": 84.9881,
+      "gini": 38.0333,
+      "socprot": 82.8
+    },
+    {
+      "country": "BIH",
+      "period_id": 7,
+      "period_label": "2020-22",
+      "ldem": 0.335667,
+      "educ_tertiary": 44.8231,
+      "gini": 38.25,
+      "socprot": 54.5
+    },
+    {
+      "country": "BLR",
+      "period_id": 6,
+      "period_label": "2015-19",
+      "ldem": 0.1066,
+      "educ_tertiary": 88.1564,
+      "gini": 24.64,
+      "socprot": 36.0
+    },
+    {
+      "country": "BRA",
+      "period_id": 6,
+      "period_label": "2015-19",
+      "ldem": 0.6398,
+      "educ_tertiary": 50.8917,
+      "gini": 46.54,
+      "socprot": 68.2
+    },
+    {
+      "country": "BRA",
+      "period_id": 7,
+      "period_label": "2020-22",
+      "ldem": 0.535,
+      "educ_tertiary": 58.0535,
+      "gini": 45.9,
+      "socprot": 71.95
+    },
+    {
+      "country": "BTN",
+      "period_id": 6,
+      "period_label": "2015-19",
+      "ldem": 0.4872,
+      "educ_tertiary": 15.236,
+      "gini": 38.06,
+      "socprot": 8.8
+    },
+    {
+      "country": "BTN",
+      "period_id": 7,
+      "period_label": "2020-22",
+      "ldem": 0.487667,
+      "educ_tertiary": 15.3938,
+      "gini": 36.9667,
+      "socprot": 11.9
+    },
+    {
+      "country": "CHL",
+      "period_id": 6,
+      "period_label": "2015-19",
+      "ldem": 0.8168,
+      "educ_tertiary": 89.6899,
+      "gini": 45.96,
+      "socprot": 69.7
+    },
+    {
+      "country": "CHL",
+      "period_id": 7,
+      "period_label": "2020-22",
+      "ldem": 0.773,
+      "educ_tertiary": 94.8909,
+      "gini": 45.2,
+      "socprot": 75.3
+    },
+    {
+      "country": "CIV",
+      "period_id": 7,
+      "period_label": "2020-22",
+      "ldem": 0.243333,
+      "educ_tertiary": 10.7175,
+      "gini": 48.95,
+      "socprot": 12.1
+    },
+    {
+      "country": "COL",
+      "period_id": 6,
+      "period_label": "2015-19",
+      "ldem": 0.538,
+      "educ_tertiary": 56.8646,
+      "gini": 47.06,
+      "socprot": 46.65
+    },
+    {
+      "country": "COL",
+      "period_id": 7,
+      "period_label": "2020-22",
+      "ldem": 0.518667,
+      "educ_tertiary": 57.7797,
+      "gini": 49.9,
+      "socprot": 52.0
+    },
+    {
+      "country": "DOM",
+      "period_id": 6,
+      "period_label": "2015-19",
+      "ldem": 0.3368,
+      "educ_tertiary": 55.3872,
+      "gini": 41.24,
+      "socprot": 53.6
+    },
+    {
+      "country": "DOM",
+      "period_id": 7,
+      "period_label": "2020-22",
+      "ldem": 0.470333,
+      "educ_tertiary": 56.7873,
+      "gini": 37.4,
+      "socprot": 57.6
+    },
+    {
+      "country": "GEO",
+      "period_id": 6,
+      "period_label": "2015-19",
+      "ldem": 0.5028,
+      "educ_tertiary": 62.0066,
+      "gini": 38.4,
+      "socprot": 97.1
+    },
+    {
+      "country": "GEO",
+      "period_id": 7,
+      "period_label": "2020-22",
+      "ldem": 0.462667,
+      "educ_tertiary": 76.1207,
+      "gini": 35.8333,
+      "socprot": 94.6
+    },
+    {
+      "country": "IDN",
+      "period_id": 6,
+      "period_label": "2015-19",
+      "ldem": 0.4826,
+      "educ_tertiary": 35.3459,
+      "gini": 45.98,
+      "socprot": 27.8
+    },
+    {
+      "country": "IDN",
+      "period_id": 7,
+      "period_label": "2020-22",
+      "ldem": 0.399667,
+      "educ_tertiary": 40.3735,
+      "gini": 45.3667,
+      "socprot": 54.3
+    },
+    {
+      "country": "MDA",
+      "period_id": 6,
+      "period_label": "2015-19",
+      "ldem": 0.4276,
+      "educ_tertiary": 52.9032,
+      "gini": 31.12,
+      "socprot": 42.0
+    },
+    {
+      "country": "MDA",
+      "period_id": 7,
+      "period_label": "2020-22",
+      "ldem": 0.593,
+      "educ_tertiary": 61.8695,
+      "gini": 31.2,
+      "socprot": 47.5
+    },
+    {
+      "country": "MKD",
+      "period_id": 6,
+      "period_label": "2015-19",
+      "ldem": 0.3444,
+      "educ_tertiary": 43.1612,
+      "gini": 31.6,
+      "socprot": 39.0
+    },
+    {
+      "country": "MKD",
+      "period_id": 7,
+      "period_label": "2020-22",
+      "ldem": 0.387333,
+      "educ_tertiary": 47.0814,
+      "gini": 30.9333,
+      "socprot": 50.5
+    },
+    {
+      "country": "MNG",
+      "period_id": 6,
+      "period_label": "2015-19",
+      "ldem": 0.5448,
+      "educ_tertiary": 66.6172,
+      "gini": 33.84,
+      "socprot": 86.2
+    },
+    {
+      "country": "MNG",
+      "period_id": 7,
+      "period_label": "2020-22",
+      "ldem": 0.493333,
+      "educ_tertiary": 67.1272,
+      "gini": 33.6667,
+      "socprot": 96.75
+    },
+    {
+      "country": "NPL",
+      "period_id": 6,
+      "period_label": "2015-19",
+      "ldem": 0.5302,
+      "educ_tertiary": 12.2466,
+      "gini": 35.54,
+      "socprot": 17.0
+    },
+    {
+      "country": "NPL",
+      "period_id": 7,
+      "period_label": "2020-22",
+      "ldem": 0.489667,
+      "educ_tertiary": 14.7623,
+      "gini": 34.9667,
+      "socprot": 18.95
+    },
+    {
+      "country": "PAN",
+      "period_id": 6,
+      "period_label": "2015-19",
+      "ldem": 0.546,
+      "educ_tertiary": 47.981,
+      "gini": 45.7,
+      "socprot": 43.95
+    },
+    {
+      "country": "PAN",
+      "period_id": 7,
+      "period_label": "2020-22",
+      "ldem": 0.545333,
+      "educ_tertiary": 51.8228,
+      "gini": 45.9,
+      "socprot": 63.55
+    },
+    {
+      "country": "PHL",
+      "period_id": 6,
+      "period_label": "2015-19",
+      "ldem": 0.3302,
+      "educ_tertiary": 33.215,
+      "gini": 39.2,
+      "socprot": 41.9
+    },
+    {
+      "country": "PHL",
+      "period_id": 7,
+      "period_label": "2020-22",
+      "ldem": 0.272667,
+      "educ_tertiary": 34.5498,
+      "gini": 37.8,
+      "socprot": 34.9
+    },
+    {
+      "country": "SEN",
+      "period_id": 6,
+      "period_label": "2015-19",
+      "ldem": 0.5598,
+      "educ_tertiary": 11.6208,
+      "gini": 40.16,
+      "socprot": 20.0
+    },
+    {
+      "country": "SEN",
+      "period_id": 7,
+      "period_label": "2020-22",
+      "ldem": 0.552333,
+      "educ_tertiary": 14.548,
+      "gini": 39.9,
+      "socprot": 19.9
+    },
+    {
+      "country": "SLV",
+      "period_id": 6,
+      "period_label": "2015-19",
+      "ldem": 0.4418,
+      "educ_tertiary": 27.7851,
+      "gini": 37.58,
+      "socprot": 21.2
+    },
+    {
+      "country": "SLV",
+      "period_id": 7,
+      "period_label": "2020-22",
+      "ldem": 0.196667,
+      "educ_tertiary": 30.919,
+      "gini": 37.1,
+      "socprot": 18.8
+    },
+    {
+      "country": "SRB",
+      "period_id": 6,
+      "period_label": "2015-19",
+      "ldem": 0.303,
+      "educ_tertiary": 64.372,
+      "gini": 32.12,
+      "socprot": 39.0
+    },
+    {
+      "country": "SRB",
+      "period_id": 7,
+      "period_label": "2020-22",
+      "ldem": 0.246333,
+      "educ_tertiary": 69.0426,
+      "gini": 31.1,
+      "socprot": 56.7
+    },
+    {
+      "country": "THA",
+      "period_id": 6,
+      "period_label": "2015-19",
+      "ldem": 0.1212,
+      "educ_tertiary": 46.7236,
+      "gini": 38.1,
+      "socprot": 68.0
+    },
+    {
+      "country": "THA",
+      "period_id": 7,
+      "period_label": "2020-22",
+      "ldem": 0.189667,
+      "educ_tertiary": 43.118,
+      "gini": 36.9333,
+      "socprot": 70.1
+    },
+    {
+      "country": "TUN",
+      "period_id": 6,
+      "period_label": "2015-19",
+      "ldem": 0.6304,
+      "educ_tertiary": 31.583,
+      "gini": 37.74,
+      "socprot": 50.2
+    },
+    {
+      "country": "TUN",
+      "period_id": 7,
+      "period_label": "2020-22",
+      "ldem": 0.427667,
+      "educ_tertiary": 34.3066,
+      "gini": 37.45,
+      "socprot": 53.8
+    },
+    {
+      "country": "TUR",
+      "period_id": 6,
+      "period_label": "2015-19",
+      "ldem": 0.137,
+      "educ_tertiary": 108.4564,
+      "gini": 39.78,
+      "socprot": 64.75
+    },
+    {
+      "country": "TUR",
+      "period_id": 7,
+      "period_label": "2020-22",
+      "ldem": 0.112667,
+      "educ_tertiary": 124.0751,
+      "gini": 40.5,
+      "socprot": 64.0
+    }
+  ]
+}
